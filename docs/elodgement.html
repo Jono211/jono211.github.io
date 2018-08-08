@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+	<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="NSPDR Ecosystem: E-Lodgement (electronic lodgement of land development applications).">
+    <meta name="keywords" content="NSPDR, E-Lodgement, SPLUMA, Ecosystem">
+    <meta name="author" content="Jonathan Cleary">
+
+    <title>NSPDR&ensp;|&ensp;E-Lodgement</title>
+
+    <link rel="icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/typeface.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/stylestest.css">
+		<link rel="stylesheet" href="../css/fa/css/all.css">
+	</head>
+  <body id="top" class="bg-linear water-mark pt-0">
+
+    <!-- HEADER -->
+    <header class="container-fluid bg-white">
+      <div class="container">
+        <div class="row p-2">
+          <div class="col-sm-8 pl-1"><div id="drdlr-logo"></div></div>
+          <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-flag"></div></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-elodg navbar-shadow">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#top" title="National Spatial Planning Data Repository"><span class="hashtag">#</span>NSPDR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> -->
+        <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
+          <!-- <span class="hashtag">#</span>NSPDR -->
+          <img class="png-shadow pb-1" src="../img/logos/acronym-light100.png" alt="NSPDR Ecosystem">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
+          <span class="navbar-toggler-icon override">
+            <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigator">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navAboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navAboutMenu">
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About the <small class="fw-600">NSPDR</small></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+                <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question mr-3"></i>&nbsp;Questions &amp; Answers</a>
+              </div>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle override ml-md-0" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Features<i class="fa fa-sm fa-angle-down ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
+                <a class="dropdown-item active" href="#"><i class="fa fa-sm fa-bars mr-3"></i>E&hybull;Lodgement<span class="sr-only">(current)</span></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-university mr-1">&ensp;</i>SPLUMA Workflow</a>
+              </div>
+            </li>
+          </ul>
+
+          <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
+            <a id="display-count" title="“T”-minus" href="../index.html#countdown-to-zero">nspdr.info</a>
+          </span>
+          <form class="form-inline mt-2 mt-md-0">
+            <!-- <a class="btn btn-outline-light opaque-75 mr-2 my-3 my-sm-0" href="contact.html">&nbsp;GET IN TOUCH.&nbsp;</a> -->
+            <a class="btn btn-outline-light opaque-75 mr-2 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i></a>
+            <!-- <div class="btn-group mr-2 my-3 my-sm-0">
+              <button type="button" class="btn btn-outline-light opaque-75 dropdown-toggle override px-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-xs fa-circle pl-2"></i><i class="fa fa-xs fa-circle pl-1"></i><i class="fa fa-xs fa-circle pl-1"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="ecosystem.html">Data Repository</a>
+                <a class="dropdown-item active" href="elodgement.html">E-Lodgement</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="newsblog.html">Latest News</a>
+                <a class="dropdown-item disabled" href="example.html">More...</a>
+              </div>
+            </div> -->
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero mask-20">
+      <div class="hero-inner" id="bg-sowetownship">
+        <div class="container">
+		      <div class="row justify-content-center">
+            <div class="col-12 col-sm-11 col-md-11 col-lg-10 col-xl-9 mx-auto">
+              <img class="hero-brand img-fluid png-shadows w90 pull-up2" alt="NSPDR Ecosystem" src="../img/title-elodgement.png">
+            </div>
+          </div>
+          <div class="col-lg-11 col-md-12 mx-auto pt-5">
+            <h2 class="tag-line h1 nospacing hide-on-phones">Enabling Integrated Spatial&nbsp;Planning and Land&nbsp;Use&nbsp;Management</h2>
+            <!-- <div class="empty-space --halfish"></div> -->
+            <!-- <a class="btn btn-lg btn-pill btn-primary fat pull-up1" href="#get-started" role="button">&nbsp;Get Started Now&nbsp;</a> -->
+            <!-- <a class="btn pullup get-started fa fa-2x fa-chevron-circle-down animate-pulsate" title="Let’s Get Started!" href="#get-started"></a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <main role="main" class=""> -->
+    <!-- <main class="nspdr-main altX --raised top-line" id="rdpsn" style="margin-top:-45px!important;"> -->
+    <main class="nspdr-background --raised --alt2 top-brown" style="margin-top:-90px!important;">
+
+      <section id="get-started" class="container">
+        <div class="start-of-page pb-0 mx-2 pull-up1">
+          <h1 class="display-2 condensed-3 fat mini-shadow mb-2">Land Use</h1>
+          <h2 class="display-2 condensed-3 fat mini-shadow text-secondary text-trunc">Applications</h2>
+
+          <div class="empty-space --single"></div>
+          <div class="row card-group">
+            <div class="col-md-6">
+              <div id="problem-statement" class="card shadow border-danger">
+                <h3 class="card-header card-title text-danger border-danger rounded statement-link">
+                  <span class="statement-title">Problem Statement</span>
+                  <i class="float-right pt-2 fa fa-sm fa-chevron-down stated"></i>
+                </h3>
+                <div class="card-body toggle-statements">
+                  <p class="card-text">
+                    <!-- PROBLEM STATEMENT -->
+                    <ul class="h4 leading-2 statement pull-up1 pull-left text-secondary">
+                      <li>Currently many municipalities utilise manual methods to process land use applications.</li>
+                      <li>These systems are often not integrated with broader land use management issues as to yield optimal results.</li>
+                      <li>These lead to undue delays regarding processing time, haphazard approvals or dismissals and incorrect land uses being allocated to a particular piece of land.</li>
+                      <li>Information is not readily accessible to the relevant users and planning is often done in isolation, without taking cognisance of the needs and impacts from other services.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="empty-space --single d-lg-none d-inline"></div>
+
+            <div class="col-md-6">
+              <div id="solution-statement" class="card shadow border-success">
+                <h3 class="card-header card-title text-success border-success rounded statement-link">
+                  <span class="statement-title">Solution Statement</span>
+                  <i class="float-right pt-2 fa fa-sm fa-chevron-down stated"></i>
+                </h3>
+                <div id="" class="card-body toggle-statements">
+                  <p class="card-text">
+                    <!-- SOLUTION STATEMENT -->
+                    <ul class="h4 leading-2 statement pull-up1 pull-left">
+                      <!-- <li>The ecosystem includes a facility that will enable municipalities to receive, consider and process land development applications. We call it... the future.</li> -->
+                      <li>The ecosystem includes a facility that will enable municipalities to receive, consider and process land development applications.</li>
+                      <li>E-Lodgement seeks to address the absence of an automated system that can assist municipalities with the processing of land development applications.</li>
+                      <li>The intention is to develop and deliver a facility for the electronic lodgement, assessment and consideration of applications through a secure portal with an automated internal workflow.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="empty-space --single"></div>
+          <div class="linear-divider"></div>
+          <div class="empty-space --half"></div>
+
+          <div class="row">
+            <div class="col-md-11">
+              <p class="h3 ml-md-2 mb-3">In terms of section 16(2) of the <small class="fat">SPLUMA</small> Regulations,</p>
+              <p class="h3 ml-md-2">a land development application will be subjected to what is termed –</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <div class="empty-space --double"></div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h2 class="mb-1 mx-2 condensed-1 spaced-out"><strong>Administrative</strong> <span class="text-muted">phase</span></h2>
+              <hr class="mr-3">
+              <p class="lead mx-2">
+                Commences after a complete development application is submitted along with the completed Assessment Report before the Municipal Planning Tribunal or an authorised official can consider and decide on an application.
+              </p>
+              <br class="hide-on-mobile">
+              <p class="float-right float-sm-none mr-4">
+                <a class="btn btnlg btn-pill btn-outline-nspdr1 btn-shadow fat" href="workflow.html#spluma-process" role="button">View process &raquo;</a>
+              </p>
+              <br class="show-on-mobile"><br class="show-on-mobile">
+              <div class="empty-space --single"></div>
+            </div>
+
+            <div class="col-md-4">
+              <h2 class="mb-1 mx-2 condensed-1 spaced-out"><strong>Consideration</strong> <span class="text-muted">phase</span></h2>
+              <hr class="mr-3">
+              <p class="lead mx-2">
+                In terms of SPLUMA Regulation 16(7) “the consideration phase is the phase during which the Municipal Planning Tribunal ... must consider the application, whether it be a written or oral proceeding.”
+              </p>
+              <br class="hide-on-mobile">
+              <p class="float-right float-sm-none mr-4">
+                <a class="btn btnlg btn-pill btn-outline-nspdr2 btn-shadow fat" href="workflow.html#spluma-process" role="button">View process &raquo;</a>
+              </p>
+              <br class="show-on-mobile"><br class="show-on-mobile">
+              <div class="empty-space --single"></div>
+            </div>
+
+            <div class="col-md-4">
+              <h2 class="mb-1 mx-2 condensed-1 spaced-out"><strong>Decision</strong> <span class="text-muted">phase</span></h2>
+              <hr class="mr-3">
+              <p class="lead mx-2">
+                A decision on the development proposal based on the outcome of the initial assessment, public notification and referrals is made ... notifying the applicant and objectors of the decision and/or their right to appeal.
+              </p>
+              <br class="hide-on-mobile">
+              <p class="float-right float-sm-none mr-4">
+                <a class="btn btnlg btn-pill btn-outline-nspdr3 btn-shadow fat" href="workflow.html#spluma-process" role="button">View process &raquo;</a>
+              </p>
+              <br class="show-on-mobile"><br class="show-on-mobile">
+              <div class="empty-space --single"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- <hr id="learn-more" class="featurette-divider"> -->
+      	<div id="learn-more" class="container"><hr class="dark-divider"></div>
+
+        <div class="container marketing">
+          <div class="empty-space --half"></div>
+
+          <div class="row featurette">
+            <div class="col-md-11 mx-auto">
+              <h2 class="featurette-heading condensed-1">Land
+                <span class="show-on-mobile">Use </span>Applications <br class="show-on-mobile">
+                <span class="text-muted">Using E&NoBreak;-&NoBreak;Lodgement.</span>
+              </h2>
+              <!-- <h2 class="featurette-heading">Land Use Applications <br class="show-on-mobile"><span class="text-muted">Using E&NoBreak;-&NoBreak;Lodgement.</span></h2> -->
+              <!-- <h2 class="featurette-heading">Land Use Applications<br><span class="text-muted">Using Electronic Lodgements.</span></h2> -->
+              <div class="linear-divider"></div>
+              <div class="lead mx-1">
+                <p><strong>E-Lodgement</strong> is to be used by land development applicants to lodge land development applications by completing pro-forma documents online, uploading supporting information and procuring cadastral information, zoning information, land use scheme provisions and related data. This culminates in the compilation of a compliant application and the lodgement thereof with the relevant municipality.</p>
+                <p>Once the system receives such an application, it will notify the municipality and the applicant of the steps to be taken in the context of the relevant by-law(s), to bring the matter to conclusion.</p>
+                <p>All documentation relevant to the application process remains on the system for monitoring and auditing. The system will generate reports for end users, including the Municipal Planning Tribunal, planning officials within the relevant municipality.</p>
+              </div>
+            </div>
+          <!-- </div>
+          <div class="row"> -->
+            <div class="col-xl-11 mx-auto">
+              <div class="empty-space --single"></div>
+              <img class="rounded img-fluid img-shadow" src="../img/uiux/elodgement-banner.png" alt="NSPDR E-Lodgement">
+            </div>
+          </div>
+        </div> <!-- /.container .marketing -->
+
+
+        <!-- <hr id="seven-benefits" class="featurette-divider"> -->
+      	<div id="seven-benefits" class="container"><hr class="dark-divider"></div>
+
+        <div class="container marketing">
+          <h2 class="featurette-heading condensed-1">
+            Top Benefits <br class="show-on-mobile"><span class="text-muted">of E&NoBreak;-&NoBreak;Lodgement.</span>
+          </h2>
+          <div class="empty-space --half"></div>
+
+          <table class="table table-hover table-responsive-sm default">
+            <thead class="thead-light">
+              <tr class="h4">
+                <th scope="col" class="fat pl-4">&numero;</th>
+                <th scope="col" class="pl-3">&nbsp;</th>
+                <th scope="col" class="fat pl-4">Benefits of E&NoBreak;-&NoBreak;Lodgement</th>
+                <th scope="col" class="pl-3">&nbsp;</th>
+                <th scope="col" class="fat pl-4">Value</th>
+              </tr>
+            </thead>
+            <tbody class="lead">
+              <tr>
+                <th class="pl-4 condensed-1" scope="row">01</th>
+                <td>&middot;</td>
+                <td class="pl-4">Application is fully SPLUMA compliant</td>
+                <td>&middot;</td>
+                <td class="pl-4">legislative</td>
+              </tr>
+              <tr>
+                <th class="pl-4 condensed-1" scope="row">02</th>
+                <td>&middot;</td>
+                <td class="pl-4">Moving away from paper-based systems</td>
+                <td>&middot;</td>
+                <td class="pl-4">efficiency</td>
+              </tr>
+              <tr>
+                <th class="pl-4 condensed-1" scope="row">03</th>
+                <td>&middot;</td>
+                <td class="pl-4">Tracking application progress and status</td>
+                <td>&middot;</td>
+                <td class="pl-4">automation</td>
+              </tr>
+              <tr>
+                <th class="pl-4 condensed-1" scope="row">04</th>
+                <td>&middot;</td>
+                <td class="pl-4">Stores all documentation in a central repository</td>
+                <td>&middot;</td>
+                <td class="pl-4">organisation</td>
+              </tr>
+              <tr>
+                <th class="pl-4 condensed-1" scope="row">05</th>
+                <td>&middot;</td>
+                <td class="pl-4">Displays GIS-based location and status of applications</td>
+                <td>&middot;</td>
+                <td class="pl-4">technology</td>
+              </tr>
+              <tr>
+                <th class="pl-4 condensed-1" scope="row">06</th>
+                <td>&middot;</td>
+                <td class="pl-4">Available on multiple platforms (PC, tablet, mobile)</td>
+                <td>&middot;</td>
+                <td class="pl-4">accessibility</td>
+              </tr>
+              <tr>
+                <th class="pl-4 condensed-1" scope="row">07</th>
+                <td>&middot;</td>
+                <td class="pl-4">Monitoring and evaluation of data in dashboards</td>
+                <td>&middot;</td>
+                <td class="pl-4">governance</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="empty-space --single"></div>
+          <div class="col-md-10 mx-auto"><div class="special-divider"></div></div>
+          <div class="empty-space --half"></div>
+        </div> <!-- /.container .marketing -->
+
+
+      <section id="featurettes" class="marketing d-none">
+        <!-- <div class="container marketing"> -->
+
+          <div class="featurette">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h2 class="featurette-heading with-image">
+                    Share spatial data<br><span class="text-muted">with anyone anywhere.</span>
+                  </h2>
+                  <p class="lead">
+                    <!-- the <small class="fat">NSPDR</small> ecosystem will ensure the most up-to-date integration of government project data for <strong>efficient and effective</strong> spatial planning.&nbsp; It enables the sharing of spatial data throughout the country, across all spheres of government including the private sector, through and with the guidance of the SDI Act. -->
+                    Compellingly leverage existing process-centric internal or "organic" sources whereas competitive products. Holisticly unleash intermandated strategic theme areas via future-proof e-services. Dynamically plagiarize seamless testing procedures via optimal expertise. Monotonectally redefine functional niche markets through multifunctional niches. Authoritatively brand intuitive collaboration and idea-sharing for collaborative potentialities.
+                  </p>
+                </div>
+                <div class="col-lg-6 mx-auto align-self-center px-lg-5">
+                  <!-- <img class="featurette-image img-fluid img-shadow px-lg-3" src="../img/logos/wordcloud-drdlr.png" alt="NSPDR Word Cloud"> -->
+                  <!-- <img class="featurette-image img-fluid img-shadow" src="../img/uiux/front-end.jpg" alt="NSPDR Portal"> -->
+                  <img class="featurette-image img-fluid img-shadow" src="../img/uiux/ecosystem-1.png" alt="NSPDR Portal">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <hr class="featurette-divider"> -->
+
+          <div class="featurette">
+            <div class="container">
+              <div class="row">
+              <!-- <div class="row featurette"> -->
+                <div class="col-lg-6 order-lg-2">
+                  <h2 class="featurette-heading with-image">
+                    Capital expenditure<br><span class="text-muted">spatially represented.</span>
+                  </h2>
+                  <p class="lead">
+                    <!-- the <small class="fat">NSPDR</small> ecosystem will support the monitoring of all capital and operational expenditure within the public sector (which currently is not done in a collaborative manner), through the digital <strong>representation</strong> of such projects <strong>spatially</strong>.&nbsp; Furthermore, the level and access to data will have modern encryption and security protocols to ensure sensitive data is protected where needed. -->
+                    Objectively mesh standards compliant e-markets vis-a-vis equity invested internal or "organic" sources. Dynamically myocardinate clicks-and-mortar infomediaries vis-a-vis worldwide initiatives. Conveniently maximize timely partnerships vis-a-vis value-added bandwidth. Monotonectally synthesize multidisciplinary systems through one-to-one opportunities. Uniquely revolutionize cost effective partnerships rather than cross-platform relationships.
+                  </p>
+                </div>
+                <div class="col-lg-6 mx-auto order-lg-1 align-self-center px-lg-5">
+                  <img class="featurette-image img-fluid" src="../img/logos/esri-agizo.png" alt="NSPDR Portal">
+                  <!-- <img class="featurette-image img-fluid img-shadow" src="../img/uiux/ui-ecosystem-1.jpg" alt="NSPDR Portal"> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <hr class="featurette-divider"> -->
+
+          <div class="featurette">
+            <div class="container">
+              <div class="row">
+              <!-- <div class="row featurette"> -->
+                <div class="col-lg-7">
+                  <h2 class="featurette-heading with-image">
+                    Decision-making<br><span class="text-muted">by visual monitoring.</span>
+                  </h2>
+                  <p class="lead">
+                    <!-- the <small class="fat">NSPDR</small> ecosystem enables management to monitor contributions and data maintenance by all departments through a comprehensive, visual monitoring <strong>dashboard system</strong>.<br>
+                    By indicating the status of the contribution, as well as the status of the individual projects themselves, the ecosystem ensures planning is done with the most recent information at hand. -->
+                    Credibly fashion worldwide catalysts for change after focused human capital. Completely strategize flexible technology and optimal e-business. Objectively evisculate quality metrics before client-based intellectual capital. Dramatically streamline long-term high-impact e-business whereas quality processes. Competently enable go forward users whereas equity invested imperatives.
+                  </p>
+                </div>
+                <div class="col-lg-5 mx-auto align-self-center">
+                  <img class="featurette-image img-fluid" src="../img/logos/icon-inners.png" alt="NSPDR Portal">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <hr class="featurette-divider"> -->
+
+          <div class="featurette">
+            <div class="container">
+              <div class="row">
+              <!-- <div class="row featurette"> -->
+                <div class="col-lg-6 order-lg-2">
+                  <h2 class="featurette-heading with-image">
+                    Land use innovation<br><span class="text-muted">through automation.</span>
+                  </h2>
+                  <p class="lead">
+                    <!-- Currently, there’s only one online portal which is accessible in just two provinces that can assist municipalities with spatial planning and land use management issues.<br>
+                    Addressing this deficiency, the <small class="fat">NSPDR</small> ecosystem through it’s <strong>E&NoBreak;&middot;&NoBreak;Lodgement</strong> application, provides a portal readily available to all municipalities in all provinces, thereby ensuring national coverage. -->
+                    Proactively administrate exceptional best practices before alternative quality vectors. Proactively customize enterprise-wide collaboration and idea-sharing through optimal solutions. Objectively evisculate ethical architectures before flexible experiences. Compellingly supply functional systems with premium leadership. Rapidiously utilize best-of-breed architectures through sustainable synergy.
+                  </p>
+                </div>
+                <div class="col-lg-6 mx-auto order-lg-1 align-self-center px-lg-3">
+                  <!-- <img class="featurette-image img-fluid img-shadow" src="../img/uiux/elodgement-2.png" alt="NSPDR Portal"> -->
+                  <img class="featurette-image img-fluid img-shadow" src="../img/uiux/elodgement-1.jpg" alt="E-Lodgement Portal">
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section> <!-- /.container .marketing -->
+
+
+      <hr class="space-6">
+    </main>
+
+
+    <!-- <hr class="dark mx-5 my-4"> -->
+
+    <!-- FOOTER -->
+    <footer class="nspdr-footer" id="end">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-4">
+		        <div class="copyright float-sm-left text-sm-left">
+		          &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
+		        </div>
+	        </div>
+          <div class="col-7 col-sm-6 col-lg-4 order-lg-3">
+		        <div class="float-sm-right text-sm-right">
+		          <ul class="underline-on-hover sibling-fade">
+		            <li><a href="../index.html">Home</a></li>
+		            <li><a href="newsblog.html">News</a></li>
+		            <li><a href="about.html">About</a></li>
+		            <li><a href="termsofuse.html">Terms</a></li>
+		          </ul>
+		        </div>
+      		</div>
+          <div class="col-12 col-md-8 col-lg-4 order-lg-2">
+		        <div class="pt-2 pt-md-1 pt-lg-0">
+		          <ul class="social-media">
+		            <li class="--facebook"><a href="template.html" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li>
+		            <li class="--twitter"><a href="template1.html" class="fab fa-2x fa-twitter" title="Twitter"></a></li>
+		            <li class="--instagram"><a href="temporary.html" class="fab fa-2x fa-instagram" title="Instagram"></a></li>
+		            <li class="--youtube"><a href="temporary1.html" class="fab fa-2x fa-youtube" title="YouTube"></a></li>
+		          </ul>
+		        </div>
+	        </div>
+      	</div>
+      </div>
+    </footer>
+
+    <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up swing"></i></a>
+    <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
+    <i id="point-breaks" class="media-breakpoint swing d-none  fa fa-sm fa-tv">&nbsp;</i>
+
+    <!-- =========== JavaScript ===========  -->
+    <!-- Placed at end so pages load faster. -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <!-- <script src="../js/rellax.min.js"></script>
+    <script>var rellax = new Rellax('.rellax');</script> -->
+
+  </body>
+</html>

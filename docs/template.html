@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="NSPDR Ecosystem - Find the latest project news and announcements for all things NSPDR right here.">
+    <meta name="keywords" content="NSPDR, Spatial Planning, Data Repository, E-Lodgement, Ecosystem, Rural Development, DRDLR, SPLUMA">
+    <meta name="author" content="Agizo Solutions on behalf of the Department of Rural Development and Land Reform">
+
+    <title>NSPDR&ensp;|&ensp;Page Template</title>
+    <script>
+      (function(){
+        // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
+        var d = document, e = d.documentElement, s = d.createElement('style');
+        if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+          s.textContent = 'body{visibility:hidden}';
+          var r = document.getElementsByTagName('script')[0];
+          r.parentNode.insertBefore(s, r);
+          function f(){ s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load',f,false);
+          setTimeout(f,3000);
+        }
+      })();
+    </script>
+    <link rel="icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/typeface.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/stylestest.css">
+		<link rel="stylesheet" href="../css/fa/css/all.css">
+	</head>
+  <body id="top" class="bg-repeater bglinear pt-0">
+
+    <header class="container-fluid bg-white">
+      <div class="container">
+        <div class="row p-2">
+          <div class="col-sm-8 pl-1"><div id="drdlr-logo"></div></div>
+          <!-- <div class="col-sm-8 pl-2"><div id="drdlr-dept"></div></div> -->
+          <div class="col-sm-4 py-2 pr3 hide-on-mobile"><div id="drdlr-flag"></div></div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow" role="navigation">
+      <div class="container">
+        <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
+          <!-- <span class="hashtag">#</span>NSPDR -->
+          <img class="png-shadow pb-1" src="../img/logos/acronym-light100.png" alt="NSPDR Ecosystem">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
+          <span class="navbar-toggler-icon override">
+            <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigator">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navAboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navAboutMenu">
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About the <small class="fw-600">NSPDR</small></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+                <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question mr-3"></i>&nbsp;Questions &amp; Answers</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle override ml-md-0" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Features<i class="fa fa-sm fa-angle-down ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-bars mr-3"></i>E&hybull;Lodgement</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-university mr-1">&ensp;</i>SPLUMA Workflow</a>
+              </div>
+            </li>
+          </ul>
+
+          <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
+            <a id="display-count" title="“T”-minus" href="../index.html#countdown-to-zero">nspdr.info</a>
+          </span>
+          <form class="form-inline mt-2 mt-md-0 pr-1">
+            <a class="btn btn-outline-light opaque-75 mr-1 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i></a>
+            <!-- <div class="btn-group mr-2 my-3 my-sm-0">
+              <button type="button" class="btn btn-outline-success dropdown-toggle override px-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-xs fa-circle pl-2"></i><i class="fa fa-xs fa-circle pl-1"></i><i class="fa fa-xs fa-circle pl-1"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="ecosystem.html">Data Repository</a>
+                <a class="dropdown-item" href="elodgement.html">E-Lodgement</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item active" href="newsblog.html">Latest News</a>
+                <a class="dropdown-item disabled" href="example.html">More...</a>
+              </div>
+            </div> -->
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-header header-filter clear-filter green-filter mask-25 rellax" data-rellax-speed="-5" style="background-image:url(../img/urban/empower-shack-1280x853.jpg)">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-11 mx-auto pr-lg-5 px-lg4 px-md-3 px-5 rellax" data-rellax-speed="0">
+              <!-- <img class="hero-brand img-fluid mx-auto png-shadows" src="../img/logos/nspdr-square.png" alt="NSPDR" style="filter:brightness(100);"> -->
+              <!-- <img class="hero-brand img-fluid mx-auto png-shadows" src="../img/logos/nspdr-square.png" alt="NSPDR Ecosystem"> -->
+              <img class="img-fluid mx-auto mb-0 png-shadows pull-up1" src="../img/logos/icon-inners-light.png" alt="NSPDR" width="325px">
+            </div>
+            <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
+              <div class="col-12">
+                <h1 class="showcase text-sm-left text-white fw-600">integrated</h1>
+              </div>
+              <div class="col-12">
+                <h2 class="showcase text-white opaque-75">Spatial Planning</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- “” -->
+    <main class="nspdr-main --raised altX top-line" id="rdpsn">
+
+      <div class="container -fluid">
+        <!-- <div class="card text-dark cardbox-raised"> -->
+          <div class="slate-fade-down px-3">
+            <h2 class="display-1 condensed-3 fat text-center mini-shadow text-trunc text-dark">
+              Design <span class="text-muted"><em>&amp;&nbsp;</em></span> Development
+            </h2>
+            <div class="special-divider mx-auto w-75 my-4"></div>
+          </div>
+          <div class="container">
+          <div class="cardbody mx-md-3 pull-up1 rellax" data-rellax-speed="-1">
+            <div class="text-geois ml-md-2">
+              <p class="h3 fw-600 mb-2">Welcome to the <small class="fat">NSPDR</small> ecosystem project news page .&nbsp;.&nbsp;.</p>
+              <p class="h3 fw-600">Find the latest news and announcements for all things <small class="fat">NSPDR</small> right here&nbsp;!</p>
+            </div>
+          </div>
+          </div>
+        <!-- </div> -->
+      </div>
+
+      <div class="container">
+        <!-- <hr class="dark mx2 my-4"> -->
+        <div class="empty-space --triplet"></div>
+
+        <div class="card cardbox-raised mb-4">
+          <div class="card-body mx-md-2">
+            <div class="text-center">
+              <div class="empty-space --half"></div>
+              <h2 class="display-3 condensed-2 fat mini-shadow">Cross browser support</h2>
+              <div class="special-divider mx-auto w-90 my-4"></div>
+              <div class="empty-space --half"></div>
+            </div>
+
+            <div class="container-fluid">
+              <div class="row mx-auto">
+
+                <div class="col-lg-5 offset-lg-1">
+                  <ul class="list-unstyled">
+                    <li class="media mb-4">
+                      <img class="mr-3" src="../img/logos/browser-chrome-128x128.png" width="64px" height="64px" alt="Generic placeholder image">
+                      <div class="media-body">
+                        <h5 class="fat mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
+                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      </div>
+                    </li>
+                    <li class="media mb-4">
+                      <img class="mr-3" src="../img/logos/browser-firefox-128x128.png" width="64px" height="64px" alt="Generic placeholder image">
+                      <div class="media-body">
+                        <h5 class="fat mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
+                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      </div>
+                    </li>
+                    <li class="media mb-4">
+                      <img class="mr-3" src="../img/logos/browser-edge-128x128.png" width="64px" height="64px" alt="Generic placeholder image">
+                      <div class="media-body">
+                        <h5 class="fat mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
+                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-lg-5">
+                  <ul class="list-unstyled">
+                    <li class="media mb-4">
+                      <img class="mr-3" src="../img/logos/browser-opera-128x128.png" width="64px" height="64px" alt="Generic placeholder image">
+                      <div class="media-body">
+                        <h5 class="fat mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      </div>
+                    </li>
+                    <li class="media mb-4">
+                      <img class="pngshadow mr-3" src="../img/logos/browser-safari-128x128.png" width="64px" height="64px" alt="Generic placeholder image">
+                      <div class="media-body">
+                        <h5 class="fat mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="empty-space --single"></div>
+        </div>
+
+        <!-- <div class="empty-space --single"></div> -->
+        <div class="row py-4">
+          <div class="col-sm-4">
+            <div class="box p-2">
+              <code>box</code>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="cardpanel">
+            <div class="profile">
+              <code>cardpanel profile</code>
+            </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card curved-bezier">
+              <div class="card-body mx-md-2">
+                <code>card curved-bezier</code>
+                <hr class="space-9">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="space-8">
+        <div class="row py-4">
+          <div class="col-sm-4">
+            <div class="card cardpanel-raised">
+              <div class="card-body mx-md-2">
+                <code>card cardpanel-raised</code>
+                <hr class="space-7">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="cardpanel">
+            <div class="profile">
+              <code>cardpanel profile</code>
+            </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card curved-bezier">
+              <div class="card-body mx-md-2">
+                <code>card curved-bezier</code>
+                <hr class="space-9">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="empty-space --single"></div>
+
+        <div class="card cardbox-raised mb-4">
+          <div class="card-body mx-md-2">
+            <div class="slate-fadedown text-center">
+              <div class="empty-space --half"></div>
+              <h2 class="display-3 condensed-2 fat mini-shadow">Social media platforms</h2>
+              <div class="special-divider mx-auto w-75 my-5"></div>
+              <div class="empty-space --half"></div>
+            </div>
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <ul class="list-unstyled">
+                    <li class="media mb-4">
+                      <i class="fab fa-4x fa-facebook-square ml-2 mr-4 hue-indigo mini-shadow"></i>
+                      <div class="media-body">
+                        <h5 class="text-dark mt-0 mb-1">Social Media –
+                          <a class="text-dark" href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" role="button">Facebook</a>
+                        </h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
+                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      </div>
+                    </li>
+                    <li class="media mb-4">
+                      <i class="fab fa-4x fa-twitter ml-0 mr-4 hue-blue mini-shadow"></i>
+                      <div class="media-body">
+                        <h5 class="text-dark mt-0 mb-1">Social Media –
+                          <a class="text-dark" href="https://twitter.com/DRDLR_online" role="button">Twitter</a>
+                        </h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
+                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      </div>
+                    </li>
+                    <li class="media mb-4">
+                      <i class="fab fa-4x fa-instagram ml-2 mr-4 hue-orange mini-shadow"></i>
+                      <div class="media-body">
+                        <h5 class="text-dark mt-0 mb-1">Social Media –
+                          <a class="text-dark" href="https://www.instagram.com/drdlr_sa" role="button">Instagram</a>
+                        </h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
+                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      </div>
+                    </li>
+                    <li class="media mb-4">
+                      <i class="fab fa-4x fa-youtube-square ml-2 mr-4 hue-red mini-shadow"></i>
+                      <div class="media-body">
+                        <h5 class="text-dark mt-0 mb-1">Social Media –
+                          <a class="text-dark" href="https://www.youtube.com/user/DRDLROnline" role="button">YouTube</a>
+                        </h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
+                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="empty-space --single"></div>
+        </div>
+
+        <hr class="my-5">
+        <div class="card curved-bezier mb-4">
+          <div class="col-md-12 d-inline-flex">
+            <a class="text-muted pointer mx-4 my-3 pt-2" onclick="typeWriter()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+            </a>
+            <p class="text-body ml-4 my-3 pt-1 lead" id="type-demo"></p>
+            <script>
+              var i = 0;
+              var txt = 'Lorem ipsum is simply dummy text, blah-blah blah . . .';
+              function typeWriter() {
+                if (i <= txt.length) {
+                  document.getElementById("type-demo").innerHTML += txt.charAt(i);
+                  i++;
+                  setTimeout(typeWriter, 100);
+                }
+              };
+            </script>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+
+      <div class="container marketing">
+        <!-- <hr id="" class="featurette-divider"> -->
+        <hr class="my-5">
+        <div class="card cardbox-raised mb-4">
+          <div class="col-lg-11 my-4 px-md-5 px-2">
+            <h2 class="featurette-heading ml-1">
+              <span class="display-4 fat">watch this space</span><br>
+              <span class="text-muted">for our next featured story.</span>
+            </h2>
+            <div class="linear-divider"></div>
+            <div class="mx-1">
+              <p class="lead">We’re always hoping to add some new content here really soon.</p>
+              <p class="">So make sure you come back and visit us from time to time, because the <small class="fat">NSPDR</small> is coming to a municipality near you, and we don’t want you to miss out, and you wouldn’t want to either... or would you?</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="space-4">
+        <div class="card cardbox-raised mb-4">
+          <div class="col-lg-11 my-4 px-md-5 px-2">
+            <h2 class="featurette-heading ml-1">
+              <span class="display-4 fat">Esri’s ArcGIS&trade; platform</span><br>
+              <span class="text-muted">provides a range of capabilities.</span>
+            </h2>
+            <div class="linear-divider"></div>
+            <div class="mx-1">
+              <p class="lead">
+                The technical solution is based on the spatial data infrastructure technology provided by <strong>Esri’s</strong> ArcGIS platform.
+                The ArcGIS platform is an integrated web-GIS system that provides a wide range of capabilities for storing, managing, analysing, visualising and sharing geo-spatial data for all users within the organisation as well as public users. <br>
+                The platform provides the framework of data and technology needed to address a wide range of location related business processes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container .marketing -->
+      <hr class="space-4">
+
+    </main>
+    <hr class="space-9">
+
+
+<section class="section-about-us">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-8 mx-auto text-center">
+				<h2 class="title">Where in the hydrosphere are we?</h2>
+				<h3 class="description">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scientist, puts the potentially record low maximum sea-ice extent this year down to low ice extent in the Pacific and a late drop in ice extent in the Bering Sea.</h3>
+			</div>
+		</div>
+		<hr class="space-4">
+
+		<div class="section-story-overview">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="image-container image-left" style="background-image: url('../img/view/boland-landscape-960x472.jpg');">
+						<!-- first image on the left side -->
+						<p class="blockquote blockquote-primary"><br><q>Over the span of the satellite record, Arctic sea-ice has been declining significantly, while sea-ice in the Antarctic increased very slightly</q>. . .<br><br><small class="float-right">-- NOAA</small></p>
+					</div>
+					<!-- second image on the left side of the article -->
+					<div class="image-container" style="background-image: url('../img/urban/rdp-medium-1023x768.jpg');"></div>
+				</div>
+				<div class="col-md-5 offset-md1">
+					<!-- first image on the right side, above the article -->
+					<div class="image-container image-right" style="background-image: url('../img/maps/lusail-stadium-1200x738.jpg');"></div>
+					<h3 class="title">So what does the lowest-level of winter ice on record actually mean</h3>
+					<p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.</p>
+					<p>For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.</p>
+					<p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.</p>
+				</div>
+			</div>
+		</div>
+		<hr class="space-4">
+
+		<div class="section-story-overview">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="image-container override-fluid png-shadow image-left" style="background-image: url('../img/uiux/imacbook.png');">
+						<!-- first image on the left side -->
+						<p class="blockquote blockquote-secondary">
+              <br><q>Over the span of the satellite record, Arctic sea-ice has been declining significantly, while sea-ice in the Antarctic increased very slightly</q>. . .<br><br><small class="float-right">-- NOAA</small>
+            </p>
+					</div>
+					<!-- second image on the left side of the article -->
+					<!-- <div class="image-container" style="background-image: url('../img/uiux/elodgement-1.jpg');"></div> -->
+					<div class="image-container" style="background-image: url('../img/uiux/file-cover.png');"></div>
+				</div>
+				<div class="col-md-5 offset-md1">
+					<!-- first image on the right side, above the article -->
+					<div class="image-container image-right" style="background-image: url('../img/uiux/front-end.jpg');"></div>
+					<h3 class="title alt">So what does the lowest-level of winter ice on record actually mean</h3>
+					<p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.</p>
+					<p>For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.</p>
+					<p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+    <!-- </main>
+    <hr class="space-9"> -->
+    <hr class="dark mx-5 my-4">
+
+    <!-- FOOTER -->
+    <!-- <div class="empty-space --triple"></div> -->
+    <!-- <footer id="footer" class="end-of-page"> -->
+    <!-- <footer id="footer" class="container mt-5 pb-3">
+      <p class="float-right"><a href="termsofuse.html#termsOfUse">Terms</a> &middot; <a href="termsofuse.html#privacyPolicy">Privacy</a></p>
+      <p>&copy;&nbsp;2018 &middot; <strong>Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform</strong></p>
+    </footer> -->
+
+    <!-- <footer class="nspdr-footer" id="end">
+      <div class="container-fluid">
+        <div class="copyright float-left"> -->
+          <!-- &copy; -->
+          <!-- <script>document.write(new Date().getFullYear())</script> -->
+          <!-- &middot; made with <i class="fab fa-html5"></i> and <i class="fab fa-css3-alt"></i> by -->
+          <!-- &middot; made by
+          <a href="http://www.agizo.co.za" target="_blank">Agizo Solutions</a> for a better web. -->
+          <!-- &middot; <strong>Rural&nbsp;Development and&nbsp;Land&nbsp;Reform</strong> -->
+          <!-- &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
+        </div>
+        <div class="pull-center pull-left"> -->
+          <!-- <ul class="social-buttons">
+            <li><a class="social-media" href="#"><i class="fab fa-2x fa-facebook hue-indigo" title="Facebook"></i></a></li>
+            <li><a class="social-media" href="template1.html"><i class="fab fa-2x fa-twitter hue-blue" title="Twitter"></i></a></li>
+            <li><a class="social-media" href="temporary.html"><i class="fab fa-2x fa-instagram hue-orange" title="Instagram"></i></a></li>
+            <li><a class="social-media" href="temporary1.html"><i class="fab fa-2x fa-youtube -square hue-red" title="YouTube"></i></a></li>
+          </ul> -->
+          <!-- <ul class="social-media">
+            <li class="--facebook"><a href="template.html"><i class="fab fa-2x fa-facebook" title="Facebook"></i></a></li>
+            <li class="--twitter"><a href="template1.html"><i class="fab fa-2x fa-twitter" title="Twitter"></i></a></li>
+            <li class="--instagram"><a href="temporary.html"><i class="fab fa-2x fa-instagram" title="Instagram"></i></a></li>
+            <li class="--youtube"><a href="temporary1.html"><i class="fab fa-2x fa-youtube" title="YouTube"></i></a></li>
+          </ul>
+        </div>
+        <nav class="float-right">
+          <ul class="underline-on-hover sibling-fade">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="newsblog.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="termsofuse.html">Terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer> -->
+
+    <footer class="nspdr-footer" id="end">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-4">
+		        <div class="copyright float-sm-left text-sm-left">
+		          &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
+		        </div>
+	        </div>
+          <div class="col-7 col-sm-6 col-lg-4 order-lg-3">
+		        <div class="float-sm-right text-sm-right">
+		          <ul class="underline-on-hover sibling-fade">
+		            <li><a href="../index.html">Home</a></li>
+		            <li><a href="newsblog.html">News</a></li>
+		            <li><a href="about.html">About</a></li>
+		            <li><a href="termsofuse.html">Terms</a></li>
+		          </ul>
+		        </div>
+      		</div>
+          <div class="col-12 col-md-8 col-lg-4 order-lg-2">
+		        <div class="pt-2 pt-md-1 pt-lg-0">
+		          <ul class="social-media">
+		            <li class="--facebook"><a href="template.html" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li>
+		            <li class="--twitter"><a href="template1.html" class="fab fa-2x fa-twitter" title="Twitter"></a></li>
+		            <li class="--instagram"><a href="temporary.html" class="fab fa-2x fa-instagram" title="Instagram"></a></li>
+		            <li class="--youtube"><a href="temporary1.html" class="fab fa-2x fa-youtube" title="YouTube"></a></li>
+		          </ul>
+		        </div>
+	        </div>
+      	</div>
+      </div>
+    </footer>
+
+    <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up swing"></i></a>
+    <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
+
+    <i id="point-breaks" class="media-breakpoint swing d-none  fa fa-sm fa-tv">&nbsp;</i>
+
+    <!-- =========== JavaScript ===========  -->
+    <!-- Placed at end so pages load faster. -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/rellax.min.js"></script>
+    <script>
+      // Accepts any class name
+      var rellax = new Rellax('.rellax');
+    </script>
+    <!-- <script>
+     /*
+      * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+      * @private
+      * @author Todd Motto
+      * @link https://github.com/toddmotto/foreach
+      * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+      * @callback requestCallback      callback   - Callback function for each iteration.
+      * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+      * @returns {}
+      */
+      var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+      var hamburgers = document.querySelectorAll(".hamburger");
+      if (hamburgers.length > 0) {
+        forEach(hamburgers, function(hamburger) {
+          hamburger.addEventListener("click", function() {
+            this.classList.toggle("is-active");
+          }, false);
+        });
+      }
+    </script> -->
+
+  </body>
+</html>

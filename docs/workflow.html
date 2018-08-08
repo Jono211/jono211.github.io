@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+	<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="NSPDR Ecosystem - Spatial Planning and Land Use Management Act">
+    <meta name="keywords" content="NSPDR, E-Lodgement, Ecosystem, SPLUMA, DRDLR">
+    <meta name="author" content="Agizo Solutions [J.Cleary], on behalf of the DRDLR">
+
+    <title>NSPDR&ensp;|&ensp;SPLUMA Workflow</title>
+    <script>
+      (function(){
+        // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
+        var d = document, e = d.documentElement, s = d.createElement('style');
+        if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+          s.textContent = 'body{visibility:hidden}';
+          var r = document.getElementsByTagName('script')[0];
+          r.parentNode.insertBefore(s, r);
+          function f(){ s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load',f,false);
+          setTimeout(f,3000);
+        }
+      })();
+    </script>
+    <link rel="icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/typeface.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/stylestest.css">
+		<link rel="stylesheet" href="../css/fa/css/all.css">
+	</head>
+  <body id="top" class="bg-linear pt-0">
+
+    <!-- HEADER -->
+    <header class="container-fluid bg-white">
+      <div class="container">
+        <div class="row p-2">
+          <div class="col-sm-8 pl-1"><div id="drdlr-logo"></div></div>
+          <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-flag"></div></div>
+          <!-- <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-icon"></div></div> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-elodg navbar-shadow">
+      <div class="container">
+        <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-light100.png" alt="NSPDR Ecosystem">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
+          <span class="navbar-toggler-icon override">
+            <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigator">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navAboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navAboutMenu">
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About the <small class="fw-600">NSPDR</small></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+                <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question mr-3"></i>&nbsp;Questions &amp; Answers</a>
+              </div>
+            </li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle override ml-md-0" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Features<i class="fa fa-sm fa-angle-down ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-bars mr-3"></i>E&hybull;Lodgement</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item active" href="#end"><i class="fa fa-sm fa-university mr-1">&ensp;</i>SPLUMA Workflow<span class="sr-only">(current)</span></a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
+            <a id="display-count" href="../index.html#countdown-to-zero">nspdr.info</a>
+          </span>
+          <form class="form-inline mt-2 mt-md-0">
+            <a class="btn btn-outline-light opaque-75 mr-2 my-3 my-sm-0" href="contact.html">Contact Us</a>
+          </form> -->
+          <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
+            <a id="display-count" title="“T”-minus" href="../index.html#countdown-to-zero">nspdr.info</a>
+          </span>
+          <form class="form-inline mt-2 mt-md-0 pr-1">
+            <a class="btn btn-outline-light opaque-75 mr-1 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-header --small header-filter clear-filter base-filter mask-25 rellax" data-rellax-speed="-5" style="background-image:url(../img/view/landscape-1280x719.jpg)">
+    </section>
+
+
+    <!-- MAIN -->
+    <!-- <main class="nspdr-main altX --raised top-line" id="rdpsn"> -->
+    <main class="nspdr-background --raised --alt1 top-brown">
+
+      <section class="segment pb-3">
+	      <div class="container">
+
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-11 col-lg10">
+		          <div class="text-center pt-5">
+		            <h1 class="showcase text-nspdr">Spatial Planning
+								</small><em class="text-nspdr2 fw-600"> &amp;</em></small></h1>
+									<!-- <span class="textgeois hue-purple fw-800"> &plus;</span></h1> -->
+		            <!-- <h1 class="showcase text-nspdr">Spatial Planning
+									<span class="text-geois fw-600"> &amp;</span></h1> -->
+		            <h2 class="showcase text-dark">Land Use Management</h2>
+		          </div>
+	          </div>
+	        </div>
+
+		      <div class="row justify-content-center">
+			      <div class="col-11 col-md-10">
+		          <div class="special-divider my-4"></div>
+	          </div>
+	        </div>
+
+	      </div>
+	    </section>
+
+      <!-- <section class="segment">
+	      <div class="container">
+
+		      <div class="row justify-content-center pt-4">
+			      <div class="col-12 col-md-11">
+		          <div class="text-center pt-2">
+		            <h1 class="display-2 condensed-3 fw-700 text-left text-geois">Spatial Planning <span class="fw-500">and</span></h1>
+		            <h2 class="display-3 condensed-2 fw-700 text-tertiary">Land Use Management</h2>
+		            <h2 class="display-4 condensed-1 fw-700 text-right text-secondary">Act of Parliament, &numero; 16 of 2013</h2>
+		          </div>
+	          </div>
+	        </div>
+		      <div class="row justify-content-center">
+			      <div class="col-11 col-md-10">
+		          <div class="special-divider my-4"></div>
+	          </div>
+	        </div> -->
+
+      <section class="segment pt-0">
+	      <div class="container">
+
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-11">
+							<p class="lead-2 leading-3">
+								SPLUMA requires that the national government must, in accordance with this Act and the Intergovernmental Relations Framework Act, develop mechanisms to support and strengthen the capacity of provinces and municipalities to adopt and implement an effective spatial planning and land use management system.<br>
+								The NSPDR Ecosystem will be a major enabler in the implementation of SPLUMA. One of the ways this will be achieved is by providing provinces and municipalities with the necessary tools and capacity building to enable SPLUMA-compliant spatial planning and land use management practices.
+							</p>
+							<hr class="space-8">
+
+							<h2 class="mb-0">
+	              <span class="text-geois fat">E&NoBreak;&hybull;&NoBreak;Lodgement’s workflow and phases are aligned to <a class="pointer fw-800 text-nspdr" role="button" data-toggle="modal" data-target="#modalSPLUMA">SPLUMA</a>.</span>
+	            </h2>
+	            <div class="linear-divider my-3"></div>
+						  <div class="lead">
+	              <p class="">The land development application process extends from the lodgement of a development application, also known as the administrative phase, which basically involves the submission of all relevant documents. From there it then moves into and towards the formal consideration phase, all the way to the final approval, or decision phase, and may or may not proceed to any possible appeals...</p>
+	              <p class="fw-600">From the very beginning, our application was developed with SPLUMA at the centre of the design process. As such, the phased approach found within E&NoBreak;-&NoBreak;Lodgement’s workflow, is completely aligned with both the act itself, and its regulations.</p>
+						  </div>
+						</div>
+					</div>
+
+	        <hr id="spluma-process" class="my-5 dark">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-11">
+		          <p class="h4 no-spacing mx2">
+		            <span class="h4 text-tertiary fat"><span class="condensed-2">E&hybull;</span>Lodgement</span>’s development application process can be conceptually viewed as follows:-
+		          </p>
+						</div>
+					</div>
+		      <div class="row justify-content-center">
+			      <div class="col-12">
+		          <div class="empty-space --quart"></div>
+		          <!-- <div id="administrative-phase" class="float-left position-relative hidden" style="top:1200px;"></div> -->
+		          <!-- <div id="consideration-phase" class="float-left position-relative hidden" style="top:1600px;"></div> -->
+		          <img class="img-fluid rounded panel-shadow-sm border border-nspdr4" src="../img/spluma-process.png" alt="SPLUMA Process">
+		        </div>
+	        </div>
+
+      	</div>
+      </section>
+
+      <hr class="space-6">
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="nspdr-footer" id="end">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-4">
+		        <div class="copyright float-sm-left text-sm-left">
+		          &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
+		        </div>
+	        </div>
+          <div class="col-7 col-sm-6 col-lg-4 order-lg-3">
+		        <div class="float-sm-right text-sm-right">
+		          <ul class="underline-on-hover sibling-fade">
+		            <li><a href="../index.html">Home</a></li>
+		            <li><a href="newsblog.html">News</a></li>
+		            <li><a href="about.html">About</a></li>
+		            <li><a href="termsofuse.html">Terms</a></li>
+		          </ul>
+		        </div>
+      		</div>
+          <div class="col-12 col-md-8 col-lg-4 order-lg-2">
+		        <div class="pt-2 pt-md-1 pt-lg-0">
+		          <ul class="social-media">
+		            <li class="--facebook"><a href="template.html" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li>
+		            <li class="--twitter"><a href="template1.html" class="fab fa-2x fa-twitter" title="Twitter"></a></li>
+		            <li class="--instagram"><a href="temporary.html" class="fab fa-2x fa-instagram" title="Instagram"></a></li>
+		            <li class="--youtube"><a href="temporary1.html" class="fab fa-2x fa-youtube" title="YouTube"></a></li>
+		          </ul>
+		        </div>
+	        </div>
+      	</div>
+      </div>
+    </footer>
+
+    <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up swing"></i></a>
+    <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
+
+    <i id="point-breaks" class="media-breakpoint swing d-none  fa fa-sm fa-tv">&nbsp;</i>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="modalSPLUMA" tabindex="-1" role="dialog" aria-labelledby="modalTitleSPLUMA" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal-shadow">
+          <div class="modal-header">
+            <h4 class="modal-title text-nspdr fat" id="modalTitleSPLUMA">Spatial Planning and <br>Land Use Management Act</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="font-size:2.25rem;" aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body mx-1">
+            <h5 class="modal-title text-elodg no-spacing fw-600 mb-2">Act of Parliament, &numero; 16 of 2013</h5>
+            <p class="text-dark mb-0">
+              To provide a framework for spatial planning and land use management in the Republic;
+              to specify the relationship between the spatial planning and the land use management system and other kinds of planning;
+              to provide for the inclusive, developmental, equitable and efficient spatial planning at the different spheres of government;
+              to provide a framework for the monitoring, coordination and review of the spatial planning and land use management system;
+              to provide a framework for policies, principles, norms and standards for spatial development planning and land use management;
+              to address past spatial and regulatory imbalances;
+              to promote greater consistency and uniformity in the application procedures and decision-making by authorities responsible for land use decisions and development applications;
+              to provide for the establishment, functions and operations of Municipal Planning Tribunals;
+              to provide for the facilitation and enforcement of land use and development measures;
+              and to provide for matters connected therewith.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========== JavaScript ===========  -->
+    <!-- Placed at end so pages load faster. -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/rellax.min.js"></script>
+    <script>var rellax = new Rellax('.rellax');</script>
+
+  </body>
+</html>
