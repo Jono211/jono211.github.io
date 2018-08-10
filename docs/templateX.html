@@ -47,7 +47,7 @@
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow">
       <div class="container">
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
-          <img class="png-shadow pb-1" src="../img/logos/acronym-light100.png" alt="NSPDR Ecosystem">
+          <img class="png-shadow pb-1" width="100" src="../img/logos/acronym-light256.png" alt="NSPDR Ecosystem">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
           <span class="navbar-toggler-icon override">
@@ -60,32 +60,41 @@
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-1"></i>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navDropdown1">
-                <!-- <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About the <small class="fw-600">NSPDR</small></a> -->
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-key mr-3"></i>About the Ecosystem</a>
-								<div class="dropdown-divider"></div>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-key mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <!-- <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-key mr-3"></i>About the <small class="fw-600">NSPDR</small></a> -->
+                <!-- <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-key mr-3"></i>About the Ecosystem</a> -->
+                <!-- <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA</a> -->
+								<!-- <div class="dropdown-divider"></div> -->
                 <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+                <!-- <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Info.</a> -->
+								<div class="dropdown-divider"></div>
                 <!-- <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question mr-3"></i>&nbsp;Questions &amp; Answers</a> -->
-                <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question mr-3"></i>&nbsp;Questions and Answers</a>
-              </div>
+                <!-- <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question mr-3"></i>&nbsp;Questions and Answers</a> -->
+								<!-- <div class="dropdown-divider"></div> -->
+                <div class="dropdown-header"><small class="expanded-3 fw-300">CORE FEATURES</small></div>
+
+              <!-- </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override ml-md-0" href="#" id="navDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Features<i class="fa fa-sm fa-angle-down ml-1"></i>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navDropdown2">
+              <div class="dropdown-menu" aria-labelledby="navDropdown2"> -->
+
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
                 <!-- <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>The Repository</a> -->
                 <!-- <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-bars mr-3"></i>E&hybull;Lodgement</a> -->
 								<!-- <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-server mr-3"></i>NSPDR Portal</a> -->
 								<!-- <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-server mr-3"></i>Spatial:  Data Repository</a> -->
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-paper-plane mr-3"></i>E&hybull;Lodgement &dagger;</a>
-                <!-- <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-paper-plane mr-3"></i>Planning:  E&hybull;Lodgement</a> -->
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement</a>
+                <!-- <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-paper-plane mr-1">&ensp;</i>E&hybull;Lodgement &dagger;</a> -->
                 <!-- <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-paper-plane mr-3"></i>Planning: E&hybull;Lodgement &dagger;</a> -->
                 <div class="dropdown-divider"></div>
+                <!-- <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Info.</a> -->
                 <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA</a>
                 <!-- <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enablement of SPLUMA</a> -->
                 <!-- <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>SPLUMA Enablement</a> -->
@@ -135,7 +144,6 @@
 
     <!-- CONTENT -->
     <main class="nspdr-background --raised --alt1 top-brown">
-       <!-- bg-background" style="background-image:url(../img/bg-litegrey.svg);"> -->
 
       <!-- <section class="segment">
 	      <div class="container">
@@ -223,9 +231,9 @@
 
           <div class="row no-gutters justify-content-center text-center">
             <!-- <div class="col-12 col-md-8 m-auto col-lg-4"> -->
-            <div class="col-10 col-sm-8 m-auto col-md-4 pr-md-3">
+            <div class="col-12 col-sm-8 m-auto col-md-4 pr-md-3">
             	<div class="db-box alt db-touch3 py-3 shadow-raised bg-linearbox" style="border-radius:2rem!important;">
-                <img alt="NSPDR Icon" class="icon-150 mt-2" src="../img/icons/f4.png">
+                <img alt="NSPDR Icon" class="icon-150 mt-2" src="../img/icons/icon4.png">
                 <h2 class="h1 fw-400">Spatial Data</h2>
                 <hr class="dark">
                 <p class="lead">Used to design custom web apps, data models, and a whole lot more.</p>
@@ -234,9 +242,9 @@
             </div>
 
             <!-- <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0"> -->
-            <div class="col-10 col-sm-8 m-auto col-md-4 pt-5 pt-md-0">
+            <div class="col-12 col-sm-8 m-auto col-md-4 pt-5 pt-md-0">
               <div class="db-box alt db-touch1 py-3 shadow-raised bg-linearbox" style="border-radius:2rem!important;">
-                <img alt="NSPDR Icon" class="icon-150 mt-2 mt-lg-5" src="../img/icons/f1.png">
+                <img alt="NSPDR Icon" class="icon-150 mt-2 mt-lg-5" src="../img/icons/icon1.png">
                 <h2 class="h1 fw-400">Geo-Analytics</h2>
                 <hr class="dark">
                 <p class="lead">Provided by a variety of amazingly advanced GIS tools and functions.</p>
@@ -245,9 +253,9 @@
             </div>
 
             <!-- <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0"> -->
-            <div class="col-10 col-sm-8 m-auto col-md-4 pt-5 pt-md-0 pl-md-3">
+            <div class="col-12 col-sm-8 m-auto col-md-4 pt-5 pt-md-0 pl-md-3">
               <div class="db-box alt db-touch4 py-3 shadow-raised bg-linearbox" style="border-radius:2rem!important;">
-                <img alt="NSPDR Icon" class="icon-150 mt-2" src="../img/icons/f3.png">
+                <img alt="NSPDR Icon" class="icon-150 mt-2" src="../img/icons/icon3.png">
                 <h2 class="h1 fw-400">E-Learning</h2>
                 <hr class="dark">
                 <p class="lead">Allowing learners to acquire skills faster, and retain knowledge longer.</p>
@@ -384,7 +392,8 @@
         <div class="container">
           <div class="row text-center">
             <div class="col-12">
-              <h2 class="display-3 fw-600">E&NoBreak;-&NoBreak;Lodgement’s User Access Control</h2>
+              <h2 class="display-3 fw-600">E&NoBreak;-&NoBreak;Lodgement’s User Management</h2>
+              <!-- <h2 class="display-3 fw-600">E&NoBreak;-&NoBreak;Lodgement’s User Access Control</h2> -->
               <!-- <p class="h3"><a href="#">See all features &gt;</a></p> -->
             </div>
           </div>
@@ -432,19 +441,19 @@
 
           <div class="row text-center justify-content-center pull-up1">
             <div class="col-10 col-sm-6 col-lg-3">
-              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/f1.png">
+              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/icon1.png">
               <!-- <h2 class="h1 fw-300 text-light rounded bg-nspdr1 expanded-3">ENABLING</h2> -->
             </div>
             <div class="col-10 col-sm-6 col-lg-3 pt-5 pt-sm-0">
-              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/f2.png">
+              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/icon2.png">
               <!-- <h2 class="h1 fw-300 text-light rounded bg-nspdr4 no-spacing">INTEGRATED</h2> -->
             </div>
             <div class="col-10 col-sm-6 col-lg-3 pt-5 pt-lg-0">
-              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/f3.png">
+              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/icon3.png">
               <!-- <h2 class="h1 fw-300 text-light rounded bg-nspdr3 expanded-3">SPATIAL</h2> -->
             </div>
             <div class="col-10 col-sm-6 col-lg-3 pt-5 pt-lg-0">
-              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/f4.png">
+              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/icon4.png">
               <!-- <h2 class="h1 fw-300 text-light rounded bg-nspdr2 expanded-2">PLANNING</h2> -->
             </div>
           </div>

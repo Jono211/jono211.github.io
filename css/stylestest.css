@@ -1001,6 +1001,7 @@ footer.nspdr-footer .social-media li.--facebook a:hover {
   color: #3f5fb6;
 }
 footer.nspdr-footer .social-media li.--twitter a:hover {
+  /* transform: scale3d(1.25,1.25,1.25); */
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
   transform: scale(1.25);

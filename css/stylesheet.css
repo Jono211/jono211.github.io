@@ -621,9 +621,11 @@ h2.showcase {
 @media (max-width: 48em) {
   h1.showcase {
     letter-spacing: -.15rem;
+    white-space: normal;
   }
   h2.showcase {
     letter-spacing: -.1rem;
+    white-space: normal;
   }
 }
 

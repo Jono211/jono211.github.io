@@ -105,7 +105,6 @@
 
 
     <!-- MAIN -->
-    <!-- <main class="nspdr-main altX --raised top-line" id="rdpsn"> -->
     <main class="nspdr-background --raised --alt1 top-brown">
 
       <section class="segment pb-3">
@@ -115,7 +114,7 @@
 			      <div class="col-12 col-md-11 col-lg10">
 		          <div class="text-center pt-5">
 		            <h1 class="showcase text-nspdr">Spatial Planning
-								</small><em class="text-nspdr2 fw-600"> &amp;</em></small></h1>
+								<small><em class="text-nspdr2 fw-600"> &amp;</em></small></h1>
 									<!-- <span class="textgeois hue-purple fw-800"> &plus;</span></h1> -->
 		            <!-- <h1 class="showcase text-nspdr">Spatial Planning
 									<span class="text-geois fw-600"> &amp;</span></h1> -->
@@ -176,7 +175,7 @@
 	        <hr id="spluma-process" class="my-5 dark">
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-11">
-		          <p class="h4 no-spacing mx2">
+		          <p class="h4 no-spacing">
 		            <span class="h4 text-tertiary fat"><span class="condensed-2">E&hybull;</span>Lodgement</span>’s development application process can be conceptually viewed as follows:-
 		          </p>
 						</div>
@@ -189,11 +188,59 @@
 		          <img class="img-fluid rounded panel-shadow-sm border border-nspdr4" src="../img/spluma-process.png" alt="SPLUMA Process">
 		        </div>
 	        </div>
+          <hr class="space-4">
 
       	</div>
       </section>
 
-      <hr class="space-6">
+      <section id="call-to-action" class="bg-background" style="background-image:url(../img/bg-litegrey.svg);">
+        <hr class="space-2">
+        <!-- primary call to action
+        =========================== -->
+        <div class="start-of-page">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-12 mx-auto">
+                <h2 id="countDown" class="display-4 condensed-2 fat text-secondary">SPLUMA IMPLEMENTATION</h2>
+                <div class="col-md-6 mx-auto"><div class="special-divider m-3"></div></div>
+              </div>
+            </div>
+            <div class="row justify-content-center text-center">
+              <div class="col-12 col-lg-11 col-xl-10 mx-auto">
+                <table class="table table-borderless">
+                  <tbody class="mini-shadow">
+                    <tr class="display-2 condensed-3">
+                      <td id="countDays" class="text-dark fw-700">00</td>
+                      <td class="clock-splitter text-danger pl-4">:</td>
+                      <td id="countHour" class="fw-600">00</td>
+                      <td class="clock-splitter hide-on-mobile">:</td>
+                      <td id="countMins" class="hide-on-mobile fw-400">00</td>
+                      <td class="clock-splitter hide-on-laptop pr-4">:</td>
+                      <td id="countSecs" class="hide-on-laptop fw-200 text-danger text-left pl-4">00</td>
+                    </tr>
+                  </tbody>
+                  <tbody class="text-center">
+                    <tr class="h5 expanded-4 fw-300 text-dark">
+                      <td class="px-sm-4">&nbsp;DAYS</td>
+                      <td class=""></td>
+                      <td class="px-md-5">&nbsp;HRS</td>
+                      <td class="hide-on-mobile"></td>
+                      <td class="hide-on-mobile px-md-5">&nbsp;MIN</td>
+                      <td class="hide-on-laptop"></td>
+                      <!-- <td class="hide-on-tablet pr-lg-5 pl-md-4">SEC&nbsp;</td> -->
+                      <!-- <td class="hide-on-tablet pl-md-5">SEC&nbsp;</td> -->
+                      <td class="hide-on-laptop px-md-4">&nbsp;SEC&ensp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="space-3">
+      </section>
+
+      <!-- <hr class="space-2"> -->
     </main>
 
 
@@ -270,6 +317,29 @@
     <script src="../js/custom.js"></script>
     <script src="../js/rellax.min.js"></script>
     <script>var rellax = new Rellax('.rellax');</script>
+
+    <script>
+      var countDownDate = new Date("Jun 30, 2020 00:00:00").getTime();
+      var countdownfunction = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var day = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            hrs = (hrs < 10 ? "0" : "") + hrs;
+        var min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            min = (min < 10 ? "0" : "") + min;
+        var sec = Math.floor((distance % (1000 * 60)) / 1000);
+            sec = (sec < 10 ? "0" : "") + sec;
+          document.getElementById("countDays").innerHTML = day;
+          document.getElementById("countHour").innerHTML = hrs;
+          document.getElementById("countMins").innerHTML = min;
+          document.getElementById("countSecs").innerHTML = sec;
+        if (distance < 0) {
+          clearInterval(countdownfunction);
+          document.getElementById("countDown").innerHTML = "IT’S HERE!";
+        }
+      }, 1000);
+    </script>
 
   </body>
 </html>
