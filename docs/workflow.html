@@ -8,7 +8,7 @@
     <meta name="keywords" content="NSPDR, E-Lodgement, Ecosystem, SPLUMA, DRDLR">
     <meta name="author" content="Agizo Solutions [J.Cleary], on behalf of the DRDLR">
 
-    <title>NSPDR&ensp;|&ensp;SPLUMA Workflow</title>
+    <title>NSPDR&ensp;|&ensp;Enabling SPLUMA</title>
     <script>
       (function(){
         // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
@@ -38,16 +38,15 @@
         <div class="row p-2">
           <div class="col-sm-8 pl-1"><div id="drdlr-logo"></div></div>
           <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-flag"></div></div>
-          <!-- <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-icon"></div></div> -->
         </div>
       </div>
     </header>
 
-    <!-- NAV -->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-elodg navbar-shadow">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr1 navbar-shadow">
       <div class="container">
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
-          <img class="png-shadow pb-1" src="../img/logos/acronym-light100.png" alt="NSPDR Ecosystem">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Ecosystem">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
           <span class="navbar-toggler-icon override">
@@ -56,7 +55,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navigator">
-          <ul class="navbar-nav mr-auto">
+          <!-- <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
             <li class="nav-item dropdown">
@@ -81,6 +80,28 @@
                 <a class="dropdown-item active" href="#end"><i class="fa fa-sm fa-university mr-1">&ensp;</i>SPLUMA Workflow<span class="sr-only">(current)</span></a>
               </div>
             </li>
+          </ul> -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-2"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <div class="dropdown-header"><small class="fw-400">Learn More</small></div>
+								<div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Links</a>
+                <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question-circle mr-3"></i>Your Questions ?</a>
+                <div class="dropdown-header"><small class="fw-400">Main Features</small></div>
+								<div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &nbsp;&dagger;</a>
+                <div class="dropdown-divider --alt"></div>
+                <a class="dropdown-item active" href="#end" title="You are here!"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA<span class="sr-only">(current)</span></a>
+              </div>
+            </li>
           </ul>
 
           <!-- <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
@@ -100,7 +121,7 @@
     </nav>
 
     <!-- HERO -->
-    <section class="page-header --small header-filter clear-filter base-filter mask-25 rellax" data-rellax-speed="-5" style="background-image:url(../img/view/landscape-1280x719.jpg)">
+    <section class="page-header --small header-filter clear-filter base-filter mask-25 rellax" data-rellax-speed="-4" style="background-image:url(../img/view/landscape-1280x719.jpg)">
     </section>
 
 
@@ -111,10 +132,10 @@
 	      <div class="container">
 
 		      <div class="row justify-content-center">
-			      <div class="col-12 col-md-11 col-lg10">
-		          <div class="text-center pt-5">
+			      <div class="col-12 col-md-11">
+		          <div class="text-center pt-4">
 		            <h1 class="showcase text-nspdr">Spatial Planning
-								<small><em class="text-nspdr2 fw-600"> &amp;</em></small></h1>
+								<big class="text-nspdr2 fw-700"> &amp;</big></h1>
 									<!-- <span class="textgeois hue-purple fw-800"> &plus;</span></h1> -->
 		            <!-- <h1 class="showcase text-nspdr">Spatial Planning
 									<span class="text-geois fw-600"> &amp;</span></h1> -->
@@ -162,12 +183,18 @@
 							<hr class="space-8">
 
 							<h2 class="mb-0">
-	              <span class="text-geois fat">E&NoBreak;&hybull;&NoBreak;Lodgement’s workflow and phases are aligned to <a class="pointer fw-800 text-nspdr" role="button" data-toggle="modal" data-target="#modalSPLUMA">SPLUMA</a>.</span>
+	              <span class="text-geois fat">
+                  E&NoBreak;&hybull;&NoBreak;Lodgement’s phased workflow is completely aligned to <a class="pointer fw-800 text-nspdr" style="text-decoration:underline;" role="button" data-toggle="modal" data-target="#modalSPLUMA">SPLUMA</a>.
+                </span>
 	            </h2>
 	            <div class="linear-divider my-3"></div>
 						  <div class="lead">
-	              <p class="">The land development application process extends from the lodgement of a development application, also known as the administrative phase, which basically involves the submission of all relevant documents. From there it then moves into and towards the formal consideration phase, all the way to the final approval, or decision phase, and may or may not proceed to any possible appeals...</p>
-	              <p class="fw-600">From the very beginning, our application was developed with SPLUMA at the centre of the design process. As such, the phased approach found within E&NoBreak;-&NoBreak;Lodgement’s workflow, is completely aligned with both the act itself, and its regulations.</p>
+	              <p class="">
+                  The land development application process extends from the lodgement of a development application, also known as the administrative phase, which basically involves the submission of all relevant documents. From there it then moves into and towards the formal consideration phase, all the way to the final approval, or decision phase, and may or may not proceed to any possible appeals...
+                </p>
+	              <p class="fw-600">
+                  From the very beginning, our application was developed with SPLUMA at the centre of the design process. As such, the phased approach found within E&NoBreak;-&NoBreak;Lodgement’s workflow, is completely aligned with both the act itself, and its regulations.
+                </p>
 						  </div>
 						</div>
 					</div>
@@ -176,13 +203,15 @@
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-11">
 		          <p class="h4 no-spacing">
-		            <span class="h4 text-tertiary fat"><span class="condensed-2">E&hybull;</span>Lodgement</span>’s development application process can be conceptually viewed as follows:-
+		            <span class="h4 text-tertiary fat">
+                <span class="condensed-2">E&hybull;</span>Lodgement</span>’s development application process can be conceptually viewed as follows:-
 		          </p>
 						</div>
 					</div>
 		      <div class="row justify-content-center">
 			      <div class="col-12">
-		          <div class="empty-space --quart"></div>
+		          <!-- <div class="empty-space --quart"></div> -->
+              <hr class="space-3">
 		          <!-- <div id="administrative-phase" class="float-left position-relative hidden" style="top:1200px;"></div> -->
 		          <!-- <div id="consideration-phase" class="float-left position-relative hidden" style="top:1600px;"></div> -->
 		          <img class="img-fluid rounded panel-shadow-sm border border-nspdr4" src="../img/spluma-process.png" alt="SPLUMA Process">
@@ -201,7 +230,7 @@
           <div class="container">
             <div class="row text-center">
               <div class="col-12 mx-auto">
-                <h2 id="countDown" class="display-4 condensed-2 fat text-secondary">SPLUMA IMPLEMENTATION</h2>
+                <h2 id="countDown" class="display-4 condensed-2 fat text-secondary">SPLUMA DEADLINE !</h2>
                 <div class="col-md-6 mx-auto"><div class="special-divider m-3"></div></div>
               </div>
             </div>
@@ -237,7 +266,7 @@
             </div>
           </div>
         </div>
-        <hr class="space-3">
+        <hr class="space-4">
       </section>
 
       <!-- <hr class="space-2"> -->
@@ -277,32 +306,33 @@
       </div>
     </footer>
 
-    <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up swing"></i></a>
+    <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
     <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
-
     <i id="point-breaks" class="media-breakpoint swing d-none  fa fa-sm fa-tv">&nbsp;</i>
 
     <!-- MODAL -->
     <div class="modal fade" id="modalSPLUMA" tabindex="-1" role="dialog" aria-labelledby="modalTitleSPLUMA" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content modal-shadow">
           <div class="modal-header">
-            <h4 class="modal-title text-nspdr fat" id="modalTitleSPLUMA">Spatial Planning and <br>Land Use Management Act</h4>
+            <h4 class="modal-title text-geois fat" id="modalTitleSPLUMA">Spatial&nbsp;Planning and <br>Land&nbsp;Use Management&nbsp;Act</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="font-size:2.25rem;" aria-hidden="true">&times;</span></button>
           </div>
           <div class="modal-body mx-1">
             <h5 class="modal-title text-elodg no-spacing fw-600 mb-2">Act of Parliament, &numero; 16 of 2013</h5>
-            <p class="text-dark mb-0">
-              To provide a framework for spatial planning and land use management in the Republic;
-              to specify the relationship between the spatial planning and the land use management system and other kinds of planning;
-              to provide for the inclusive, developmental, equitable and efficient spatial planning at the different spheres of government;
-              to provide a framework for the monitoring, coordination and review of the spatial planning and land use management system;
-              to provide a framework for policies, principles, norms and standards for spatial development planning and land use management;
-              to address past spatial and regulatory imbalances;
-              to promote greater consistency and uniformity in the application procedures and decision-making by authorities responsible for land use decisions and development applications;
-              to provide for the establishment, functions and operations of Municipal Planning Tribunals;
-              to provide for the facilitation and enforcement of land use and development measures;
-              and to provide for matters connected therewith.<br>
+            <p id="legalese" class="text-dark mb-0">
+              <ol class="roman flush"><span class="pull-left">Preamble:-</span><br>
+              <li>To provide a framework for spatial planning and land use management in the Republic;</li>
+              <li>to specify the relationship between the spatial planning and the land use management system and other kinds of planning;</li>
+              <li>to provide for the inclusive, developmental, equitable and efficient spatial planning at the different spheres of government;</li>
+              <li>to provide a framework for the monitoring, coordination and review of the spatial planning and land use management system;</li>
+              <li>to provide a framework for policies, principles, norms and standards for spatial development planning and land use management;</li>
+              <li>to address past spatial and regulatory imbalances;</li>
+              <li>to promote greater consistency and uniformity in the application procedures and decision-making by authorities responsible for land use decisions and development applications;</li>
+              <li>to provide for the establishment, functions and operations of Municipal Planning Tribunals;</li>
+              <li>to provide for the facilitation and enforcement of land use and development measures;</li>
+              <li>and to provide for matters connected therewith.</li><br>
+              </ol>
             </p>
           </div>
         </div>
