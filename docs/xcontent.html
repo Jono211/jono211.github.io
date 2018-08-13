@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+	<head>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359766-1"></script>
+		<script>
+			// Google Analytics - site tag (gtag.js)
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-123359766-1');
+		</script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="the National Spatial Planning Data Repository (NSPDR Ecosystem) - Enabling Integrated Spatial Planning and Land Use Management.">
+    <meta name="keywords" content="NSPDR, Spatial Planning, Data Repository, E-Lodgement, Ecosystem, Rural Development, DRDLR, SPLUMA">
+    <meta name="author" content="Agizo Solutions on behalf of the Department of Rural Development and Land Reform">
+
+    <title>NSPDR&ensp;|&ensp;Starter Page</title>
+    <script>
+      (function(){
+        // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
+        var d = document, e = d.documentElement, s = d.createElement('style');
+        if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+          s.textContent = 'body{visibility:hidden}';
+          var r = document.getElementsByTagName('script')[0];
+          r.parentNode.insertBefore(s, r);
+          function f(){ s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load',f,false);
+          setTimeout(f,3000);
+        }
+      })();
+    </script>
+    <link rel="icon" href="../img/fluidicon.png">
+    <link rel="stylesheet" href="../css/typeface.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/stylestest.css">
+		<link rel="stylesheet" href="../css/fa/css/all.css">
+	</head>
+  <body id="top" class="bg-linear pt-0">
+
+    <!-- BANNER -->
+    <header class="container-fluid bg-white">
+      <div class="container">
+        <div class="row p-2">
+          <div class="col-sm-8 pl-1"><div id="drdlr-logo"></div></div>
+          <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-flag"></div></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow">
+      <div class="container">
+        <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Ecosystem">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
+          <span class="navbar-toggler-icon override">
+            <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigator">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-2"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Links</a>
+                <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question-circle mr-3"></i>Your Questions ?</a>
+                <div class="dropdown-header"><small class="fw-300">Main Features</small></div>
+								<div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &nbsp;&dagger;</a>
+                <div class="dropdown-divider --alt"></div>
+                <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA</a>
+              </div>
+            </li>
+          </ul>
+
+          <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
+            <a id="display-count" title="“T”-minus" href="../index.html#countdown-to-zero">nspdr.info</a>
+          </span>
+          <form class="form-inline mt-2 mt-md-0 pr-1">
+            <a class="btn btn-outline-light opaque-75 mr-1 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i>&nbsp;</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-header header-filter clear-filter base-filter mask-25 rellax" data-rellax-speed="-5" style="background-image:url('../img/view/boland-landscape-960x472.jpg')">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- <div class="col-12 mx-auto">
+            <img class="img-fluid png-shadows opaque-50 pull-md-up2 d-none d-md-block rellax" data-rellax-speed="-1" alt="NSPDR Ecosystem" src="../img/logos/icon-inner-light.png">
+						<img class="img-fluid png-shadows opaque-50 p-2 p-sm-5 d-md-none d-block rellax" data-rellax-speed="-1" alt="NSPDR Ecosystem" src="../img/logos/icon-inners-light.png">
+          </div> -->
+          <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
+            <img class="img-fluid png-shadows opaque-75 pull-up1 p-4 p-md-3 p-xl-2" src="../img/logos/icon-inners-light.png" alt="NSPDR">
+          </div>
+          <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
+        		<div class="row text-left">
+	            <div class="col-12">
+	              <h1 class="showcase text-white opaque-90 fw-600">integrated</h1>
+	            </div>
+	            <div class="col-12">
+	              <h2 class="showcase text-white opaque-75">Spatial Planning</h2>
+	            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTENT -->
+    <main class="nspdr-background --raised --alt1 top-brown">
+
+      <section class="segment">
+        <div class="container pt-3 pt-sm-4">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-11">
+		          <div class="text-center">
+		            <h1 class="showcase text-nspdr">spatial planning
+								<span class="text-nspdr2"> &amp;</span></h1>
+		            <h2 class="showcase text-dark">land use management</h2>
+		          </div>
+	          </div>
+	        </div>
+		      <!-- <div class="row justify-content-center">
+			      <div class="col-11 col-md-10">
+		          <div class="special-divider my-4"></div>
+	          </div>
+	        </div> -->
+        </div>
+      </section>
+
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment">
+	      <div class="container">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-10">
+		          <div class="lead">
+		            <h2 class="mb-3 fw-700">Corporate Ipsum</h2>
+		            <p class="">
+									Compellingly conceptualize viral paradigms after standardized infrastructures. Interactively empower client-centric e-services via collaborative internal or "organic" sources. Assertively target excellent total linkage vis-a-vis performance based niche markets. Interactively brand alternative architectures without integrated meta-services. Energistically fabricate team building interfaces and equity invested process improvements.
+		            </p>
+		            <p class="">
+									Quickly pursue scalable systems without business customer service. Enthusiastically myocardinate 24/7 materials vis-a-vis frictionless vortals. Seamlessly disseminate high-payoff infrastructures before empowered schemas. Enthusiastically myocardinate enterprise total linkage through an expanded array of leadership skills. Distinctively facilitate world-class expertise with technically sound schemas.
+		            </p>
+		            <p class="">
+									Assertively formulate premier data after economically sound value. Monotonectally incubate interoperable mindshare for emerging quality vectors. Appropriately grow value-added manufactured products and cooperative customer service. Collaboratively disseminate high-payoff e-tailers through plug-and-play potentialities. Dynamically integrate value-added ROI via mission-critical paradigms.
+		            </p>
+		            <p class="">
+									Uniquely customize state of the art ROI before sticky e-commerce. Completely pursue accurate growth strategies without B2C core competencies. Uniquely whiteboard fully tested best practices through robust e-services. Dramatically disseminate integrated imperatives for corporate expertise. Uniquely procrastinate adaptive action items with cross-unit leadership skills.
+		            </p>
+		            <p class="">
+									Assertively incubate interoperable portals after reliable schemas. Assertively reintermediate cross-unit portals and inexpensive channels. Proactively predominate market-driven leadership skills through real-time strategic theme areas. Competently maintain robust potentialities before intermandated testing procedures. Globally provide access to web-enabled communities vis-a-vis sticky architectures.
+		            </p>
+		            <p class="">
+									Objectively procrastinate global portals vis-a-vis world-class process improvements. Monotonectally actualize quality portals through fully tested methodologies. Phosfluorescently customize web-enabled supply chains rather than long-term high-impact supply chains. Monotonectally utilize scalable communities without low-risk high-yield meta-services. Quickly disseminate goal-oriented internal or "organic" sources and cross-unit portals.
+		            </p>
+		            <p class="">
+									Proactively benchmark client-focused web services via pandemic functionalities. Dynamically fabricate exceptional sources without functionalized experiences. Collaboratively productize distributed initiatives via worldwide benefits. Dramatically impact an expanded array of solutions for optimal communities. Holisticly evolve transparent systems through accurate human capital.
+		            </p>
+		            <p class="">
+									Authoritatively unleash bricks-and-clicks e-commerce vis-a-vis professional platforms. Dynamically leverage other's mission-critical deliverables without 24/365 applications. Completely procrastinate multimedia based "outside the box" thinking before emerging "outside the box" thinking. Conveniently embrace sustainable imperatives with magnetic models. Enthusiastically e-enable high standards in innovation rather than enterprise-wide services.
+		            </p>
+		            <p class="">
+									Compellingly aggregate dynamic platforms whereas corporate leadership. Monotonectally actualize resource sucking mindshare via visionary leadership. Completely revolutionize high-quality deliverables after out-of-the-box catalysts for change. Credibly strategize intermandated web-readiness rather than intuitive sources. Holisticly pursue maintainable sources with distinctive leadership skills.
+		            </p>
+		            <p class="">
+									Dramatically transition alternative e-markets whereas leading-edge leadership. Appropriately fashion cost effective opportunities for impactful benefits. Interactively orchestrate inexpensive human capital via timely imperatives. Holisticly foster maintainable web-readiness for professional platforms. Proactively expedite integrated results vis-a-vis flexible ROI.
+		            </p>
+		            <p class="">
+									Appropriately unleash front-end products for e-business customer service. Assertively enhance user-centric models before ubiquitous services. Professionally myocardinate long-term high-impact total linkage vis-a-vis wireless deliverables. Dynamically synthesize customized e-commerce after emerging portals. Monotonectally actualize resource-leveling web-readiness with interactive users.
+		            </p>
+		            <p class="">
+									Enthusiastically incentivize B2C portals through market positioning supply chains. Quickly aggregate interdependent ROI for scalable content. Energistically enhance error-free channels whereas reliable information. Appropriately streamline front-end process improvements vis-a-vis technically sound testing procedures. Phosfluorescently streamline compelling partnerships and world-class channels.
+									<br>Efficiently deliver business meta-services.
+		            </p>
+	          	</div>
+	          </div>
+	        </div>
+        </div>
+      </section>
+
+      <!-- <div class="container"><hr class="dark"></div> -->
+
+      <section class="segment bg-background" style="background-image:url('../img/bg-litegrey.svg');">
+	      <div class="container">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-10">
+							<hr class="space-9">
+	          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <hr class="space-4"> -->
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="nspdr-footer" id="end">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-4">
+		        <div class="copyright float-sm-left text-sm-left">
+		          &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
+		        </div>
+	        </div>
+          <div class="col-7 col-sm-6 col-lg-4 order-lg-3">
+		        <div class="float-sm-right text-sm-right">
+		          <ul class="underline-on-hover sibling-fade">
+		            <li><a href="../index.html">Home</a></li>
+		            <li><a href="newsblog.html">News</a></li>
+		            <li><a href="about.html">About</a></li>
+		            <li><a href="termsofuse.html">Terms</a></li>
+		          </ul>
+		        </div>
+      		</div>
+          <div class="col-12 col-md-8 col-lg-4 order-lg-2">
+		        <div class="pt-2 pt-md-1 pt-lg-0">
+		          <ul class="social-media">
+		            <!-- <li class="--facebook"><a href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" target="_blank" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li> -->
+		            <!-- <li class="--twitter"><a href="https://twitter.com/DRDLR_online" target="_blank" class="fab fa-2x fa-twitter" title="Twitter"></a></li> -->
+		            <!-- <li class="--instagram"><a href="https://www.instagram.com/drdlr_sa" target="_blank" class="fab fa-2x fa-instagram" title="Instagram"></a></li> -->
+		            <!-- <li class="--youtube"><a href="https://www.youtube.com/user/DRDLROnline" target="_blank" class="fab fa-2x fa-youtube" title="YouTube"></a></li> -->
+		            <li class="--facebook"><a href="template.html" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li>
+		            <li class="--twitter"><a href="template1.html" class="fab fa-2x fa-twitter" title="Twitter"></a></li>
+		            <li class="--instagram"><a href="temporary.html" class="fab fa-2x fa-instagram" title="Instagram"></a></li>
+		            <li class="--youtube"><a href="temporary1.html" class="fab fa-2x fa-youtube" title="YouTube"></a></li>
+		          </ul>
+		        </div>
+	        </div>
+      	</div>
+      </div>
+
+      <a id="scroll-to-top" href="#top" title="To Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
+	    <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
+	    <i id="point-breaks" class="media-breakpoint swing d-none  fa fa-sm fa-tv">&nbsp;</i>
+    </footer>
+
+    <!-- =========== JavaScript ===========  -->
+    <!-- Placed at end so pages load faster. -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="../js/rellax.min.js"></script>
+    <script>var rellax = new Rellax('.rellax');</script>
+
+  </body>
+</html>

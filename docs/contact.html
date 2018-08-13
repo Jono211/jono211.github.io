@@ -127,7 +127,7 @@
 
     <main role="main" class="">
 
-      <div class="container marketing">
+      <div class="container marketing d-none">
 				<div class="empty-space --triplet"></div>
 
 				<div class="row">
@@ -150,7 +150,7 @@
         <div class="empty-space --single"></div>
       </div> <!-- /.container .marketing -->
 
-      <div class="container">
+      <div class="container d-none">
 				<div class="row">
           <div class="col-md-10 mx-auto">
             <h2 class="text-tertiary fat">Contact information.</h2>
@@ -163,13 +163,13 @@
                   <label for="validateFirstName" class="pl-1">First name<span class="fat text-danger">&nbsp;*</span></label>
                   <!-- <input type="text" name="firstname" class="form-control" id="validateFirstName" required> -->
                   <input type="text" name="name" class="form-control" id="validateFirstName" required>
-                  <div class="invalid-feedback">&nbsp;* please provide us with your name</div>
-                  <div class="valid-feedback">&nbsp;* looks good</div>
+                  <div class="invalid-tooltip">* please provide us with your name</div>
+                  <!-- <div class="valid-tooltip">&nbsp;* looks good</div> -->
                 </div>
                 <div class="col-lg-6 mb-3">
                   <label for="validateLastName" class="pl-1">Last name</label>
                   <input type="text" name="lastname" class="form-control" id="validateLastName">
-                  <div class="valid-feedback">&nbsp;* optional</div>
+                  <!-- <div class="valid-feedback">&nbsp;* optional</div> -->
                 </div>
               </div>
 
@@ -264,7 +264,7 @@
         </div>
       </div> <!-- /.container .form -->
 
-      <div class="container">
+      <div class="container d-none">
         <div class="container marketing">
           <hr class="my-4">
 
@@ -287,73 +287,62 @@
       </div> <!-- /.container -->
 
 
-<hr class="dark">
+<!-- <hr class="dark"> -->
+
 <section class="db-block pt-0">
   <div class="container">
   	<hr class="space-6">
     <div class="row text-left">
       <div class="col-10">
-        <!-- <h1>Contact Us</h1> -->
 				<h2 class="featurette-heading fw-700 condensed-1">Have any questions?<br><span class="text-muted">Get in touch with us...</span></h2>
         <div class="linear-divider"></div>
-        <p class="lead-2">Believe it or not, but we really do want to hear from you.&nbsp; So, get in touch!
+        <p class="lead-2">Believe it or not, but we really do want to hear from you.&nbsp; <strong>So, get in touch!</strong>
 					<br>All you need to do is simply complete the contact form below and send us your feedback.</p>
       </div>
     </div>
-  	<hr class="space-4">
+  	<!-- <hr class="space-4"> -->
   </div>
-
+  <hr class="space-8">
   <div class="container">
-    <hr class="space-4">
+    <!-- <hr class="space-4"> -->
     <div class="row">
       <div class="col-12 col-md-6 col-lg-5">
-        <h2 class="fw-600 mb-4">Call or email</h2>
+        <h2 class="text-tertiary fw-600 mb-4">Call or email</h2>
         <p class="lead">Helpdesk support and account management services are currently only available in English.</p>
 
-        <!-- <p class="lead mt-4 mt-lg-5"><strong>Technical Support</strong></p>
-        <p class="mb-1">+800 3005 4300</p>
-        <p class="mb1"><a href="#">Contact Support</a></p>
-        <p>Our technical support is available by phone or email from 11am to 11pm BST, Monday through Friday.</p>
-
-        <p class="lead mt-4 mt-lg-5"><strong>General Inquiries</strong></p>
-        <p class="mb-1">+800 3005 4300</p>
-        <p class="mb-1"><a href="#">Contact Inquiries</a></p> -->
-
-        <!-- <p class="lead mt-4 mt-lg-5">
-          <strong>General inquiries</strong>
-        </p>
-        <p><a href="#">hello@website.com</a></p> -->
         <div class="row pt-4 pt-xl-5">
           <div class="col-12 col-md-5">
-		        <p class="lead mt4 mt-lg5"><strong>Technical Support</strong></p>
-		        <p class="mb-1">+27 12 312 0000</p>
+		        <p class="lead"><strong>Technical Support</strong></p>
+		        <p class="mb-1">+27 12 312 9665</p>
 		        <p class="mb-1"><a href="#">Contact Support</a></p>
           </div>
           <div class="col-12 col-md-5 m-auto pt-3 pt-md-0">
-		        <p class="lead mt4 mt-lg5"><strong>General Inquiries</strong></p>
-		        <p class="mb-1">+27 12 312 0000</p>
-		        <p class="mb-1"><a href="#">Contact Inquiries</a></p>
+		        <p class="lead"><strong>Helpdesk Service</strong></p>
+		        <p class="mb-1">012 312-9852</p>
+		        <p class="mb-1"><a href="#">Contact Helpdesk</a></p>
           </div>
         </div>
 
     		<hr class="space-4">
-        <p>Our technical support is available by phone or email from 09:00 to 16:00, Monday through Friday (excl. public holidays).</p>
+        <p>Our technical support is available by phone or email from <strong>09:30</strong> to <strong>15:30</strong>, Monday through Friday (excl.&nbsp;public&nbsp;holidays).</p>
       </div>
 
       <div class="col-12 col-md-6 ml-auto">
         <!-- <h2 class="fw-600 mb-4">Drop us a line</h2> -->
-        <h2 class="fw-600 mb-4">Your feedback</h2>
-        <form>
+        <h2 class="text-dimgrey fw-600 mb-4">Your feedback</h2>
+
+        <!-- <form class="needs-validation" novalidate> -->
+        <form method="POST" action="contact/thanks.html">
+        <!-- <form> -->
+
           <div class="row">
             <div class="col-7">
-              <input type="text" class="form-control" placeholder="Name Surname" required>
+              <input type="text" class="form-control verify" placeholder="Name Surname" required>
+              <!-- <div class="invalid-tooltip">* please provide us with your name</div> -->
             </div>
-            <!-- <div class="col">
-              <input type="text" class="form-control" placeholder="Last name">
-            </div> -->
             <div class="col-5">
-              <select type="text" class="custom-select" minlength="7" required>
-                <option value="">Select Province</option>
+              <select type="text" class="custom-select verify" required>
+                <option class="text-muted" value="">&lt;select province&gt;</option>
                 <option>Eastern Cape</option>
                 <option>Free State</option>
                 <option>Gauteng</option>
@@ -364,32 +353,35 @@
                 <option>Northern Cape</option>
                 <option>Western Cape</option>
               </select>
-              <!-- <select class="form-control" required="">
-                <option value="">Select Department</option>
-                <option value="1">Support</option>
-                <option value="2">Sales</option>
-                <option value="3">Accounting</option>
-              </select> -->
             </div>
           </div>
 
           <div class="row mt-4">
             <div class="col">
-              <input type="email" class="form-control" placeholder="email@address.com" required>
+              <input type="email" class="form-control verify" placeholder="email@address.com" required>
             </div>
           </div>
 
           <div class="row mt-4">
             <div class="col">
-              <textarea class="form-control" name="message" rows="5" placeholder="How can we help...?" required></textarea>
+              <textarea class="form-control verify" name="message" rows="5" placeholder="How can we help you...?" minlength="4" required></textarea>
             </div>
           </div>
 
-          <div class="row mt-5">
+          <div class="row mt-4">
             <div class="col">
-              <button type="submit" class="btn btn-pill btn-info btn-shadow fw-600">Click to submit</button>
+              <div class="form-inline mt-3">
+                <!-- <button onclick="contact/thanks.html" type="submit" name="submit" class="btn btn-pill btn-outline-secondary fill shadow-sm fw-600">Click to submit</button> -->
+                <button type="submit" name="submit" class="btn btn-pill btn-outline-secondary fill shadow-sm fw-600">Click to submit</button>
+
+                <input class="form-check-input ml-5" type="checkbox" name="termsagreed" value="" id="acceptTerms" required>
+                <label class="form-check-label text-secondary" for="acceptTerms">&nbsp;&nbsp;I’ve&nbsp;read&nbsp;and&nbsp;accept&nbsp;the&nbsp; 
+                  <a class="text-dark" href="termsofuse.html#privacyPolicy"> terms&nbsp;and&nbsp;conditions</a>
+                </label>
+              </div>
             </div>
           </div>
+
         </form>
       </div>
 
@@ -460,7 +452,7 @@
       </div>
     </footer>
 
-    <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up swing"></i></a>
+    <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
     <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
 
 

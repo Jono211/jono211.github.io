@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
 	<head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -47,7 +47,7 @@
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow">
       <div class="container">
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
-          <img class="png-shadow pb-1" width="100" src="../img/logos/acronym-light256.png" alt="NSPDR Ecosystem">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Ecosystem">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
           <span class="navbar-toggler-icon override">
@@ -61,44 +61,20 @@
             <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About<i class="fa fa-sm fa-angle-down ml-1"></i>
+                About<i class="fa fa-sm fa-angle-down ml-2"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-key mr-3"></i>About <span class="fw-700">NSPDR</span></a>
-                <!-- <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-key mr-3"></i>About the <small class="fw-600">NSPDR</small></a> -->
-                <!-- <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-key mr-3"></i>About the Ecosystem</a> -->
-                <!-- <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA</a> -->
-								<!-- <div class="dropdown-divider"></div> -->
-                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
-                <!-- <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Info.</a> -->
+                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
 								<div class="dropdown-divider"></div>
-                <!-- <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question mr-3"></i>&nbsp;Questions &amp; Answers</a> -->
-                <!-- <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question mr-3"></i>&nbsp;Questions and Answers</a> -->
-								<!-- <div class="dropdown-divider"></div> -->
-                <div class="dropdown-header"><small class="expanded-3 fw-300">CORE FEATURES</small></div>
-
-              <!-- </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle override ml-md-0" href="#" id="navDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Features<i class="fa fa-sm fa-angle-down ml-1"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navDropdown2"> -->
-
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Links</a>
+                <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question-circle mr-3"></i>Your Questions ?</a>
+                <div class="dropdown-header"><small class="fw-300">Main Features</small></div>
+								<div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
-                <!-- <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>The Repository</a> -->
-                <!-- <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-bars mr-3"></i>E&hybull;Lodgement</a> -->
-								<!-- <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-server mr-3"></i>NSPDR Portal</a> -->
-								<!-- <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-server mr-3"></i>Spatial:  Data Repository</a> -->
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement</a>
-                <!-- <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-paper-plane mr-1">&ensp;</i>E&hybull;Lodgement &dagger;</a> -->
-                <!-- <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-paper-plane mr-3"></i>Planning: E&hybull;Lodgement &dagger;</a> -->
-                <div class="dropdown-divider"></div>
-                <!-- <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Info.</a> -->
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &nbsp;&dagger;</a>
+                <div class="dropdown-divider --alt"></div>
                 <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA</a>
-                <!-- <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enablement of SPLUMA</a> -->
-                <!-- <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>SPLUMA Enablement</a> -->
-                <!-- <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-university mr-1">&ensp;</i>SPLUMA Workflow</a> -->
               </div>
             </li>
           </ul>
@@ -107,7 +83,7 @@
             <a id="display-count" title="“T”-minus" href="../index.html#countdown-to-zero">nspdr.info</a>
           </span>
           <form class="form-inline mt-2 mt-md-0 pr-1">
-            <a class="btn btn-outline-light opaque-75 mr-1 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i></a>
+            <a class="btn btn-outline-light opaque-75 mr-1 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i>&nbsp;</a>
           </form>
         </div>
       </div>
@@ -125,7 +101,7 @@
         </div> -->
         <div class="row justify-content-center">
           <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="1">
-            <img class="img-fluid png-shadows opaque-90 pull-up1 p-4 p-md-3 p-xl-2" src="../img/logos/icon-inners-light.png" alt="NSPDR">
+            <img class="img-fluid png-shadows opaque-75 pull-up1 p-4 p-md-3 p-xl-2" src="../img/logos/icon-inners-light.png" alt="NSPDR">
           </div>
           <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
         		<div class="row text-left">
@@ -194,18 +170,18 @@
             <div class="col-12 col-lg-7 col-xl-8 pt-4 pt-lg-0">
               <!-- <h2 class="display-3 condensed-1 text-nspdr1 mini-shadow fw-700">NSPDR Ecosystem</h2> -->
               <p class="lead-2">
-								<!-- The <strong>National Spatial Planning Data Repository</strong> (NSPDR&nbsp;Ecosystem). -->
-								The <strong>National Spatial Planning Data Repository</strong> Ecosystem Project.
-								<br><strong class="text-dark">Enabling Integrated Spatial Planning and Land Use Management!</strong>
+								<!-- The <strong>National Spatial Planning Data Repository</strong> (NSPDR&nbsp;Ecosystem) Project. -->
+								The <strong class="h3 fw-700 text-dimgrey">National Spatial Planning Data Repository</strong> Ecosystem.
+								<br><strong class="fw-600 text-dimgrey">Enabling Integrated Spatial Planning and Land Use Management!</strong>
               </p>
 
               <div class="row text-left mt-3">
                 <div class="col-12 col-sm-6">
-                  <h4 class="textdark"><strong>Data Repository</strong></h4>
+                  <h4 class="text-dimgrey"><strong>Data Repository</strong></h4>
                   <p class="">The NSPDR Ecosystem will enable the sharing of spatial planning information across all three spheres of government, as well as the private sector, and will support key objectives of the NDP and most importantly, SPLUMA.</p>
                 </div>
                 <div class="col-12 col-sm-6 pt-3 pt-sm-0">
-                  <h4 class="textdark"><strong>E-Lodgement</strong></h4>
+                  <h4 class="text-dimgrey"><strong>E-Lodgement</strong></h4>
                   <p class="">From the very beginning, our application was developed with SPLUMA at the centre of the design process. Resulting in a workflow that’s completely aligned both with the act itself, but also its regulations.</p>
                 </div>
               </div>
@@ -231,7 +207,7 @@
 
           <div class="row no-gutters justify-content-center text-center">
             <!-- <div class="col-12 col-md-8 m-auto col-lg-4"> -->
-            <div class="col-12 col-sm-8 m-auto col-md-4 pr-md-3">
+            <div class="col-11 col-sm-8 m-auto col-md-4 pr-md-3">
             	<div class="db-box alt db-touch3 py-3 shadow-raised bg-linearbox" style="border-radius:2rem!important;">
                 <img alt="NSPDR Icon" class="icon-150 mt-2" src="../img/icons/icon4.png">
                 <h2 class="h1 fw-400">Spatial Data</h2>
@@ -242,7 +218,7 @@
             </div>
 
             <!-- <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0"> -->
-            <div class="col-12 col-sm-8 m-auto col-md-4 pt-5 pt-md-0">
+            <div class="col-11 col-sm-8 m-auto col-md-4 pt-5 pt-md-0">
               <div class="db-box alt db-touch1 py-3 shadow-raised bg-linearbox" style="border-radius:2rem!important;">
                 <img alt="NSPDR Icon" class="icon-150 mt-2 mt-lg-5" src="../img/icons/icon1.png">
                 <h2 class="h1 fw-400">Geo-Analytics</h2>
@@ -253,7 +229,7 @@
             </div>
 
             <!-- <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0"> -->
-            <div class="col-12 col-sm-8 m-auto col-md-4 pt-5 pt-md-0 pl-md-3">
+            <div class="col-11 col-sm-8 m-auto col-md-4 pt-5 pt-md-0 pl-md-3">
               <div class="db-box alt db-touch4 py-3 shadow-raised bg-linearbox" style="border-radius:2rem!important;">
                 <img alt="NSPDR Icon" class="icon-150 mt-2" src="../img/icons/icon3.png">
                 <h2 class="h1 fw-400">E-Learning</h2>
@@ -271,7 +247,7 @@
       <section class="segment db-block">
         <div class="container">
           <div class="row text-right align-items-center">
-            <div class="col-7 col-lg-4 m-auto">
+            <div class="col-10 col-sm-7 col-lg-4 m-auto">
               <img alt="NSPDR" class="img-fluid png-raised" src="../img/uiux/ipad2.png">
             </div>
 
@@ -311,7 +287,7 @@
 								<!-- Something that makes a website great is when it is compatible in multiple browsers regardless of version. ... Multi-browser means a website will work in several web browsers like Safari, Chrome, Firefox, Internet Explorer. While cross-browser means a website works in any browser, and any version of the browser, being used. -->
 								<!-- The ecosystem is cross-browser compatibile; works in any browser, and any version of the browser, being used. -->
 							<!-- </p> -->
-              <p class="lead mt-5"><strong>Works in every browser:</strong></p>
+              <p class="lead-2 pl-2 mt-5">... works in all modern browsers:</p>
               <div class="container">
                 <div class="row justify-content-between justify-content-md-start">
                   <img alt="Chrome" class="browser-icon" src="../img/logos/browser-chrome-128x128.png"/>
@@ -325,6 +301,26 @@
 
             <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
               <img alt="NSPDR Ecosystem" class="img-fluid png-raised" src="../img/uiux/imacbook2.png">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment db-block">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-left mb-2 mb-lg-5">
+              <h2 class="display-3 condensed-2 fw-600 ml-1">responsive design&nbsp;&nbsp;<span class="text-dark fw-400">&gt;&gt;&gt;</span></h2>
+              <!-- <h2 class="featurette-heading ml-1">Available on multiple platforms&nbsp;&gt;</h2> -->
+              <!-- <hr class="space-2"> -->
+            </div>
+            <div class="col-11 mx-auto align-self-center">
+              <img class="img-fluid png-raised" src="../img/uiux/responsive.png" alt="NSPDR Responsive Interface">
+            </div>
+            <div class="col-12 text-right mt-2 mt-lg-4">
+              <h2 class="display-4 condensed-1 text-secondary fw-600 mr-1"><span class="text-tertiary fw-400">&gt;&gt;&gt;</span>&nbsp;&nbsp;PCs,&nbsp;laptops, tablets and&nbsp;phones</h2>
             </div>
           </div>
         </div>
@@ -392,7 +388,8 @@
         <div class="container">
           <div class="row text-center">
             <div class="col-12">
-              <h2 class="display-3 fw-600">E&NoBreak;-&NoBreak;Lodgement’s User Management</h2>
+              <!-- <h2 class="display-3 fw-600">E&NoBreak;-&NoBreak;Lodgement’s User Profiles</h2> -->
+              <h2 class="display-3 fw-600"><span class="condensed-3">E<span class="fw-800">&middot;</span></span>Lodgement’s User Profiles</h2>
               <!-- <h2 class="display-3 fw-600">E&NoBreak;-&NoBreak;Lodgement’s User Access Control</h2> -->
               <!-- <p class="h3"><a href="#">See all features &gt;</a></p> -->
             </div>
@@ -559,6 +556,8 @@
             </div>
           </div>
         </div>
+
+        <hr class="space-4">
       </section>
 
       <!-- <div class="container"><hr class="dark"></div> -->
@@ -585,9 +584,10 @@
           <div class="row justify-content-center text-center">
             <div class="col-12 col-md mx-auto">
               <!-- <img alt="NSPDR" class="icon-100 png-raised mb-4" src="../img/logos/nspdr-500x500.png"> -->
-							<i class="fa fa-4x fa-fax mb-4 text-nspdr1 mini-shadow"></i>
-							<!-- <i class="fa fa-4x fa-phone-volume mb-4 text-nspdr1 mini-shadow"></i> -->
-							<!-- <i class="fa fa-4x fa-mobile-alt mb-4 text-nspdr1 mini-shadow"></i> -->
+							<!-- <a class="fa fa-4x fa-fax mb-4 text-nspdr1 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-phone-volume mb-4 text-nspdr1 mini-shadow"></a> -->
+							<a class="fa fa-4x fa-phone fa-flip-horizontal mb-4 text-nspdr1 mini-shadow"></a>
+							<!-- <a class="fa fa-4x fa-mobile-alt mb-4 text-nspdr1 mini-shadow"></a> -->
               <p class="h4 leading-2">
 								<!-- +27 (0) 12&nbsp; 312 &ndash; 9665<br> -->
 								<!-- (012)&nbsp; 312 &ndash; 9852 -->
@@ -597,10 +597,10 @@
 
             <div class="col-12 col-md pt-4 pt-md-0 mx-auto">
               <!-- <img alt="NSPDR" class="icon-100 png-raised mb-4" src="../img/logos/nspdr-500x500.png"> -->
-							<i class="fa fa-4x fa-map-marker-alt mb-4 text-nspdr2 mini-shadow"></i>
-							<!-- <i class="fa fa-4x fa-map-marked-alt mb-4 text-nspdr2 mini-shadow"></i> -->
-							<!-- <i class="fa fa-4x fa-location-arrow mb-4 text-nspdr2 mini-shadow"></i> -->
-							<!-- <i class="fa fa-4x fa-flag mb-4 text-nspdr2 mini-shadow"></i> -->
+							<a class="fa fa-4x fa-map-marker-alt mb-4 text-nspdr2 mini-shadow"></a>
+							<!-- <a class="fa fa-4x fa-map-marked-alt mb-4 text-nspdr2 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-location-arrow mb-4 text-nspdr2 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-flag mb-4 text-nspdr2 mini-shadow"></a> -->
               <p class="h4 leading-2">
 								<!-- 224 Helen Joseph Street<br> -->
 								<!-- Capitol Towers,&nbsp; Pretoria -->
@@ -612,11 +612,13 @@
 
             <div class="col-12 col-md pt-4 pt-md-0 mx-auto">
               <!-- <img alt="NSPDR" class="icon-100 png-raised mb-4" src="../img/logos/nspdr-500x500.png"> -->
-							<!-- <i class="fab fa-4x fa-internet-explorer mb-4 text-nspdr3 mini-shadow"></i> -->
-							<!-- <i class="fa fa-4x fa-share-alt mb-4 text-nspdr3 mini-shadow"></i> -->
-							<!-- <i class="fa fa-4x fa-envelope mb-4 text-nspdr3 mini-shadow"></i> -->
-							<i class="fa fa-4x fa-code-branch mb-4 text-nspdr3 mini-shadow"></i>
-							<!-- <i class="fa fa-4x fa-at mb-4 text-nspdr3 mini-shadow"></i> -->
+							<!-- <a class="fab fa-4x fa-internet-explorer mb-4 text-nspdr3 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-share-alt mb-4 text-nspdr3 mini-shadow"></a> -->
+							<a class="fa fa-4x fa-reply mb-4 text-nspdr3 mini-shadow"></a>
+							<!-- <a class="fa fa-4x fa-envelope-open mb-4 text-nspdr3 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-paperclip mb-4 text-nspdr3 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-code-branch mb-4 text-nspdr3 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-at mb-4 text-nspdr3 mini-shadow"></a> -->
               <p class="h4 leading-2">
                 support@nspdr.info<br>
                 <a class="text-dark" href="http://www.drdlr.gov.za">www.drdlr.gov.za</a>
@@ -652,7 +654,7 @@
           <div class="col-12 col-md-8 col-lg-4 order-lg-2">
 		        <div class="pt-2 pt-md-1 pt-lg-0">
 		          <ul class="social-media">
-		            <li class="--facebook"><a href="template.html" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li>
+		            <li class="--facebook"><a href="webpage.html" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li>
 		            <li class="--twitter"><a href="template1.html" class="fab fa-2x fa-twitter" title="Twitter"></a></li>
 		            <li class="--instagram"><a href="temporary.html" class="fab fa-2x fa-instagram" title="Instagram"></a></li>
 		            <li class="--youtube"><a href="temporary1.html" class="fab fa-2x fa-youtube" title="YouTube"></a></li>
@@ -662,7 +664,7 @@
       	</div>
       </div>
 
-      <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up swing"></i></a>
+      <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
 	    <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
 	    <i id="point-breaks" class="media-breakpoint swing d-none  fa fa-sm fa-tv">&nbsp;</i>
     </footer>

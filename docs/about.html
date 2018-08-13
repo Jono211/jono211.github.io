@@ -31,7 +31,7 @@
       <div class="container">
         <div class="row p-2">
           <div class="col-sm-8 pl-1"><div id="drdlr-logo"></div></div>
-          <div class="col-sm-4 py-2 pr-3 hide-on-mobile"><div id="drdlr-flag"></div></div>
+          <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-flag"></div></div>
         </div>
       </div>
     </header>
@@ -59,12 +59,27 @@
             <!-- <li class="nav-item"><a class="nav-link px-md-2" href="news.html">News</a></li> -->
             <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
             <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-2"></i><span class="sr-only">(current)</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
+								<!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item active" href="#general-info"><i class="fa fa-sm fa-cog mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Links</a>
+                <!-- <a class="dropdown-item" href="#some-questions"><i class="fa fa-sm fa-question-circle mr-3"></i>Your Questions ?</a> -->
+								<div class="dropdown-divider"></div>
+                <div class="dropdown-header"><small class="fw-300">Feature Set</small></div>
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement</a>
+                <div class="dropdown-divider --alt"></div>
+                <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navAboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-1"></i><span class="sr-only">(current)</span>
               </a>
-            <!-- <li class="nav-item dropdown d-inline-flex pr-md-2">
-              <a class="nav-link pr-0" href="about.html">About</a>
-              <a class="nav-link dropdown-toggle override dropdown-toggle-split ml1 px-0" href="#" id="navAboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-sm fa-angle-down px-0"></i></a> -->
               <div class="dropdown-menu" aria-labelledby="navAboutMenu">
                 <a class="dropdown-item" href="#general-info"><i class="fa fa-sm fa-cog mr-3"></i>About the <small class="fw-600">NSPDR</small></a>
                 <div class="dropdown-divider"></div>
@@ -73,16 +88,16 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle override ml-md-0" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle override ml-md-0" href="#" id="navDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Features<i class="fa fa-sm fa-angle-down ml-1"></i>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navDropdown">
+              <div class="dropdown-menu" aria-labelledby="navDropdown2">
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
                 <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-bars mr-3"></i>E&hybull;Lodgement</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-university mr-1">&ensp;</i>SPLUMA Workflow</a>
               </div>
-            </li>
+            </li> -->
           </ul>
 
           <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
@@ -167,7 +182,7 @@
               <h3 class="display-4 condensed-1 text-dark fat text-center">A spatial planning information system.</h3>
           </div>
           <div class="cardbody text-center mx-md-4 p-2">
-            <p class="h3 text-dark ml-md-2 leading-3">
+            <p class="h3 textdark ml-md-2 leading-3">
               The <span class="condensed-1 fw-800">NSPDR</span> <span class="fw-700">Ecosystem</span> will enable sharing of spatial planning information across all spheres of government and the private sector and will support key objectives of the NDP.
             </p>
             <!-- <hr class="space-1"> -->
