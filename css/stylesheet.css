@@ -382,7 +382,6 @@ ul.statement > li {
 #legalese h2 {
   color: #666;
   font-weight: 600;
-  margin-left: -.75rem;
   margin-bottom: 1.25rem; }
 #legalese ol {
   list-style-type: none;
@@ -1261,21 +1260,14 @@ ul.scroller li {
 /* .text-rural { color: #a62 !important; } */
 .text-rural { color: #b91 !important; }
 .text-geois { color: #375 !important; }
-.text-dimgrey { color: #4d4d4d !important; }
+.text-dimgrey   { color: #4d4d4d !important; }
 
-/*
-.black { color: #000; }
-.near-black { color: #111; }
-.dark-grey { color: #333; }
-.mid-grey { color: #555; }
-.grey { color: #777; }
-.silver { color: #999; }
-.light-silver { color: #aaa; }
-.moon-grey { color: #ccc; }
-.light-grey { color: #eee; }
-.near-white { color: #f4f4f4; }
-.white { color: #fff; }
-*/
+.text-darkgrey  { color: #333; }
+.text-midgrey   { color: #666; }
+.text-grey      { color: #999; }
+.text-moongrey  { color: #aaa; }
+.text-silver    { color: #ccc; }
+.text-lightgrey { color: #eee; }
 
 .c-purple { color: #6d2da6; }
 .c-plum   { color: #b22962; }
