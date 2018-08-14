@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
 	<head>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359766-1"></script>
+		<script>
+			// Google Analytics - site tag (gtag.js)
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-123359766-1');
+		</script> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <meta name="description" content="National Spatial Planning Data Repository"> -->
-    <meta name="keywords" content="NSPDR, E-Lodgement, SPLUMA, Ecosystem">
-    <meta name="author" content="Jonathan Cleary">
+    <meta name="description" content="the National Spatial Planning Data Repository">
+    <meta name="keywords" content="NSPDR, E-Lodgement, SPLUMA, Ecosystem, DRDLR">
+    <meta name="author" content="Agizo Solutions on behalf of the DRDLR">
 
     <title>NSPDR&ensp;|&ensp;Terms of Use</title>
-
+    <script>
+      (function(){
+        // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
+        var d = document, e = d.documentElement, s = d.createElement('style');
+        if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+          s.textContent = 'body{visibility:hidden}';
+          var r = document.getElementsByTagName('script')[0];
+          r.parentNode.insertBefore(s, r);
+          function f(){ s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load',f,false);
+          setTimeout(f,3000);
+        }
+      })();
+    </script>
     <link rel="icon" href="../img/fluidicon.png">
     <link rel="stylesheet" href="../css/typeface.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -19,6 +40,7 @@
 	</head>
   <body id="top" class="bg-linear pt-0">
 
+    <!-- BANNER -->
     <header class="container-fluid bg-white">
       <div class="container">
         <div class="row p-2">
@@ -28,6 +50,7 @@
       </div>
     </header>
 
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark navbar-shadow">
       <div class="container">
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
@@ -55,7 +78,7 @@
                 <div class="dropdown-header"><small class="fw-300">Main Features</small></div>
 								<div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &nbsp;&dagger;</a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &dagger;</a>
                 <div class="dropdown-divider --alt"></div>
                 <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA</a>
               </div>
@@ -69,36 +92,16 @@
             <a class="btn btn-outline-light opaque-75 mr-1 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i>&nbsp;</a>
           </form>
         </div>
-
-        <!-- <div class="collapse navbar-collapse" id="navigator">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
-              <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <a class="dropdown-item" href="ecosystem.html">Data Repository</a>
-                <a class="dropdown-item" href="elodgement.html">E&hybull;Lodgement</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="workflow.html">SPLUMA</a>
-                <a class="dropdown-item disabled" href="example.html">More...</a>
-              </div>
-            </li>
-          </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <a class="btn btn-outline-light opaque-75 mr-2 my-3 my-sm-0" href="contact.html#input-form">Contact Us</a>
-          </form>
-        </div> -->
       </div>
     </nav>
 
     <!-- HERO -->
-    <section class="page-header --small header-filter clear-filter base-filter mask-25 rellax" 
-			data-rellax-speed="-4" style="background-image:url(../img/urban/interchange-1280x720.jpg)">
+    <section class="page-header --small header-filter clear-filter basefilter mask-25 rellax" 
+			data-rellax-speed="-4" style="background-image:url('../img/urban/interchange-1280x720.jpg')">
     </section>
 
 
+    <!-- MAIN -->
     <main class="nspdr-background --raised --alt2 top-brown">
 
       <section id="legalese" class="segment pt-4 pt-sm-5">
@@ -131,7 +134,7 @@
 
 		          <!-- <h3>Terms &amp; Conditions</h3> -->
 		          <h3>Terms and Conditions</h3>
-		          <ol style="color:#666;">
+		          <ol style="color:#555;">
 
 		            <li class="h5">Terms
 		              <ol class="para mt-2">
