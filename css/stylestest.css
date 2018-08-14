@@ -550,8 +550,11 @@ a.text-nspdr4:hover {
 }
 
 
+.mask-10 {
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 5%);
+  mask-image: linear-gradient(to top, transparent 0%, black 5%); }
 .mask-20 {
-  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 20%);
+  -webkit-mask-image: linear-gradient(to top, transparent 5%, black 20%);
   mask-image: linear-gradient(to top, transparent 5%, black 20%); }
 .mask-25 {
   -webkit-mask-image: linear-gradient(to top, transparent 5%, black 25%);
@@ -1380,16 +1383,16 @@ ul.underline-on-hover li a:hover::after {
 	color: #111;
 }
 .tabs > :checked + label:nth-of-type(1) {
-	border-bottom-color: #e46;
+	border-bottom-color: #163;
 }
 .tabs > :checked + label:nth-of-type(2) {
-	border-bottom-color: #cc3;
+	border-bottom-color: #887;
 }
 .tabs > :checked + label:nth-of-type(3) {
-	border-bottom-color: #6b4;
+	border-bottom-color: #985;
 }
 .tabs > :checked + label:nth-of-type(4) {
-  border-bottom-color: #6ac;
+  border-bottom-color: #a62;
 }
 .tabs > :checked + label + div {
   -webkit-box-sizing: border-box;

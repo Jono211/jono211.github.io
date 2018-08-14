@@ -296,6 +296,9 @@ $(document).ready(function() {
 })(jQuery);
 
 
+// $(document).ready(function() {
+	// $(window).stellar();
+// });
 
 // $(document).ready(function() {
 //   var timer = 0;

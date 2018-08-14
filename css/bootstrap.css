@@ -3036,8 +3036,9 @@ input[type='submit'].btn-block {
 }
 .dropdown-item.active:hover,
 .dropdown-item:active:hover {
-  color: #918449;
-  background-color: #e9ecef;
+  /* color: #918449; */
+  color: #763;
+  background-color: #bcd;
 }
 .dropdown-item.disabled,
 .dropdown-item:disabled {
@@ -5598,7 +5599,7 @@ button.close {
   position: absolute;
   right: 0;
   /* bottom: 10px; */
-  bottom: 50px;
+  bottom: 60px;
   left: 0;
   z-index: 15;
   display: -ms-flexbox;

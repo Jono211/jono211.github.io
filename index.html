@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
-  <head>
+	<head>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359766-1"></script>
+		<script>
+			// Google Analytics - site tag (gtag.js)
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-123359766-1');
+		</script> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,6 +17,20 @@
     <meta name="author" content="Agizo Solutions on behalf of the Department of Rural Development and Land Reform">
 
     <title>NSPDR Ecosystem</title>
+    <script>
+      (function(){
+        // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
+        var d = document, e = d.documentElement, s = d.createElement('style');
+        if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+          s.textContent = 'body{visibility:hidden}';
+          var r = document.getElementsByTagName('script')[0];
+          r.parentNode.insertBefore(s, r);
+          function f(){ s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load',f,false);
+          setTimeout(f,3000);
+        }
+      })();
+    </script>
     <link rel="icon" href="img/fluidicon.png">
     <link rel="stylesheet" href="css/typeface.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -18,11 +40,10 @@
 	</head>
   <body id="top" class="bg-linear">
 
-    <nav class="scrolling scrolling--below navbar navbar-expand-md navbar-dark fixed-top" data-scrolling-offset="411">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling scrolling--below" data-scrolling-offset="411">
       <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-nspdr drop-shadow"> -->
       <div class="container">
-        <!-- <a class="navbar-brand" href="#top" title="National Spatial Planning Data Repository"><span class="hashtag">#</span>NSPDR</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> -->
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
           <img class="png-shadow pb-1" src="img/logos/acronym-light256.png" alt="NSPDR Ecosystem">
         </a>
@@ -37,42 +58,41 @@
             <li class="nav-item active"><a class="nav-link" href="#top">Home<span class="sr-only">(current)</span></a></li>
             <li class="nav-item"><a class="nav-link px-md-2" href="docs/newsblog.html">News</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle override" href="#" id="navAboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navAboutMenu">
-                <a class="dropdown-item" href="docs/about.html"><i class="fa fa-sm fa-cog mr-3"></i>About <small class="fw-600">NSPDR</small></a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="docs/about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
-                <a class="dropdown-item" href="docs/about.html#some-questions"><i class="fa fa-sm fa-question mr-3"></i>&nbsp;Your Questions ?</a>
-              </div>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <div class="dropdown-header"><small class="fw-300">Learn More</small></div><div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="docs/about.html"><i class="fa fa-sm fa-cog mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="docs/about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Links</a>
+                <a class="dropdown-item" href="docs/about.html#some-questions"><i class="fa fa-sm fa-question-circle mr-3"></i>Your Questions ?</a>
+              <!-- </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle override ml-md-0" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle override ml-md-0" href="#" id="navDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Features<i class="fa fa-sm fa-angle-down ml-2"></i>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navDropdown">
+              <div class="dropdown-menu" aria-labelledby="navDropdown2"> -->
+                <div class="dropdown-header"><small class="fw-300">Main Features</small></div><div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="docs/ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
-                <a class="dropdown-item" href="docs/elodgement.html"><i class="fa fa-sm fa-bars mr-3"></i>E&hybull;Lodgement &dagger;</a>
-                <div class="dropdown-divider"></div>
-                <!-- <a class="dropdown-item" href="docs/workflow.html"><i class="fa fa-sm fa-university mr-2 pr-1"> </i> SPLUMA Workflow</a> -->
-                <a class="dropdown-item" href="docs/workflow.html"><i class="fa fa-sm fa-university mr-1">&ensp;</i>Enabling SPLUMA</a>
+                <a class="dropdown-item" href="docs/elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &dagger;</a>
+                <div class="dropdown-divider --alt"></div>
+                <a class="dropdown-item" href="docs/workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA</a>
+                <!-- <a class="dropdown-item" href="docs/workflow.html"><i class="fa fa-sm fa-university mr-1">&ensp;</i>Enabling SPLUMA</a> -->
               </div>
             </li>
           </ul>
 
           <form class="form-inline mt-2 mt-md-0">
-            <!-- <a class="btn btn-outline-success mr-2 my-3 my-sm-0" href="docs/contact.html">&nbsp;GET IN TOUCH&nbsp;</a> -->
-            <!-- <a class="btn btn-outline-warning mr-2 my-3 my-sm-0" href="docs/contact.html">&nbsp;GET IN TOUCH&nbsp;</a> -->
-            <a class="btn btn-outline-warning mr-2 my-3 my-sm-0" href="docs/contact.html">GET IN TOUCH<i class="fa fa-sm fa-phone ml-2"></i></a>
-            <!-- <a class="btn btn-outline-warning mr-2 my-3 my-sm-0" href="docs/contact.html">Contact<i class="fa fa-sm fa-phone ml-1"></i></a> -->
+            <a class="btn btn-outline-warning fw-600 my-3 my-sm-0" href="docs/contact.html">GET IN TOUCH<i class="fa fa-sm fa-phone ml-2"></i></a>
+            <!-- <a class="btn btn-outline-warning fw-600 my-3 my-sm-0" href="docs/contact.html">Contact<i class="fa fa-sm fa-phone ml-1"></i></a> -->
           </form>
         </div>
       </div>
     </nav>
 
-    <section class="carousel-hero mask-20" style="position:relative;top:0px!important;z-index:1;margin-top:-55px!important;">
-      <!-- CAROUSEL-HEADER -->
+    <!-- CAROUSEL-HERO -->
+    <section class="carousel-hero mask-10" style="position:relative;top:0px!important;z-index:1;margin-top:-48px!important;">
       <div id="slideCarousel" class="carousel slide drop-shadow" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#slideCarousel" data-slide-to="0" class="active"></li>
@@ -126,7 +146,7 @@
           </div>
 
           <div class="carousel-item">
-            <div id="slide-flag1" class="fifth-slide">
+            <div id="slide-flag3" class="fifth-slide">
             </div>
             <div class="container">
               <div class="carousel-caption text-right">
@@ -149,15 +169,17 @@
     </section>
 
 
-    <!-- <main role="main" class=""> -->
-    <main class="nspdr-main altX --raised top-line" id="rdpsn" style="margin-top:-45px!important;">
+    <!-- MAIN-CONTENT -->
+    <!-- <main class="nspdr-main altX --raised top-line" id="rdpsn" style="margin-top:-45px!important;"> -->
+    <main class="nspdr-background --raised --alt1 top-brown" style="margin-top:-60px!important;">
 
-      <!-- marketing messaging and featurettes
-      ======================================== -->
+      <!-- marketing messaging
+      ======================== -->
       <section id="portfolio" class="portfolio">
-        <hr class="space-4">
+        <hr class="space-6">
         <div class="container marketing">
           <div class="row">
+
             <div class="col-lg-4">
               <img class="rounded-circle shadow" src="img/logos/nspdr-500x500.png" width="180px" height="180px" alt="NSPDR Ecosystem">
               <h2 class=""><br>Spatial Data</h2>
@@ -166,8 +188,8 @@
                 Source datasets and models derived from spatial data provided by base data custodians, <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout04">SDF</a> guidelines, as well as the E&NoBreak;-&NoBreak;Lodgement application layer, can be used to design customised data models, validations and a whole lot more.
               </p>
               <p>
-                <a class="btn btnlg btn-pill btn-outline-nspdr1 btn-shadow fat mt-3" href="docs/ecosystem.html#spatial-data" role="button">
-                  Available datasets <i class="fa fa-sm fa-angle-double-right ml-2"></i>
+                <a class="btn btn-pill btn-outline-nspdr1 btn-shadow fw-700 mt-3" href="docs/ecosystem.html#spatial-data" role="button" style="font-size:1.15rem;">
+                  Available datasets<i class="fa fa-sm fa-angle-double-right ml-2"></i>
                 </a>
               </p>
               <div class="empty-space --single show-on-laptop"></div>
@@ -181,24 +203,23 @@
                 The portal hosts and contains an amazing variety of advanced <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout05">GIS</a> tools and functions. The portal will be the main place where users can access various web maps, mapping services, metadata, and E&NoBreak;-&NoBreak;Lodgement amongst others.
               </p>
               <p>
-                <a class="btn btnlg btn-pill btn-outline-nspdr2 btn-shadow fat mt-3" href="docs/ecosystem.html#geo-tools" role="button">
-                  Tools and features <i class="fa fa-sm fa-angle-double-right ml-2"></i>
+                <a class="btn btnlg btn-pill btn-outline-nspdr2 btn-shadow fw-700 mt-3" href="docs/ecosystem.html#geo-tools" role="button" style="font-size:1.15rem;">
+                  Tools and features<i class="fa fa-sm fa-angle-double-right ml-2"></i>
                 </a>
               </p>
               <div class="empty-space --single show-on-laptop"></div>
             </div>
 
             <div class="col-lg-4">
-              <img class="rounded-circle shadow" src="img/logos/nspdr-500x500.png" width="180px" height="180px" alt="NSPDR Ecosystem">
+              <img class="rounded-circle shadow" src="img/logos/nspdr-256x256.png" width="180px" height="180px" alt="NSPDR Ecosystem">
               <h2 class=""><br>E-Learning</h2>
               <div class="special-divider mx-4"></div>
               <p class="text-tertiary lead mx-3">
                 This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.
               </p>
               <p>
-                <a class="btn btnlg btn-pill btn-outline-nspdr3 btn-shadow fat mt-3" href="docs/ecosystem.html#e-learning" role="button">
-                  Training platform <i class="fa fa-sm fa-angle-double-right ml-2"></i>
-                  <!-- Training platform &raquo; -->
+                <a class="btn btn-pill btn-outline-nspdr3 btn-shadow fw-700 lead mt-3" href="docs/ecosystem.html#e-learning" role="button" style="font-size:1.15rem;">
+                  Training platform<i class="fa fa-sm fa-angle-double-right ml-2"></i>
                 </a>
               </p>
               <!-- <div class="empty-space --single d-none d-lg-block"></div> -->
@@ -209,17 +230,15 @@
 
           <div class="row">
             <div class="col-lg-11 mx-auto">
-              <h2 class="display-3 condensed-2 fw-600 ml-1">responsive design&nbsp;&nbsp;&gt;</h2>
-              <!-- <h2 class="featurette-heading ml-1">Available on multiple platforms&nbsp;&gt;</h2> -->
+              <h2 class="display-3 condensed-2 fw-600 ml-1">responsive design&nbsp;&nbsp;&gt;&gt;&gt;</h2>
               <div class="empty-space --half"></div>
             </div>
             <div class="col-lg-11 mx-auto align-self-center">
               <img class="img-fluid png-raised" src="img/uiux/responsive.png" alt="NSPDR User Interface">
-              <!-- <img class="img-fluid" src="img/uiux/nspdr-responsive.png" alt="NSPDR User Interface"> -->
             </div>
             <div class="col-lg-11 mx-auto text-right">
               <div class="empty-space --half"></div>
-              <h2 class="featurette-heading text-muted fw-600 mr-1">&gt;&ensp;PCs,&nbsp;laptops, tablets and&nbsp;phones</h2>
+              <h2 class="featurette-heading text-muted fw-600 mr-1">&gt;&gt;&gt;&ensp;PCs,&nbsp;laptops, tablets and&nbsp;phones</h2>
             </div>
           </div>
         </div> <!-- /.container .marketing -->
@@ -228,7 +247,6 @@
       </section>
 
       <section id="call-to-action" class="bg-background rounded" style="background-image:url(img/bg-litegrey.svg);">
-        <hr class="space-2">
         <!-- primary call to action
         =========================== -->
         <div class="start-of-page">
@@ -269,9 +287,15 @@
                 </table>
               </div>
             </div>
+            <hr class="space-4">
+            <div class="row text-right">
+              <div class="col">
+                <a href="docs/workflow.html#spluma-countdown" class="h4 text-nspdr1"><small class="fw-600">SPLUMA</small>’s count-down &gt;</a>
+              </div>
+            </div>
           </div>
         </div>
-        <hr class="space-3">
+        <!-- <hr class="space-2"> -->
       </section>
 
       <hr class="featurette-divider mx-5">
