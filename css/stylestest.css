@@ -290,24 +290,25 @@ a.text-nspdr4:hover {
 
 /* =========================================== */
 
+.browser-icon {
+  width: 64px;
+  height: 100%;
+}
 .icon-100 {
   width: 100px;
   height: auto;
-  /* height: 100%; */
 }
 .icon-125 {
   width: 125px;
   height: auto;
-  /* height: 100%; */
 }
 .icon-150 {
   width: 150px;
   height: auto;
-  /* height: 100%; */
 }
-.browser-icon {
-  width: 64px;
-  height: 100%;
+.icon-175 {
+  width: 175px;
+  height: auto;
 }
 
 .db-block .db-box {
