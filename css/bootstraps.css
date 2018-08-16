@@ -4,63 +4,84 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+/*
+	stylesheet | san francisco | pro display | font-family
+	http://nspdr.info/wwwroot/css/fonts/SFProDisplay-[weight].[format]
+*/
+
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('fonts/SFProDisplay-Heavy.woff2') format('woff2'),
+			 url('fonts/SFProDisplay-Heavy.woff') format('woff');
+			 /* url('fonts/SFProDisplay-Heavy.ttf') format('truetype'); */
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('fonts/SFProDisplay-Bold.woff2') format('woff2'),
+			 url('fonts/SFProDisplay-Bold.woff') format('woff');
+			 /* url('fonts/SFProDisplay-Bold.ttf') format('truetype'); */
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+			 url('fonts/SFProDisplay-Semibold.woff') format('woff');
+			 /* url('fonts/SFProDisplay-Semibold.ttf') format('truetype'); */
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('fonts/SFProDisplay-Medium.woff2') format('woff2'),
+			 url('fonts/SFProDisplay-Medium.woff') format('woff');
+			 /* url('fonts/SFProDisplay-Medium.ttf') format('truetype'); */
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('fonts/SFProDisplay-Regular.woff2') format('woff2'),
+			 url('fonts/SFProDisplay-Regular.woff') format('woff');
+			 /* url('fonts/SFProDisplay-Regular.ttf') format('truetype'); */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('fonts/SFProDisplay-Light.woff2') format('woff2'),
+			 url('fonts/SFProDisplay-Light.woff') format('woff');
+			 /* url('fonts/SFProDisplay-Light.ttf') format('truetype'); */
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('fonts/SFProDisplay-Thin.woff2') format('woff2'),
+			 url('fonts/SFProDisplay-Thin.woff') format('woff');
+			 /* url('fonts/SFProDisplay-Thin.ttf') format('truetype'); */
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SF Pro Display';
+	src: url('fonts/SFProDisplay-Ultralight.woff2') format('woff2'),
+			 url('fonts/SFProDisplay-Ultralight.woff') format('woff');
+			 /* url('fonts/SFProDisplay-Ultralight.ttf') format('truetype'); */
+	font-weight: 100;
+	font-style: normal;
+}
+
 :root {
-  /* --nspdr1: #052;
-  --nspdr2: #ea1;
-  --nspdr: #153;
-  --blue: #17f;
-  --indigo: #61e;
-  --purple: #74b;
-  --pink: #e48;
-  --red: #d34;
-  --orange: #f71;
-  --yellow: #fb1;
-  --green: #3a4;
-  --teal: #2c9;
-  --cyan: #29b;
-  --white: #fff;
-  --gray: #678;
-  --gray-dark: #345;
-  --primary: #17f;
-  --secondary: #678;
-  --success: #3a4;
-  --info: #2aa;
-  --warning: #fb1;
-  --danger: #d34;
-  --light: #f5f5f5;
-  --dark: #345; */
-  --nspdr: #115b2a;
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;  /* phones */
   --breakpoint-md: 768px;  /* tablets */
   --breakpoint-lg: 992px;  /* desktops */
   --breakpoint-xl: 1200px; /* hd-screen */
-  /* --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, 'Segoe UI', Roboto, Arial, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; */
 }
-
 *,
 ::after,
 ::before {
@@ -85,8 +106,6 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 }
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; */
   font-family: 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   /* font-weight: 400; */
@@ -109,7 +128,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
 }
 p {
-  /* font-size: 1.1rem; */
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -167,7 +185,6 @@ sub {
   bottom: -.25em;
 }
 sup {
-  /* top: -.5em; */
   top: -.75rem;
 }
 a {
@@ -338,8 +355,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
-  /* line-height: 1.1; */
-  /* color: inherit; */
   color: #5a5a5a;
 }
 .h1, h1 {
@@ -371,21 +386,18 @@ h1, h2, h3, h4, h5, h6 {
 .display-2 {
   font-size: 5.5rem;
   font-weight: 300;
-  /* line-height: 1.2; */
   line-height: .9;
   letter-spacing: -.3rem;
 }
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
-  /* line-height: 1.2; */
   line-height: 1;
   letter-spacing: -.2rem;
 }
 .display-4 {
   font-size: 3.5rem;
   font-weight: 300;
-  /* line-height: 1.2; */
   line-height: 1;
   letter-spacing: -.1rem;
 }
@@ -399,15 +411,12 @@ hr {
   margin-bottom: 1rem; */
   margin: 1rem 0;
   border: 0;
-  /* border-top: 1px solid rgba(0, 0, 0, .1); */
   border-top: 1px solid rgba(0, 0, 0, .2);
 }
 
 .small, small {
   /* font-size: 80%; */
-  /* font-size: 85%; */
   font-size: 90%;
-  /* font-weight: 400; */
   font-weight: 500;
 }
 .mark, mark {
@@ -455,10 +464,8 @@ hr {
 .img-thumbnail {
   padding: .25rem;
   background-color: #fff;
-  /* background-color: #eee; */
   /* border: 1px solid #dee2e6; */
   border: 1px solid #ced4da;
-  /* border: 1px solid #a2a9b0; */
   border-radius: .25rem;
   max-width: 100%;
   height: auto;
@@ -2051,16 +2058,12 @@ select.form-control-lg:not([size]):not([multiple]) {
   background-color: rgba(220, 53, 69, .8);
   border-radius: .2rem;
 }
-/* .custom-select.verify:invalid,
-.form-control.verify:invalid, */
 .custom-select.is-invalid,
 .form-control.is-invalid,
 .was-validated .custom-select:invalid,
 .was-validated .form-control:invalid {
   border-color: #dc3545;
 }
-/* .custom-select.verify:invalid:focus,
-.form-control.verify:invalid:focus, */
 .custom-select.is-invalid:focus,
 .form-control.is-invalid:focus,
 .was-validated .custom-select:invalid:focus,
@@ -3078,12 +3081,6 @@ input[type='submit'].btn-block {
   border-top-style: dashed;
 } */
 .dropdown-divider.--alt {
-  /* margin-top: 0;
-  margin-bottom: 0; */
-  /* margin-top: .5rem; */
-  /* margin: .25rem 1rem; */
-  /* margin: 0 1rem; */
-  /* margin: .5rem 1rem .25rem; */
   border-top: .125rem dotted #ddd !important;
 }
 
@@ -3670,9 +3667,6 @@ input[type='submit'].btn-block {
   display: block;
   /* padding: .5rem 1rem; */
   padding: .25rem 1rem;
-  /* padding: .5rem 1rem .375rem; */
-  /* padding-top: .05rem; */
-  /* padding-bottom: .05rem; */
 }
 .nav-link:focus,
 .nav-link:hover {
@@ -3766,12 +3760,9 @@ input[type='submit'].btn-block {
 }
 .navbar-brand {
   display: inline-block;
-  /* padding-top: .3125rem; */
-  /* padding-bottom: .3125rem; */
   padding-top: .125rem;
   padding-bottom: .125rem;
   margin-right: 1rem;
-  /* font-size: 1.33rem; */
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: -.05rem;
@@ -4039,12 +4030,10 @@ input[type='submit'].btn-block {
   display: none;
 }
 .navbar-light .navbar-brand {
-  /* color: rgba(0, 0, 0, .9); */
   color: rgba(51, 51, 51, .9);
 }
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
-  /* color: rgba(0, 0, 0, .75); */
   color: rgba(0, 0, 0, .6);
 }
 .navbar-light .navbar-nav .nav-link {
@@ -4595,8 +4584,6 @@ input[type='submit'].btn-block {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 1.5rem;
-  /* background-color: #e9ecef; */
-  /* background-color: #dae0e5; */
   background-color: #c4d2cd;
   /* border-radius: .3rem; */
 }
@@ -5160,9 +5147,6 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol'; */
   font-family: 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -5272,9 +5256,6 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol'; */
   font-family: 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;

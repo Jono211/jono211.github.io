@@ -9,17 +9,29 @@
     <meta name="author" content="Jonathan Cleary">
 
     <title>NSPDR&ensp;|&ensp;Contact Us</title>
+    <script>
+      (function(){
+        // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
+        var d = document, e = d.documentElement, s = d.createElement('style');
+        if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+          s.textContent = 'body{visibility:hidden}';
+          var r = document.getElementsByTagName('script')[0];
+          r.parentNode.insertBefore(s, r);
+          function f(){ s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load',f,false);
+          setTimeout(f,3000);
+        }
+      })();
+    </script>
     <link rel="icon" href="../img/fluidicon.png">
-
-    <link rel="stylesheet" href="../css/typeface.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstraps.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="stylesheet" href="../css/stylestest.css">
 		<link rel="stylesheet" href="../css/fa/css/all.css">
 	</head>
   <body id="top" class="pt-0 bg-smoke">
 
-    <!-- HEADER -->
+    <!-- BANNER -->
     <header class="container-fluid bg-white">
       <div class="container">
         <div class="row p-2">
@@ -29,11 +41,11 @@
       </div>
     </header>
 
-    <!-- NAVIGATION -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-light sticky-top bg-drdlr drop-shadow">
       <div class="container">
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
-          <img class="png-shadow pb-1" src="../img/logos/acronym-grey100.png" alt="NSPDR Ecosystem">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-grey256.png" alt="NSPDR Ecosystem">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
           <span class="navbar-toggler-icon override">

@@ -17,10 +17,22 @@
 		<link rel="preload" href="../css/fonts/SFProDisplay-Thin.woff2" as="font" type="font/woff2" crossorigin/> -->
 
     <title>NSPDR&ensp;|&ensp;What’s It About?</title>
-
+    <script>
+      (function(){
+        // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
+        var d = document, e = d.documentElement, s = d.createElement('style');
+        if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+          s.textContent = 'body{visibility:hidden}';
+          var r = document.getElementsByTagName('script')[0];
+          r.parentNode.insertBefore(s, r);
+          function f(){ s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load',f,false);
+          setTimeout(f,3000);
+        }
+      })();
+    </script>
     <link rel="icon" href="../img/fluidicon.png">
-    <link rel="stylesheet" href="../css/typeface.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstraps.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="stylesheet" href="../css/stylestest.css">
 		<link rel="stylesheet" href="../css/fa/css/all.css">
@@ -50,7 +62,6 @@
         <div class="collapse navbar-collapse" id="navigator">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <!-- <li class="nav-item"><a class="nav-link px-md-2" href="news.html">News</a></li> -->
             <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
             <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -125,10 +136,7 @@
 
     <!-- HERO -->
     <section class="page-header header-filter clear-filter teal-filter darkfilter mask-25 rellax" data-rellax-speed="-5" style="background-image:url('../img/view/sani-pass-1440x960.jpg')">
-      <!-- <section class="hero page-header mask-25" data-parallax="true" style="background-image:url(../img/view/oceania-1200x799.jpg)"> -->
-      <!-- <div class="hero-inner" id="bg-interchange"> -->
-      <!-- <div class="hero-inner" id="bg-johannesburg"> -->
-      <!-- <div class="hero-inner"> -->
+      <!-- <section class="hero page-header mask-25" data-parallax="true" style="background-image:url('../img/view/oceania-1200x799.jpg')"> -->
         <div class="container">
           <div class="row mx-auto">
             <div class="col-lg10 col-md-11 col-12 mx-auto mt-5 pt-5 pull-mdup rellax" data-rellax-speed="0">
@@ -145,12 +153,10 @@
             <!-- <hr class="space-4"> -->
           </div>
         </div>
-      <!-- </div> -->
     </section>
 
 
     <main class="nspdr-main --raised top-line2" id="rdpsn">
-      <!-- <div class="container-fluid watermark"> -->
       <div class="container">
 
         <!-- <div class="card cardpanel-shadow top-brown mb-4 rellax" data-rellax-speed="-3.33" style="margin-top:-125px!important;">
@@ -171,7 +177,7 @@
               <!-- What’s It All About? -->
                 All About the Ecosystem
             </h2>
-            <div class="special-divider mx-auto w-75 mt3 mb0 my-5"></div>
+            <div class="special-divider mx-auto w-75 my-5"></div>
             <!-- <hr class="space-2"> -->
               <h3 class="display-4 condensed-1 text-dark fat text-center">A spatial planning information system.</h3>
           </div>
@@ -531,8 +537,6 @@
         <hr class="space-6">
 
       </div> <!-- /.container -->
-
-      <!-- </div> -->
     </main>
 
 
@@ -577,8 +581,8 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/custom.js"></script>
     <script src="../js/rellax.min.js"></script>
+    <script src="../js/custom.js"></script>
     <script>
       // Accepts any class name
       var rellax = new Rellax('.rellax');
