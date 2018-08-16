@@ -294,6 +294,10 @@ a.text-nspdr4:hover {
   width: 64px;
   height: 100%;
 }
+.icon-50 {
+  width: 50px;
+  height: auto;
+}
 .icon-100 {
   width: 100px;
   height: auto;
@@ -303,7 +307,8 @@ a.text-nspdr4:hover {
   height: auto;
 }
 .icon-150 {
-  width: 150px;
+  /* width: 150px; */
+  max-width: 150px;
   height: auto;
 }
 .icon-175 {
@@ -480,12 +485,12 @@ a.text-nspdr4:hover {
 
 .card.curved-bezier {
   position: relative;
-  background-color: rgba(123,123,123,.123);
-  transition: background-color .3s ease-in;
+  /* background-color: rgba(123,123,123,.123);
+  transition: background-color .3s ease-in; */
   box-shadow: 0 .3125rem .1875rem rgba(0,0,0,.12),
               0 .0625rem .125rem rgba(0,0,0,.24); }
-.card.curved-bezier:hover {
-  background-color: #fff !important; }
+/* .card.curved-bezier:hover {
+  background-color: #fff !important; } */
 
 .card.curved-bezier::after {
   content: '';
@@ -514,6 +519,17 @@ a.text-nspdr4:hover {
 }
 .card.cardpanel-raised:hover {
   box-shadow: 0 1.6875rem 1.5rem -.875rem rgba(0,0,0,.33),
+              0 2.875rem 4.8125rem 0 rgba(0,0,0,.22);
+}
+
+.card.panel-raised {
+  /* border: .05rem solid rgba(0,0,0,.1); */
+  box-shadow: 0 .3125rem .1875rem rgba(0,0,0,.12),
+              0 .0625rem .125rem rgba(0,0,0,.24);
+  transition: all .3s cubic-bezier(.55,.44,.44,.55);
+}
+.card.panel-raised:hover {
+  box-shadow: 0 1.6875rem 1.5rem -.875rem,
               0 2.875rem 4.8125rem 0 rgba(0,0,0,.22);
 }
 
@@ -1589,6 +1605,97 @@ ol.roman li::before {
     border: 1px solid blue; }
 
 
+/* boomerang-uikit
+----------------------------- */
+/* .body-backdrop {
+  position: fixed;
+  top: 0;left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1040;
+} */
+.card-img-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  background-size: cover;
+  border-radius: .125rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all .7s cubic-bezier(.2,1,.22,1);
+  transition: all .7s cubic-bezier(.2,1,.22,1);
+}
+/* .card .card-img-bg {
+  overflow: hidden !important;
+  border: 0;
+} */
+.card:hover .card-img-bg {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+.card-img-bg ~ .card-body {
+  position: relative;
+  min-height: 400px;
+}
+
+.overflow-visible {
+  overflow: visible !important;
+}
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+/* .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.alpha-1,
+.alpha-container:hover .alpha-1--hover {
+  opacity: .1;
+}
+.alpha-2,
+.alpha-container:hover .alpha-2--hover {
+  opacity: .2;
+}
+.alpha-3,
+.alpha-container:hover .alpha-3--hover {
+  opacity: .3;
+}
+.alpha-4,
+.alpha-container:hover .alpha-4--hover {
+  opacity: .4;
+}
+.alpha-5,
+.alpha-container:hover .alpha-5--hover {
+  opacity: .5;
+}
+.alpha-6,
+.alpha-container:hover .alpha-6--hover {
+  opacity: .6;
+}
+.alpha-7,
+.alpha-container:hover .alpha-7--hover {
+  opacity: .7;
+}
+.alpha-8,
+.alpha-container:hover .alpha-8--hover {
+  opacity: .8;
+}
+.alpha-9,
+.alpha-container:hover .alpha-9--hover {
+  opacity: .9;
+} */
+
+
+
+
 
 /* ----------------------------------------------
 * Title: 			NSPDR Ecosystem CSS
@@ -1645,7 +1752,6 @@ misc
 */
 
 
-
 /* fluid-text
 ---------------------------------------------- */
 /* html {
@@ -1666,7 +1772,6 @@ html { font-size: calc(.13em + 1vw); }
 @media (min-width: 1200px) {
   html { font-size: calc(.18em + 1vw); }
 } */
-
 
 /* html { font-size: calc(.16rem + 1vw); }
 @media screen and (max-width: 768px) { html { font-size: calc(.14rem + 1.5vw); } }
