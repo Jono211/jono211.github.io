@@ -55,6 +55,7 @@ footer#footer:not(.end-of-page) {
   padding-bottom: 3rem;
 }
 
+.w-99 { width: 99%; }
 .w-90 { width: 90%; }
 .w-67 { width: 67%; }
 

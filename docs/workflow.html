@@ -32,14 +32,14 @@
       })();
     </script>
     <link rel="icon" href="../img/fluidicon.png">
-    <link rel="stylesheet" href="../css/typeface.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstraps.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="stylesheet" href="../css/stylestest.css">
 		<link rel="stylesheet" href="../css/fa/css/all.css">
 		<!--[if lt IE 9]>
 			<script src="../js/html5shiv.min.js"></script>
 		<![endif]-->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 	</head>
   <body id="top" class="bg-linear pt-0">
 
@@ -84,7 +84,7 @@
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
                 <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &dagger;</a>
                 <div class="dropdown-divider --alt"></div>
-                <a class="dropdown-item active" href="#end" title="You are here!"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA<span class="sr-only">(current)</span></a>
+                <a class="dropdown-item active" href="../" title="You are here!"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA<span class="sr-only">(current)</span></a>
               </div>
             </li>
           </ul>
@@ -93,14 +93,14 @@
             <a id="display-count" title="“T”-minus" href="../index.html#countdown-to-zero">nspdr.info</a>
           </span>
           <form class="form-inline mt-2 mt-md-0 pr-1">
-            <a class="btn btn-outline-light opaque-75 mr-1 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i>&nbsp;</a>
+            <a class="btn btn-outline-light fw-600 opaque-75 mr-1 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i>&nbsp;</a>
           </form>
         </div>
       </div>
     </nav>
 
     <!-- HERO -->
-    <section class="page-header --small header-filter clear-filter base-filter mask-25 rellax" data-rellax-speed="-4" style="background-image:url('../img/view/nottinghamshire-900x600.jpg')">
+    <section class="page-header --small header-filter clear-filter base-filter mask-25 rellax" data-rellax-speed="-4" style="background-image:url('../img/urban/sowetoview-960x472.jpg')">
     <!-- <section class="page-header --small header-filter clear-filter basefilter mask-25 rellax" data-rellax-speed="-4" style="background-image:url('../img/urban/klaus-leidorf-980x551.jpg')"> -->
     </section>
 
@@ -113,16 +113,16 @@
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-11">
 		          <div class="text-center pt-4">
-		            <h1 class="showcase text-nspdr">Spatial Planning
-								<big class="text-nspdr2 fw-700"> &amp;</big></h1>
+		            <h1 class="showcase text-nspdr">spatial planning
+								<!-- <big class="text-nspdr2 fw-600 ml-1"> &amp;</big></h1> -->
+								<small class="text-nspdr2 condensed-3 fw-500"> and</small></h1>
 									<!-- <span class="textgeois hue-purple fw-800"> &plus;</span></h1> -->
 		            <!-- <h1 class="showcase text-nspdr">Spatial Planning
 									<span class="text-geois fw-600"> &amp;</span></h1> -->
-		            <h2 class="showcase text-dark">Land Use Management</h2>
+		            <h2 class="showcase text-dark">Land Use Management *</h2>
 		          </div>
 	          </div>
 	        </div>
-
 		      <div class="row justify-content-center">
 			      <div class="col-11 col-md-10">
 		          <div class="special-divider my-4"></div>
@@ -133,7 +133,6 @@
 
       <!-- <section class="segment">
 	      <div class="container">
-
 		      <div class="row justify-content-center pt-4">
 			      <div class="col-12 col-md-11">
 		          <div class="text-center pt-2">
@@ -157,11 +156,98 @@
 								SPLUMA requires that the national government must, in accordance with this Act and the Intergovernmental Relations Framework Act, develop mechanisms to support and strengthen the capacity of provinces and municipalities to adopt and implement an effective spatial planning and land use management system.<br>
 								The NSPDR Ecosystem will be a major enabler in the implementation of SPLUMA. One of the ways this will be achieved is by providing provinces and municipalities with the necessary tools and capacity building to enable SPLUMA-compliant spatial planning and land use management practices.
 							</p>
-							<hr class="space-4" id="spluma-countdown">
       	    </div>
       	  </div>
       	</div>
       </section>
+
+      <!-- <section id="call-to-action" class="bg-background" style="background-image:url(../img/bg-litegrey.svg);">
+        <hr class="space-2">
+        <div class="start-of-page">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-12 mx-auto">
+                <h2 id="countDown" class="display-4 condensed-2 fat text-secondary">SPLUMA COMPLIANCE !</h2>
+                <div class="col-md-6 mx-auto"><div class="special-divider m-3"></div></div>
+              </div>
+            </div>
+            <div class="row justify-content-center text-center">
+              <div class="col-12 col-lg-11 col-xl-10 mx-auto">
+                <table class="table table-borderless">
+                  <tbody class="mini-shadow">
+                    <tr class="display-2 condensed-3">
+                      <td id="countDays" class="text-dark fw-700">00</td>
+                      <td class="clock-splitter text-danger pl-4">:</td>
+                      <td id="countHour" class="fw-600">00</td>
+                      <td class="clock-splitter hide-on-mobile">:</td>
+                      <td id="countMins" class="hide-on-mobile fw-400">00</td>
+                      <td class="clock-splitter hide-on-laptop pr-4">:</td>
+                      <td id="countSecs" class="hide-on-laptop fw-200 text-danger text-left pl-4">00</td>
+                    </tr>
+                  </tbody>
+                  <tbody class="text-center">
+                    <tr class="h5 expanded-4 fw-300 text-dark">
+                      <td class="px-sm-4">&nbsp;DAYS</td>
+                      <td class=""></td>
+                      <td class="px-md-5">&nbsp;HRS</td>
+                      <td class="hide-on-mobile"></td>
+                      <td class="hide-on-mobile px-md-5">&nbsp;MIN</td>
+                      <td class="hide-on-laptop"></td>
+                      <td class="hide-on-laptop px-md-4">&nbsp;SEC&ensp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="space-2">
+      </section> -->
+
+      <!-- <hr class="space-4"> -->
+
+      <section class="segment pt0">
+	      <div class="container">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-11">
+							<h2 class="mb-0">
+	              <span class="text-geois fw-600">
+                  E&NoBreak;&hybull;&NoBreak;Lodgement’s phased workflow is completely aligned to <a class="pointer fw-700 text-nspdr" style="text-decoration:underline;" role="button" data-toggle="modal" data-target="#modalSPLUMA">SPLUMA</a>.
+                </span>
+	            </h2>
+	            <div class="linear-divider my-3"></div>
+						  <div class="lead">
+	              <p class="">
+                  The land development application process extends from the lodgement of a development application, also known as the administrative phase, which basically involves the submission of all relevant documents. From there it then moves into and towards the formal consideration phase, all the way to the final approval, or decision phase, and may or may not proceed to any possible appeals...
+                </p>
+	              <p class="fw-600">
+                  From the very beginning, our application was developed with SPLUMA at the centre of the design process. As such, the phased approach found within E&NoBreak;-&NoBreak;Lodgement’s workflow, is completely aligned with both the act itself, and its regulations.
+                </p>
+						  </div>
+						</div>
+					</div>
+
+	        <hr id="spluma-process" class="my-5 dark">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-11">
+		          <p class="h4 no-spacing">
+		            <span class="h4 text-tertiary fat">
+                <span class="condensed-2">E&hybull;</span>Lodgement</span>’s development application process can be conceptually viewed as follows:-
+		          </p>
+						</div>
+					</div>
+		      <div class="row justify-content-center">
+			      <div class="col-12">
+              <hr class="space-3">
+		          <!-- <div id="administrative-phase" class="float-left position-relative hidden" style="top:1200px;"></div> -->
+		          <!-- <div id="consideration-phase" class="float-left position-relative hidden" style="top:1600px;"></div> -->
+		          <img class="img-fluid rounded panel-shadow-sm border border-nspdr4" src="../img/spluma-process.png" alt="SPLUMA Process">
+		        </div>
+	        </div>
+          <hr class="space-4" id="spluma-countdown">
+      	</div>
+      </section>
+
 
       <section id="call-to-action" class="bg-background" style="background-image:url(../img/bg-litegrey.svg);">
         <hr class="space-2">
@@ -203,97 +289,10 @@
             </div>
           </div>
         </div>
-        <hr class="space-2">
-      </section>
-
-      <hr class="space-4">
-
-      <section class="segment">
-	      <div class="container">
-		      <div class="row justify-content-center">
-			      <div class="col-12 col-md-11">
-							<h2 class="mb-0">
-	              <span class="text-geois fat">
-                  E&NoBreak;&hybull;&NoBreak;Lodgement’s phased workflow is completely aligned to <a class="pointer fw-800 text-nspdr" style="text-decoration:underline;" role="button" data-toggle="modal" data-target="#modalSPLUMA">SPLUMA</a>.
-                </span>
-	            </h2>
-	            <div class="linear-divider my-3"></div>
-						  <div class="lead">
-	              <p class="">
-                  The land development application process extends from the lodgement of a development application, also known as the administrative phase, which basically involves the submission of all relevant documents. From there it then moves into and towards the formal consideration phase, all the way to the final approval, or decision phase, and may or may not proceed to any possible appeals...
-                </p>
-	              <p class="fw-600">
-                  From the very beginning, our application was developed with SPLUMA at the centre of the design process. As such, the phased approach found within E&NoBreak;-&NoBreak;Lodgement’s workflow, is completely aligned with both the act itself, and its regulations.
-                </p>
-						  </div>
-						</div>
-					</div>
-
-	        <hr id="spluma-process" class="my-5 dark">
-		      <div class="row justify-content-center">
-			      <div class="col-12 col-md-11">
-		          <p class="h4 no-spacing">
-		            <span class="h4 text-tertiary fat">
-                <span class="condensed-2">E&hybull;</span>Lodgement</span>’s development application process can be conceptually viewed as follows:-
-		          </p>
-						</div>
-					</div>
-		      <div class="row justify-content-center">
-			      <div class="col-12">
-              <hr class="space-3">
-		          <!-- <div id="administrative-phase" class="float-left position-relative hidden" style="top:1200px;"></div> -->
-		          <!-- <div id="consideration-phase" class="float-left position-relative hidden" style="top:1600px;"></div> -->
-		          <img class="img-fluid rounded panel-shadow-sm border border-nspdr4" src="../img/spluma-process.png" alt="SPLUMA Process">
-		        </div>
-	        </div>
-          <hr class="space-2">
-      	</div>
-      </section>
-
-      <!-- <section id="call-to-action" class="bg-background" style="background-image:url(../img/bg-litegrey.svg);">
-        <hr class="space-2">
-        <div class="start-of-page">
-          <div class="container">
-            <div class="row text-center">
-              <div class="col-12 mx-auto">
-                <h2 id="countDown" class="display-4 condensed-2 fat text-secondary">SPLUMA DEADLINE !</h2>
-                <div class="col-md-6 mx-auto"><div class="special-divider m-3"></div></div>
-              </div>
-            </div>
-            <div class="row justify-content-center text-center">
-              <div class="col-12 col-lg-11 col-xl-10 mx-auto">
-                <table class="table table-borderless">
-                  <tbody class="mini-shadow">
-                    <tr class="display-2 condensed-3">
-                      <td id="countDays" class="text-dark fw-700">00</td>
-                      <td class="clock-splitter text-danger pl-4">:</td>
-                      <td id="countHour" class="fw-600">00</td>
-                      <td class="clock-splitter hide-on-mobile">:</td>
-                      <td id="countMins" class="hide-on-mobile fw-400">00</td>
-                      <td class="clock-splitter hide-on-laptop pr-4">:</td>
-                      <td id="countSecs" class="hide-on-laptop fw-200 text-danger text-left pl-4">00</td>
-                    </tr>
-                  </tbody>
-                  <tbody class="text-center">
-                    <tr class="h5 expanded-4 fw-300 text-dark">
-                      <td class="px-sm-4">&nbsp;DAYS</td>
-                      <td class=""></td>
-                      <td class="px-md-5">&nbsp;HRS</td>
-                      <td class="hide-on-mobile"></td>
-                      <td class="hide-on-mobile px-md-5">&nbsp;MIN</td>
-                      <td class="hide-on-laptop"></td>
-                      <td class="hide-on-laptop px-md-4">&nbsp;SEC&ensp;</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
         <hr class="space-4">
-      </section> -->
+      </section>
 
-      <hr class="space-2">
+      <!-- <hr class="space-2"> -->
     </main>
 
 
