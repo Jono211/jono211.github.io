@@ -10,7 +10,7 @@
 			gtag('config', 'UA-123359766-1');
 		</script> -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="the National Spatial Planning Data Repository">
     <meta name="keywords" content="NSPDR, E-Lodgement, SPLUMA, Ecosystem, DRDLR">
@@ -36,6 +36,9 @@
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="stylesheet" href="../css/stylestest.css">
 		<link rel="stylesheet" href="../css/fa/css/all.css">
+		<!--[if lt IE 9]>
+			<script src="../js/html5shiv.min.js"></script>
+		<![endif]-->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 	</head>
   <body id="top" class="bg-linear pt-0">
@@ -64,7 +67,7 @@
         <div class="collapse navbar-collapse" id="navigator">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link px-md-3" href="newsblog.html">News</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
@@ -89,7 +92,7 @@
             <a id="display-count" title="“T”-minus" href="../index.html#countdown-to-zero">nspdr.info</a>
           </span>
           <form class="form-inline mt-2 mt-md-0 pr-1">
-            <a class="btn btn-outline-light opaque-75 mr-1 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i>&nbsp;</a>
+            <a class="btn btn-outline-light opaque-75 mr-1 my-2 my-md-0" href="contact.html"><small>CONTACT</small>&nbsp;<i class="fa fa-sm fa-phone"></i></a>
           </form>
         </div>
       </div>
@@ -306,16 +309,17 @@
 
 			<a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
 			<a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
+			<i id="point-breaks" class="media-breakpoint swing d-none fa fa-sm fa-tv">&nbsp;</i>
     </footer>
 
     <!-- =========== JavaScript ===========  -->
     <!-- Placed at end so pages load faster. -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
+    <script src="../js/rellax.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/nspdr-scripts.js"></script>
-    <script src="../js/rellax.min.js"></script>
-    <script>var rellax = new Rellax('.rellax');</script>
+    <!-- <script>var rellax = new Rellax('.rellax');</script> -->
 
   </body>
 </html>

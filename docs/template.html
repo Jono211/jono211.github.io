@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
-  <head>
+	<head>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359766-1"></script>
+		<script>
+			// Google Analytics - site tag (gtag.js)
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-123359766-1');
+		</script> -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="NSPDR Ecosystem - Find the latest project news and announcements for all things NSPDR right here.">
+
+    <meta name="description" content="The National Spatial Planning Data Repository (NSPDR Ecosystem) - Enabling Integrated Spatial Planning and Land Use Management.">
     <meta name="keywords" content="NSPDR, Spatial Planning, Data Repository, E-Lodgement, Ecosystem, Rural Development, DRDLR, SPLUMA">
     <meta name="author" content="Agizo Solutions on behalf of the Department of Rural Development and Land Reform">
 
-    <title>NSPDR&ensp;|&ensp;Page Template</title>
+    <title>NSPDR&ensp;|&ensp;Template Page</title>
     <script>
       (function(){
         // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
@@ -28,23 +37,27 @@
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="stylesheet" href="../css/stylestest.css">
 		<link rel="stylesheet" href="../css/fa/css/all.css">
+		<!--[if lt IE 9]>
+			<script src="../js/html5shiv.min.js"></script>
+		<![endif]-->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 	</head>
-  <body id="top" class="bg-repeater bglinear pt-0">
+  <body id="top" class="bg-linear pt-0">
 
+    <!-- BANNER -->
     <header class="container-fluid bg-white">
       <div class="container">
         <div class="row p-2">
           <div class="col-sm-8 pl-1"><div id="drdlr-logo"></div></div>
-          <!-- <div class="col-sm-8 pl-2"><div id="drdlr-dept"></div></div> -->
-          <div class="col-sm-4 py-2 pr3 hide-on-mobile"><div id="drdlr-flag"></div></div>
+          <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-flag"></div></div>
         </div>
       </div>
     </header>
 
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow" role="navigation">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow">
       <div class="container">
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
-          <!-- <span class="hashtag">#</span>NSPDR -->
           <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Ecosystem">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
@@ -52,457 +65,610 @@
             <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
           </span>
         </button>
-
         <div class="collapse navbar-collapse" id="navigator">
-          <ul class="navbar-nav mr-auto">
+          <!-- <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link px-md-2" href="newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link px-md-3" href="newsblog.html">News</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle override" href="#" id="navAboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About<i class="fa fa-sm fa-angle-down ml-1"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navAboutMenu">
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About the <small class="fw-600">NSPDR</small></a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
-                <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question mr-3"></i>&nbsp;Questions &amp; Answers</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle override ml-md-0" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Features<i class="fa fa-sm fa-angle-down ml-1"></i>
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-2"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Links</a>
+                <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question-circle mr-3"></i>Your Questions ?</a>
+                <div class="dropdown-header"><small class="fw-300">Main Features</small></div>
+								<div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-bars mr-3"></i>E&hybull;Lodgement</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-university mr-1">&ensp;</i>SPLUMA Workflow</a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &dagger;</a>
+                <div class="dropdown-divider --alt"></div>
+                <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA</a>
+              </div>
+            </li>
+          </ul> -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-md-3" href="newsblog.html">News</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-2"></i>
+                <!-- <span class="sr-only">(current)</span> -->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
+                <!-- <div class="dropdown-header"><small class="fw-300">It’s Features</small></div> -->
+								<div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &dagger;</a>
+                <div class="dropdown-divider --end"></div>
+                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
             </li>
           </ul>
-
           <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
             <a id="display-count" title="“T”-minus" href="../index.html#countdown-to-zero">nspdr.info</a>
           </span>
           <form class="form-inline mt-2 mt-md-0 pr-1">
-            <a class="btn btn-outline-light opaque-75 mr-1 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i></a>
-            <!-- <div class="btn-group mr-2 my-3 my-sm-0">
-              <button type="button" class="btn btn-outline-success dropdown-toggle override px-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-xs fa-circle pl-2"></i><i class="fa fa-xs fa-circle pl-1"></i><i class="fa fa-xs fa-circle pl-1"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="ecosystem.html">Data Repository</a>
-                <a class="dropdown-item" href="elodgement.html">E-Lodgement</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item active" href="newsblog.html">Latest News</a>
-                <a class="dropdown-item disabled" href="example.html">More...</a>
-              </div>
-            </div> -->
+            <a class="btn btn-outline-light opaque-75 mr-1 my-2 my-md-0" href="contact.html"><small>CONTACT</small>&nbsp;<i class="fa fa-sm fa-phone"></i></a>
           </form>
         </div>
       </div>
     </nav>
 
     <!-- HERO -->
-    <section class="page-header header-filter clear-filter green-filter mask-25 rellax" data-rellax-speed="-5" style="background-image:url('../img/urban/empower-shack-1280x853.jpg')">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 col-11 mx-auto pr-lg-5 px-lg4 px-md-3 px-5 rellax" data-rellax-speed="0">
-              <!-- <img class="hero-brand img-fluid mx-auto png-shadows" src="../img/logos/nspdr-square.png" alt="NSPDR" style="filter:brightness(100);"> -->
-              <!-- <img class="hero-brand img-fluid mx-auto png-shadows" src="../img/logos/nspdr-square.png" alt="NSPDR Ecosystem"> -->
-              <img class="img-fluid mx-auto mb-0 png-shadows pull-up1" src="../img/logos/icon-inners-light.png" alt="NSPDR" width="325px">
-            </div>
-            <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
-              <div class="col-12">
-                <h1 class="showcase text-sm-left text-white fw-600">integrated</h1>
-              </div>
-              <div class="col-12">
-                <h2 class="showcase text-white opaque-75">Spatial Planning</h2>
-              </div>
+    <section class="page-header header-filter clear-filter base-filter mask-25 rellax" data-rellax-speed="-5" style="background-image:url('../img/view/boland-landscape-960x472.jpg')">
+      <div class="container">
+        <!-- <div class="row justify-content-center">
+          <div class="col-12 col-lg-11 mx-auto">
+            <img class="img-fluid png-shadows opaque-50 pull-md-up2 d-none d-md-block rellax" data-rellax-speed="-1" alt="NSPDR Ecosystem" src="../img/logos/icon-inner-light.png"> -->
+            <!-- <img class="img-fluid png-shadows opaque-50 pull-md-up1 rellax" data-rellax-speed="-1" alt="NSPDR E-Lodgement" src="../img/title-elodgement.png"> -->
+						<!-- <img class="img-fluid png-shadows opaque-50 p-4 d-md-none d-block rellax" data-rellax-speed="-1" alt="NSPDR Ecosystem" src="../img/logos/icon-inners-light.png">
+          </div>
+        </div> -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
+          <!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="0" data-rellax-percentage="1"> -->
+            <img class="img-fluid png-shadows opaque-75 pull-up1 p-4 p-md-3 p-xl-2" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
+          </div>
+          <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
+        		<div class="row text-left">
+	            <div class="col-12">
+	              <h1 class="showcase text-white opaque-90 fw-600">integrated</h1>
+	            </div>
+	            <div class="col-12">
+	              <h2 class="showcase text-white opaque-75">Spatial Planning</h2>
+	            </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
 
-    <!-- “” -->
+
+    <!-- CONTENT -->
     <main class="nspdr-background --raised --alt1 top-brown">
-    <!-- <main class="nspdr-main --raised altX top-line" id="rdpsn"> -->
 
-      <div class="container -fluid">
-        <!-- <div class="card text-dark cardbox-raised"> -->
-          <div class="slate-fade-down px-3">
-            <h2 class="display-1 condensed-3 fat text-center mini-shadow text-trunc text-dark">
-              Design <span class="text-muted"><em>&amp;&nbsp;</em></span> Development
-            </h2>
-            <div class="special-divider mx-auto w-75 my-4"></div>
-          </div>
-          <div class="container">
-          <div class="cardbody mx-md-3 pull-up1 rellax" data-rellax-speed="-1">
-            <div class="text-geois ml-md-2">
-              <p class="h3 fw-600 mb-2">Welcome to the <small class="fat">NSPDR</small> ecosystem project news page .&nbsp;.&nbsp;.</p>
-              <p class="h3 fw-600">Find the latest news and announcements for all things <small class="fat">NSPDR</small> right here&nbsp;!</p>
+      <!-- <section class="segment">
+	      <div class="container">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-11">
+		          <div class="text-center pt-4 pt-sm-5"> -->
+		            <!-- <h1 class="showcase text-nspdr">Spatial Planning
+									<strong class="hue-purple fw-800"> &plus;</strong></h1>
+		            <h2 class="showcase text-dark">Land Use Management</h2> -->
+		            <!-- <h1 class="showcase text-nspdr">NSPDR Ecosystem</h1>
+		            <h1 class="showcase text-body">
+									<strong class="text-rural fw-600 mr-md-4">and&nbsp; </strong>
+									E-Lodgement</h1>
+		          </div>
+	          </div>
+	        </div> -->
+
+		      <!-- <div class="row justify-content-center">
+			      <div class="col-11 col-md-10">
+		          <div class="special-divider my-4"></div>
+	          </div>
+	        </div> -->
+	      <!-- </div>
+      </section>
+
+      <div class="container"><hr class="dark"></div> -->
+      <!-- <section class="segment db-block">
+        <div class="card cardpanel-shadow">
+          <div class="col-lg-12 mt1 px-md-5 px-2 text-center">
+            <div class="card-body mx-md-2">
+              <h2 class="display-2 condensed-2 text-geois fat mini-shadow">DRDLR’s NSPDR Ecosystem</h2>
+              <div class="special-divider my-4"></div>
+              <h3 class="display-4 condensed-1 text-dark fat mb-3">An integrated spatial planning technology.</h3>
             </div>
           </div>
-          </div>
-        <!-- </div> -->
-      </div>
+        </div>
+      </section> -->
+      <!-- <hr class="space-4"> -->
 
-      <div class="container">
-        <!-- <hr class="dark mx2 my-4"> -->
-        <div class="empty-space --triplet"></div>
-
-        <div class="card cardbox-raised mb-4">
-          <div class="card-body mx-md-2">
-            <div class="text-center">
-              <div class="empty-space --half"></div>
-              <h2 class="display-3 condensed-2 fat mini-shadow">Cross browser support</h2>
-              <div class="special-divider mx-auto w-90 my-4"></div>
-              <div class="empty-space --half"></div>
+      <section class="segment db-block">
+        <div class="container pt-4 pt-sm-5">
+        <!-- <div class="container"> -->
+          <div class="row text-center text-lg-left align-items-center">
+            <div class="col-9 col-sm-7 col-md-6 m-auto m-lg-0 col-lg-5 col-xl-4">
+              <img alt="NSPDR Ecosystem" class="img-fluid png-raised p-2" src="../img/logos/nspdr-500x500.png">
             </div>
 
-            <div class="container-fluid">
-              <div class="row mx-auto">
+            <div class="col-12 col-lg-7 col-xl-8 pt-4 pt-lg-0">
+              <!-- <h2 class="display-3 condensed-1 text-nspdr1 mini-shadow fw-700">NSPDR Ecosystem</h2> -->
+              <p class="lead-2">
+								<!-- The <strong>National Spatial Planning Data Repository</strong> (NSPDR&nbsp;Ecosystem) Project. -->
+								The <strong class="h3 fw-700 text-dimgrey">National Spatial Planning Data Repository</strong> Ecosystem
+								<br><strong class="fw-600 text-dimgrey">Enabling Integrated Spatial Planning and Land Use Management</strong>
+              </p>
 
-                <div class="col-lg-5 offset-lg-1">
-                  <ul class="list-unstyled">
-                    <li class="media mb-4">
-                      <img class="mr-3" src="../img/logos/browser-chrome-128x128.png" width="64px" height="64px" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h5 class="fat mt-0 mb-1">List-based media object</h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
-                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                      </div>
-                    </li>
-                    <li class="media mb-4">
-                      <img class="mr-3" src="../img/logos/browser-firefox-128x128.png" width="64px" height="64px" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h5 class="fat mt-0 mb-1">List-based media object</h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
-                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                      </div>
-                    </li>
-                    <li class="media mb-4">
-                      <img class="mr-3" src="../img/logos/browser-edge-128x128.png" width="64px" height="64px" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h5 class="fat mt-0 mb-1">List-based media object</h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
-                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                      </div>
-                    </li>
-                  </ul>
+              <div class="row text-left mt-3">
+                <div class="col-12 col-sm-6">
+                  <h4 class="text-dimgrey"><strong>Data Repository</strong></h4>
+                  <p class="">The NSPDR Ecosystem will enable the sharing of spatial planning information across all three spheres of government, as well as the private sector, and will support key objectives of the NDP and most importantly, SPLUMA.</p>
                 </div>
-
-                <div class="col-lg-5">
-                  <ul class="list-unstyled">
-                    <li class="media mb-4">
-                      <img class="mr-3" src="../img/logos/browser-opera-128x128.png" width="64px" height="64px" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h5 class="fat mt-0 mb-1">List-based media object</h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                      </div>
-                    </li>
-                    <li class="media mb-4">
-                      <img class="pngshadow mr-3" src="../img/logos/browser-safari-128x128.png" width="64px" height="64px" alt="Generic placeholder image">
-                      <div class="media-body">
-                        <h5 class="fat mt-0 mb-1">List-based media object</h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                      </div>
-                    </li>
-                  </ul>
+                <div class="col-12 col-sm-6 pt-3 pt-sm-0">
+                  <h4 class="text-dimgrey"><strong>E-Lodgement</strong></h4>
+                  <p class="">From the very beginning, our application was developed with SPLUMA at the centre of the design process. Resulting in a workflow that’s completely aligned both with the act itself, but also its regulations.</p>
                 </div>
-
               </div>
-            </div>
-          </div>
-          <div class="empty-space --single"></div>
-        </div>
 
-        <!-- <div class="empty-space --single"></div> -->
-        <div class="row py-4">
-          <div class="col-sm-4">
-            <div class="box p-2">
-              <code>box</code>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="cardpanel">
-            <div class="profile">
-              <code>cardpanel profile</code>
-            </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card curved-bezier">
-              <div class="card-body mx-md-2">
-                <code>card curved-bezier</code>
-                <hr class="space-9">
-              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <hr class="space-8">
-        <div class="row py-4">
-          <div class="col-sm-4">
-            <div class="card cardpanel-raised">
-              <div class="card-body mx-md-2">
-                <code>card cardpanel-raised</code>
-                <hr class="space-7">
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment db-block">
+      	<!-- bg-background" style="background-image:url(../img/bg-litegrey.svg);"> -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10">
+              <h2 class="display-4 fw-600">Inclusive Framework</h2>
+              <div class="linear-divider w-90 my-3"></div>
+              <p class="lead-2">The <small class="fat">NSPDR</small> ecosystem will enable sharing of spatial planning information across all spheres of government and the private sector and will support key objectives of the NDP.</p>
+            </div>
+          </div>
+          <hr class="space-4">
+
+          <div class="row no-gutters justify-content-center text-center">
+            <!-- <div class="col-12 col-md-8 m-auto col-lg-4"> -->
+            <div class="col-11 col-sm-8 m-auto col-md-4 pr-md-3">
+            	<div class="db-box alt db-touch3 py-3 shadow-raised bg-white" style="border-radius:2rem!important;">
+                <img alt="NSPDR Icon" class="icon-150 mt-2" src="../img/icons/icon4.png">
+                <h2 class="h1 fw-400">Spatial Data</h2>
+                <hr class="dark">
+                <p class="lead">Used to design custom web apps, data models, and a whole lot more.</p>
+                <p class="mt-4"><a href="#">Read More &gt;</a></p>
               </div>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="cardpanel">
-            <div class="profile">
-              <code>cardpanel profile</code>
+
+            <!-- <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0"> -->
+            <div class="col-11 col-sm-8 m-auto col-md-4 pt-5 pt-md-0">
+              <div class="db-box alt db-touch1 py-3 shadow-raised bg-white" style="border-radius:2rem!important;">
+                <img alt="NSPDR Icon" class="icon-175 mt-2 mt-lg-4" src="../img/icons/icon1.png">
+                <h2 class="h1 fw-400">Geo-Analytics</h2>
+                <hr class="dark">
+                <p class="lead">Provided by a variety of amazingly advanced GIS tools and functions.</p>
+                <p class="mt-4 mb-lg-5"><a href="#">Read More &gt;</a></p>
+              </div>
             </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card curved-bezier">
-              <div class="card-body mx-md-2">
-                <code>card curved-bezier</code>
-                <hr class="space-9">
+
+            <!-- <div class="col-12 col-md-8 m-auto col-lg-4 pt-5 pt-lg-0"> -->
+            <div class="col-11 col-sm-8 m-auto col-md-4 pt-5 pt-md-0 pl-md-3">
+              <div class="db-box alt db-touch4 py-3 shadow-raised bg-white" style="border-radius:2rem!important;">
+                <img alt="NSPDR Icon" class="icon-150 mt-2" src="../img/icons/icon3.png">
+                <h2 class="h1 fw-400">E-Learning</h2>
+                <hr class="dark">
+                <p class="lead">Allowing learners to acquire skills faster, and retain knowledge longer.</p>
+                <p class="mt-4"><a href="#">Read More &gt;</a></p>
               </div>
             </div>
           </div>
         </div>
-        <div class="empty-space --single"></div>
+      </section>
 
-        <div class="card cardbox-raised mb-4">
-          <div class="card-body mx-md-2">
-            <div class="slate-fadedown text-center">
-              <div class="empty-space --half"></div>
-              <h2 class="display-3 condensed-2 fat mini-shadow">Social media platforms</h2>
-              <div class="special-divider mx-auto w-75 my-5"></div>
-              <div class="empty-space --half"></div>
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment db-block">
+        <div class="container">
+          <div class="row text-right align-items-center">
+            <div class="col-10 col-sm-7 col-lg-4 m-auto">
+              <img alt="NSPDR" class="img-fluid png-raised" src="../img/uiux/ipad2.png">
             </div>
 
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-8 mx-auto">
-                  <ul class="list-unstyled">
-                    <li class="media mb-4">
-                      <i class="fab fa-4x fa-facebook-square ml-2 mr-4 hue-indigo mini-shadow"></i>
-                      <div class="media-body">
-                        <h5 class="text-dark mt-0 mb-1">Social Media –
-                          <a class="text-dark" href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" role="button">Facebook</a>
-                        </h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
-                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                      </div>
-                    </li>
-                    <li class="media mb-4">
-                      <i class="fab fa-4x fa-twitter ml-0 mr-4 hue-blue mini-shadow"></i>
-                      <div class="media-body">
-                        <h5 class="text-dark mt-0 mb-1">Social Media –
-                          <a class="text-dark" href="https://twitter.com/DRDLR_online" role="button">Twitter</a>
-                        </h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
-                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                      </div>
-                    </li>
-                    <li class="media mb-4">
-                      <i class="fab fa-4x fa-instagram ml-2 mr-4 hue-orange mini-shadow"></i>
-                      <div class="media-body">
-                        <h5 class="text-dark mt-0 mb-1">Social Media –
-                          <a class="text-dark" href="https://www.instagram.com/drdlr_sa" role="button">Instagram</a>
-                        </h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
-                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                      </div>
-                    </li>
-                    <li class="media mb-4">
-                      <i class="fab fa-4x fa-youtube-square ml-2 mr-4 hue-red mini-shadow"></i>
-                      <div class="media-body">
-                        <h5 class="text-dark mt-0 mb-1">Social Media –
-                          <a class="text-dark" href="https://www.youtube.com/user/DRDLROnline" role="button">YouTube</a>
-                        </h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.<br>
-                        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                      </div>
-                    </li>
-                  </ul>
+            <div class="col-12 col-lg-6 col-xl-5 m-lg-auto text-left pt-5 pt-lg-0">
+              <h2 class="h1 fw-600">Policy and Legislation</h2>
+              <p class="lead pb-xl-2">The NSPDR Ecosystem will be a major enabler in the implementation of SPLUMA. Two ways this will be achieved is by providing provinces and municipalities with . . .</p>
+              <div class="row pt-4">
+                <div class="col-3">
+                  <img alt="NDP" class="img-fluid img-raised icon-125 rounded-circle" src="../img/logos/ndp-426x426.jpg">
+                </div>
+                <div class="col-9">
+                  <p>... integrated development planning across the spheres of government as required by key planning policies and legislations such as the <strong>NDP</strong>.</p>
+                </div>
+              </div>
+              <div class="row pt-4">
+                <div class="col-9 text-right">
+                  <p>... the necessary tools and capacity building to enable <strong>SPLUMA</strong>-compliant spatial planning and land use management practices.</p>
+                </div>
+                <div class="col-3">
+                  <img alt="NDP" class="img-fluid img-raised icon-125 rounded-circle" src="../img/logos/spluma-200x198.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment db-block">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+              <!-- <h2 class="display-5 fw-600">Robust Technology</h2> -->
+              <h2 class="display-5 fw-600">Cross-browser compatibility</h2>
+              <!-- <p class="lead mb-5"> -->
+								<!-- Something that makes a website great is when it is compatible in multiple browsers regardless of version. ... Multi-browser means a website will work in several web browsers like Safari, Chrome, Firefox, Internet Explorer. While cross-browser means a website works in any browser, and any version of the browser, being used. -->
+								<!-- The ecosystem is cross-browser compatibile; works in any browser, and any version of the browser, being used. -->
+							<!-- </p> -->
+              <p class="lead-2 pl-2 mt-5">... works in all modern browsers:</p>
+              <div class="container">
+                <!-- <div class="row justify-content-between justify-content-md-start"> -->
+                <div class="row justify-content-start">
+                  <img alt="Chrome" class="browser-icon" src="../img/logos/browser-chrome-128x128.png"/>
+                  <img alt="Firefox" class="browser-icon ml-1 ml-sm-3" src="../img/logos/browser-firefox-128x128.png"/>
+                  <img alt="Edge" class="browser-icon ml-1 ml-sm-3" src="../img/logos/browser-edge-128x128.png"/>
+                  <img alt="Opera" class="browser-icon ml-1 ml-sm-3" src="../img/logos/browser-opera-128x128.png"/>
+                  <img alt="Safari" class="browser-icon ml-1 ml-sm-3" src="../img/logos/browser-safari-128x128.png"/>
                 </div>
               </div>
             </div>
 
-          </div>
-          <div class="empty-space --single"></div>
-        </div>
-
-        <hr class="my-5">
-        <div class="card curved-bezier mb-4">
-          <div class="col-md-12 d-inline-flex">
-            <a class="text-muted pointer mx-4 my-3 pt-2" onclick="typeWriter()">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
-            </a>
-            <p class="text-body ml-4 my-3 pt-1 lead" id="type-demo"></p>
-            <script>
-              var i = 0;
-              var txt = 'Lorem ipsum is simply dummy text, blah-blah blah . . .';
-              function typeWriter() {
-                if (i <= txt.length) {
-                  document.getElementById("type-demo").innerHTML += txt.charAt(i);
-                  i++;
-                  setTimeout(typeWriter, 100);
-                }
-              };
-            </script>
+            <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
+              <img alt="NSPDR Ecosystem" class="img-fluid png-raised" src="../img/uiux/imacbook2.png">
+            </div>
           </div>
         </div>
-      </div> <!-- /.container -->
+      </section>
 
-      <div class="container marketing">
-        <!-- <hr id="" class="featurette-divider"> -->
-        <hr class="my-5">
-        <div class="card cardbox-raised mb-4">
-          <div class="col-lg-11 my-4 px-md-5 px-2">
-            <h2 class="featurette-heading ml-1">
-              <span class="display-4 fat">watch this space</span><br>
-              <span class="text-muted">for our next featured story.</span>
-            </h2>
-            <div class="linear-divider"></div>
-            <div class="mx-1">
-              <p class="lead">We’re always hoping to add some new content here really soon.</p>
-              <p class="">So make sure you come back and visit us from time to time, because the <small class="fat">NSPDR</small> is coming to a municipality near you, and we don’t want you to miss out, and you wouldn’t want to either... or would you?</p>
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment db-block">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-left mb-2 mb-lg-5">
+              <h2 class="display-3 condensed-2 fw-600 ml-1">responsive design&nbsp;&nbsp;<span class="text-dark fw-400">&gt;&gt;&gt;</span></h2>
+              <!-- <h2 class="featurette-heading ml-1">Available on multiple platforms&nbsp;&gt;</h2> -->
+              <!-- <hr class="space-2"> -->
+            </div>
+            <div class="col-11 mx-auto align-self-center">
+              <img class="img-fluid png-raised" src="../img/uiux/responsive.png" alt="NSPDR Responsive Interface">
+            </div>
+            <div class="col-12 text-right mt-2 mt-lg-4">
+              <!-- <h2 class="display-4 condensed-1 text-secondary fw-600 mr-1"><span class="text-tertiary fw-400">&gt;&gt;&gt;</span>&nbsp;&nbsp;PCs,&nbsp;laptops, tablets and&nbsp;phones</h2> -->
+              <h2 class="display-4 condensed-1 text-secondary fw-600 mr-1">PCs,&nbsp;laptops, tablets and&nbsp;phones</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment db-block">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-10 col-lg-6 mb-4 mb-lg-0">
+              <!-- <img alt="NSPDR Ecosystem" class="img-fluid" src="../img/logos/nspdr-block.png"> -->
+              <img alt="NSPDR Ecosystem" class="img-fluid" src="../img/logos/nspdr-square.png">
+            </div>
+            <div class="col-12 col-lg-5 ml-lg-auto text-left">
+              <h2 class="display-5 fw-600">Bridging Divides</h2>
+              <p class="lead">
+								The NSPDR Ecosystem will ensure up-to-date integration of most government project data for efficient and effective spatial planning. It will also enable sharing of spatial data throughout the country and across the public and private sectors.
+							</p>
+              <p>
+								<a class="btn btn-lg btn-pill btn-nspdr1 btn-shadow mt-lg-4" href="../index.html#countdown-to-zero">Learn More &gt;</a>
+							</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment db-block">
+        <div class="container align-items-end justify-content-center dflex">
+          <div class="row align-items-top text-left">
+            <div class="col-12 col-md-6">
+              <p class="mt-md-5 mb-5"><img alt="NSPDR" height="40" src="../img/logos/acronym-grey.png"></p>
+              <h2 class="h1 fw-600">Land Use Applications</h2>
+              <p class="lead mr-lg-4 mr-xl-5">
+								The Department of Rural Development and Land Reform has made the National Spatial Planning Data Repository and E&NoBreak;-&NoBreak;Lodgement available for use by all municipalities in South Africa as well as the public. E&NoBreak;-&NoBreak;Lodgement allows members from the public to electronically lodge land use applications. The respective municipality will be informed of the application and process the application electronically, using E&NoBreak;-&NoBreak;Lodgement.
+							</p>
+              <p class="mt-4">
+								<!-- <a href="#" class="btn btn-lg btn-pill btn-outline-nspdr2 btn-shadow">Learn More &gt;</a> -->
+								<a href="../index.html#countdown-to-zero" class="btn btn-lg btn-pill btn-outline-nspdr2 btn-shadow">Explore Features</a>
+							</p>
+
+              <hr class="space-4 d-none d-xl-block">
+              <p class="lead-2 mt-5">Follow us and ask more on:</p>
+              <p class="lead">
+                <a class="text-nspdr1 mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
+                <a class="text-nspdr1 mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
+                <a class="text-nspdr1 mr-4" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+								<!-- <a class="text-nspdr1 mr-4" href="#"><i class="fab fa-2x fa-google"></i></a> -->
+                <a class="text-nspdr1" href="#"><i class="fab fa-2x fa-youtube"></i></a>
+              </p>
+            </div>
+
+            <div class="col-10 col-sm-8 col-md-6 col-lg-4 m-auto pt-4 pt-md-0 text-center">
+              <img alt="NSPDR E-Lodgement" class="img-fluid" src="../img/uiux/iphone5.png">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment db-block">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-12">
+              <!-- <h2 class="display-3 fw-600">E&NoBreak;-&NoBreak;Lodgement’s User Profiles</h2> -->
+              <h2 class="display-3 fw-600"><span class="condensed-3">E<span class="fw-800">&middot;</span></span>Lodgement’s User Profiles</h2>
+              <!-- <h2 class="display-3 fw-600">E&NoBreak;-&NoBreak;Lodgement’s User Access Control</h2> -->
+              <!-- <p class="h3"><a href="#">See all features &gt;</a></p> -->
+            </div>
+          </div>
+
+          <div class="row text-left textcenter justify-content-center mt-5">
+            <div class="col-10 col-sm-6 col-lg-3">
+							<a class="fa fa-9x fa-user-shield text-nspdr1 mini-shadow"></a>
+              <div class="text-left mt-4">
+	              <h3><strong>NSPDR Administrator</strong></h3>
+	              <p>DRDLR employees assigned as E&NoBreak;-&NoBreak;Lodgement (NSPDR) administrators. It will be these “super”-users’ responsibility to manage the global settings aspect of E&NoBreak;-&NoBreak;Lodgement.</p>
+	            </div>
+            </div>
+
+            <div class="col-10 col-sm-6 col-lg-3 pt-5 pt-sm-0">
+							<a class="fa fa-9x fa-user-cog text-nspdr4 mini-shadow"></a>
+              <div class="text-left mt-4">
+	              <h3><strong>Municipal Administrator</strong></h3>
+	              <p>Municipal employees assigned as E&NoBreak;-&NoBreak;Lodgement administrators. It will be these users’ responsibility to manage the settings aspect of E&NoBreak;-&NoBreak;Lodgement regarding their municipalities.</p>
+            	</div>
+            </div>
+
+            <div class="col-10 col-sm-6 col-lg-3 pt-5 pt-lg-0">
+							<a class="fa fa-9x fa-users-cog text-nspdr3 mini-shadow"></a>
+              <div class="text-left mt-4">
+	              <h3><strong>Municipal Users (Official)</strong></h3>
+	              <p>The municipal user will use E&NoBreak;-&NoBreak;Lodgement to electronically process lodged applications. The system allows users to process applications as it moves along the application process.</p>
+	            </div>
+            </div>
+
+            <div class="col-10 col-sm-6 col-lg-3 pt-5 pt-lg-0">
+							<a class="fa fa-9x fa-users text-nspdr2 mini-shadow"></a>
+              <div class="text-left mt-4">
+	              <h3><strong>Public Users (Applicant)</strong></h3>
+	              <p>The public user will use E&NoBreak;-&NoBreak;Lodgement to electronically lodge applications. Before lodging an application, the public user will have to register themselves on the E&NoBreak;-&NoBreak;Lodgement site.</p>
+	            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment db-block">
+			  <div class="container">
+
+          <div class="row text-center justify-content-center pull-up1">
+            <div class="col-10 col-sm-6 col-lg-3">
+              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/icon1.png">
+              <!-- <h2 class="h1 fw-300 text-light rounded bg-nspdr1 expanded-3">ENABLING</h2> -->
+            </div>
+            <div class="col-10 col-sm-6 col-lg-3 pt-5 pt-sm-0">
+              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/icon2.png">
+              <!-- <h2 class="h1 fw-300 text-light rounded bg-nspdr4 no-spacing">INTEGRATED</h2> -->
+            </div>
+            <div class="col-10 col-sm-6 col-lg-3 pt-5 pt-lg-0">
+              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/icon3.png">
+              <!-- <h2 class="h1 fw-300 text-light rounded bg-nspdr3 expanded-3">SPATIAL</h2> -->
+            </div>
+            <div class="col-10 col-sm-6 col-lg-3 pt-5 pt-lg-0">
+              <img alt="NSPDR Icon" class="img-fluid p-md-3 p-lg-2" src="../img/icons/icon4.png">
+              <!-- <h2 class="h1 fw-300 text-light rounded bg-nspdr2 expanded-2">PLANNING</h2> -->
+            </div>
+          </div>
+          <hr class="space-8">
+
+			    <div class="row align-items-center">
+			      <div class="col-6 col-lg-3">
+			        <img alt="NSPDR" class="img-fluid png-raised" src="../img/uiux/imac.png">
+			      </div>
+			      <div class="col-6 col-lg-3">
+			        <img alt="NSPDR" class="img-fluid png-raised" src="../img/uiux/imac.png">
+			      </div>
+
+			      <div class="col-12 col-lg-6 pt-5 pt-lg-0">
+				      <div class="text-left">
+				        <p class="lead">The ArcGIS&trade; platform is an integrated web-GIS system that provides a wide range of capabilities for storing, managing, analysing, visualising and sharing geospatial data.</p>
+				        <p class="lead mb-0">The platform provides the framework of data and technology needed to address location related business processes.&nbsp; <a href="#">[Read&nbsp;More]</a></p>
+				      </div>
+			      </div>
+			    </div>
+			  </div>
+			</section>
+
+      <!-- <div class="container"><hr class="dark"></div>
+
+      <section class="segment db-block">
+        <div class="container">
+          <div class="row align-items-center pb-xl-5">
+            <div class="col-12 col-md-7 col-xl-5">
+              <h2 class="h1 fw-600">Design Block 19*</h2>
+              <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 m-sm-auto mr-md-0 ml-md-auto pt-4 pt-md-0">
+              <img alt="NSPDR" class="img-fluid" src="../img/logos/icon-inners.png">
+            </div>
+          </div>
+
+          <div class="row pt-5">
+            <div class="col-12 col-sm-6 col-md-3">
+              <h3><strong>Feature One</strong></h3>
+              <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large ocean.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 pt-3 pt-sm-0">
+              <h3><strong>Feature Two</strong></h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
+              <h3><strong>Feature Three</strong></h3>
+              <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 pt-3 pt-md-0">
+              <h3><strong>Feature Four</strong></h3>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment db-block">
+        <div class="container">
+          <div class="row pb-xl-5">
+            <div class="col-12 col-md-10">
+              <h2 class="display-4 fw-600 mb-0">Esri’s ArcGIS&trade; platform</h2>
+              <div class="linear-divider w-90 my-3"></div>
+              <p class="lead-2">The ArcGIS&trade; platform diagram can be unpacked into the various components, workflows and methods to show how each component contributes to the system.</p>
+            </div>
+          </div>
+
+          <div class="row text-lg-right align-items-center">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <i class="fa fa-4x fa-database text-grey mb-1"></i>
+              <h4 class="my-1"><strong>Data Management</strong></h4>
+              <p>The central database storing all relevant geospatial data, providing a range of data management tools.</p>
+
+              <i class="fa fa-4x fa-atlas text-midgrey mt-3 mt-xl-5 mb-1"></i>
+              <h4 class="my-1"><strong>Author Services</strong></h4>
+              <p>Web services are a method of sharing geospatial content across the web.</p>
+
+              <i class="fa fa-4x fa-cog text-dimgrey mt-3 mt-xl-5 mb-1"></i>
+              <h4 class="my-1"><strong>Host Services</strong></h4>
+              <p>Services provide a ‘live view’ into the geodatabase in a very fast and reliable way.</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 text-left pt-3 pt-sm-0 order-lg-12">
+              <i class="fa fa-4x fa-cube text-dimgrey mb-1"></i>
+              <h4 class="my-1"><strong>Host Items</strong></h4>
+              <p>The portal is the place where users can go to discover, use, make and share maps.</p>
+
+              <i class="fa fa-4x fa-map-marked-alt text-midgrey mt-3 mt-xl-5 mb-1"></i>
+              <h4 class="my-1"><strong> Create Web Maps</strong></h4>
+              <p>A web map is a user-created combination of items from the portal that creates a “mash-up” of geospatial information.</p>
+
+              <i class="fa fa-4x fa-hdd text-grey mt-3 mt-xl-5 mb-1"></i>
+              <h4 class="my-1"><strong>Create Applications</strong></h4>
+              <p>Platform apps are simply web maps that are presented to the user for a particular, focussed purpose.</p>
+            </div>
+
+            <div class="col-10 col-sm-8 col-lg-4 m-auto pt-5 pt-lg-0 order-lg-1">
+              <!-- <img alt="NSPDR Ecosystem" class="img-fluid png-raised" src="../img/uiux/iphone3.png"> -->
+              <img alt="NSPDR Ecosystem" class="img-fluid png-raised" src="../img/uiux/iphone6.png">
             </div>
           </div>
         </div>
 
         <hr class="space-4">
-        <div class="card cardbox-raised mb-4">
-          <div class="col-lg-11 my-4 px-md-5 px-2">
-            <h2 class="featurette-heading ml-1">
-              <span class="display-4 fat">Esri’s ArcGIS&trade; platform</span><br>
-              <span class="text-muted">provides a range of capabilities.</span>
-            </h2>
-            <div class="linear-divider"></div>
-            <div class="mx-1">
-              <p class="lead">
-                The technical solution is based on the spatial data infrastructure technology provided by <strong>Esri’s</strong> ArcGIS platform.
-                The ArcGIS platform is an integrated web-GIS system that provides a wide range of capabilities for storing, managing, analysing, visualising and sharing geo-spatial data for all users within the organisation as well as public users. <br>
-                The platform provides the framework of data and technology needed to address a wide range of location related business processes.
+      </section>
+
+      <!-- <div class="container"><hr class="dark"></div> -->
+
+      <section class="segment db-block bg-background" style="background-image:url('../img/bg-litegreen.svg')">
+      <!-- <section class="segment db-block bg-background" style="background-image:url('../img/bg-litetheme.svg')"> -->
+			  <div class="container">
+			    <div class="row align-items-center py-5">
+			      <div class="col-12 col-sm-8 col-md-9 text-left">
+			        <h2 class="fw-600 text-light dark-shadow ml-4 ml-sm-0">
+								Use the NSPDR Ecosystem for all your planning projects.
+							</h2>
+			      </div>
+			      <div class="col-12 col-sm-4 col-md-3 text-center mt-4 mt-sm-0">
+			        <a class="btn btn-lg btn-pill btn-outline-nspdr2 btn-shadow" href="../index.html#countdown-to-zero">&ensp;Take a Tour&ensp;</a>
+			      </div>
+			    </div>
+			  </div>
+			</section>
+
+      <!-- <div class="container"><hr class="dark"></div> -->
+
+      <section class="segment db-block">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-12 col-md mx-auto">
+							<a class="fa fa-4x fa-fax mb-4 text-nspdr1 mini-shadow"></a>
+							<!-- <a class="fa fa-4x fa-phone-volume mb-4 text-nspdr1 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-phone fa-flip-horizontal mb-4 text-nspdr1 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-mobile-alt mb-4 text-nspdr1 mini-shadow"></a> -->
+              <p class="h4 expanded-1 leading-2">
+								<!-- (012)&nbsp; 312 &ndash; 9852 -->
+								(012) 312-9665 /<br>
+								012 312-9852
+								<!-- (012)&nbsp; 312 &ndash; 9665 / 9852 -->
+							</p>
+            </div>
+
+            <div class="col-12 col-md pt-4 pt-md-0 mx-auto">
+							<!-- <a class="fa fa-4x fa-map-marker-alt mb-4 text-nspdr2 mini-shadow"></a> -->
+							<a class="fa fa-4x fa-map-marked-alt mb-4 text-nspdr2 mini-shadow"></a>
+							<!-- <a class="fa fa-4x fa-location-arrow mb-4 text-nspdr2 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-flag mb-4 text-nspdr2 mini-shadow"></a> -->
+              <p class="h4 leading-2">
+								<!-- 224 Helen Joseph Street<br> -->
+								<!-- Capitol Towers,&nbsp; Pretoria -->
+								224 Helen Joseph St.<br>
+								Capitol Towers<br>
+								Pretoria
+							</p>
+            </div>
+
+            <div class="col-12 col-md pt-4 pt-md-0 mx-auto">
+							<a class="fab fa-4x fa-internet-explorer mb-4 text-nspdr3 mini-shadow"></a>
+							<!-- <a class="fa fa-4x fa-share-alt mb-4 text-nspdr3 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-reply mb-4 text-nspdr3 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-envelope-open mb-4 text-nspdr3 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-paperclip mb-4 text-nspdr3 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-code-branch mb-4 text-nspdr3 mini-shadow"></a> -->
+							<!-- <a class="fa fa-4x fa-at mb-4 text-nspdr3 mini-shadow"></a> -->
+              <p class="h4 leading-2">
+                <!-- <a href="mailto:nspdr@nspdr.info">http://nspdr.info</a> -->
+                <a class="text-secondary" href="mailto:support.nspdr@drdlr.gov.za">support.nspdr@drdlr.gov.za</a><br>
+                <!-- support.nspdr@drdlr.gov.za<br> -->
+                <!-- support@nspdr.info<br> -->
+                <a class="text-dark expanded-1" href="http://www.drdlr.gov.za">www.drdlr.gov.za</a>
               </p>
             </div>
           </div>
         </div>
-      </div> <!-- /.container .marketing -->
-      <hr class="space-4">
+      </section>
 
+      <!-- <hr class="space-4"> -->
     </main>
-    <hr class="space-9">
 
-
-<section class="section-about-us">
-	<div class="container">
-
-		<div class="row">
-			<div class="col-md-8 mx-auto text-center">
-				<h2 class="title">Where in the hydrosphere are we?</h2>
-				<h3 class="description">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scientist, puts the potentially record low maximum sea-ice extent this year down to low ice extent in the Pacific and a late drop in ice extent in the Bering Sea.</h3>
-			</div>
-		</div>
-		<hr class="space-4">
-
-		<div class="section-story-overview">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="image-container image-left" style="background-image: url('../img/view/boland-landscape-960x472.jpg');">
-						<!-- first image on the left side -->
-						<p class="blockquote blockquote-primary"><br><q>Over the span of the satellite record, Arctic sea-ice has been declining significantly, while sea-ice in the Antarctic increased very slightly</q>. . .<br><br><small class="float-right">-- NOAA</small></p>
-					</div>
-					<!-- second image on the left side of the article -->
-					<div class="image-container" style="background-image: url('../img/urban/rdp-medium-1023x768.jpg');"></div>
-				</div>
-				<div class="col-md-5 offset-md1">
-					<!-- first image on the right side, above the article -->
-					<div class="image-container image-right" style="background-image: url('../img/maps/lusail-stadium-1200x738.jpg');"></div>
-					<h3 class="title">So what does the lowest-level of winter ice on record actually mean</h3>
-					<p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.</p>
-					<p>For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.</p>
-					<p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.</p>
-				</div>
-			</div>
-		</div>
-		<hr class="space-4">
-
-		<div class="section-story-overview">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="image-container override-fluid png-shadow image-left" style="background-image: url('../img/uiux/imacbook.png');">
-						<!-- first image on the left side -->
-						<p class="blockquote blockquote-secondary">
-              <br><q>Over the span of the satellite record, Arctic sea-ice has been declining significantly, while sea-ice in the Antarctic increased very slightly</q>. . .<br><br><small class="float-right">-- NOAA</small>
-            </p>
-					</div>
-					<!-- second image on the left side of the article -->
-					<!-- <div class="image-container" style="background-image: url('../img/uiux/elodgement-1.jpg');"></div> -->
-					<div class="image-container" style="background-image: url('../img/uiux/file-cover.png');"></div>
-				</div>
-				<div class="col-md-5 offset-md1">
-					<!-- first image on the right side, above the article -->
-					<div class="image-container image-right" style="background-image: url('../img/uiux/front-end.jpg');"></div>
-					<h3 class="title alt">So what does the lowest-level of winter ice on record actually mean</h3>
-					<p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.</p>
-					<p>For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.</p>
-					<p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.</p>
-				</div>
-			</div>
-		</div>
-
-	</div>
-</section>
-
-
-    <!-- </main>
-    <hr class="space-9"> -->
-    <hr class="dark mx-5 my-4">
 
     <!-- FOOTER -->
-    <!-- <div class="empty-space --triple"></div> -->
-    <!-- <footer id="footer" class="end-of-page"> -->
-    <!-- <footer id="footer" class="container mt-5 pb-3">
-      <p class="float-right"><a href="termsofuse.html#termsOfUse">Terms</a> &middot; <a href="termsofuse.html#privacyPolicy">Privacy</a></p>
-      <p>&copy;&nbsp;2018 &middot; <strong>Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform</strong></p>
-    </footer> -->
-
-    <!-- <footer class="nspdr-footer" id="end">
-      <div class="container-fluid">
-        <div class="copyright float-left"> -->
-          <!-- &copy; -->
-          <!-- <script>document.write(new Date().getFullYear())</script> -->
-          <!-- &middot; made with <i class="fab fa-html5"></i> and <i class="fab fa-css3-alt"></i> by -->
-          <!-- &middot; made by
-          <a href="http://www.agizo.co.za" target="_blank">Agizo Solutions</a> for a better web. -->
-          <!-- &middot; <strong>Rural&nbsp;Development and&nbsp;Land&nbsp;Reform</strong> -->
-          <!-- &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
-        </div>
-        <div class="pull-center pull-left"> -->
-          <!-- <ul class="social-buttons">
-            <li><a class="social-media" href="#"><i class="fab fa-2x fa-facebook hue-indigo" title="Facebook"></i></a></li>
-            <li><a class="social-media" href="template1.html"><i class="fab fa-2x fa-twitter hue-blue" title="Twitter"></i></a></li>
-            <li><a class="social-media" href="temporary.html"><i class="fab fa-2x fa-instagram hue-orange" title="Instagram"></i></a></li>
-            <li><a class="social-media" href="temporary1.html"><i class="fab fa-2x fa-youtube -square hue-red" title="YouTube"></i></a></li>
-          </ul> -->
-          <!-- <ul class="social-media">
-            <li class="--facebook"><a href="template.html"><i class="fab fa-2x fa-facebook" title="Facebook"></i></a></li>
-            <li class="--twitter"><a href="template1.html"><i class="fab fa-2x fa-twitter" title="Twitter"></i></a></li>
-            <li class="--instagram"><a href="temporary.html"><i class="fab fa-2x fa-instagram" title="Instagram"></i></a></li>
-            <li class="--youtube"><a href="temporary1.html"><i class="fab fa-2x fa-youtube" title="YouTube"></i></a></li>
-          </ul>
-        </div>
-        <nav class="float-right">
-          <ul class="underline-on-hover sibling-fade">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="newsblog.html">News</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="termsofuse.html">Terms</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer> -->
-
     <footer class="nspdr-footer" id="end">
       <div class="container-fluid">
         <div class="row no-gutters justify-content-center">
@@ -524,10 +690,10 @@
           <div class="col-12 col-md-8 col-lg-4 order-lg-2">
 		        <div class="pt-2 pt-md-1 pt-lg-0">
 		          <ul class="social-media">
-		            <li class="--facebook"><a href="template.html" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li>
-		            <li class="--twitter"><a href="template1.html" class="fab fa-2x fa-twitter" title="Twitter"></a></li>
-		            <li class="--instagram"><a href="temporary.html" class="fab fa-2x fa-instagram" title="Instagram"></a></li>
-		            <li class="--youtube"><a href="temporary1.html" class="fab fa-2x fa-youtube" title="YouTube"></a></li>
+		            <li class="--facebook"><a href="webpage.html" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li>
+		            <li class="--twitter"><a href="xabout.html" class="fab fa-2x fa-twitter" title="Twitter"></a></li>
+		            <li class="--instagram"><a href="xcontent.html" class="fab fa-2x fa-instagram" title="Instagram"></a></li>
+		            <li class="--youtube"><a href="temporary.html" class="fab fa-2x fa-youtube" title="YouTube"></a></li>
 		          </ul>
 		        </div>
 	        </div>
@@ -535,42 +701,18 @@
       </div>
 
       <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
-      <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
-      <i id="point-breaks" class="media-breakpoint swing d-none  fa fa-sm fa-tv">&nbsp;</i>
+	    <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
+	    <i id="point-breaks" class="media-breakpoint swing d-none fa fa-sm fa-tv">&nbsp;</i>
     </footer>
 
     <!-- =========== JavaScript ===========  -->
     <!-- Placed at end so pages load faster. -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
+    <script src="../js/rellax.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/nspdr-scripts.js"></script>
-    <script src="../js/rellax.min.js"></script>
-    <script>
-      // Accepts any class name
-      var rellax = new Rellax('.rellax');
-    </script>
-    <!-- <script>
-     /*
-      * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
-      * @private
-      * @author Todd Motto
-      * @link https://github.com/toddmotto/foreach
-      * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
-      * @callback requestCallback      callback   - Callback function for each iteration.
-      * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
-      * @returns {}
-      */
-      var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
-      var hamburgers = document.querySelectorAll(".hamburger");
-      if (hamburgers.length > 0) {
-        forEach(hamburgers, function(hamburger) {
-          hamburger.addEventListener("click", function() {
-            this.classList.toggle("is-active");
-          }, false);
-        });
-      }
-    </script> -->
+    <!-- <script>var rellax = new Rellax('.rellax');</script> -->
 
   </body>
 </html>
