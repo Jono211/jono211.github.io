@@ -39,6 +39,8 @@ function hideOnScroll() {
 window.addEventListener('scroll', hideOnScroll);
 */
 
+var rellax = new Rellax('.rellax');
+
 
 function displayHamburger() {
   var hamburger = document.getElementById('burgers');
@@ -69,6 +71,7 @@ jQuery('#drdlr-flag,#drdlr-bloc,#point-breaks').click(function() {
     ' outerHeight: ' + '\u00A0' + doc.outerHeight()
   );
 });
+
 
 $('#toggle-debugger').click(function() {
   if ($('body,html').hasClass('debugger')) {
@@ -232,6 +235,7 @@ function toggleStatements() {
   document.getElementById('toggle-nxt').classList.toggle('d-none');
   document.getElementById('toggle-bck').classList.toggle('d-none');
 }
+
 
 function displayCount() {
 var target = document.getElementById('display-count');

@@ -61,18 +61,32 @@ footer#footer:not(.end-of-page) {
 
 .opaque-10 { opacity: .1 !important; }
 .opaque-25 { opacity: .25 !important; }
+.opaque-33 { opacity: .33 !important; }
 .opaque-50 { opacity: .5 !important; }
 .opaque-67 { opacity: .67 !important; }
 .opaque-75 { opacity: .75 !important; }
 .opaque-90 { opacity: .9 !important; }
 
-.unselectable { user-select: none; }
+.img-hover {
+  opacity: .9;
+  -webkit-transition: opacity .5s cubic-bezier(.55,.44,.44,.55);
+  transition: opacity .5s cubic-bezier(.55,.44,.44,.55); }
+  .img-hover:hover { opacity: 1 !important; }
+
+.img-hover-alt {
+  opacity: 1;
+  -webkit-transition: opacity .25s cubic-bezier(.55,.44,.44,.55);
+  transition: opacity .25s cubic-bezier(.55,.44,.44,.55); }
+  .img-hover-alt:hover { opacity: .8 !important; }
+
 
 /* PAGE-STRUCTURE
 ================= */
 .debugger * { outline: 1px dashed magenta; }
 /* blue red yellow magenta cyan lime */
 /* .debugger * { outline: 1px dotted dashed dodgerblue; } */
+
+.unselectable { user-select: none; }
 
 
 /* CAROUSEL-CUSTOMISATION
@@ -310,9 +324,12 @@ footer#footer:not(.end-of-page) {
   z-index: 0;
   position: absolute;
   top: 0; left: 0;
-  background: linear-gradient(to bottom, rgba(10,50,30,.9), rgba(10,50,30,.3));
-  width: 100%;
-  height: 100%;
+  width: 100%; height: 100%;
+  /* background: linear-gradient(to bottom, rgba(10,50,30,.9), rgba(10,50,30,.3)); */
+  /* background: rgba(170,102,34,.6); */
+  /* background: linear-gradient(to bottom, rgba(102,85,51,.9) 0%, rgba(170,102,34,.3) 100%); */
+  background: linear-gradient(to bottom, rgba(102,85,51,.9) 0%, rgba(102,85,51,.3) 100%);
+  /* background: linear-gradient(to bottom, rgba(170,102,34,.9) 0%, rgba(170,102,34,.3) 100%); */
 }
 .hero-inner .container {
   position: relative;
@@ -396,6 +413,8 @@ ul.statement > li {
   letter-spacing: normal; }
 #legalese ol.policy > li {
   margin-bottom: .5rem; }
+#legalese ol.compact > li {
+  margin-bottom: .125rem; }
 #legalese ol > li::before {
   content: counters(item, ".") ". ";
   display: table-cell;
@@ -409,6 +428,15 @@ ul.statement > li {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: normal; }
+
+ul.bullet li::before {
+  content: "•";
+  color: dimgrey;
+  display: inline-block;
+  font-size: 110%;
+  line-height: 1.15;
+  width: 1rem;
+  margin-left: .5rem; }
 
 
 /* MARKETING-CONTENT
@@ -498,11 +526,11 @@ h2.showcase {
     white-space: normal;
   }
   h2.showcase {
+    font-size: calc(.6em + 8vw);
     letter-spacing: -.1rem;
     white-space: normal;
   }
 }
-
 
 /* RESPONSIVE-CSS
 --------------------- */
@@ -1205,7 +1233,8 @@ ul.scroller li {
 							0 .5rem .625rem -.3125rem rgba(0,0,0,.3); }
 
 .bg-gradient {
-  background: repeating-linear-gradient(-45deg, #eee 0, #eee 5%, #ddd 5%, #ddd 10%) !important; }
+  background: repeating-linear-gradient(-45deg, #fafafa 0, #fafafa 5%, #eee 5%, #eee 10%) !important; }
+  /* background: repeating-linear-gradient(-45deg, #eee 0, #eee 5%, #ddd 5%, #ddd 10%) !important; } */
 #rainbow-gradient {
 	background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); }
 
