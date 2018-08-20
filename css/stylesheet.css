@@ -124,7 +124,7 @@ footer#footer:not(.end-of-page) {
 .carousel-item {
   width: 100%;
   height: 100vh;
-  background-color: #777;
+  /* background-color: #777; */
 }
 .carousel-item > [id^='slide-'] {
   position: relative;
@@ -148,7 +148,11 @@ footer#footer:not(.end-of-page) {
   background-repeat: no-repeat;
 } */
 
-[id^='slide-'] {
+.slide-hero,
+.slide-flags,
+.slide-nspdr,
+[id^='slide-'],
+[class^='slide-'] {
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -158,6 +162,22 @@ footer#footer:not(.end-of-page) {
   height: 100vh;
   object-fit: fill !important;  /* none scale-down cover contain fill */
 }
+
+.slide-nspdr {
+	background-attachment: scroll, fixed;
+  -webkit-background-size: 85%, cover;
+  background-size: 85%, cover;
+  /* background-image: url('../img/title-ecosystem.png'), url('../img/nspdr-hero-1280x897.jpg'); */
+}
+/* .slide-nspdr::after {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.75), rgba(0,0,0,.25));
+} */
 
 #slide-hero1 {
 	background-attachment: scroll, fixed;
@@ -178,15 +198,6 @@ footer#footer:not(.end-of-page) {
 		/* url('../img/proxy/16x9-50.png'),
 		url('../img/urban/sowetownship-1280x720.jpg');  */
 }
-/* [id^='slide-hero']::after {
-  content: '';
-  z-index: 0;
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,.75), rgba(0,0,0,.25));
-} */
 
 #slide-flag1, #slide-flag3 {
   background-image: url('../img/flag-1280x605.jpg');
@@ -196,10 +207,7 @@ footer#footer:not(.end-of-page) {
 }
 
 @media (min-width: 40em) {
-  /* [id^='slide-'] {
-    background-position: center, bottom;
-		height: 25rem !important;
-	} */
+	.slide-nspdr,
 	#slide-hero2,
   #slide-hero1 {
     -webkit-background-size: 80%, cover;
@@ -207,12 +215,8 @@ footer#footer:not(.end-of-page) {
     background-position: center, bottom;
 	}
 }
-/* @media (min-width: 62em) {
-  [id^='slide-'] {
-		height: 35rem !important;
-	}
-} */
 @media (min-width: 75em) {
+	.slide-nspdr,
 	#slide-hero2,
   #slide-hero1 {
     -webkit-background-size: 75%, cover;
@@ -220,6 +224,7 @@ footer#footer:not(.end-of-page) {
 	}
 }
 @media (min-width: 90em) {
+	.slide-nspdr,
 	#slide-hero2,
   #slide-hero1 {
     -webkit-background-size: 65%, cover;
@@ -252,13 +257,9 @@ footer#footer:not(.end-of-page) {
   height: 5.25rem !important;
 }
 #drdlr-logo {
-	/* background-image: url('../img/logos/drdlr-layer.png'); */
-	/* background-image: url('../img/logos/drdlr-logo.png'); */
-	background-image: url('../img/logos/drdlr-coa.png');
+	background-image: url('../img/logos/drdlr-logo.png');
 	background-position: center left !important;
-  /* height: 5.5rem !important; */
   height: 5.25rem !important;
-  /* height: 5rem !important; */
 }
 #drdlr-flag {
 	background-image: url('../img/logos/sa-flag.png');
@@ -268,13 +269,9 @@ footer#footer:not(.end-of-page) {
 	background-image: url('../img/logos/nspdr-block.png');
 	background-position: center right !important;
 }
-/* #drdlr-icon {
-	background-image: url('../img/logos/elodgement-logo-min.png');
-	background-position: center right !important;
-} */
 
 
-#bg-sowetobanner {
+/* #bg-sowetobanner {
   background-image: url(../img/urban/viewpoint-1700x955.jpg) !important;
 	background-attachment: fixed;
 }
@@ -289,7 +286,7 @@ footer#footer:not(.end-of-page) {
 #bg-johannesburg {
   background-image: url(../img/urban/johannesburg-1365x768.jpg) !important;
 	background-attachment: fixed;
-}
+} */
 
 
 /* HERO-STYLING
@@ -1290,6 +1287,7 @@ ul.scroller li {
 /* .text-rural { color: #a62 !important; } */
 .text-rural { color: #b91 !important; }
 .text-geois { color: #375 !important; }
+.text-gisci { color: #a73 !important; }
 .text-dimgrey   { color: #4d4d4d !important; }
 
 .text-darkgrey  { color: #333; }
