@@ -905,6 +905,15 @@ a.text-nspdr4:hover {
   }
 }
 
+section.segment h5,
+section.segment h4,
+section.segment h3,
+section.segment h2,
+section.segment h1 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
 .top-yello {
   border-top: solid .45rem #da2 !important;
   /* border-top: solid .45rem #ea1 !important; */
