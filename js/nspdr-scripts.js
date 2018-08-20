@@ -40,6 +40,9 @@ window.addEventListener('scroll', hideOnScroll);
 */
 
 
+// var rellax = new Rellax('.rellax');
+
+
 function displayHamburger() {
   var hamburger = document.getElementById('burgers');
   // var hamburger = document.querySelectorAll(".hamburger--spin");
@@ -69,6 +72,7 @@ jQuery('#drdlr-flag,#drdlr-bloc,#point-breaks').click(function() {
     ' outerHeight: ' + '\u00A0' + doc.outerHeight()
   );
 });
+
 
 $('#toggle-debugger').click(function() {
   if ($('body,html').hasClass('debugger')) {
@@ -219,24 +223,25 @@ $(document).ready(function() {
 });
 
 
-function toggleStatements() {
-  document.getElementById('toggle-one').classList.toggle('d-none');
-  document.getElementById('toggle-two').classList.toggle('d-none');
-  document.getElementById('toggle-btn').classList.toggle('btn-outline-danger');
-  var txt = document.getElementById('toggle-txt');
-  if (txt.innerHTML === 'Problem') {
-    txt.innerHTML = 'Solution';
-  } else {
-    txt.innerHTML = 'Problem';
-  }
-  document.getElementById('toggle-nxt').classList.toggle('d-none');
-  document.getElementById('toggle-bck').classList.toggle('d-none');
-}
+// function toggleStatements() {
+//   document.getElementById('toggle-one').classList.toggle('d-none');
+//   document.getElementById('toggle-two').classList.toggle('d-none');
+//   document.getElementById('toggle-btn').classList.toggle('btn-outline-danger');
+//   var txt = document.getElementById('toggle-txt');
+//   if (txt.innerHTML === 'Problem') {
+//     txt.innerHTML = 'Solution';
+//   } else {
+//     txt.innerHTML = 'Problem';
+//   }
+//   document.getElementById('toggle-nxt').classList.toggle('d-none');
+//   document.getElementById('toggle-bck').classList.toggle('d-none');
+// }
+
 
 function displayCount() {
 var target = document.getElementById('display-count');
   if (target != null) {
-    var calcDate = new Date('Nov 5, 2018 00:00:00').getTime();
+    var calcDate = new Date('Nov 5, 2018 08:00:00').getTime();
     var now = new Date().getTime();
     var dist = calcDate - now;
     var days = Math.floor(dist / (1000 * 60 * 60 * 24));
@@ -253,7 +258,7 @@ $(document).ready(function() {
 	var counter = $('#displaycount');
   if (counter != null) {
     // doCalc = true;
-    var goLive = new Date('Nov 5, 2018 00:00:00').getTime();
+    var goLive = new Date('Nov 5, 2018 08:00:00').getTime();
     // var countdowndisplay = setInterval(function() {
     // setInterval(function() {
       // if (doCalc) {
@@ -269,7 +274,7 @@ $(document).ready(function() {
         // var min = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         //     min = (min < 10 ? "0" : "") + min;
         counter.html(days + ' days left!');
-        // counter.html(days + 'd to go!');
+        // counter.html(days + ' days to go!');
         // counter.html(hrs + ':00 to go!');
         // counter.html(hrs + ':' + min + ' to go!');
         if (diff < 0) { counter.html('IT’S HERE!'); }
@@ -339,7 +344,6 @@ $(document).ready(function() {
 // });
 
 
-
 // jQuery(function($) {
 (function($) {
 	/* ----------------------------------------------------------- */
@@ -354,7 +358,6 @@ $(document).ready(function() {
   // $(window).on('resize orientationchange', event);
   //   if ($(window).width() >= 768) {
 		// } else {
-
       // $('ul.navbar-nav li.dropdown').hover(function() {
       //   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
       //   // $(this).find('.dropdown-menu').addClass('show');
@@ -362,7 +365,6 @@ $(document).ready(function() {
       //   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
       //   // $(this).find('.dropdown-menu').removeClass('show');
       // });
-
 //       return;
 // 	};
 // };
@@ -427,7 +429,6 @@ $(document).ready(function() {
 // });
 
 
-
 // (function($) {
 //   // $(window).on('resize','orientationchange', function() {
 // 	$(window).resize(function() {
@@ -442,3 +443,19 @@ $(document).ready(function() {
 // 		};
 // 	});
 }(jQuery));
+
+
+// $(document).ready(function() {
+// // $(window).load(function() {
+//   // var target = document.querySelectorAll('.rellax');
+//   var target = document.getElementsByClassName('.rellax');
+//   if (target != null) {
+//   // if ($('body').hasClass('rellax')) {
+//     var rellax = new Rellax('.rellax');
+//   // } else {
+//   //   return;
+//   // }
+//   } else { return; }
+// });
+
+var rellax = new Rellax('.rellax');

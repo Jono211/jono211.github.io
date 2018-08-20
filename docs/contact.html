@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
 	<head>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359766-1"></script>
+		<script>
+			// Google Analytics - site tag (gtag.js)
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-123359766-1');
+		</script> -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <meta name="description" content="National Spatial Planning Data Repository"> -->
     <meta name="keywords" content="NSPDR, E-Lodgement, SPLUMA, Ecosystem">
@@ -28,7 +36,10 @@
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="stylesheet" href="../css/stylestest.css">
 		<link rel="stylesheet" href="../css/fa/css/all.css">
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+		<!--[if lt IE 9]>
+			<script src="../js/html5shiv.min.js"></script>
+		<![endif]-->
+    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
   <body id="top" class="pt-0 bg-smoke">
 
@@ -43,7 +54,7 @@
     </header>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light sticky-top bg-drdlr drop-shadow">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top bg-drdlr navbar-shadow">
       <div class="container">
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
           <img class="png-shadow pb-1" src="../img/logos/acronym-grey256.png" alt="NSPDR Ecosystem">
@@ -112,11 +123,11 @@
                 <i class="fa fa-xs fa-circle pl-2"></i><i class="fa fa-xs fa-circle pl-1"></i><i class="fa fa-xs fa-circle pl-1"></i>
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="ecosystem.html">Data Repository</a>
-                <a class="dropdown-item" href="elodgement.html">E-Lodgement</a>
+                <!-- <a class="dropdown-item" href="ecosystem.html">Data Repository</a> -->
+                <!-- <a class="dropdown-item" href="elodgement.html">E-Lodgement</a> -->
+                <a class="dropdown-item disabled" href="contact/thanks.html">Thank You</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="contact/thanks.html">Thank You</a>
-                <a class="dropdown-item disabled" href="templateX.html">More...</a>
+                <a class="dropdown-item" href="template.html">More...</a>
               </div>
             </div>
           </form>
@@ -131,7 +142,7 @@
             <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
             <li class="breadcrumb-item"><a href="newsblog.html">News</a></li>
             <li class="breadcrumb-item"><a href="about.html">About</a></li>
-            <li class="breadcrumb-item"><a href="ecosystem.html">Features</a></li>
+            <!-- <li class="breadcrumb-item"><a href="ecosystem.html">Features</a></li> -->
           </ol>
         </div>
       </nav>
@@ -331,7 +342,7 @@
           </div>
           <div class="col-12 col-md-5 m-auto pt-3 pt-md-0">
 		        <p class="lead"><strong>Helpdesk Service</strong></p>
-		        <p class="mb-1">012 312-9852</p>
+		        <p class="mb-1">(012) 312-9852</p>
 		        <p class="mb-1"><a href="#">Contact Helpdesk</a></p>
           </div>
         </div>
@@ -341,7 +352,6 @@
       </div>
 
       <div class="col-12 col-md-6 ml-auto">
-        <!-- <h2 class="fw-600 mb-4">Drop us a line</h2> -->
         <h2 class="text-dimgrey fw-600 mb-4">Your feedback</h2>
 
         <!-- <form class="needs-validation" novalidate> -->
@@ -377,20 +387,31 @@
 
           <div class="row mt-4">
             <div class="col">
-              <textarea class="form-control verify" name="message" rows="5" placeholder="How can we help you...?" minlength="4" required></textarea>
+              <textarea class="form-control verify" name="message" rows="4" placeholder="How can we help you...?" minlength="4" required></textarea>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col ml-4">
+              <!-- <div class="form-inline"> -->
+                <input class="form-check-input" type="checkbox" name="termsagreed" value="" id="acceptTerms" required>
+                <label class="form-check-label text-secondary" for="acceptTerms">&nbsp;&nbsp;I’ve&nbsp;read&nbsp;and&nbsp;accept&nbsp;the&nbsp; 
+                  <a class="text-dark" href="termsofuse.html#privacyPolicy"> terms&nbsp;and&nbsp;conditions</a>
+                </label>
+              <!-- </div> -->
             </div>
           </div>
 
           <div class="row mt-4">
             <div class="col">
-              <div class="form-inline mt-3">
+              <div class="form-inline mt-2">
                 <!-- <button onclick="contact/thanks.html" type="submit" name="submit" class="btn btn-pill btn-outline-secondary fill shadow-sm fw-600">Click to submit</button> -->
                 <button type="submit" name="submit" class="btn btn-pill btn-outline-secondary fill shadow-sm fw-600">Click to submit</button>
 
-                <input class="form-check-input ml-5" type="checkbox" name="termsagreed" value="" id="acceptTerms" required>
+                <!-- <input class="form-check-input ml-5" type="checkbox" name="termsagreed" value="" id="acceptTerms" required>
                 <label class="form-check-label text-secondary" for="acceptTerms">&nbsp;&nbsp;I’ve&nbsp;read&nbsp;and&nbsp;accept&nbsp;the&nbsp; 
                   <a class="text-dark" href="termsofuse.html#privacyPolicy"> terms&nbsp;and&nbsp;conditions</a>
-                </label>
+                </label> -->
               </div>
             </div>
           </div>
@@ -404,11 +425,12 @@
 
 <section class="db-block">
   <div class="container">
-		<hr class="space-6">
-		<hr class="dark space-6">
+		<hr class="space-8">
+		<!-- <hr class="dark space-6"> -->
     <div class="row text-center justify-content-center">
       <div class="col-12 col-md-8 col-lg-7">
-        <p class="h2"><strong>support@nspdr.info</strong></p>
+        <!-- <p class="h2"><strong>support@nspdr.info</strong></p> -->
+        <p class="h2"><strong>support.nspdr@drdlr.gov.za</strong></p>
         <p class="lead">Based on your feedback’s subject-matter, a member of our team will be in touch with you as soon as possible!</p>
         <p><br></p>
         <!-- <p class="lead-2">
@@ -424,7 +446,6 @@
 </section>
 
     </main>
-
 
     <hr class="dark mx-5 mb-0">
 
@@ -463,10 +484,11 @@
 	        </div>
       	</div>
       </div>
-    </footer>
 
-    <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
-    <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
+      <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
+      <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
+			<i id="point-breaks" class="media-breakpoint swing d-none fa fa-sm fa-tv">&nbsp;</i>
+    </footer>
 
 
     <!-- =========== JavaScript ===========  -->
@@ -474,7 +496,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/custom.js"></script>
+    <script src="../js/nspdr-scripts.js"></script>
 
     <script>
       // disable form submission if there are invalid fields
