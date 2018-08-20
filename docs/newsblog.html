@@ -39,7 +39,7 @@
 		<!--[if lt IE 9]>
 			<script src="../js/html5shiv.min.js"></script>
 		<![endif]-->
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
   <body id="top" class="bg-linear pt-0">
 
@@ -64,9 +64,8 @@
             <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
           </span>
         </button>
-
         <div class="collapse navbar-collapse" id="navigator">
-          <ul class="navbar-nav mr-auto">
+          <!-- <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
             <li class="nav-item active"><a class="nav-link px-md-3" href="#top">News<span class="sr-only">(current)</span></a></li>
             <li class="nav-item dropdown">
@@ -91,13 +90,32 @@
                 <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-university mr-1">&ensp;</i>SPLUMA Workflow</a>
               </div>
             </li>
+          </ul> -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link px-md-3" href="#top">News<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-2"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="workflow.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
+                <!-- <div class="dropdown-header"><small class="fw-300">It’s Features</small></div> -->
+								<div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &dagger;</a>
+                <div class="dropdown-divider --end"></div>
+                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+              </div>
+            </li>
           </ul>
-
           <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
             <a id="display-count" title="“T”-minus" href="../index.html#countdown-to-zero">nspdr.info</a>
           </span>
           <form class="form-inline mt-2 mt-md-0 pr-1">
-            <!-- <a class="btn btn-outline-light opaque-75 mr-1 my-3 my-sm-0" href="contact.html">&nbsp;Contact<i class="fa fa-sm fa-phone ml-2"></i>&nbsp;</a> -->
             <a class="btn btn-outline-light opaque-75 mr-1 my-2 my-md-0" href="contact.html"><small>CONTACT</small>&nbsp;<i class="fa fa-sm fa-phone"></i></a>
           </form>
         </div>
@@ -134,16 +152,16 @@
             <img class="img-fluid png-shadows opaque-75 pull-md-up2 d-none d-md-block rellax" data-rellax-speed="-1" alt="NSPDR Ecosystem" src="../img/logos/icon-inner-light.png">
             <img class="img-fluid png-shadows opaque-67 p-2 p-sm-5 d-md-none d-block rellax" data-rellax-speed="-1" alt="NSPDR Ecosystem" src="../img/logos/icon-inners-light.png">
           </div> -->
-          <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="1">
-            <img class="img-fluid png-shadows opaque90 pull-up1 p-4 p-md-3 p-xl-2" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
+          <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
+            <img class="img-fluid png-shadows opaque90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
           </div>
           <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
         		<div class="row text-left">
 	            <div class="col-12">
-	              <h1 class="showcase text-white opaque-75">news <small class="text-drdlr opaque-67 fw-600">&nbsp;and</small></h1>
+	              <h1 class="showcase text-white opaque-90">news <small class="text-drdlr opaque-67 fw-600">&nbsp;and</small></h1>
 	            </div>
 	            <div class="col-12">
-	              <h2 class="showcase text-white opaque-90">Announcements</h2>
+	              <h2 class="showcase text-white opaque-75">Announcements</h2>
 	            </div>
             </div>
           </div>
