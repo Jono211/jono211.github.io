@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="3000" height="3000" viewbox="0 0 3000 3000">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <rdf:Description rdf:about=""/>
    </rdf:RDF>
@@ -9,12 +9,11 @@
 <defs>
     <style>
       .cls-1 {
-        fill: #dfe7f2;
+        fill: #dee;
       }
 
       .cls-2 {
-        <!-- fill: #fbc472; -->
-        fill: #999988;
+        fill: #998;
       }
     </style>
   </defs>
