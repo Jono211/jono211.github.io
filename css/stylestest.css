@@ -759,13 +759,16 @@ a.text-nspdr4:hover {
 
 
 .green-filter::after {
-  background: rgba(0,100,50,.5);
-  background: linear-gradient(180deg, rgba(0,100,50,.9), rgba(0,100,50,.1));
+  background: rgba(17,102,51,.5);
+  background: linear-gradient(180deg, rgba(17,102,51,.9), rgba(17,102,51,.1));
 }
-.yellow-filter::after {
+.beige-filter::after {
   background: rgba(221,170,34,.5);
-  background: linear-gradient(180deg, rgba(221,170,34,.9) 0%, rgba(221,170,34,.1) 100%);
-  /* background: linear-gradient(180deg, rgba(170,102,34,.9) 0%, rgba(170,102,34,.1) 100%); */
+  background: linear-gradient(180deg, rgba(170,153,85,.9) 0%, rgba(170,153,85,.1) 100%);
+}
+.greyy-filter::after {
+  background: rgba(85,85,85,.5);
+  background: linear-gradient(180deg, rgba(102,102,102,.9) 0%, rgba(102,102,102,.1) 100%);
 }
 .brown-filter::after {
   background: rgba(102,85,51,.5);
@@ -773,16 +776,12 @@ a.text-nspdr4:hover {
   background: linear-gradient(to bottom, rgba(102,85,51,.9) 0%, rgba(102,85,51,.1) 100%);
 }
 .purple-filter::after {
-  background: rgba(100,81,116,.5);
-  background: linear-gradient(180deg, rgba(100,81,116,.9), rgba(100,81,116,.1));
+  background: rgba(102,85,119,.5);
+  background: linear-gradient(180deg, rgba(102,85,119,.9), rgba(102,85,119,.1));
 }
 .teal-filter::after {
-  background: rgba(102,153,153,.6);
-  background: linear-gradient(180deg, rgba(102,153,153,.8) 0%, rgba(102,153,153,.4) 100%);
-}
-.dark-filter::after {
-  background: rgba(85,85,85,.6);
-  background: linear-gradient(180deg, rgba(51,51,51,.8) 0%, rgba(51,51,51,.4) 100%);
+  background: rgba(51,102,102,.5);
+  background: linear-gradient(180deg, rgba(51,102,102,.9) 0%, rgba(51,102,102,.1) 100%);
 }
 .base-filter::after {
 	background: rgba(0,0,0,.5);
