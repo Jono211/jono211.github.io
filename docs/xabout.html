@@ -211,7 +211,8 @@
 									The NSPDR Ecosystem will also support the implementation of and compliance with multiple legislative and policy frameworks such as the National Development Plan (NDP), and the Spatial Data Infrastructure Act of 2003.
 								</p>
 							<!-- </div> -->
-							<p class="lead-2 text-right mt-5"><a href="#">Learn More &gt;</a></p>
+							<!-- <p class="lead-2 text-right mt-5"><a href="#">Learn More &gt;</a></p> -->
+							<p class="lead-2 text-right mt-5"><a href="#" class="pointertextnspdr" role="button" data-toggle="modal" data-target="#modalRationale">Learn More &gt;</a></p>
 						</div>
 					</div>
 				</div>
@@ -426,15 +427,6 @@
           </div>
         </div>
       </section>
-      <section class="segment bg-background" style="background-image:url('../img/bg-litegreen.svg');">
-	      <div class="container">
-		      <div class="row justify-content-center">
-			      <div class="col-12 col-md-10">
-							<hr class="space-9">
-	          </div>
-          </div>
-        </div>
-      </section>
 
       <!-- <hr class="space-4"> -->
     </main>
@@ -480,6 +472,39 @@
 	    <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
 	    <i id="point-breaks" class="media-breakpoint swing d-none fa fa-sm fa-tv">&nbsp;</i>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="modalRationale" tabindex="-1" role="dialog" aria-labelledby="modallRationale" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content modal-shadow">
+          <div class="modal-header">
+            <h2 class="modal-title text-nspdr2 fw-600" id="modallRationale">Project Rationale</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="font-size:2.25rem;" aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body mx-md-3 mt-2 pre-scrollable">
+            <!-- <h5 class="modal-title text-nspdr2 no-spacing fw-700 mb-2">Project Rationale</h5> -->
+						<div class="text-dark mb-0">
+							<p>South Africa does not have a central repository that utilises spatial data for spatial planning, monitoring, evaluation and coordination purposes at a national level. There is no formal collaboration on metadata kept or data custodianship being recorded to the effect according to the prescriptions of the Spatial Data Infrastructure <a href="about.html#content-links">Act</a> (Act 54 of 2003).</p>
+							<p>The lack of the availability of up-to-date spatial datasets to the public and private sector causes extensive time wastage and insecurity as data quality, scale and recentness is undermined. Currently, most departments have standalone databases and tools that are being used for planning and reporting purposes. Many of these do not have integrated spatial referencing and some departments rely only on spreadsheets to manage their planning and business processes.</p>
+							<p>As a result, information is not readily accessible to the relevant users and planning is often done in isolation without cognisance of associated needs and impacts from other services. This has resulted in the duplication of common datasets across existing databases, which in turn has resulted in data differences and related data conflicts.</p>
+							<p>This has led to fragmented planning processes characterised by delays and misalignment. In turn, it affects integrated development planning across the spheres of government as required by key planning policies and legislations such as the National Development Plan (NDP), Spatial Planning and Land Use Management <a href="about.html#content-links">Act</a> (Act 16 of 2013), Infrastructure Development Act (Act 23 of 2014), Municipal Systems Act (Act 32 of 2000) and others.</p>
+							<p>It also reflects in the misalignment of sector reporting to national departments and provincial reporting to the Presidency. Current and expected reporting to the National Planning Commission requires a spatial information management system integrated into the NSPDR Ecosystem and improved alignment of institutional roles and responsibilities to effect cooperative governance.</p>
+							<hr class="dark my-3">
+							<p>As a forerunner to the NSPDR Ecosystem, Spatial Planning Information Systems (SPISys) was piloted in the Free State and Northern Cape provinces to test the feasibility of developing and running a Geographic Information System (GIS) web-enabled portal containing relevant spatial planning information.</p>
+							<p class="mb-1">This was done between 2011 and 2014 and was concluded successfully with some key learnings being understood as follows:</p>
+							<ul class="flush">
+								<li>Datasets do not currently have official custodians as per the SDI Act with the responsibility to maintain and update the datasets;</li>
+								<li>Data standards pertaining to land use classes are not in place making it difficult to integrate datasets;</li>
+								<li>Some datasets that would form the basis of NSPDR such as wall-to-wall land use classification schemes do not exist;</li>
+								<li>The need to remove subjectivity from the planning function and move towards an evidence-based approach; and</li>
+								<li>The requirement of horizontal and vertical alignment of planning between the three spheres of government can only be managed or conceptualised through the use of a system such as the NSPDR Ecosystem.</li>
+							</ul>
+							<p>The DRDLR has already completed the User Requirements Specification (URS), Functional Requirements Specification (FRS) and Technical Specification making it possible to start with the construction of the NSPDR Ecosystem modules. The Esri South Africa and Agizo Solutions Joint Venture (JV) will develop and maintain a central repository that utilises spatial data for spatial planning, monitoring, evaluation and coordination purposes over a period of five years.</p>
+						</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- =========== JavaScript ===========  -->
     <!-- Placed at end so pages load faster. -->
