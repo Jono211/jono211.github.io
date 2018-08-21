@@ -5,18 +5,16 @@
       <rdf:Description rdf:about=""/>
    </rdf:RDF>
 </x:xmpmeta>
-
 <?xpacket end="w"?></metadata>
 <defs>
     <style>
       .cls-1 {
-        fill: #486;
-        <!-- fill: #597; -->
+        fill: #b73;
         opacity: 0.75;
       }
 
       .cls-2, .cls-3 {
-        fill: #ced;
+        fill: #eee;
         fill-rule: evenodd;
       }
 
