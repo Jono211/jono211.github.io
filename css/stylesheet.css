@@ -527,7 +527,7 @@ h2.showcase {
     white-space: normal;
   }
   h2.showcase {
-    font-size: calc(.6em + 8vw);
+    font-size: calc(.6em + 7vw);
     letter-spacing: -.1rem;
     white-space: normal;
   }
@@ -787,6 +787,9 @@ hr[class^='space-'] {
 .pull-right { margin-right: -1rem !important; }
 .pull-left  { margin-left: -1rem !important; }
 
+.pull-right2 { margin-right: -2rem !important; }
+.pull-left2  { margin-left: -2rem !important; }
+
 .pull-up1   { margin-top: -1rem !important; }
 .pull-up2   { margin-top: -2rem !important; }
 .pull-up3   { margin-top: -3rem !important; }
@@ -807,6 +810,12 @@ hr[class^='space-'] {
   .pull-md-right {
     margin-right: -1rem !important;
   }
+  .pull-md-left2 {
+    margin-left: -2rem !important;
+  }
+  .pull-md-right2 {
+    margin-right: -2rem !important;
+  }
 }
 @media (min-width: 992px) {
   .pull-lg-up1 {
@@ -823,6 +832,12 @@ hr[class^='space-'] {
   }
   .pull-lg-right {
     margin-right: -1rem !important;
+  }
+  .pull-lg-left2 {
+    margin-left: -2rem !important;
+  }
+  .pull-lg-right2 {
+    margin-right: -2rem !important;
   }
 }
 
