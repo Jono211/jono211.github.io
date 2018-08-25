@@ -3,9 +3,9 @@
 
 body {
 /* padding: 3rem 0rem; */
-  padding: 3rem 0 0;
-  color: #444;
-  background-color: whitesmoke;
+  /* padding: 3rem 0 0; */
+  /* color: #444; */
+  /* background-color: whitesmoke; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
@@ -46,6 +46,10 @@ ul.flush {
   margin-left: .5rem;
   padding-left: 1rem;
 }
+/* ol > li,
+ul > li {
+  margin-bottom: .25rem;
+} */
 
 footer#footer.end-of-page {
   background-color: #bbc1c7;
@@ -59,13 +63,13 @@ footer#footer:not(.end-of-page) {
 .w-90 { width: 90%; }
 .w-67 { width: 67%; }
 
-.opaque-10 { opacity: .1 !important; }
+.opaque-10 { opacity: .1  !important; }
 .opaque-25 { opacity: .25 !important; }
 .opaque-33 { opacity: .33 !important; }
-.opaque-50 { opacity: .5 !important; }
+.opaque-50 { opacity: .5  !important; }
 .opaque-67 { opacity: .67 !important; }
 .opaque-75 { opacity: .75 !important; }
-.opaque-90 { opacity: .9 !important; }
+.opaque-90 { opacity: .9  !important; }
 .opaque-99 { opacity: .99 !important; }
 
 .img-hover {
@@ -397,6 +401,11 @@ ul.statement > li {
 
 /* LEGAL-CONTENT
 --------------------- */
+#legalese * {
+  color: #444; }
+#legalese .h5 {
+  color: #555;
+  font-weight: 500; }
 #legalese h3,
 #legalese h2 {
   color: #666;
@@ -763,7 +772,6 @@ hr[class^='space-'] {
 .fw-400 { font-weight: 400 !important; }
 .fw-300 { font-weight: 300 !important; }
 .fw-200 { font-weight: 200 !important; }
-.fw-100 { font-weight: 100 !important; }
 
 .fat  { font-weight: 700 !important; }
 .thin { font-weight: 300 !important; }
