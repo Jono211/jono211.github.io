@@ -42,6 +42,11 @@
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
   <body id="top" class="bg-linear2">
+		<!--[if lt IE 8]>
+				<p class="upgrade-browser">
+          You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+		<![endif]-->
 
     <!-- BANNER -->
     <header class="container-fluid bg-white">
@@ -75,7 +80,7 @@
               <div class="dropdown-menu" aria-labelledby="navDropdown">
                 <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
 								<div class="dropdown-divider d-none d-md-block"></div>
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="xabout.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
                 <a class="dropdown-item active" href="#top" title="You are here!">
                   <i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA<span class="sr-only">(current)</span>
                 </a>
@@ -127,8 +132,8 @@
     </section>
 
 
-    <!-- MAIN -->
-    <main class="nspdr-background --raised --alt1 top-brown">
+    <!-- CONTENT -->
+    <main class="nspdr-background --raised circular top-brown">
 
       <section class="segment py-3">
 	      <div class="container-fluid">
@@ -233,7 +238,7 @@
       </section>
 
 
-      <section class="segment --headers bg-background" draggable="true" style="background-image:url('../img/bg-altstyled.svg');">
+      <section class="segment --headers bg-background bg--right" draggable="true" style="background-image:url('../img/bg-altstyled.svg');">
       <!-- <section id="call-to-action" class="bg-background" style="background-image:url(../img/bg-litebeige.svg);"> -->
         <!-- <hr class="space-2"> -->
         <div class="start-of-page">
@@ -272,6 +277,14 @@
                 </table>
               </div>
             </div>
+            <div class="row text-right">
+              <div class="col-11 mt-3">
+                <button class="btn btn-pill btn-outline-secondary fill btn-shadow fw-700 mr-0 mr-md-3 mr-xl5" style="font-size:1.15rem" type="button" onclick="goBack()">
+                  <i class="fa fa-sm fa-angle-double-left mr-2"></i>Go Back
+                </button>
+                <script>function goBack(){window.history.back();}</script>
+              </div>
+            </div>
           </div>
         </div>
         <hr class="space-2">
@@ -294,7 +307,7 @@
 		          <ul class="underline-on-hover sibling-fade">
 		            <li><a href="../index.html">Home</a></li>
 		            <li><a href="newsblog.html">News</a></li>
-		            <li><a href="about.html">About</a></li>
+		            <li><a href="xabout.html">About</a></li>
 		            <li><a href="termsofuse.html">Terms</a></li>
 		          </ul>
 		        </div>

@@ -13,8 +13,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="NSPDR Ecosystem - Find the latest project news and announcements for all things NSPDR right here.">
-    <meta name="keywords" content="NSPDR, Spatial Planning, Data Repository, E-Lodgement, Ecosystem, Rural Development, DRDLR, SPLUMA">
-    <meta name="author" content="Agizo Solutions on behalf of the Department of Rural Development and Land Reform">
+    <meta name="keywords" content="NSPDR, E-Lodgement, Ecosystem, Spatial Planning, Land Use Management, Rural Development, DRDLR, SPLUMA">
+    <meta name="author" content="Agizo Solutions, on behalf of the Department of Rural Development and Land Reform">
 
     <title>NSPDR&ensp;|&ensp;Latest News</title>
     <script>
@@ -41,7 +41,12 @@
 		<![endif]-->
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
-  <body id="top" class="bg-linear2 pt-0">
+  <body id="top" class="bg-linear2">
+		<!--[if lt IE 8]>
+				<p class="upgrade-browser">
+          You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+		<![endif]-->
 
     <!-- BANNER -->
     <header class="container-fluid bg-white">
@@ -57,58 +62,31 @@
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow">
       <div class="container">
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
-          <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Ecosystem">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Brand">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle Navigation" onclick="displayHamburger()">
           <span class="navbar-toggler-icon override">
             <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
           </span>
         </button>
         <div class="collapse navbar-collapse" id="navigator">
-          <!-- <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item active"><a class="nav-link px-md-3" href="#top">News<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle override" href="#" id="navAboutMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About<i class="fa fa-sm fa-angle-down ml-1"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navAboutMenu">
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About the <small class="fw-600">NSPDR</small></a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
-                <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question mr-3"></i>&nbsp;Questions &amp; Answers</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle override ml-md-0" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Features<i class="fa fa-sm fa-angle-down ml-1"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-bars mr-3"></i>E&hybull;Lodgement</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-university mr-1">&ensp;</i>SPLUMA Workflow</a>
-              </div>
-            </li>
-          </ul> -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item active"><a class="nav-link px-md-3" href="#top" title="You are here!">News<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item active"><a class="nav-link pr-md-3" href="#top" title="You are here!">News<span class="sr-only">(current)</span></a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
-								<div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider d-none d-md-block"></div>
+                <a class="dropdown-item" href="xabout.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
                 <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
-                <!-- <div class="dropdown-header"><small class="fw-300">It’s Features</small></div> -->
-								<div class="dropdown-divider --alt"></div>
-                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &dagger;</a>
-                <div class="dropdown-divider --end"></div>
-                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &infin;</span></a>
+								<div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item" href="content.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
             </li>
           </ul>
@@ -137,58 +115,46 @@
     </div> -->
 
     <!-- HERO -->
-    <!-- <section class="page-header header-filter clear-filter brown-filter mask-25 rellax" data-rellax-speed="-4" style="background-image:url('../img/view/sani-pass-1440x810.jpg')"> -->
     <section class="page-hero mask-25 rellax" data-rellax-speed="-4">
       <div class="hero-header brown-filter" style="background-image:url('../img/view/sani-pass-1440x810.jpg')">
         <div class="container clear-filter">
-        <div class="row justify-content-center align-content-end">
-          <!-- <div class="col-12 col-md-11 col-lg10 mx-auto mt-4">
-            <img class="herobrand pull-up1 img-fluid mb-auto png-shadow opaque-75 rellax" data-rellax-speed="-1" data-rellax-percentage=".1" src="../img/logos/icon-inner-light.png" alt="NSPDR Ecosystem">
-          </div> -->
-          <!-- <div class="col-12 mx-auto pt-4">
-            <h1 class="showcase text-center text-white opaque-50 rellax" data-rellax-speed="6" data-rellax-percentage=".5" data-rellax-zindex="5">
-              Project Blog
-            </h1>
-          </div> -->
-          <!-- <div class="col-12 mx-auto">
-            <img class="img-fluid png-shadows opaque-75 pull-md-up2 d-none d-md-block rellax" data-rellax-speed="-1" alt="NSPDR Ecosystem" src="../img/logos/icon-inner-light.png">
-            <img class="img-fluid png-shadows opaque-67 p-2 p-sm-5 d-md-none d-block rellax" data-rellax-speed="-1" alt="NSPDR Ecosystem" src="../img/logos/icon-inners-light.png">
-          </div> -->
-          <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
-            <img class="img-fluid png-shadows opaque90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
-          </div>
-          <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
-        		<div class="row text-left">
-	            <div class="col-12">
-	              <h1 class="showcase text-white opaque-90">news <small class="text-drdlr opaque-67 fw-600">&nbsp;and</small></h1>
-	            </div>
-	            <div class="col-12">
-	              <h2 class="showcase text-white opaque-75">Announcements</h2>
-	            </div>
+          <div class="row justify-content-center align-content-end">
+            <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto">
+              <img class="img-fluid png-shadows opaque-90 pull-up1 p-md-3 p-xl-2 d-none d-md-block rellax" data-rellax-speed="2" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
+              <img class="img-fluid png-shadows opaque-75 pull-up1 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-1" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
+            </div>
+            <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
+              <div class="row text-left">
+                <div class="col-12">
+                  <h1 class="showcase text-white opaque-90">news <small class="text-drdlr opaque-67 fw-600">&nbsp;and</small></h1>
+                </div>
+                <div class="col-12">
+                  <h2 class="showcase text-white opaque-75">Announcements</h2>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
     </section>
 
 
-    <!-- “MAIN” -->
-    <main class="nspdr-background --raised --alt2 top-brown">
+    <!-- “CONTENT” -->
+    <main class="nspdr-background --raised circles2 top-brown">
 
       <div class="container">
         <!-- <div class="card text-dark main main-raised" style="margin-top:-180px!important;"> -->
           <!-- <div class="row justify-content-center pt-4 px-3">
             <h1 style="opacity:1;" class="showcase text-center mini-shadow text-dark">Project <span class="text-geois">&nbsp;Blog</span></h1> -->
             <!-- <h2 class="showcase text-center mini-shadow text-dark">News <span class="text-geois"><em>&amp;&nbsp;</em></span> Announcements</h2> -->
-            <!-- <h2 class="display-1 condensed-3 fat texttrunc mini-shadow text-dark px-1 mb-0">News <em class="text-geois">&amp;&nbsp;</em> Announcements</h2> -->
+            <!-- <h2 class="display-1 condensed-3 fw-700 texttrunc mini-shadow text-dark px-1 mb-0">News <em class="text-geois">&amp;&nbsp;</em> Announcements</h2> -->
             <!-- <div class="special-divider mx-auto w-75 my-4"></div>
           </div> -->
 
           <div class="row justify-content-center pt-5 mb-0 mx-1 mx-md-3">
             <div class="text-center ml-md-2">
-              <p class="h2 text-dark fw-600 mb-2">Hello, and welcome to the <small class="fat">NSPDR</small> ecosystem project blog and news page .&nbsp;.&nbsp;.</p>
-              <p class="h2 text-dark fw-600">You can find the latest news and announcements for all things <small class="fat">NSPDR</small> right here&nbsp;!</p>
+              <p class="h2 text-dark fw-600 mb-2">Hello, and welcome to the <small class="fw-700">NSPDR</small> ecosystem project blog and news page .&nbsp;.&nbsp;.</p>
+              <p class="h2 text-dark fw-600">You can find the latest news and announcements for all things <small class="fw-700">NSPDR</small> right here&nbsp;!</p>
             </div>
           </div>
         </div>
@@ -233,7 +199,7 @@
                 </h3>
                 <div class="mb-2 text-muted">05 June 2018</div>
                 <div class="card-text mb-auto">
-                  <p class="wrap mb-2">The <span class="fat">NSPDR</span> team was invited to give a presentation at the Planners Forum hosted by the ANDM. In attendance were representatives from COGTA, SALGA as well as the two local municipalities of Matatiele and Mbizana.</p>
+                  <p class="wrap mb-2">The <span class="fw-700">NSPDR</span> team was invited to give a presentation at the Planners Forum hosted by the ANDM. In attendance were representatives from COGTA, SALGA as well as the two local municipalities of Matatiele and Mbizana.</p>
                   <p>The district, which has been identified as one of the . . .</p>
                 </div>
                 <a class="mt-2 blog-post" href="#" role="button" data-toggle="modal" data-target="#modalBlogpost4A">Continue reading</a>
@@ -251,7 +217,7 @@
                 </h3>
                 <div class="mb-2 text-muted">16 May 2018</div>
                 <p class="card-text d-block mb-auto">
-                  <!-- The <span class="fat">NSPDR</span> stakeholder management team embarked on their second visit to the district ... -->
+                  <!-- The <span class="fw-700">NSPDR</span> stakeholder management team embarked on their second visit to the district ... -->
                   The NSPDR stakeholder management team embarked on their second visit to the district . . .
                 </p>
                 <a class="mt-2 blog-post" href="#" role="button" data-toggle="modal" data-target="#modalBlogpost3A">Continue reading</a>
@@ -275,10 +241,10 @@
             </div>
           </div>
           <!--
-            <h4 class="card-title fat">Community Feedback</h4>
+            <h4 class="card-title fw-700">Community Feedback</h4>
             <div class="card-text lead pl-md-1">
               <p class="mb-1">
-                “<em>I’m looking forward to the <small class="fat">NSPDR</small> ecosystem going live; seeing that it will be a useful and progressive tool for planning, and assist us with efficiency at a municipal level.</em>”
+                “<em>I’m looking forward to the <small class="fw-700">NSPDR</small> ecosystem going live; seeing that it will be a useful and progressive tool for planning, and assist us with efficiency at a municipal level.</em>”
               </p>
               <p class="text-right mr-2 mb-1">&mdash;&ensp;Busisiwe Sibiya
                 <span class="initialism fw-400 text-muted">&nbsp; West Rand District Municipality</span>
@@ -287,12 +253,12 @@
           </div>
           <hr class="mx-3 my-2">
           <div class="card-body">
-            <h4 class="card-title fat">Social Media</h4>
+            <h4 class="card-title fw-700">Social Media</h4>
             <div class="card-text lead pl-md-1">
               <p class="modal-subtitle text-muted">From the DRDLR’s Instagram profile</p>
               <p class="pull-up1">The National Spatial Planning Data Repository (NSPDR) conference gets underway at Emperors Palace Hotel and Casino in Johannesburg, on 23 November 2017.</p>
               <ul class="flush pull-up1">
-                <li>The <small class="fat">NSPDR</small> ecosystem was setup to address challenges related to the availability of information for sustainable spatial planning.</li>
+                <li>The <small class="fw-700">NSPDR</small> ecosystem was setup to address challenges related to the availability of information for sustainable spatial planning.</li>
                 <li>It aims to develop technical tools and systems to assist municipalities with spatial planning.</li>
                 <li>This is in line with the NDP spatial planning imperatives of integrated planning approach.</li>
                 <li>The NDP spatial planning advocate for ensuring harmony between environmental, social and economic factors on a given geographic space.</li>
@@ -339,13 +305,13 @@
         <div class="row my-5">
           <div class="col-lg-11 my-4 px-3 px-md-5">
             <h2 class="featurette-heading ml-1">
-              <span class="display-4 fat">watch this space</span><br>
+              <span class="display-4 fw-700">watch this space</span><br>
               <span class="text-muted">for our next featured story.</span>
             </h2>
             <div class="linear-divider"></div>
             <div class="mx-1">
               <p class="lead-2">We’re always hoping to add some new content here really soon.</p>
-              <p class="lead">So make sure you come back and visit us from time to time, because the <small class="fat">NSPDR</small> is coming to a municipality near you, and we don’t want you to miss out, and you wouldn’t want to either... or would you?</p>
+              <p class="lead">So make sure you come back and visit us from time to time, because the <small class="fw-700">NSPDR</small> is coming to a municipality near you, and we don’t want you to miss out, and you wouldn’t want to either... or would you?</p>
             </div>
           </div>
         </div>
@@ -354,6 +320,7 @@
       <hr class="space-6">
       <!-- </div> -->
     </main>
+
 
     <!-- MODAL-04 -->
     <div class="modal fade" id="modalBlogpost4A" tabindex="-1" role="dialog" aria-labelledby="modalBlogpost4B" aria-hidden="true">
@@ -381,8 +348,8 @@
             <div class="linear-divider my-3"></div>
             <div class="text-dark">
               <h6 class="modal-title text-tertiary expanded-1 mb-1">MEETING SUMMARY</h6>
-              <p>The <span class="fat">NSPDR</span> team was invited to give a presentation at the Planners Forum hosted by the ANDM. In attendance were representatives from COGTA, SALGA as well as the two local municipalities of Matatiele and Mbizana.</p>
-              <p>The district, which has been identified as one of the most impoverished in the province, is currently looking to get their SDF approved and adopted. The assistant manager from the district expressed his sentiments that the <span class="fat">NSPDR</span> system would be pivotal in supporting the reviewing of their SDF which is going to be carried out in house due to financial constraints. He also highlighted a pressing need to map existing capital projects in order to report to Treasury using such a system.</p>
+              <p>The <span class="fw-700">NSPDR</span> team was invited to give a presentation at the Planners Forum hosted by the ANDM. In attendance were representatives from COGTA, SALGA as well as the two local municipalities of Matatiele and Mbizana.</p>
+              <p>The district, which has been identified as one of the most impoverished in the province, is currently looking to get their SDF approved and adopted. The assistant manager from the district expressed his sentiments that the <span class="fw-700">NSPDR</span> system would be pivotal in supporting the reviewing of their SDF which is going to be carried out in house due to financial constraints. He also highlighted a pressing need to map existing capital projects in order to report to Treasury using such a system.</p>
             <img class="img-thumbnail p-2 mb-3" src="../img/alfred-nzo-201806.jpg" alt="NSPDR Engagements">
               <p>SALGA extended a hand of support to the project, reiterating the opportunity for the national department to partner with them in their various campaigns across the local municipalities of Eastern Cape.</p>
               <p>The overall feedback received from the district municipalities was positive with questions being raised regarding the spatial data and cost implications for interested municipalities.</p>
@@ -417,10 +384,10 @@
             <div class="linear-divider my-3"></div>
             <h6 class="modal-title text-tertiary expanded-1 mb-1">MEETING SUMMARY</h6>
             <div class="text-dark">
-              <p>The <span class="fat">NSPDR</span> stakeholder management team embarked on their second visit to the Umkhanyakhude district municipality in an attempt to get an audience with the Jozini, Mtubatuba and uMhlabuyalingana local municipalities.</p>
+              <p>The <span class="fw-700">NSPDR</span> stakeholder management team embarked on their second visit to the Umkhanyakhude district municipality in an attempt to get an audience with the Jozini, Mtubatuba and uMhlabuyalingana local municipalities.</p>
               <p>We were received warmly by our host from KZN Cogta and where given an opportunity to introduce the project to the attendees. The feedback we received was positive with comments given that considerations for municipalities with low bandwidth was a bonus so as not to exclude anyone from being able to fully utilise the system.</p>
             <img class="img-thumbnail p-2 mb-3" src="../img/umkhanyakhude-201805.jpg" alt="NSPDR Engagements">
-              <p>The chairperson, Mr V. Govender, expressed his views on the importance of initiatives such as these, and further highlighted the opportunity for the <span class="fat">NSPDR</span> team to join efforts with the current work being done in the district to capacitate the municipalities with SDF reviews that are underway.</p>
+              <p>The chairperson, Mr V. Govender, expressed his views on the importance of initiatives such as these, and further highlighted the opportunity for the <span class="fw-700">NSPDR</span> team to join efforts with the current work being done in the district to capacitate the municipalities with SDF reviews that are underway.</p>
               <p>The overall objectives of the team where realised as we established contact with individual planners who were eager to be part of the testing and training phases of the system.</p>
               <p>We look forward to officially welcoming Umkhanyakhude and its local municipalities as partners of the project.</p>
             </div>
@@ -475,7 +442,7 @@
             <div class="text-dark">
               <h6 class="modal-title text-tertiary expanded-1 mb-1">COMMUNITY FEEDBACK</h6>
               <p class="mb-1">
-                “<em>I’m looking forward to the <small class="fat">NSPDR</small> ecosystem going live; seeing that it will be a useful and progressive tool for planning, and assist us with efficiency at a municipal level.</em>”
+                “<em>I’m looking forward to the <small class="fw-700">NSPDR</small> ecosystem going live; seeing that it will be a useful and progressive tool for planning, and assist us with efficiency at a municipal level.</em>”
               </p>
               <p class="text-right mr-2 mb-1">&mdash;&ensp;Busisiwe Sibiya
                 <span class="initialism fw-400 text-muted">&nbsp; West Rand District Municipality</span>
@@ -485,7 +452,7 @@
               <!-- <p class="modal-subtitle text-muted">From the DRDLR’s Instagram profile</p> -->
               <p class="">The National Spatial Planning Data Repository (NSPDR) conference gets underway at Emperors Palace Hotel and Casino in Johannesburg, on 23 November 2017.</p>
               <ul class="flush pull-up1">
-                <li>The <small class="fat">NSPDR</small> ecosystem was setup to address challenges related to the availability of information for sustainable spatial planning.</li>
+                <li>The <small class="fw-700">NSPDR</small> ecosystem was setup to address challenges related to the availability of information for sustainable spatial planning.</li>
                 <li>It aims to develop technical tools and systems to assist municipalities with spatial planning.</li>
                 <li>This is in line with the NDP spatial planning imperatives of integrated planning approach.</li>
                 <li>The NDP spatial planning advocate for ensuring harmony between environmental, social and economic factors on a given geographic space.</li>
@@ -527,8 +494,6 @@
       </div>
     </div>
 
-		<!-- <hr class="space-4">
-    <hr class="dark mx-5 my-4"> -->
 
     <!-- FOOTER -->
     <footer class="nspdr-footer" id="end">
@@ -539,12 +504,12 @@
 		          &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
 		        </div>
 	        </div>
-          <div class="col-8 col-sm-6 col-lg-4 order-lg-3">
+          <div class="col-9 col-sm-6 col-lg-4 order-lg-3">
 		        <div class="float-sm-right text-sm-right">
 		          <ul class="underline-on-hover sibling-fade">
 		            <li><a href="../index.html">Home</a></li>
 		            <li><a href="newsblog.html">News</a></li>
-		            <li><a href="about.html">About</a></li>
+		            <li><a href="xabout.html">About</a></li>
 		            <li><a href="termsofuse.html">Terms</a></li>
 		          </ul>
 		        </div>
@@ -574,7 +539,6 @@
     <script src="../js/rellax.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/nspdr-scripts.js"></script>
-    <!-- <script>var rellax = new Rellax('.rellax');</script> -->
 
   </body>
 </html>

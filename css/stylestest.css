@@ -851,14 +851,17 @@ a.text-nspdr4:hover {
   background-color: #fafafa;
   /* background-image: repeating-radial-gradient(circle, #fafafa, #fafafa 10%, #fff 10%, #fff 20%); */
 }
-.nspdr-background.--alt1 {
+.nspdr-background.circular {
   background-image: repeating-radial-gradient(circle, #f5f5f5, #f5f5f5 15%, #fafafa 15%, #fafafa 30%) !important;
 }
-.nspdr-background.--alt2 {
+.nspdr-background.circles2 {
   background-image: repeating-radial-gradient(circle, #e3e3e3, #e3e3e3 15%, #f0f0f0 15%, #f0f0f0 30%) !important;
 }
-.nspdr-background.--alt3 {
+.nspdr-background.circles3 {
   background-image: repeating-radial-gradient(circle, #ddd, #ddd 15%, #eee 15%, #eee 30%) !important;
+}
+.nspdr-background.diagonal {
+  background-image: repeating-linear-gradient(-45deg, #fafafa 0, #fafafa 10%, #eee 10%, #eee 20%) !important;
 }
 
 /* .nspdr-main .nspdr-section, */
@@ -1435,6 +1438,94 @@ ul.underline-on-hover li a:hover::after {
 
 .overflow-visible { overflow: visible !important; }
 .overflow-hidden  { overflow: hidden !important; }
+
+.col-fill-left {
+	width: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-size: contain;
+	background-position: center;
+	z-index: -1;
+}
+.col-fill-left + div {
+	position: relative;
+	z-index: 0;
+}
+.col-fill-right {
+	width: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-size: contain;
+	background-position: center;
+	z-index: -1;
+}
+.col-fill-right + div {
+	position: relative;
+	z-index: 0;
+}
+
+
+.upgrade-browser {
+  background: #ccc;
+  color: #111;
+  text-align: center;
+  margin: .2em 0;
+  padding: .2em 0; }
+
+/* background-positions */
+.background,
+[class*='bg--'] {
+  /* position: absolute; */
+  position: relative;
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  /* top: 0; left: 0; right: 0; bottom: 0; */
+}
+.bg--top {
+	background-position: top !important;
+}
+.bg--bottom {
+	background-position: bottom !important;
+}
+.bg--center {
+	background-position: center !important;
+}
+.bg--center-top {
+	background-position: center top !important;
+}
+.bg--right-top {
+	background-position: right top !important;
+}
+.bg--left-top {
+	background-position: left top !important;
+}
+.bg--right-bottom,
+.bg--left-bottom,
+.bg--right,
+.bg--left,
+.bg--center-bottom {
+	background-position: center bottom !important;
+}
+/* @media (min-width: 1024px) { */
+@media (min-width: 768px) {
+	.bg--right-bottom {
+		background-position: right bottom !important;
+	}
+	.bg--left-bottom {
+		background-position: left bottom !important;
+	}
+	.bg--right {
+		background-position: right !important;
+	}
+	.bg--left {
+		background-position: left !important;
+	}
+}
 
 
 /* animations
