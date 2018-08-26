@@ -394,9 +394,9 @@ a.text-nspdr4:hover {
 .box-block {
   text-align: center;
   background-color: #fff;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  border-radius: 1rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  border-radius: 1.5rem;
   -webkit-box-shadow: 0 1.275rem 1.5rem -.75rem rgba(0,0,0,.33), 0 1.875rem 3.125rem 0 rgba(0,0,0,.22);
   -moz-box-shadow: 0 1.275rem 1.5rem -.75rem rgba(0,0,0,.33), 0 1.875rem 3.125rem 0 rgba(0,0,0,.22);
   box-shadow: 0 1.275rem 1.5rem -.75rem rgba(0,0,0,.33), 0 1.875rem 3.125rem 0 rgba(0,0,0,.22);
@@ -411,7 +411,7 @@ a.text-nspdr4:hover {
 }
 .box-block h2 {
   color: #444;
-  font-weight: 400;
+  font-weight: 300;
 }
 .box-block.--main {
   z-index: 2;
