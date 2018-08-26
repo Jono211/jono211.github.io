@@ -41,7 +41,7 @@
 		<![endif]-->
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
-  <body id="top" class="bg-linear pt-0">
+  <body id="top" class="bg-linear2">
 
     <!-- BANNER -->
     <header class="container-fluid bg-white">
@@ -57,57 +57,34 @@
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark navbar-shadow">
       <div class="container">
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
-          <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Ecosystem">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Brand">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle Navigation" onclick="displayHamburger()">
           <span class="navbar-toggler-icon override">
             <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
           </span>
         </button>
         <div class="collapse navbar-collapse" id="navigator">
-          <!-- <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link px-md-3" href="newsblog.html">News</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About<i class="fa fa-sm fa-angle-down ml-2"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
-								<div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About <span class="fw-700">NSPDR</span></a>
-                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Links</a>
-                <a class="dropdown-item" href="about.html#some-questions"><i class="fa fa-sm fa-question-circle mr-3"></i>Your Questions ?</a>
-                <div class="dropdown-header"><small class="fw-300">Main Features</small></div>
-								<div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &dagger;</a>
-                <div class="dropdown-divider --alt"></div>
-                <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-road mr-1">&ensp;</i>Enabling SPLUMA</a>
-              </div>
-            </li>
-          </ul> -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link px-md-3" href="newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="newsblog.html">News</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
-								<div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider d-none d-md-block"></div>
+                <a class="dropdown-item" href="xabout.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
                 <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
-								<div class="dropdown-divider --alt"></div>
+								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &oS;</span></a>
-                <div class="dropdown-divider --end"></div>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &infin;</span></a>
+                <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="content.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
             </li>
           </ul>
-
           <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
             <a id="display-count" title="“T”-minus" href="../index.html#countdown-to-zero">nspdr.info</a>
           </span>
@@ -119,7 +96,7 @@
     </nav>
 
     <!-- HERO -->
-    <section class="page-header --small header-filter clear-filter basefilter mask-25 rellax" 
+    <section class="page-header --small header-filter clear-filter base-filter mask-25 rellax" 
 			data-rellax-speed="-3" style="background-image:url('../img/urban/interchange-1280x720.jpg')">
     </section>
 
@@ -131,16 +108,16 @@
         <div id="termOfUse" class="container">
 					<div class="row justify-content-center">
 						<div class="col-12 col-md-11">
-							<h1 class="display-2 condensed-2 fat text-tertiary mb-1">Terms of Use<strong class="text-dark fw-800">&nbsp;.</strong></h1>
-							<!-- <h2 class="display-4 condensed-1 fat text-tertiary ml-1">[ brief summary ]</h2> -->
-							<h2 class="display-4 condensed-1 fat text-secondary ml-1">[&nbsp;briefly summarised&nbsp;]</h2>
+							<h1 class="display-2 condensed-2 fw-700 text-tertiary mb-1">Terms of Use<strong class="text-dark fw-800">&nbsp;.</strong></h1>
+							<!-- <h2 class="display-4 condensed-1 fw-700 text-tertiary ml-1">[ brief summary ]</h2> -->
+							<h2 class="display-4 condensed-1 fw-700 text-secondary ml-1">[&nbsp;briefly summarised&nbsp;]</h2>
 							<div class="linear-divider my-3"></div>
 							<div class="lead leading-3 mx-2">
 								<p class="mb-3">
 									You may use the website, information, writings, images or other work that you see, hear or otherwise experience on the site (individually or collectively - referred to as, the “content” or “material”) solely for personal, non-commercial transitory purposes only, or to learn about the national <strong>Department of Rural Development and Land Reform</strong>.<br>
 									No right, title, or interest in any content is transferred to you, without limitation, whether as a result of downloading such content or otherwise.&nbsp; The Department of Rural Development and Land Reform (hereinafter referred to as, the “Department” or the “<small>DRDLR</small>”) reserves complete title and full intellectual property rights in all content.
 								</p>
-								<p class="fat">
+								<p class="fw-700">
 									Except where expressly authorised or permitted by these terms of use, you may not use, alter, copy, distribute, transmit, or derive additional work from any content obtained from this website or it’s applicable services.
 								</p>
 							</div>
@@ -149,16 +126,14 @@
 				</div>
 
 
-        <!-- <hr id="terms-of-use" class="featurette-divider"> -->
       	<div id="termsConditions" class="container"><hr class="dark-divider"></div>
         <div class="container">
 					<div class="row justify-content-center">
 						<div class="col-12 col-lg-11 mx-auto">
 
-		          <!-- <h3>Terms &amp; Conditions</h3> -->
 		          <h3>Terms and Conditions</h3>
-		          <ol style="color:#333!important;">
-
+		          <!-- <ol style="color:#333!important;"> -->
+							<ol>
 		            <li class="h5">Terms
 		              <ol class="para mt-2">
 		                <li>By accessing this website, you are agreeing to be bound by these general terms and conditions of use, and all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.</li>
@@ -166,7 +141,6 @@
 		                <li>The materials contained in this website are protected by applicable copyright and trademark law.</li>
 		              </ol>
 		            </li>
-
 		            <li class="h5">License
 		              <ol class="para mt-2">
 		                <li>
@@ -188,7 +162,6 @@
 		                </li>
 		              </ol>
 		            </li>
-
 		            <li class="h5">Disclaimer
 		              <ol class="para mt-2">
 		                <li>The materials on the Department’s <small class="fat">NSPDR</small> website are provided “as-is”.</li>
@@ -200,7 +173,6 @@
 		                </li>
 		              </ol>
 		            </li>
-
 		            <li class="h5">Limitations
 		              <ol class="para mt-2">
 		                <li>
@@ -218,7 +190,6 @@
 		                </li>
 		              </ol>
 		            </li>
-
 		            <li class="h5">Site Links
 		              <ol class="para mt-2">
 		                <li>
@@ -230,28 +201,24 @@
 		                </li>
 		              </ol>
 		            </li>
-
 		            <li class="h5">Erratum
 		              <ol class="para mt-2">
 		                <li>The materials appearing on the Department’s <small class="fat">NSPDR</small> website could include technical, typographical, or photographic errors.</li>
 		                <li>The Department does not warrant that any of the materials on its website are accurate, complete, or current.</li>
 		              </ol>
 		            </li>
-
 		            <li class="h5">Revisions
 		              <ol class="para mt-2">
 		                <li>The Department may make changes to the materials contained on its website at any time without notice.</li>
 		                <li>The Department does not, however, make any commitment to update the materials.</li>
 		              </ol>
 		            </li>
-
 		            <li class="h5">Modifications
 		              <ol class="para mt-2">
 		                <li>The Department may revise these terms of use for its <small class="fat">NSPDR</small> website at any time without notice.</li>
 		                <li>By using this website, you are agreeing to be bound by the then current version of these terms and conditions of use.</li>
 		              </ol>
 		            </li>
-
 		            <li class="h5">Governing Law
 		              <ol class="para mt-2">
 		                <li>Any claim relating to the Department’s <small class="fat">NSPDR</small> website shall be procedurally governed by the laws of the Republic of South Africa, without regard to its conflict of law provisions.</li>
@@ -265,7 +232,6 @@
         </div> <!-- /.container -->
 
 
-        <!-- <hr id="privacyPolicy" class="featurette-divider"> -->
       	<div id="privacyPolicy" class="container"><hr class="dark-divider"></div>
         <div class="container">
 					<div class="row justify-content-center">
@@ -304,12 +270,12 @@
 		          &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
 		        </div>
 	        </div>
-          <div class="col-8 col-sm-6 col-lg-4 order-lg-3">
+          <div class="col-9 col-sm-6 col-lg-4 order-lg-3">
 		        <div class="float-sm-right text-sm-right">
 		          <ul class="underline-on-hover sibling-fade">
 		            <li><a href="../index.html">Home</a></li>
 		            <li><a href="newsblog.html">News</a></li>
-		            <li><a href="about.html">About</a></li>
+		            <li><a href="xabout.html">About</a></li>
 		            <li><a href="#termsConditions">Terms</a></li>
 		          </ul>
 		        </div>
@@ -317,10 +283,12 @@
           <div class="col-12 col-md-8 col-lg-4 order-lg-2">
 		        <div class="pt-3 pt-md-1 pt-lg-0">
 		          <ul class="social-media">
-		            <li class="--facebook"><a href="template.html" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li>
-		            <li class="--twitter"><a href="template1.html" class="fab fa-2x fa-twitter" title="Twitter"></a></li>
-		            <li class="--instagram"><a href="temporary.html" class="fab fa-2x fa-instagram" title="Instagram"></a></li>
-		            <li class="--youtube"><a href="temporary1.html" class="fab fa-2x fa-youtube" title="YouTube"></a></li>
+		            <li class="--facebook">
+									<a href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" target="_blank" class="fab fa-2x fa-facebook-f" title="Facebook"></a>
+								</li>
+		            <li class="--twitter"><a href="https://twitter.com/DRDLR_online" target="_blank" class="fab fa-2x fa-twitter" title="Twitter"></a></li>
+		            <li class="--instagram"><a href="https://www.instagram.com/drdlr_sa" target="_blank" class="fab fa-2x fa-instagram" title="Instagram"></a></li>
+		            <li class="--youtube"><a href="https://www.youtube.com/user/DRDLROnline" target="_blank" class="fab fa-2x fa-youtube" title="YouTube"></a></li>
 		          </ul>
 		        </div>
 	        </div>

@@ -68,20 +68,20 @@
         <div class="collapse navbar-collapse" id="navigator">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link px-md-3" href="newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="newsblog.html">News</a></li>
             <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
-								<div class="dropdown-divider"></div>
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider d-none d-md-block"></div>
                 <a class="dropdown-item" href="xabout.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
                 <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
-								<div class="dropdown-divider --alt"></div>
+								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &oS;</span></a>
-                <div class="dropdown-divider --end"></div>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &infin;</span></a>
+                <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item active" href="#top" title="You are here!"><i class="fa fa-sm fa-link mr-3"></i>Additional Content<span class="sr-only">(current)</span></a>
               </div>
             </li>
@@ -101,23 +101,10 @@
       <div class="hero-header base-filter" style="background-image:url('../img/view/boland-landscape-960x472.jpg')">
         <div class="container clear-filter">
           <div class="row justify-content-center">
-            <div class="col-12 mx-auto">
-              <img class="img-fluid png-shadows opaque-90 pull-md-up2 d-none d-md-block rellax" data-rellax-speed="2" alt="NSPDR Ecosystem" src="../img/logos/icon-inner-light.png">
-              <img class="img-fluid png-shadows opaque-75 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-2" alt="NSPDR Ecosystem" src="../img/logos/icon-inners-light.png">
+            <div class="col-12 mx-auto rellax" data-rellax-speed="-2">
+              <img class="img-fluid png-shadows opaque-90 pull-md-up2 d-none d-md-block" alt="NSPDR Ecosystem" src="../img/logos/icon-inner-light.png">
+              <img class="img-fluid png-shadows opaque-75 p-5 p-sm-4 d-block d-md-none" alt="NSPDR Ecosystem" src="../img/logos/icon-inners-light.png">
             </div>
-            <!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
-              <img class="img-fluid png-shadows opaque-90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/icon-inners-light.png" alt="NSPDR">
-            </div>
-            <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
-              <div class="row text-left">
-                <div class="col-12">
-                  <h2 class="showcase text-white opaque-90">NSPDR</h2>
-                </div>
-                <div class="col-12">
-                  <h1 class="showcase text-white opaque-75 fw-600">Ecosystem</h1>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -234,7 +221,6 @@
       </section>
 
       <div class="container"><hr class="dark"></div>
-
       <!-- <section class="segment bg-background" style="background-image:url('../img/bg-litegrey.svg');">
 	      <div class="container">
 		      <div class="row justify-content-center">
@@ -244,10 +230,8 @@
           </div>
         </div>
       </section> -->
-      <hr class="space-4">
+      <hr class="space-4" id="doc-links">
 
-
-      <!-- <section class="segment bg-background" draggable="true" style="background-image:url('../img/bg-altstyled.svg')"> -->
       <section class="segment bg-background" draggable="true" style="background-image:url('../img/bg-altwavez.svg')">
 	      <div class="container">
 		      <div class="row justify-content-center">
@@ -357,7 +341,6 @@
 	          </div>
           </div>
         </div>
-        <!-- <hr class="space-9"> -->
         <hr class="space-3">
       </section>
 
@@ -414,7 +397,6 @@
     <script src="../js/rellax.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/nspdr-scripts.js"></script>
-    <!-- <script>var rellax = new Rellax('.rellax');</script> -->
 
   </body>
 </html>
