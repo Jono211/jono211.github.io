@@ -14,8 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="description" content="The National Spatial Planning Data Repository Ecosystem - Enabling Integrated Spatial Planning and Land Use Management.">
-    <meta name="keywords" content="NSPDR, Spatial Planning, Data Repository, E-Lodgement, Ecosystem, Rural Development, DRDLR, SPLUMA">
-    <meta name="author" content="Agizo Solutions on behalf of the Department of Rural Development and Land Reform">
+    <meta name="keywords" content="NSPDR, E-Lodgement, Ecosystem, Spatial Planning, Land Use Management, Rural Development, DRDLR, SPLUMA">
+    <meta name="author" content="Agizo Solutions, on behalf of the Department of Rural Development and Land Reform">
 
     <title>NSPDR&ensp;|&ensp;What’s It About?</title>
     <script>
@@ -42,7 +42,12 @@
 		<![endif]-->
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
-  <body id="top" class="bg-linear pt-0">
+  <body id="top" class="bg-linear">
+		<!--[if lt IE 8]>
+				<p class="upgrade-browser">
+          You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+		<![endif]-->
 
     <!-- BANNER -->
     <header class="container-fluid bg-white">
@@ -60,7 +65,7 @@
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
           <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Brand">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle Navigation" onclick="displayHamburger()">
           <span class="navbar-toggler-icon override">
             <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
           </span>
@@ -68,21 +73,22 @@
         <div class="collapse navbar-collapse" id="navigator">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link px-md-3" href="newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="newsblog.html">News</a></li>
             <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
-								<div class="dropdown-divider"></div>
-                <a class="dropdown-item active" href="#top" title="You are here!"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span><span class="sr-only">(current)</span></a>
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider d-none d-md-block"></div>
+                <a class="dropdown-item active" href="#top" title="You are here!">
+									<i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span><span class="sr-only">(current)</span>
+								</a>
                 <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
-                <!-- <div class="dropdown-header"><small class="fw-300">It’s Features</small></div> -->
-								<div class="dropdown-divider --alt"></div>
+								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &oS;</span></a>
-                <div class="dropdown-divider --end"></div>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &infin;</span></a>
+                <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="content.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
             </li>
@@ -98,34 +104,31 @@
     </nav>
 
     <!-- HERO -->
-    <!-- <section class="page-header header-filter clear-filter base-filter mask-25 rellax" data-rellax-speed="-5" style="background-image:url('../img/view/boland-landscape-960x472.jpg')">
-      <div class="container"> -->
     <section class="page-hero mask-25 rellax" data-rellax-speed="-4">
-      <!-- <div class="hero-header base-filter" style="background-image:url('../img/view/boland-landscape-960x472.jpg')"> -->
       <div class="hero-header base-filter" style="background-image:url('../img/view/mountain-landscape-960x432.jpg')">
         <div class="container clear-filter">
-        <div class="row justify-content-center">
-          <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
-            <img class="img-fluid png-shadows opaque90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/icon-inners-light.png" alt="NSPDR">
-          </div>
-          <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
-        		<div class="row text-left">
-	            <div class="col-12">
-	              <h2 class="showcase text-white opaque-75">all about the</h2>
-	            </div>
-	            <div class="col-12">
-	              <h1 class="showcase text-white opaque-90 fw-600">ecosystem</h1>
-	            </div>
+					<div class="row justify-content-center">
+						<!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
+							<img class="img-fluid png-shadows opaque90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/icon-inners-light.png" alt="NSPDR">
+						</div> -->
+            <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto">
+              <img class="img-fluid png-shadows opaque-90 pull-up1 p-md-3 p-xl-2 d-none d-md-block rellax" data-rellax-speed="2" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
+              <img class="img-fluid png-shadows opaque-75 pull-up1 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-1" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
             </div>
-          </div>
-        </div>
+						<div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
+							<div class="row text-left">
+								<div class="col-12"><h2 class="showcase text-white opaque-75">all about the</h2></div>
+								<div class="col-12"><h1 class="showcase text-white opaque-90 fw-600">ecosystem</h1></div>
+							</div>
+						</div>
+					</div>
         </div>
       </div>
     </section>
 
 
     <!-- CONTENT -->
-    <main class="nspdr-background --raised --alt1 top-brown">
+    <main class="nspdr-background --raised diagonal top-brown">
 
 			<section class="segment" draggable="true">
         <div class="container-fluid pt-3 pt-sm-4">
@@ -221,7 +224,52 @@
 								</p>
 							<!-- </div> -->
 							<!-- <p class="lead-2 text-right mt-5"><a href="#">Learn More &gt;</a></p> -->
-							<p class="lead fw-700 text-right mt-5"><a href="#" class="pointertextnspdr" role="button" data-toggle="modal" data-target="#modalRationale">Learn More &gt;</a></p>
+							<p class="lead fw-700 text-right mt-5"><a href="#" class="" role="button" data-toggle="modal" data-target="#modalRationale">Learn More &gt;</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+      <div class="container"><hr class="dark"></div>
+
+			<section class="segment --headers pb-3" draggable="true">
+	      <div class="container">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-10">
+							<h2 class="h1 mb-3"><small class="fw-600">NSPDR</small> as an enabler of <small class="fw600">SPLUMA</small></h2>
+            	<div class="linear-divider my-3"></div>
+
+							<p class="lead-2 no-spacing text-tertiary fw-500 mb-0"><small class="fw-700">SPLUMA</small> calls for the following provisions:</p>
+							<ul class="lead flush">
+								<li>A uniform, effective and comprehensive system of spatial planning and land use management.</li>
+								<li>The national government must, in accordance with this act and the Intergovernmental Relations Framework Act, develop mechanisms to support and strengthen the capacity of provinces and municipalities to adopt and implement an effective spatial planning and land use management system.</li>
+								<li>Procedures and processes for the preparation, submission and consideration of land development applications and related processes provided by provincial legislation.</li>
+								<li>A coherent, planned approach to spatial development at the national, provincial and municipal spheres.</li>
+							</ul>
+	          </div>
+	        </div>
+        </div>
+      </section>
+
+			<!-- <div class="container"><hr class="dark"></div> -->
+
+			<section class="segment --headers pt-0" draggable="true">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10">
+							<h2 class="h1 mb-3">What does <small class="fw-600">NSPDR</small> actually do ...?</h2>
+							<div class="linear-divider my-3"></div>
+
+							<p class="lead-2 no-spacing text-tertiary fw-500 mb-0"><small class="fw-600">NSPDR</small> will provide for the following functionality:</p>
+							<ul class="lead flush">
+								<li>Facilitation of access to spatial information such as demographic, environmental, general infrastructure and cadastre data that is required for integrated spatial planning;</li>
+								<li>E-Lodgement capability that will enable the lodging of land development applications to municipalities as well as storage and management of related documents;</li>
+								<li>Offline spatial information access to remote municipalities;</li>
+								<li>Enablement of horizontal and vertical alignment of spatial planning through the overlay of multi-level plans at different spheres of government;</li>
+								<li>Provision of access to the guidelines and tools for the development of Spatial Development Frameworks (SDFs) and Land Use Schemes including Land Use Management capability;</li>
+								<li>Town and regional planners will have a view of their spatial plans as well as adjacent spatial plans (local, district, regional, provincial, and national SDFs), in order to assess alignment; and</li>
+								<li>Tools to monitor the equitable spending of capital budgets and resources across the country.</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -287,7 +335,6 @@
 								<div class="col-9">
 									<!-- <p class="initialism text-secondary expanded-2 mb-1">National, Provincial &amp; Municipal</p> -->
 									<p class="initialism text-secondary expanded-2 mb-0">All Spheres of Government</p>
-									<!-- <h4 class="mt-0">GIS professionals /&nbsp;specialists</h4> -->
 									<h4 class="mt-0">GIS specialists &amp; professionals</h4>
 								</div>
 							</div>
@@ -408,8 +455,7 @@
 
       <div class="container"><hr class="dark"></div>
 
-      <section class="segment --headers bg-background" draggable="true" style="background-image:url('../img/bg-altstyle.svg');">
-			<!-- <section class="segment --headers" draggable="true"> -->
+      <section class="segment --headers bg-background" draggable="true" style="background-image:url('../img/bg-altstyle.svg')">
 				<div class="container">
 					<div class="row card-group">
 						<div class="col-md-6 my-5">
@@ -518,10 +564,10 @@
           <div class="modal-body mx-md-3 mt-2 pre-scrollable">
             <!-- <h5 class="modal-title text-nspdr2 no-spacing fw-700 mb-2">Project Rationale</h5> -->
 						<div class="text-dark mb-0">
-							<p>South Africa does not have a central repository that utilises spatial data for spatial planning, monitoring, evaluation and coordination purposes at a national level. There is no formal collaboration on metadata kept or data custodianship being recorded to the effect according to the prescriptions of the Spatial Data Infrastructure <a href="about.html#content-links">Act</a> (Act 54 of 2003).</p>
+							<p>South Africa does not have a central repository that utilises spatial data for spatial planning, monitoring, evaluation and coordination purposes at a national level. There is no formal collaboration on metadata kept or data custodianship being recorded to the effect according to the prescriptions of the Spatial Data Infrastructure <a href="content.html#doc-links">Act</a> (Act 54 of 2003).</p>
 							<p>The lack of the availability of up-to-date spatial datasets to the public and private sector causes extensive time wastage and insecurity as data quality, scale and recentness is undermined. Currently, most departments have standalone databases and tools that are being used for planning and reporting purposes. Many of these do not have integrated spatial referencing and some departments rely only on spreadsheets to manage their planning and business processes.</p>
 							<p>As a result, information is not readily accessible to the relevant users and planning is often done in isolation without cognisance of associated needs and impacts from other services. This has resulted in the duplication of common datasets across existing databases, which in turn has resulted in data differences and related data conflicts.</p>
-							<p>This has led to fragmented planning processes characterised by delays and misalignment. In turn, it affects integrated development planning across the spheres of government as required by key planning policies and legislations such as the National Development Plan (NDP), Spatial Planning and Land Use Management <a href="about.html#content-links">Act</a> (Act 16 of 2013), Infrastructure Development Act (Act 23 of 2014), Municipal Systems Act (Act 32 of 2000) and others.</p>
+							<p>This has led to fragmented planning processes characterised by delays and misalignment. In turn, it affects integrated development planning across the spheres of government as required by key planning policies and legislations such as the National Development Plan (NDP), Spatial Planning and Land Use Management <a href="content.html#doc-links">Act</a> (Act 16 of 2013), Infrastructure Development Act (Act 23 of 2014), Municipal Systems Act (Act 32 of 2000) and others.</p>
 							<p>It also reflects in the misalignment of sector reporting to national departments and provincial reporting to the Presidency. Current and expected reporting to the National Planning Commission requires a spatial information management system integrated into the NSPDR Ecosystem and improved alignment of institutional roles and responsibilities to effect cooperative governance.</p>
 							<hr class="dark my-3">
 							<p>As a forerunner to the NSPDR Ecosystem, Spatial Planning Information Systems (SPISys) was piloted in the Free State and Northern Cape provinces to test the feasibility of developing and running a Geographic Information System (GIS) web-enabled portal containing relevant spatial planning information.</p>
@@ -547,7 +593,6 @@
     <script src="../js/rellax.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/nspdr-scripts.js"></script>
-    <!-- <script>var rellax = new Rellax('.rellax');</script> -->
 
   </body>
 </html>

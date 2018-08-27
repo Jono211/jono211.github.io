@@ -41,7 +41,12 @@
 		<![endif]-->
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
-  <body id="top" class="bg-linear2 pt-0">
+  <body id="top" class="bg-linear2">
+		<!--[if lt IE 8]>
+				<p class="upgrade-browser">
+          You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+		<![endif]-->
 
     <!-- BANNER -->
     <header class="container-fluid bg-white">
@@ -57,56 +62,36 @@
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr1 navbar-shadow">
       <div class="container">
         <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
-          <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Ecosystem">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Brand">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle navigation" onclick="displayHamburger()">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle Navigation" onclick="displayHamburger()">
           <span class="navbar-toggler-icon override">
             <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
           </span>
         </button>
-
         <div class="collapse navbar-collapse" id="navigator">
-          <!-- <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link px-md-3" href="newsblog.html">News</a></li>
-            <li class="nav-item active dropdown">
-              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About<i class="fa fa-sm fa-angle-down ml-2"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <div class="dropdown-header"><small class="fw-400">Learn More</small></div>
-								<div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-cog mr-3"></i>About <span class="fw-700">NSPDR</span></a>
-                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Links</a>
-								<div class="dropdown-divider --alt"></div>
-                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &dagger;</a>
-                <div class="dropdown-divider --alt"></div>
-                <a class="dropdown-item active" href="#top" title="You are here!"><i class="fa fa-sm fa-road mr-1"></i>&ensp;Enabling SPLUMA<span class="sr-only">(current)</span></a>
-              </div>
-            </li>
-          </ul> -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link px-md-3" href="newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="newsblog.html">News</a></li>
             <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
-								<div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
-                <a class="dropdown-item active" href="#top" title="You are here!"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA<span class="sr-only">(current)</span></a>
-								<div class="dropdown-divider --alt"></div>
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider d-none d-md-block"></div>
+                <a class="dropdown-item" href="xabout.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item active" href="#top" title="You are here!">
+                  <i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA<span class="sr-only">(current)</span>
+                </a>
+								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &oS;</span></a>
-                <div class="dropdown-divider --end"></div>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &infin;</span></a>
+								<div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="content.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
             </li>
           </ul>
-
           <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
             <a id="display-count" title="“T”-minus" href="../index.html#countdown-to-zero">nspdr.info</a>
           </span>
@@ -118,26 +103,26 @@
     </nav>
 
     <!-- HERO -->
-    <!-- <section class="page-header --small header-filter clear-filter base-filter brown-filter mask-25 rellax" data-rellax-speed="-3" style="background-image:url('../img/urban/sowetoview-960x472.jpg')"> -->
-    <!-- <section class="page-header --small header-filter clear-filter basefilter mask-25 rellax" data-rellax-speed="-3" style="background-image:url('../img/urban/klaus-leidorf-980x551.jpg')"> -->
-    <!-- </section> -->
     <section class="page-hero mask-25 rellax" data-rellax-speed="-4">
-      <!-- <div class="hero-header brown-filter" style="background-image:url('../img/urban/sowetoview-960x472.jpg')"> -->
-      <div class="hero-header brown-filter" style="background-image:url('../img/urban/klaus-leidorf-980x551.jpg')">
+      <!-- <div class="hero-header base-filter" style="background-image:url('../img/urban/mandela-bridge-1440x960.jpg');background-position:bottom!important;"> -->
+      <!-- <div class="hero-header brown-filter" style="background-image:url('../img/urban/klaus-leidorf-980x551.jpg')"> -->
+      <div class="hero-header greyy-filter" style="background-image:url('../img/urban/johannesburg-1440x900.jpg')">
         <div class="container clear-filter">
           <div class="row justify-content-center">
-            <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
+            <!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
               <img class="img-fluid png-shadows opaque-90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/icon-inners-light.png" alt="NSPDR">
+            </div> -->
+            <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto">
+              <img class="img-fluid png-shadows opaque-90 pull-up1 p-md-3 p-xl-2 d-none d-md-block rellax" data-rellax-speed="2" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
+              <img class="img-fluid png-shadows opaque-75 pull-up1 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-1" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
             </div>
             <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
               <div class="row text-left">
                 <div class="col-12">
-                  <!-- <h1 class="showcase text-white opaque-90 fw-600">integrated</h1> -->
                   <h1 class="showcase text-white opaque-90 fw-600">SPLUMA</h1>
                 </div>
                 <div class="col-12">
-                  <!-- <h2 class="showcase text-white opaque-75">Spatial Planning</h2> -->
-                  <h1 class="showcase text-white opaque75">Enablement</h1>
+                  <h1 class="showcase text-white opaque-75">Enablement</h1>
                 </div>
               </div>
             </div>
@@ -147,10 +132,10 @@
     </section>
 
 
-    <!-- MAIN -->
-    <main class="nspdr-background --raised --alt1 top-brown">
+    <!-- CONTENT -->
+    <main class="nspdr-background --raised circular top-brown">
 
-      <section class="segment pb-3">
+      <section class="segment py-3">
 	      <div class="container-fluid">
 		      <div class="row justify-content-center">
 			      <div class="col-12">
@@ -158,7 +143,7 @@
 		            <h1 class="showcase text-nspdr">Spatial Planning
 								<!-- <big class="text-nspdr2 fw-600 ml-1"> &amp;</big></h1> -->
 								<!-- <span class="text-nspdr2 condensed-3 fw-800 ml-1"> &amp;</span></h1> -->
-								<span class="text-nspdr2 condensed-2 fw-600 ml-0 ml-md-2"> and</span></h1>
+								<span class="text-nspdr2 fw-600 condensed-2 ml-0 ml-md-3"> and</span></h1>
 									<!-- <span class="textgeois hue-purple fw-800"> &plus;</span></h1> -->
 		            <!-- <h1 class="showcase text-nspdr">Spatial Planning
 									<span class="text-geois fw-600"> &amp;</span></h1> -->
@@ -195,11 +180,11 @@
 	      <div class="container">
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-11">
-						  <div class="lead-2">
-                <p class="leading-3">
+						  <div class="lead-2 leading-3">
+                <p class="">
                   SPLUMA requires that the national government must, in accordance with this Act and the Intergovernmental Relations Framework Act, develop mechanisms to support and strengthen the capacity of provinces and municipalities to adopt and implement an effective spatial planning and land use management system.
                 </p>
-                <p class="leading-3">
+                <p class="">
                   The NSPDR Ecosystem will be a major enabler in the implementation of SPLUMA. One of the ways this will be achieved is by providing provinces and municipalities with the necessary tools and capacity building to enable SPLUMA-compliant spatial planning and land use management practices.
                 </p>
               </div>
@@ -208,59 +193,15 @@
       	</div>
       </section>
 
-      <!-- <section id="call-to-action" class="bg-background" style="background-image:url(../img/bg-litegrey.svg);">
-        <hr class="space-2">
-        <div class="start-of-page">
-          <div class="container">
-            <div class="row text-center">
-              <div class="col-12 mx-auto">
-                <h2 id="countDown" class="display-4 condensed-2 fat text-secondary">SPLUMA COMPLIANCE !</h2>
-                <div class="col-md-6 mx-auto"><div class="special-divider m-3"></div></div>
-              </div>
-            </div>
-            <div class="row justify-content-center text-center">
-              <div class="col-12 col-lg-11 col-xl-10 mx-auto">
-                <table class="table table-borderless">
-                  <tbody class="mini-shadow">
-                    <tr class="display-2 condensed-3">
-                      <td id="countDays" class="text-dark fw-700">00</td>
-                      <td class="clock-splitter text-danger pl-4">:</td>
-                      <td id="countHour" class="fw-600">00</td>
-                      <td class="clock-splitter hide-on-mobile">:</td>
-                      <td id="countMins" class="hide-on-mobile fw-400">00</td>
-                      <td class="clock-splitter hide-on-laptop pr-4">:</td>
-                      <td id="countSecs" class="hide-on-laptop fw-200 text-danger text-left pl-4">00</td>
-                    </tr>
-                  </tbody>
-                  <tbody class="text-center">
-                    <tr class="h5 expanded-4 fw-300 text-dark">
-                      <td class="px-sm-4">&nbsp;DAYS</td>
-                      <td class=""></td>
-                      <td class="px-md-5">&nbsp;HRS</td>
-                      <td class="hide-on-mobile"></td>
-                      <td class="hide-on-mobile px-md-5">&nbsp;MIN</td>
-                      <td class="hide-on-laptop"></td>
-                      <td class="hide-on-laptop px-md-4">&nbsp;SEC&ensp;</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="space-2">
-      </section> -->
-
       <!-- <hr class="space-4"> -->
 
-      <section class="segment pt0">
+      <section class="segment">
 	      <div class="container">
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-11">
 							<h2 class="fw-600 mb-0">
 	              <span class="text-nspdr1">
-                  <!-- E&NoBreak;&hybull;&NoBreak; -->
-                  <span class="condensed-2">E&hybull;</span>Lodgement’s phased workflow is completely aligned to <a class="pointer fw-600 text-nspdr" style="text-decoration:underline;" role="button" data-toggle="modal" data-target="#modalSpluma">SPLUMA</a>
+                  <span class="condensed-2">E&hybull;</span>Lodgement’s workflow is completely aligned to <a class="pointer fw-600 text-nspdr" style="text-decoration:underline;" role="button" data-toggle="modal" data-target="#modalSpluma">SPLUMA</a>
                 </span>
 	            </h2>
 	            <div class="linear-divider my-3"></div>
@@ -292,34 +233,34 @@
 		          <img class="img-fluid rounded panel-shadow-sm border border-nspdr4" src="../img/spluma-process.png" alt="SPLUMA Process">
 		        </div>
 	        </div>
-          <hr class="space-4" id="spluma-countdown">
+          <hr class="space-1" id="spluma-countdown">
       	</div>
       </section>
 
 
-      <section class="segment --headers bg-background" draggable="true" style="background-image:url('../img/bg-altstyled.svg');">
+      <section class="segment --headers bg-background bg--right" draggable="true" style="background-image:url('../img/bg-altstyled.svg');">
       <!-- <section id="call-to-action" class="bg-background" style="background-image:url(../img/bg-litebeige.svg);"> -->
-        <hr class="space-2">
+        <!-- <hr class="space-2"> -->
         <div class="start-of-page">
           <div class="container">
             <div class="row text-center">
               <div class="col-12 mx-auto">
-                <h2 id="countDown" class="display-4 condensed-2 fw-700">SPLUMA COMPLIANCE !</h2>
+                <h2 id="countDown" class="display-4 condensed-2 text-secondary fw-700">SPLUMA COMPLIANCE</h2>
                 <div class="col-md-8 mx-auto"><div class="special-divider m-4"></div></div>
               </div>
             </div>
             <div class="row justify-content-center text-center">
               <div class="col-12 col-lg-11 col-xl-10 mx-auto">
                 <table class="table table-borderless">
-                  <tbody class="mini-shadow">
+                  <tbody class="lite-shadow">
                     <tr class="display-2 condensed-3">
-                      <td id="countDays" class="text-dark fw-700">00</td>
-                      <td class="clock-splitter text-drdlr pl-4">:</td>
-                      <td id="countHour" class="fw-600">00</td>
-                      <td class="clock-splitter text-white50 hide-on-mobile">:</td>
-                      <td id="countMins" class="hide-on-mobile fw-400">00</td>
-                      <td class="clock-splitter text-white50 hide-on-laptop pr-4">:</td>
-                      <td id="countSecs" class="hide-on-laptop fw-200 text-warning text-left pl-4">00</td>
+                      <td id="countDays" class="grey-51 fw-700">00</td>
+                      <td class="clock-splitter hue-indigo pl-4">:</td>
+                      <td id="countHour" class="grey-85 fw-600">00</td>
+                      <td class="clock-splitter hide-on-mobile">:</td>
+                      <td id="countMins" class="grey-102 hide-on-mobile fw-400">00</td>
+                      <td class="clock-splitter hide-on-laptop pr-4">:</td>
+                      <td id="countSecs" class="hide-on-laptop fw-200 hue-violet text-left pl-4">00</td>
                     </tr>
                   </tbody>
                   <tbody class="text-center">
@@ -336,12 +277,19 @@
                 </table>
               </div>
             </div>
+            <div class="row text-right">
+              <div class="col-11 mt-3">
+                <button class="btn btn-pill btn-outline-secondary fill btn-shadow fw-700 mr-0 mr-md-3 mr-xl5" style="font-size:1.15rem" type="button" onclick="goBack()">
+                  <i class="fa fa-sm fa-angle-double-left mr-2"></i>Go Back
+                </button>
+                <script>function goBack(){window.history.back();}</script>
+              </div>
+            </div>
           </div>
         </div>
         <hr class="space-2">
       </section>
 
-      <!-- <hr class="space-2"> -->
     </main>
 
 
@@ -359,7 +307,7 @@
 		          <ul class="underline-on-hover sibling-fade">
 		            <li><a href="../index.html">Home</a></li>
 		            <li><a href="newsblog.html">News</a></li>
-		            <li><a href="about.html">About</a></li>
+		            <li><a href="xabout.html">About</a></li>
 		            <li><a href="termsofuse.html">Terms</a></li>
 		          </ul>
 		        </div>
@@ -404,8 +352,6 @@
                 <li>to promote greater consistency and uniformity in the application procedures and decision-making by authorities responsible for land use decisions and development applications;</li>
                 <li>to provide for the establishment, functions and operations of Municipal Planning Tribunals;</li>
                 <li>to provide for the facilitation and enforcement of land use and development measures; and to provide for matters connected therewith.</li>
-                <!-- <li>and to provide for matters connected therewith.</li> -->
-                <!-- <br> -->
               </ol>
             </div>
           </div>
@@ -420,7 +366,6 @@
     <script src="../js/rellax.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/nspdr-scripts.js"></script>
-    <!-- <script>var rellax = new Rellax('.rellax');</script> -->
 
     <script>
       var countDownDate = new Date("Jun 30, 2020 00:00:00").getTime();

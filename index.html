@@ -42,7 +42,12 @@
 		<![endif]-->
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
-  <body id="top" class="bg-linear pt-5">
+  <body id="top" class="bg-linear2 pt-5">
+		<!--[if lt IE 8]>
+				<p class="upgrade-browser">
+          You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+		<![endif]-->
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling scrolling--below" data-scrolling-offset="411">
@@ -59,20 +64,20 @@
         <div class="collapse navbar-collapse" id="navigator">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active"><a class="nav-link" href="#top" title="You are here!">Home<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link px-md-3" href="docs/newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="docs/newsblog.html">News</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
-								<div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="docs/about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider d-none d-md-block"></div>
+                <a class="dropdown-item" href="docs/xabout.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
                 <a class="dropdown-item" href="docs/spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
-								<div class="dropdown-divider --alt"></div>
+								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="docs/ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
                 <a class="dropdown-item" href="docs/elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &infin;</span></a>
-                <div class="dropdown-divider --end"></div>
+                <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="docs/content.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
             </li>
@@ -112,7 +117,7 @@
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1 class="display-4">Inclusive framework</h1>
-                <p>the <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout00">NSPDR</a> is a digital ecosystem for national spatial planning, that enables the sharing of spatial planning information and data across all spheres of government, as well as supporting key objectives of <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout01">SPLUMA</a> and the <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout02">NDP</a>.</p>
+                <p>the <a class="pointer fw-700" role="button" data-toggle="modal" data-target="#modalCallout00">NSPDR</a> is a digital ecosystem for national spatial planning, that enables the sharing of spatial planning information and data across all spheres of government, as well as supporting key objectives of <a class="pointer fw-700" role="button" data-toggle="modal" data-target="#modalCallout01">SPLUMA</a> and the <a class="pointer fw-700" role="button" data-toggle="modal" data-target="#modalCallout02">NDP</a>.</p>
               </div>
             </div>
           </div>
@@ -123,7 +128,7 @@
             <div class="container">
               <div class="carousel-caption text-center">
                 <h1 class="display-4">Fulfilling commitments</h1>
-                <p>through the development of the <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout00">NSPDR</a>, the <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout03">DRDLR</a> proudly committed itself to the provision of <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout01">SPLUMA</a>’s core mandate, by developing mechanisms that support and strengthen the capability of our provinces and municipalities.</p>
+                <p>through the development of the <a class="pointer fw-700" role="button" data-toggle="modal" data-target="#modalCallout00">NSPDR</a>, the <a class="pointer fw-700" role="button" data-toggle="modal" data-target="#modalCallout03">DRDLR</a> proudly committed itself to the provision of <a class="pointer fw-700" role="button" data-toggle="modal" data-target="#modalCallout01">SPLUMA</a>’s core mandate, by developing mechanisms that support and strengthen the capability of our provinces and municipalities.</p>
               </div>
             </div>
           </div>
@@ -146,7 +151,7 @@
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1 class="display-4">Empowering municipalities</h1>
-                <p>the ultimate objective of <strong>E&NoBreak;&middot;&NoBreak;Lodgement</strong> is to honour the <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout03">DRDLR</a>’s responsibility in terms of <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout01">SPLUMA</a>, by automating the land development process and workflow through the online “electronic” lodgement of land use applications.</p>
+                <p>the ultimate objective of <strong>E&NoBreak;&middot;&NoBreak;Lodgement</strong> is to honour the <a class="pointer fw-700" role="button" data-toggle="modal" data-target="#modalCallout03">DRDLR</a>’s responsibility in terms of <a class="pointer fw-700" role="button" data-toggle="modal" data-target="#modalCallout01">SPLUMA</a>, by automating the land development process and workflow through the online “electronic” lodgement of land use applications.</p>
               </div>
             </div>
           </div>
@@ -165,7 +170,7 @@
 
 
     <!-- CONTENT -->
-    <main class="nspdr-background --raised --alt1 top-brown" style="margin-top:-60px!important;">
+    <main class="nspdr-background --raised circular top-brown" style="margin-top:-60px!important;">
 
       <section class="segment --headers" draggable="true">
         <div class="container pt-4 pt-sm-5">
@@ -182,11 +187,11 @@
 
               <div class="row text-left mt-3">
                 <div class="col-12 col-sm-6">
-                  <h4 class="texttertiary"><strong>Data Repository</strong></h4>
+                  <h4 class="text-tertiary"><strong>Data Repository</strong></h4>
                   <p class="">The NSPDR Ecosystem will enable the sharing of spatial planning information across all three spheres of government, as well as the private sector, and will support key objectives of the NDP and most importantly, SPLUMA.</p>
                 </div>
                 <div class="col-12 col-sm-6 pt-3 pt-sm-0">
-                  <h4 class="texttertiary"><strong>E-Lodgement</strong></h4>
+                  <h4 class="text-tertiary"><strong>E-Lodgement</strong></h4>
                   <p class="">From the very beginning, our application was developed with SPLUMA at the centre of the design process. Resulting in a workflow that’s completely aligned both with the act itself, but also its regulations.</p>
                 </div>
               </div>
@@ -199,12 +204,54 @@
       <div class="container"><hr class="dark"></div>
 
       <!-- MARKETING -->
+			<section class="segment --headers" draggable="true">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10">
+              <h2 class="h1 fw-600">Inclusive Framework</h2>
+              <div class="linear-divider w-90 my-3"></div>
+              <p class="lead">The <strong>NSPDR</strong> Ecosystem will enable sharing of spatial planning information across all spheres of government and the private sector and will support key objectives of the NDP.</p>
+            </div>
+          </div>
+          <hr class="space-2">
+          <div class="row mt-5 align-items-center no-gutters">
+            <div class="col-10 col-md-8 col-lg-4 m-auto">
+              <div class="box-block top-brown pull-lg-right2 p-4 pr-lg-5">
+                <img alt="NSPDR Icon" class="icon-150 grow mt-2" src="img/icons/icon4.png">
+                <h2 class="h1">Spatial Data</h2>
+                <hr class="dark mx-4">
+                <p class="">Source datasets and models derived from spatial data provided by base data custodians, as well as the E&NoBreak;-&NoBreak;Lodgement application layer, can be used to design custom data models, validations and a whole lot more.</p>
+                <p class="pt-3"><a href="docs/ecosystem.html#spatial-data" class="btn btn-lg btn-pill btn-nspdr2 btn-shadow px-4 py-1">Read More</a></p>
+              </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-4 mx-auto mt-5 mt-lg-0 py-0 py-lg-3 box-block --main top-green">
+              <div class="p-4">
+                <img alt="NSPDR Icon" class="icon-150 grow mt-2" src="img/icons/icon1.png">
+                <h2 class="h1">Geo-Analysis</h2>
+                <hr class="dark mx-4">
+                <p class="">NSPDR hosts and contains an amazing collection of advanced GIS tools and functions. The portal will be the main place where users can access various web maps and services, metadata, and E&NoBreak;-&NoBreak;Lodgement amongst others.</p>
+                <p class="pt-3"><a href="docs/ecosystem.html#geo-tools" class="btn btn-lg btn-pill btn-nspdr1 btn-shadow px-4 py-1">Learn More</a></p>
+              </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-4 mx-auto mt-5 mt-lg-0">
+              <div class="box-block top-greyy pull-lg-left2 p-4 pl-lg-5">
+                <img alt="NSPDR Icon" class="icon-150 grow mt-2" src="img/icons/icon2.png">
+                <h2 class="h1">E-Learning</h2>
+                <hr class="dark mx-4">
+                <p class="">This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
+                <p class="pt-3"><a href="docs/ecosystem.html#e-learning" class="btn btn-lg btn-pill btn-nspdr4 btn-shadow px-4 py-1">Know More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <div class="container"><hr class="dark"></div>
 
       <section id="portfolio" class="portfolio">
         <hr class="space-6">
         <div class="container marketing">
-          <div class="row">
+          <div class="row opaque-50">
 
             <div class="col-lg-4">
               <img class="rounded-circle shadow d-none" src="img/logos/nspdr-256x256.png" width="180px" height="180px" alt="NSPDR Ecosystem">
@@ -215,7 +262,7 @@
                 Source datasets and models derived from spatial data provided by base data custodians, <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout04">SDF</a> guidelines, as well as the E&NoBreak;-&NoBreak;Lodgement application layer, can be used to design customised data models, validations and a whole lot more.
               </p>
               <p>
-                <a class="btn btn-pill btn-outline-nspdr1 btn-shadow fw-700 mt-3" href="docs/ecosystem.html#spatial-data" role="button" style="font-size:1.15rem;">
+                <a class="btn btn-pill btn-outline-nspdr1 btn-shadow fw-700 mt-3" href="404.html" role="button" style="font-size:1.15rem;">
                   Available datasets<i class="fa fa-sm fa-angle-double-right ml-2"></i>
                 </a>
               </p>
@@ -231,7 +278,7 @@
                 The portal hosts and contains an amazing variety of advanced <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout05">GIS</a> tools and functions. The portal will be the main place where users can access various web maps, mapping services, metadata, and E&NoBreak;-&NoBreak;Lodgement amongst others.
               </p>
               <p>
-                <a class="btn btnlg btn-pill btn-outline-nspdr2 btn-shadow fw-700 mt-3" href="docs/ecosystem.html#geo-tools" role="button" style="font-size:1.15rem;">
+                <a class="btn btnlg btn-pill btn-outline-nspdr2 btn-shadow fw-700 mt-3" href="404.html" role="button" style="font-size:1.15rem;">
                   Tools and features<i class="fa fa-sm fa-angle-double-right ml-2"></i>
                 </a>
               </p>
@@ -247,7 +294,7 @@
                 This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.
               </p>
               <p>
-                <a class="btn btn-pill btn-outline-nspdr4 btn-shadow fw-700 lead mt-3" href="docs/ecosystem.html#e-learning" role="button" style="font-size:1.15rem;">
+                <a class="btn btn-pill btn-outline-nspdr4 btn-shadow fw-700 lead mt-3" href="404.html" role="button" style="font-size:1.15rem;">
                   Training platform<i class="fa fa-sm fa-angle-double-right ml-2"></i>
                 </a>
               </p>
@@ -276,7 +323,7 @@
 
 
       <!-- CALL-TO-ACTION -->
-      <section class="start-of-page mx-1 mx-sm-2 mx-md-3 rounded bg-background" style="background-image:url(img/bg-litegrey.svg);">
+      <section class="start-of-page mx-1 mx-sm-2 mx-md-3 rounded bg-background" style="background-image:url('img/bg-litegrey.svg')">
         <div class="container">
           <div class="row text-center">
             <div class="col-12 mx-auto">
@@ -289,11 +336,11 @@
               <table class="table table-borderless">
                 <tbody class="mini-shadow">
                   <tr class="display-2 condensed-3">
-                    <td id="countDays" class="text-dark fw-700">00</td>
+                    <td id="countDays" class="grey-51 fw-700">00</td>
                     <td class="clock-splitter text-danger pl-4">:</td>
-                    <td id="countHour" class="fw-600">00</td>
+                    <td id="countHour" class="grey-85 fw-600">00</td>
                     <td class="clock-splitter hide-on-mobile">:</td>
-                    <td id="countMins" class="hide-on-mobile fw-400">00</td>
+                    <td id="countMins" class="grey-102 hide-on-mobile fw-400">00</td>
                     <td class="clock-splitter hide-on-laptop pr-4">:</td>
                     <td id="countSecs" class="hide-on-laptop fw-200 text-danger text-left pl-4">00</td>
                   </tr>
@@ -314,8 +361,8 @@
           </div>
           <hr class="space-5">
           <div class="row text-right">
-            <div class="col-11">
-              <a href="docs/spluma.html#spluma-countdown" class="lead-2 text-secondary">count-down to <small class="fw-700">SPLUMA</small> &gt;</a>
+            <div class="col-12">
+              <a href="docs/spluma.html#spluma-countdown" class="lead-2 mr-0 mr-md-3 mr-xl-5 text-secondary">countdown to <small class="fw-700">SPLUMA</small> &gt;</a>
             </div>
           </div>
         </div>
@@ -366,11 +413,11 @@
               </p>
             </div>
             <div class="col-lg-5 mx-auto order-lg-1 align-self-center">
-              <!-- <img class="featurette-image img-fluid img-shadow" src="img/uiux/ecosystem-1.png" alt="NSPDR User Interface"> -->
-              <div class="card img-shadow border-0 rounded-0 overflow-hidden">
+              <img class="featurette-image img-fluid img-shadow" src="img/uiux/ecosystem-1.png" alt="NSPDR User Interface">
+              <!-- <div class="card img-shadow border-0 rounded-0 overflow-hidden">
                 <div class="card-img-bg" style="background-image:url('img/uiux/ecosystem-1.png')"></div>
                 <div class="card-body p-5"></div>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -388,11 +435,11 @@
               </p>
             </div>
             <div class="col-lg-5 mx-auto align-self-center">
-              <!-- <img class="featurette-image img-fluid img-shadow" src="img/uiux/ecosystem-2.png" alt="NSPDR User Interface"> -->
-              <div class="card img-shadow border-0 rounded-0 overflow-hidden">
+              <img class="featurette-image img-fluid img-shadow" src="img/uiux/ecosystem-2.png" alt="NSPDR User Interface">
+              <!-- <div class="card img-shadow border-0 rounded-0 overflow-hidden">
                 <div class="card-img-bg" style="background-image:url('img/uiux/ecosystem-2.png')"></div>
                 <div class="card-body p-5"></div>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -481,7 +528,7 @@
 
             <div class="col-12 col-lg pt-4 pt-lg-0 mx-auto">
 							<a class="fa fa-5x fa-map-marked-alt mb-4 text-nspdr2 mini-shadow"></a>
-              <p class="h4 leading-2">
+              <p class="h4 no-spacing leading-2">
 								224 Helen Joseph St.<br>
 								Capitol Towers<br>
 								Pretoria
@@ -490,9 +537,9 @@
 
             <div class="col-12 col-lg pt-4 pt-lg-0 mx-auto">
 							<a class="fab fa-5x fa-internet-explorer mb-4 text-nspdr3 mini-shadow"></a>
-              <p class="h4 leading-2">
+              <p class="h4 no-spacing leading-2">
                 <a class="text-secondary" href="mailto:support.nspdr@drdlr.gov.za">support.nspdr@drdlr.gov.za</a><br>
-                <a class="text-dark no-spacing" href="http://www.drdlr.gov.za" target="_blank">www.drdlr.gov.za</a>
+                <a class="text-dark expanded-1" href="http://www.drdlr.gov.za" target="_blank">www.drdlr.gov.za</a>
                 <br><span class="text-silver">&bullet;</span>
                 <!-- <br>&nbsp; -->
               </p>

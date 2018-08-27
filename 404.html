@@ -10,7 +10,8 @@
 				line-height: 1.5;
 				margin: 0; }
 			html {
-				color: #888;
+				color: #444;
+				background-color: whitesmoke;
 				display: table;
 				font-family: sans-serif;
 				text-align: center;
@@ -22,14 +23,17 @@
 				margin: 2em auto; }
 			h1 {
 				color: #555;
-				font-size: 2em;
+				font-size: 3em;
 				font-weight: 400; }
 			p {
+				font-size: 1.5em;
 				margin: 0 auto;
-				width: 280px; }
+				width: 320px; }
 
-			@media only screen and (max-width: 280px) {
-				body, p { width: 95%; }
+			@media only screen and (max-width: 320px) {
+				body, p {
+					font-size: .75em;
+					width: 95%; }
 				h1 {
 					font-size: 1.5em;
 					margin: 0 0 .5em; }
@@ -40,6 +44,14 @@
 
 		<h1>Page Not Found</h1>
 		<p>Sorry, but the page you were trying to view does not exist.</p>
+
+		<br>
+		<button onclick="goBack()">Go Back</button>
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
 
 	</body>
 </html>
