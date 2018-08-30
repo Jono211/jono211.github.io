@@ -795,6 +795,7 @@ h2.showcase {
   margin: 1rem 0; border: 0;
   border-top: 1px solid rgba(0,0,0,.2); } */
 hr.divider { margin: 6rem 0; }
+hr.light { border-top-color: rgba(0,0,0,.1); }
 hr.dark { border-top-color: rgba(0,0,0,.33); }
 hr.dark-divider {
   border-top-color: rgba(10,20,30,.4);
