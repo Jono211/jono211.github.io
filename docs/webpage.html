@@ -42,7 +42,12 @@
 		<![endif]-->
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
-  <body id="top" class="bg-linear">
+  <body id="top" class="bg-linear2">
+		<!--[if lt IE 8]>
+				<p class="upgrade-browser">
+          You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+		<![endif]-->
 
     <!-- BANNER -->
     <header class="container-fluid bg-white">
@@ -57,7 +62,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow">
       <div class="container">
-        <a class="navbar-brand acronym-icon swing" href="#end" title="National Spatial Planning Data Repository">
+        <a id="scrollContext" class="navbar-brand acronym-icon swing" href="#" title="National Spatial Planning Data Repository">
           <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Brand">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle Navigation" onclick="displayHamburger()">
@@ -75,16 +80,17 @@
                 <!-- <span class="sr-only">(current)</span> -->
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <div class="dropdown-header"><small class="fw-300">Learn More</small></div>
-								<div class="dropdown-divider"></div>
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider d-none d-md-block"></div>
                 <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
                 <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
+                <!-- <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-building mr-3"></i>Enabling SPLUMA</a> -->
                 <!-- <div class="dropdown-header"><small class="fw-300">It’s Features</small></div> -->
-								<div class="dropdown-divider --alt"></div>
-                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &dagger;</a>
-                <div class="dropdown-divider --end"></div>
-                <a class="dropdown-item" href="about.html#content-links"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &infin;</span></a>
+                <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item" href="documents.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
             </li>
           </ul>
@@ -104,8 +110,12 @@
         <div class="container clear-filter">
           <div class="row justify-content-center">
             <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
-              <img class="img-fluid png-shadows opaque75 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/icon-inners.png" alt="NSPDR">
+              <img class="img-fluid png-shadows opaque-90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/icon-inners.png" alt="NSPDR">
             </div>
+            <!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto">
+              <img class="img-fluid png-shadows opaque-90 pull-up1 p-md-3 p-xl-2 d-none d-md-block rellax" data-rellax-speed="2" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
+              <img class="img-fluid png-shadows opaque-75 pull-up1 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-1" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
+            </div> -->
             <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
               <div class="row text-left">
                 <div class="col-12"><h1 class="showcase text-white opaque-90 fw-600">integrated</h1></div>
@@ -119,14 +129,14 @@
 
 
     <!-- CONTENT -->
-    <main class="nspdr-background --raised circular top-brown">
+    <main class="nspdr-background --raised circles2 top-brown">
 
       <section class="segment">
         <div class="container pt-3 pt-sm-4">
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-11">
 		          <div class="text-center">
-		            <h1 class="showcase text-nspdr">spatial planning
+		            <h1 class="showcase text-nspdr">Spatial Planning
 								<span class="text-nspdr2"> &nbsp;&amp;</span></h1>
 		            <h2 class="showcase text-dark">Land Use Management</h2>
 		          </div>
@@ -238,15 +248,16 @@
           </div>
         </div>
       </section>
-      <!-- <section class="segment bg-background" style="background-image:url('../img/proxy/bg-darkgrey.svg');">
+      <section class="segment bg-background" style="background-image:url('../img/proxy/bg-altstyled.svg');">
 	      <div class="container">
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-10">
 							<hr class="space-9">
+							<hr class="space-9">
 	          </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- <hr class="space-4"> -->
     </main>
@@ -261,7 +272,7 @@
 		          &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
 		        </div>
 	        </div>
-          <div class="col-9 col-sm-6 col-lg-4 order-lg-3">
+          <div class="col-8 col-sm-6 col-lg-4 order-lg-3">
 		        <div class="float-sm-right text-sm-right">
 		          <ul class="underline-on-hover sibling-fade">
 		            <li><a href="../index.html">Home</a></li>
@@ -274,14 +285,10 @@
           <div class="col-12 col-md-8 col-lg-4 order-lg-2">
 		        <div class="pt-3 pt-md-1 pt-lg-0">
 		          <ul class="social-media">
-		            <!-- <li class="--facebook"><a href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" target="_blank" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li> -->
-		            <!-- <li class="--twitter"><a href="https://twitter.com/DRDLR_online" target="_blank" class="fab fa-2x fa-twitter" title="Twitter"></a></li> -->
-		            <!-- <li class="--instagram"><a href="https://www.instagram.com/drdlr_sa" target="_blank" class="fab fa-2x fa-instagram" title="Instagram"></a></li> -->
-		            <!-- <li class="--youtube"><a href="https://www.youtube.com/user/DRDLROnline" target="_blank" class="fab fa-2x fa-youtube" title="YouTube"></a></li> -->
-		            <li class="--facebook"><a href="template.html" class="fab fa-2x fa-facebook-f" title="Facebook"></a></li>
-		            <li class="--twitter"><a href="template1.html" class="fab fa-2x fa-twitter" title="Twitter"></a></li>
-		            <li class="--instagram"><a href="temporary.html" class="fab fa-2x fa-instagram" title="Instagram"></a></li>
-		            <li class="--youtube"><a href="temporary1.html" class="fab fa-2x fa-youtube" title="YouTube"></a></li>
+		            <li class="--facebook"><a href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" target="_blank" class="fab fa-facebook-f" title="Facebook"></a></li>
+		            <li class="--twitter"><a href="https://twitter.com/DRDLR_online" target="_blank" class="fab fa-twitter" title="Twitter"></a></li>
+		            <li class="--instagram"><a href="https://www.instagram.com/drdlr_sa" target="_blank" class="fab fa-instagram" title="Instagram"></a></li>
+		            <li class="--youtube"><a href="https://www.youtube.com/user/DRDLROnline" target="_blank" class="fab fa-youtube" title="YouTube"></a></li>
 		          </ul>
 		        </div>
 	        </div>
@@ -296,10 +303,9 @@
     <!-- =========== JavaScript ===========  -->
     <!-- Placed at end so pages load faster. -->
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/popper.min.js"></script>
     <script src="../js/rellax.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/nspdr-scripts.js"></script>
+    <script src="../js/twbs-popper.min.js"></script>
+    <script src="../js/nspdr-javascript.js"></script>
 
   </body>
 </html>

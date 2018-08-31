@@ -3078,7 +3078,8 @@ input[type='submit'].btn-block {
   border-top: .125rem dotted #aaa !important;
 }
 .dropdown-divider.--alt {
-  border-top: .125rem dotted #ddd !important;
+  border-top: .125rem dotted #ccc !important;
+  /* border-top: .125rem dashed #ddd !important; */
 }
 
 .btn-group,

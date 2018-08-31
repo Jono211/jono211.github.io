@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+	<head>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359766-1"></script>
+		<script>
+			// Google Analytics - site tag (gtag.js)
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-123359766-1');
+		</script> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="The National Spatial Planning Data Repository Ecosystem - Enabling Integrated Spatial Planning and Land Use Management.">
+    <meta name="keywords" content="NSPDR, E-Lodgement, Ecosystem, Spatial Planning, Land Use Management, Rural Development, DRDLR, SPLUMA">
+    <meta name="author" content="Agizo Solutions, on behalf of the Department of Rural Development and Land Reform">
+
+    <title>NSPDR&ensp;|&ensp;Slideshow</title>
+    <script>
+      (function(){
+        // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
+        var d = document, e = d.documentElement, s = d.createElement('style');
+        if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+          s.textContent = 'body{visibility:hidden}';
+          var r = document.getElementsByTagName('script')[0];
+          r.parentNode.insertBefore(s, r);
+          function f(){ s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load',f,false);
+          setTimeout(f,3000);
+        }
+      })();
+    </script>
+    <link rel="icon" href="../img/fluidicon.png">
+    <link rel="stylesheet" href="../css/bootstraps.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/stylestest.css">
+		<link rel="stylesheet" href="../css/fa/css/all.css">
+		<!--[if lt IE 9]>
+			<script src="../js/html5shiv.min.js"></script>
+		<![endif]-->
+    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
+
+<style>
+/* slideshow
+------------ */
+.slideshow .slideshow-container {
+  display: block;
+	position: relative;
+  min-height: 12.5rem;
+	overflow: hidden;
+}
+.slideshow .slides {
+	display: none;
+	padding: 2.5rem 10rem;
+	text-align: left;
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  transform: scaleY(1);
+	/* <!-- -webkit-transform: scaleY(0); -->
+	<!-- -moz-transform: scaleY(0); -->
+	<!-- -ms-transform: scaleY(0); -->
+	<!-- -o-transform: scaleY(0); -->
+	<!-- transform: scaleY(0); --> */
+	-webkit-transform-origin: top;
+	-moz-transform-origin: top;
+	-ms-transform-origin: top;
+	-o-transform-origin: top;
+	transform-origin: top;
+	transition: -webkit-transform .3s, transform .3s;
+  min-height: 20rem;
+}
+
+.slideshow a.prev,
+.slideshow a.next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	margin-top: -2rem;
+	padding: 2rem;
+	color: #888;
+	font-weight: bolder;
+	font-size: 1.75rem;
+	border-radius: 0 12px 12px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+}
+.slideshow a.next {
+	position: absolute;
+	right: 0;
+	border-radius: 12px 0 0 12px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.slideshow a.prev:hover,
+.slideshow a.next:hover {
+	font-size: 2rem;
+	color: #1d9c9e;
+	opacity: .8;
+	-webkit-transition: opacity .2s ease-in;
+	-moz-transition: opacity .2s ease-in;
+	-o-transition: opacity .2s ease-in;
+	transition: opacity .2s ease-in;
+}
+
+.slideshow .dot-container {
+	text-align: center;
+	padding: .5rem;
+}
+.slideshow .dot {
+	cursor: pointer;
+	height: 1.5rem;
+	width: 1.5rem;
+	margin: 0 .125rem;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	-webkit-transition: background-color .6s ease;
+	-moz-transition: background-color .6s ease;
+	-o-transition: background-color .6s ease;
+	transition: background-color .6s ease;
+}
+.slideshow .active,
+.slideshow .dot:hover {
+	background-color: #777;
+}
+
+.slideshow q {
+	font-style: normal;
+	font-family: 'Playfair Display', serif !important;
+	font-size: 2.5rem;
+	line-height: 3rem;
+  font-weight: 500;
+	color: #333;
+}
+.slideshow .author {
+	color: #ba6026;
+	font-weight: bold;
+  text-transform: uppercase;
+	letter-spacing: -.08rem;
+	word-spacing: .25rem;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	padding: 1.5rem .5rem;
+}
+.slideshow .author i.neg-offset {
+	margin-top: -1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .slideshow .slides {
+	  padding: 1.5rem 5rem 1.5rem 6rem;
+  }
+  .slideshow q {
+    font-size: 2rem;
+  }
+  .slideshow .author i.neg-offset {
+    margin-top: -.5rem;
+    display: none;
+  }
+}
+
+.nav-pills .nav-item .nav-link {
+	padding: 0 15.5px;
+	text-align: center;
+	height: 60px;
+	width: 60px;
+	font-weight: 400;
+	color: #9a9a9a;
+	margin-right: 19px;
+	background-color: rgba(222,222,222,.3);
+	border-radius: 30px;
+}
+.nav-pills .nav-item .nav-link:hover {
+	background-color: rgba(222,222,222,.3);
+}
+.nav-pills .nav-item .nav-link.active,
+.nav-pills .nav-item .nav-link.active:focus,
+.nav-pills .nav-item .nav-link.active:hover {
+	background-color: #9a9a9a;
+	color: #fff;
+	box-shadow: 0px 5px 35px 0px rgba(0,0,0,.3);
+}
+.nav-pills .nav-item .nav-link.disabled,
+.nav-pills .nav-item .nav-link:disabled,
+.nav-pills .nav-item .nav-link[disabled] {
+	opacity: .5;
+}
+
+.nav-pills .nav-item i {
+	display: block;
+	font-size: 20px;
+	line-height: 60px;
+}
+
+.nav-pills.nav-pills-neutral .nav-item .nav-link {
+	background-color: rgba(255,255,255,.2);
+	color: #fff;
+}
+.nav-pills.nav-pills-neutral .nav-item .nav-link.active,
+.nav-pills.nav-pills-neutral .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-neutral .nav-item .nav-link.active:hover {
+	background-color: #fff;
+	color: #f96332;
+}
+.nav-pills.nav-pills-primary .nav-item .nav-link.active,
+.nav-pills.nav-pills-primary .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-primary .nav-item .nav-link.active:hover {
+	background-color: #f96332;
+}
+.nav-pills.nav-pills-info .nav-item .nav-link.active,
+.nav-pills.nav-pills-info .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-info .nav-item .nav-link.active:hover {
+	background-color: #2ca8ff;
+}
+.nav-pills.nav-pills-success .nav-item .nav-link.active,
+.nav-pills.nav-pills-success .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-success .nav-item .nav-link.active:hover {
+	background-color: #18ce0f;
+}
+.nav-pills.nav-pills-warning .nav-item .nav-link.active,
+.nav-pills.nav-pills-warning .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-warning .nav-item .nav-link.active:hover {
+	background-color: #ffb236;
+}
+.nav-pills.nav-pills-danger .nav-item .nav-link.active,
+.nav-pills.nav-pills-danger .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-danger .nav-item .nav-link.active:hover {
+	background-color: #ff3636;
+}
+
+.nav-align-center {
+	text-align: center;
+}
+.nav-align-center .nav-pills {
+	display: inline-flex;
+}
+</style>
+
+  </head>
+  <body id="top" class="bg-linear2">
+		<!--[if lt IE 8]>
+				<p class="upgrade-browser">
+          You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+		<![endif]-->
+
+    <!-- BANNER -->
+    <header class="container-fluid bg-white">
+      <div class="container">
+        <div class="row p-2">
+          <div class="col-sm-8 pl-1"><div id="drdlr-logo"></div></div>
+          <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-flag"></div></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow">
+      <div class="container">
+        <a id="scrollContext" class="navbar-brand acronym-icon swing" href="#" title="National Spatial Planning Data Repository">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle Navigation" onclick="displayHamburger()">
+          <span class="navbar-toggler-icon override">
+            <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigator">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="newsblog.html">News</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-2"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider d-none d-md-block"></div>
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
+								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &infin;</span></a>
+                <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item" href="documents.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+              </div>
+            </li>
+          </ul>
+          <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
+            <a id="display-count" title="“T”-minus" href="../index.html#nspdr-countdown">nspdr.info</a>
+          </span>
+          <form class="form-inline mt-2 mt-md-0 pr-1">
+            <a class="btn btn-outline-light opaque-75 mr-1 my-2 my-md-0" href="contact.html"><small>CONTACT</small>&nbsp;<i class="fa fa-sm fa-phone"></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-hero mask-25 rellax" data-rellax-speed="-4">
+      <div class="hero-header base-filter" style="background-image:url('../img/view/landscape-1440x810.jpg')">
+        <div class="container clear-filter">
+          <div class="row justify-content-center">
+            <!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
+              <img class="img-fluid png-shadows opaque-90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/icon-inners.png" alt="NSPDR">
+            </div> -->
+            <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto">
+              <img class="img-fluid png-shadows opaque-90 pull-up1 p-md-3 p-xl-2 d-none d-md-block rellax" data-rellax-speed="2" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
+              <img class="img-fluid png-shadows opaque-75 pull-up1 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-1" src="../img/logos/icon-inners-light.png" alt="NSPDR Ecosystem">
+            </div>
+            <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
+              <div class="row text-left">
+                <div class="col-12"><h1 class="showcase text-white opaque-90 fw-600">integrated</h1></div>
+                <div class="col-12"><h2 class="showcase text-white opaque-75">Spatial Planning</h2></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTENT -->
+    <main class="nspdr-background --raised circles2 top-brown">
+
+      <section class="segment pb-1" draggable="true">
+        <div class="container pt-3 pt-sm-4">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-11">
+		          <div class="text-center">
+		            <h1 class="showcase text-nspdr">Spatial Planning
+								<span class="text-nspdr2"> &nbsp;&amp;</span></h1>
+		            <h2 class="showcase text-dark">Land Use Management</h2>
+		          </div>
+	          </div>
+	        </div>
+		      <div class="row justify-content-center">
+			      <div class="col-11 col-md-10">
+		          <div class="special-divider my-5"></div>
+	          </div>
+	        </div>
+        </div>
+      </section>
+
+      <!-- <div class="container"><div class="container"><hr class="dark mx-5"></div></div> -->
+
+      <section class="segment --headers pt-1" draggable="true">
+	      <div class="container">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-10">
+		          <div class="lead">
+		            <h2 class="mb-3 fw-600">Project Rationale</h2>
+		            <p>South Africa does not have a central repository that utilises spatial data for spatial planning, monitoring, evaluation and coordination purposes at a national level. There is no formal collaboration on metadata kept or data custodianship being recorded to the effect according to the prescriptions of the Spatial Data Infrastructure <a href="documents.html#doc-links">Act</a> (Act 54 of 2003).</p>
+		            <p>The lack of the availability of up-to-date spatial datasets to the public and private sector causes extensive time wastage and insecurity as data quality, scale and recentness is undermined. Currently, most departments have standalone databases and tools that are being used for planning and reporting purposes. Many of these do not have integrated spatial referencing and some departments rely only on spreadsheets to manage their planning and business processes.</p>
+		            <p>As a result, information is not readily accessible to the relevant users and planning is often done in isolation without cognisance of associated needs and impacts from other services. This has resulted in the duplication of common datasets across existing databases, which in turn has resulted in data differences and related data conflicts.</p>
+		            <p>This has led to fragmented planning processes characterised by delays and misalignment. In turn, it affects integrated development planning across the spheres of government as required by key planning policies and legislations such as the National Development Plan (NDP), Spatial Planning and Land Use Management <a href="documents.html#doc-links">Act</a> (Act 16 of 2013), Infrastructure Development Act (Act 23 of 2014), Municipal Systems Act (Act 32 of 2000) and others.</p>
+		            <p>It also reflects in the misalignment of sector reporting to national departments and provincial reporting to the Presidency. Current and expected reporting to the National Planning Commission requires a spatial information management system integrated into the NSPDR Ecosystem and improved alignment of institutional roles and responsibilities to effect cooperative governance.</p>
+	        			<hr class="space-4">
+		            <p>As a forerunner to the NSPDR Ecosystem, Spatial Planning Information Systems (SPISys) was piloted in the Free State and Northern Cape provinces to test the feasibility of developing and running a Geographic Information System (GIS) web-enabled portal containing relevant spatial planning information.</p>
+								<p class="mb-1">This was done between 2011 and 2014 and was concluded successfully with some key learnings being understood as follows:</p>
+		            <ul class="lead flush">
+		              <li>Datasets do not currently have official custodians as per the SDI Act with the responsibility to maintain and update the datasets;</li>
+		              <li>Data standards pertaining to land use classes are not in place making it difficult to integrate datasets;</li>
+		              <li>Some datasets that would form the basis of NSPDR such as wall-to-wall land use classification schemes do not exist;</li>
+		              <li>The need to remove subjectivity from the planning function and move towards an evidence-based approach; and</li>
+		              <li>The requirement of horizontal and vertical alignment of planning between the three spheres of government can only be managed or conceptualised through the use of a system such as the NSPDR Ecosystem.</li>
+		            </ul>
+		            <p>The DRDLR has already completed the User Requirements Specification (URS), Functional Requirements Specification (FRS) and Technical Specification making it possible to start with the construction of the NSPDR Ecosystem modules. The Esri South Africa and Agizo Solutions Joint Venture (JV) will develop and maintain a central repository that utilises spatial data for spatial planning, monitoring, evaluation and coordination purposes over a period of five years.</p>
+		          </div>
+	        	</div>
+	        </div>
+        </div>
+      </section>
+
+      <div class="container"><hr class="dark"></div>
+
+      <section class="segment --headers" draggable="true">
+        <div class="slideshow">
+          <div class="slideshow-container">
+
+            <div class="slides">
+              <q>Our work facilitates the creation of spaces, that result in socially and economically vibrant communities.</q>
+              <p class="author font-upper">&mdash; &nbsp; &nbsp;Matheri Kangethe
+                <i class="fa fa-pull-right fa-2x fa-quote-right gutter-right neg-offset"></i>
+              </p>
+            </div>
+            <div class="slides">
+              <q>Our company uses a systematic method of spatial planning in which geo-informatics and ...</q>
+              <p class="author font-upper">&mdash; &nbsp; &nbsp;Mission Statement
+                <i class="fa fa-pull-right fa-2x fa-comment-alt gutter-right neg-offset"></i>
+              </p>
+            </div>
+            <div class="slides">
+              <q>... multi-criteria analysis tools are integrated to provide effective methods for rational decision-making.</q>
+              <p class="author font-upper">&mdash; &nbsp; &nbsp;Mission Statement
+                <i class="fa fa-pull-right fa-2x fa-comment gutter-right neg-offset"></i>
+              </p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-2x fa-chevron-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa fa-2x fa-chevron-right"></i></a>
+          </div>
+
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+          <nav aria-label="Page Navigation">
+            <ul class="pagination pagination-lg justify-content-center">
+              <li class="page-item">
+                <a class="page-link" role="button" onclick="plusSlides(-1)"><i class="fa fa-sm fa-chevron-left"></i><i class="fa fa-sm fa-chevron-left"></i></a>
+              </li>
+              <li class="page-item"><a class="page-link fw-700" role="button" onclick="currentSlide(1)">1</a></li>
+              <li class="page-item"><a class="page-link fw-700" role="button" onclick="currentSlide(2)">2</a></li>
+              <li class="page-item"><a class="page-link fw-700" role="button" onclick="currentSlide(3)">3</a></li>
+              <li class="page-item">
+                <a class="page-link" role="button" onclick="plusSlides(1)"><i class="fa fa-sm fa-chevron-right"></i><i class="fa fa-sm fa-chevron-right"></i></a>
+              </li>
+              <!-- <li class="page-item"><a class="page-link" href="javascript:void(0)" role="button" onclick="plusSlides(1)">Next</a></li> -->
+            </ul>
+          </nav>
+
+<ul class="nav nav-pills nav-pills-primary justify-content-center" role="tablist">
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="tab" href="#active" role="tablist">
+			<i class="fa fa-anchor"></i>
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link active" data-toggle="tab" href="#link" role="tablist">
+			<i class="fa fa-thermometer-full"></i>
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="tab" href="#link" role="tablist">
+			<i class="fa fa-suitcase"></i>
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="tab" href="#link" role="tablist">
+			<i class="fa fa-exclamation"></i>
+		</a>
+	</li>
+</ul>
+
+          <hr class="space-4">
+        </div>
+      </section>
+
+      <section class="segment bg-background" style="background-image:url('../img/proxy/bg-altstyled.svg');">
+	      <div class="container">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-10">
+							<hr class="space-9">
+							<hr class="space-9">
+	          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <hr class="space-4"> -->
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="nspdr-footer" id="end">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-4">
+		        <div class="copyright float-sm-left text-sm-left">
+		          &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
+		        </div>
+	        </div>
+          <div class="col-8 col-sm-6 col-lg-4 order-lg-3">
+		        <div class="float-sm-right text-sm-right">
+		          <ul class="underline-on-hover sibling-fade">
+		            <li><a href="../index.html">Home</a></li>
+		            <li><a href="newsblog.html">News</a></li>
+		            <li><a href="about.html">About</a></li>
+		            <li><a href="termsofuse.html">Terms</a></li>
+		          </ul>
+		        </div>
+      		</div>
+          <div class="col-12 col-md-8 col-lg-4 order-lg-2">
+		        <div class="pt-3 pt-md-1 pt-lg-0">
+		          <ul class="social-media">
+		            <li class="--facebook"><a href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" target="_blank" class="fab fa-facebook-f" title="Facebook"></a></li>
+		            <li class="--twitter"><a href="https://twitter.com/DRDLR_online" target="_blank" class="fab fa-twitter" title="Twitter"></a></li>
+		            <li class="--instagram"><a href="https://www.instagram.com/drdlr_sa" target="_blank" class="fab fa-instagram" title="Instagram"></a></li>
+		            <li class="--youtube"><a href="https://www.youtube.com/user/DRDLROnline" target="_blank" class="fab fa-youtube" title="YouTube"></a></li>
+		          </ul>
+		        </div>
+	        </div>
+      	</div>
+      </div>
+
+      <a id="scroll-to-top" href="#top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
+	    <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
+	    <i id="point-breaks" class="media-breakpoint swing d-none fa fa-sm fa-tv">&nbsp;</i>
+    </footer>
+
+    <!-- =========== JavaScript ===========  -->
+    <!-- Placed at end so pages load faster. -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/rellax.min.js"></script>
+    <script src="../js/twbs-popper.min.js"></script>
+    <script src="../js/nspdr-javascript.js"></script>
+
+    <script>
+      var slideIndex = 1;
+        showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("dot");
+          // Some weirdness is happening, so bail
+          if (slides.length == 0) { return; }
+          if (n > slides.length) { slideIndex = 1; }
+          if (n < 1) { slideIndex = slides.length; }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+  </body>
+</html>
