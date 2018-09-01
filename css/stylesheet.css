@@ -41,6 +41,10 @@ body.watermark {
 p.lead ~ p {
   font-size: 1.15rem;
 }
+.compact-paragraphs p {
+  margin-bottom: .5rem;
+}
+
 ol.flush,
 ul.flush {
   margin-left: .5rem;
