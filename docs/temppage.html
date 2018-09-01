@@ -45,16 +45,17 @@
 <style>
 /* slideshow
 ------------ */
-.slideshow .slideshow-container {
+/* .slideshow .slideshow-container { */
+.slideshow {
   display: block;
 	position: relative;
-  min-height: 12.5rem;
+  /* min-height: 12.5rem; */
 	overflow: hidden;
 }
-.slideshow .slides {
+.slideshow .showslide {
 	display: none;
-	padding: 2.5rem 10rem;
-	text-align: left;
+	/* padding: 2.5rem 10rem; */
+	/* text-align: left; */
   -webkit-transform: scaleY(1);
   -moz-transform: scaleY(1);
   -ms-transform: scaleY(1);
@@ -71,10 +72,10 @@
 	-o-transform-origin: top;
 	transform-origin: top;
 	transition: -webkit-transform .3s, transform .3s;
-  min-height: 20rem;
+  min-height: 25rem;
 }
 
-.slideshow a.prev,
+/* .slideshow a.prev,
 .slideshow a.next {
 	cursor: pointer;
 	position: absolute;
@@ -113,31 +114,39 @@
 	-moz-transition: opacity .2s ease-in;
 	-o-transition: opacity .2s ease-in;
 	transition: opacity .2s ease-in;
-}
+} */
 
-.slideshow .dot-container {
+/* .slideshow .dot-container {
 	text-align: center;
 	padding: .5rem;
-}
+} */
 .slideshow .dot {
 	cursor: pointer;
-	height: 1.5rem;
+	/* height: 1.5rem;
 	width: 1.5rem;
-	margin: 0 .125rem;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
+	margin: 0 .125rem; */
+	/* background-color: #bbb; */
+	/* border-radius: 50%;
+	display: inline-block; */
 	-webkit-transition: background-color .6s ease;
 	-moz-transition: background-color .6s ease;
 	-o-transition: background-color .6s ease;
 	transition: background-color .6s ease;
 }
-.slideshow .active,
+/* .slideshow .active,
+.slideshow .dot:hover { */
+.slideshow .active {
+	/* background-color: #777; */
+	/* background-color: #999; */
+	background-color: #f96332;
+	color: #fff !important;
+}
 .slideshow .dot:hover {
-	background-color: #777;
+	background-color: #ffb236;
+	color: #777 !important;
 }
 
-.slideshow q {
+/* .slideshow q {
 	font-style: normal;
 	font-family: 'Playfair Display', serif !important;
 	font-size: 2.5rem;
@@ -157,9 +166,9 @@
 }
 .slideshow .author i.neg-offset {
 	margin-top: -1rem;
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .slideshow .slides {
 	  padding: 1.5rem 5rem 1.5rem 6rem;
   }
@@ -170,7 +179,7 @@
     margin-top: -.5rem;
     display: none;
   }
-}
+} */
 
 .nav-pills .nav-item .nav-link {
 	padding: 0 15.5px;
@@ -315,7 +324,7 @@
 
     <!-- HERO -->
     <section class="page-hero mask-25 rellax" data-rellax-speed="-4">
-      <div class="hero-header base-filter" style="background-image:url('../img/view/landscape-1440x810.jpg')">
+      <div class="hero-header base-filter" style="background-image:url('../img/views/landscape-1440x810.jpg')">
         <div class="container clear-filter">
           <div class="row justify-content-center">
             <!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
@@ -338,7 +347,8 @@
 
 
     <!-- CONTENT -->
-    <main class="nspdr-background --raised circles2 top-brown">
+    <main class="nspdr-background --raised ircles2 top-brown">
+      <article style="background:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAxIiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1ZjVmNSIgc3Ryb2tlLXdpZHRoPSIzIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1ZjVmNSIgc3Ryb2tlLXdpZHRoPSI0Ij48L3BhdGg+Cjwvc3ZnPg==');">
 
       <section class="segment pb-1" draggable="true">
         <div class="container pt-3 pt-sm-4">
@@ -392,78 +402,183 @@
       <div class="container"><hr class="dark"></div>
 
       <section class="segment --headers" draggable="true">
+	      <div class="container">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-11">
+		          <div class="lead">
+
         <div class="slideshow">
-          <div class="slideshow-container">
+          <!-- <div class="slideshow-container"> -->
 
-            <div class="slides">
-              <q>Our work facilitates the creation of spaces, that result in socially and economically vibrant communities.</q>
-              <p class="author font-upper">&mdash; &nbsp; &nbsp;Matheri Kangethe
-                <i class="fa fa-pull-right fa-2x fa-quote-right gutter-right neg-offset"></i>
-              </p>
+            <!-- <div class="showslide">
+              <p class="lead">The lack of the availability of up-to-date spatial datasets to the public and private sector causes extensive time wastage and insecurity as data quality, scale and recentness is undermined. Currently, most departments have standalone databases and tools that are being used for planning and reporting purposes. Many of these do not have integrated spatial referencing and some departments rely only on spreadsheets to manage their planning and business processes.</p>
             </div>
-            <div class="slides">
-              <q>Our company uses a systematic method of spatial planning in which geo-informatics and ...</q>
-              <p class="author font-upper">&mdash; &nbsp; &nbsp;Mission Statement
-                <i class="fa fa-pull-right fa-2x fa-comment-alt gutter-right neg-offset"></i>
-              </p>
+            <div class="showslide">
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo, id facilis ducimus suscipit, doloribus laboriosam eos, iusto necessitatibus sit velit mollitia quaerat tenetur. Amet eius, doloribus voluptatum animi eum aspernatur cum, facere commodi rerum aliquid quaerat perspiciatis dolor dignissimos, explicabo quidem exercitationem voluptatibus placeat magnam? Vero unde ratione sapiente?</p>
             </div>
-            <div class="slides">
-              <q>... multi-criteria analysis tools are integrated to provide effective methods for rational decision-making.</q>
-              <p class="author font-upper">&mdash; &nbsp; &nbsp;Mission Statement
-                <i class="fa fa-pull-right fa-2x fa-comment gutter-right neg-offset"></i>
-              </p>
+            <div class="showslide">
+              <p class="lead mb-1">This was done between 2011 and 2014 and was concluded successfully with some key learnings being understood as follows:</p>
+              <ul class="lead flush">
+                <li>Datasets do not currently have official custodians as per the SDI Act with the responsibility to maintain and update the datasets;</li>
+                <li>Data standards pertaining to land use classes are not in place making it difficult to integrate datasets;</li>
+                <li>Some datasets that would form the basis of NSPDR such as wall-to-wall land use classification schemes do not exist;</li>
+                <li>The need to remove subjectivity from the planning function and move towards an evidence-based approach; and</li>
+                <li>The requirement of horizontal and vertical alignment of planning between the three spheres of government can only be managed or conceptualised through the use of a system such as the NSPDR Ecosystem.</li>
+              </ul>
+            </div> -->
+
+            <!-- 01 -->
+            <div class="showslide">
+              <div class="col-md-10 mxauto">
+                <h3 class="fw-600 text-geois mb-0">Setting the scene for <small class="fat">NSPDR</small></h3>
+                <div class="linear-divider my-2"></div>
+                <div class="lead mx-2">
+                  <h5 class="initial-subtitle mt-3">background</h5>
+                  <p class="pull-up1">The goal to achieve integrated development through effective spatial planning and land use management gained urgency with the passing of the Spatial Planning and Land Use Management Act (SPLUMA) in 2013, wherein the national government is mandated to develop mechanisms to support and strengthen the capacity of provinces and municipalities to adopt and implement an effective spatial planning and land use management system.</p>
+                  <p>To give effect to the call of developing a mechanism to support and strengthen the capability of provinces and municipalities in this regard, the Department of Rural Development and Land Reform has embarked on a process to develop the National Spatial Planning Data Repository (NSPDR) Ecosystem.</p>
+                  <h5 class="initial-subtitle mt-4">objectives</h5>
+                  <p class="pull-up1">The <small class="fat">NSPDR</small> ecosystem will enable sharing of spatial planning information and data across all spheres of government and the private sector and will aid municipalities in spatial planning and land use management. The <small class="fat">NSPDR</small> ecosystem will also facilitate the monitoring of defined KPI’s such as spatial budgets and SPLUMA compliance.</p>
+                  <p>The <small class="fat">NSPDR</small> ecosystem will also support the implementation of and compliance with multiple legislative and policy frameworks such as the National Development Plan (NDP), and the Spatial Data Infrastructure Act of 2003.</p>
+                </div>
+              </div>
+            </div>
+            <!-- 02 -->
+            <div class="showslide">
+              <div class="col-md-10 mx-auto">
+                <h3 class="fw-600 text-geois mb-0"><small class="fat">NSPDR</small> as an enabler of <small class="fat">SPLUMA</small></h3>
+                <div class="linear-divider my-2"></div>
+                <h4 class="no-spacing fw-400 mx-1"><small class="fat">SPLUMA</small> calls for the following provisions:</h4>
+                <ul class="lead mx-2 flush pull-up1">
+                  <li>A uniform, effective and comprehensive system of spatial planning and land use management.</li>
+                  <li>The national government must, in accordance with this act and the Intergovernmental Relations Framework Act, develop mechanisms to support and strengthen the capacity of provinces and municipalities to adopt and implement an effective spatial planning and land use management system.</li>
+                  <li>Procedures and processes for the preparation, submission and consideration of land development applications and related processes provided by provincial legislation.</li>
+                  <li>A coherent, planned approach to spatial development at the national, provincial and municipal spheres.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- 03 -->
+            <div class="showslide">
+              <div class="col-md-10 ml-auto">
+                <h3 class="fw-600 text-geois mb-0">What does the <small class="fat">NSPDR</small> actually do?</h3>
+                <div class="linear-divider my-2"></div>
+                <h4 class="no-spacing fw-400 mx-1">the <small class="fat">NSPDR</small> ecosystem provides for the following:</h4>
+                <ul class="lead mx-2 flush pull-up1">
+                  <li>Facilitation of access to spatial information such as demographic, environmental, general infrastructure and cadastre data that is required for integrated spatial planning;</li>
+                  <li>E-Lodgement capability that will enable the lodging of land development applications to municipalities as well as storage and management of related documents;</li>
+                  <li>Offline spatial information access to remote municipalities;</li>
+                  <li>Enablement of horizontal and vertical alignment of spatial planning through the overlay of multi-level plans at different spheres of government;</li>
+                  <li>Provision of access to the guidelines and tools for the development of Spatial Development Frameworks (SDFs) and Land Use Schemes including Land Use Management capability;</li>
+                  <li>Town and regional planners will have a view of their spatial plans as well as adjacent spatial plans (local, district, regional, provincial, and national SDFs), in order to assess alignment; and</li>
+                  <li>Tools to monitor the equitable spending of capital budgets and resources across the country.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- 04 -->
+            <div class="showslide">
+              <div class="col-md-10 mx-auto">
+                <h3 class="fw-600 text-geois mb-0">Who are the beneficiaries?</h3>
+                <div class="linear-divider my-2"></div>
+                <h4 class="no-spacing fw-400 mx-1">the target user-groups are as follows:</h4>
+                <ul class="lead mx-2 flush pull-up1">
+                  <li>Municipal Senior Management</li>
+                  <li>Municipal Spatial Planning professionals</li>
+                  <li>Municipal Land Use Management professionals</li>
+                  <li>National, Provincial and Municipal GIS professionals</li>
+                  <li>National and Provincial Senior Management responsible for <abbr title="Monitoring and Evaluation">M&amp;E</abbr></li>
+                  <li>Contributors within state-owned enterprises, including the private and academic/research sectors</li>
+                </ul>
+              </div>
+            </div>
+            <!-- 05 -->
+            <div class="showslide">
+              <div class="col-md-10 mxauto">
+                <h3 class="fw-600 text-geois mb-0">How is the <small class="fat">NSPDR</small> being developed?</h3>
+                <div class="linear-divider my-2"></div>
+                <h4 class="initial-subtitle ml-1 mt-4">Awareness creation</h4>
+                <ul class="lead flush pull-up1">
+                  <li>Engage stakeholders at a national, provincial and municipal level</li>
+                  <li>Highlight policy and legislative objectives addressed by the <small class="fat">NSPDR</small> ecosystem</li>
+                  <li>Inform stakeholders on the progress of the <small class="fat">NSPDR</small> ecosystem development</li>
+                  <li>Secure buy-in of data custodians and other stakeholders for ongoing data sharing and maintenance</li>
+                </ul>
+                <h5 class="initial-subtitle ml-1 mt-4">Data collection</h5>
+                <ul class="lead flush pull-up1">
+                  <li>Identify core datasets and host them in one central location</li>
+                  <li>Develop pathways for future data sourcing including automated data capture</li>
+                  <li>Formalise data sourcing agreements to secure commitment from data custodians</li>
+                </ul>
+                <h5 class="initial-subtitle ml-1 mt-4">Systems &amp; technology</h5>
+                <ul class="lead flush pull-up1">
+                  <li>Develop an intuitive, user-friendly, web-based GIS spatial interface to share project information and other data</li>
+                  <li>Ability to handle tablet and mobile devices thereby aiding access to even more users</li>
+                  <li>Provide offline appliances for users with limited bandwidth</li>
+                  <li>Ability to create custom apps to analyse spatial information through the provision of <abbr title="Application Programming Interfaces">APIs</abbr></li>
+                  <li>Provide the ability to link with external databases and/or portals of various stakeholders</li>
+                  <li>Provide the ability to generate performance reports on integrated spatial planning and information sharing</li>
+                </ul>
+                <h5 class="initial-subtitle ml-1 mt-4">Education &amp; training</h5>
+                <ul class="lead flush pull-up1">
+                  <li>Assess and identify various training groups and training needs</li>
+                  <li>Develop an e-learning web portal with access to training</li>
+                  <li>Evaluate training programme and instructor effectiveness</li>
+                  <li>Assess knowledge and skill acquisition of the trainees</li>
+                </ul>
+              </div>
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-2x fa-chevron-left"></i></a>
-            <a class="next" onclick="plusSlides(1)"><i class="fa fa-2x fa-chevron-right"></i></a>
-          </div>
+            <!-- <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-2x fa-chevron-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa fa-2x fa-chevron-right"></i></a> -->
+          <!-- </div> -->
 
-          <div class="dot-container">
+          <!-- <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
+          </div> -->
 
-          <nav aria-label="Page Navigation">
-            <ul class="pagination pagination-lg justify-content-center">
-              <li class="page-item">
-                <a class="page-link" role="button" onclick="plusSlides(-1)"><i class="fa fa-sm fa-chevron-left"></i><i class="fa fa-sm fa-chevron-left"></i></a>
-              </li>
-              <li class="page-item"><a class="page-link fw-700" role="button" onclick="currentSlide(1)">1</a></li>
-              <li class="page-item"><a class="page-link fw-700" role="button" onclick="currentSlide(2)">2</a></li>
-              <li class="page-item"><a class="page-link fw-700" role="button" onclick="currentSlide(3)">3</a></li>
-              <li class="page-item">
-                <a class="page-link" role="button" onclick="plusSlides(1)"><i class="fa fa-sm fa-chevron-right"></i><i class="fa fa-sm fa-chevron-right"></i></a>
-              </li>
-              <!-- <li class="page-item"><a class="page-link" href="javascript:void(0)" role="button" onclick="plusSlides(1)">Next</a></li> -->
-            </ul>
-          </nav>
+          <ul class="pagination pagination-lg justify-content-center">
+            <li class="page-item">
+              <a class="page-link" role="button" onclick="plusSlides(-1)"><i class="fa fa-sm fa-chevron-left"></i><i class="fa fa-sm fa-chevron-left"></i></a>
+            </li>
+            <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(1)">1</a></li>
+            <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(2)">2</a></li>
+            <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(3)">3</a></li>
+            <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(4)">4</a></li>
+            <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(5)">5</a></li>
+            <li class="page-item">
+              <a class="page-link" role="button" onclick="plusSlides(1)"><i class="fa fa-sm fa-chevron-right"></i><i class="fa fa-sm fa-chevron-right"></i></a>
+            </li>
+          </ul>
+          <!-- <ul class="nav nav-pills nav-pills-primary justify-content-center">
+            <li class="nav-item text-center">
+              <a class="nav-link active" href="javascript:void(0)" role="button" onclick="plusSlides(-1)"><i class="fa fa-angle-double-left"></i></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link active" href="javascript:void(0)" role="button" onclick="plusSlides(1)"><i class="fa fa-angle-double-right"></i></a>
+            </li>
+          </ul> -->
+          <!-- <ul class="nav nav-pills nav-pills-primary justify-content-center" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#active" role="tablist"><i class="fa fa-anchor"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#link" role="tablist"><i class="fa fa-thermometer-full"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#link" role="tablist"><i class="fa fa-suitcase"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#link" role="tablist"><i class="fa fa-exclamation"></i></a>
+            </li>
+          </ul> -->
 
-<ul class="nav nav-pills nav-pills-primary nav-align-center justify-content-center" role="tablist">
-	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#active" role="tablist">
-			<i class="fa fa-anchor"></i>
-		</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link active" data-toggle="tab" href="#link" role="tablist">
-			<i class="fa fa-thermometer-full"></i>
-		</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#link" role="tablist">
-			<i class="fa fa-suitcase"></i>
-		</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" data-toggle="tab" href="#link" role="tablist">
-			<i class="fa fa-exclamation"></i>
-		</a>
-	</li>
-</ul>
-
-          <hr class="space-4">
         </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <hr class="space-4">
       </section>
 
       <div class="container"><hr class="dark"></div>
@@ -637,6 +752,7 @@
       </section>
 
       <!-- <hr class="space-4"> -->
+      </article>
     </main>
 
 
@@ -695,7 +811,7 @@
       }
       function showSlides(n) {
         var i;
-        var slides = document.getElementsByClassName('slides');
+        var slides = document.getElementsByClassName('showslide');
         var dots = document.getElementsByClassName('dot');
           // Some weirdness is happening, so bail
           if (slides.length == 0) { return; }

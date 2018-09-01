@@ -25,9 +25,11 @@ function displayHamburger() {
 		/* ----------------------------------------------------------- */
 		$('#accordion .collapse').on('shown.bs.collapse', function() {
 			$(this).prev().find('.fa').toggleClass('fa-rotate-180');
+			$(this).find('.fa-sm').toggleClass('fa-rotate-180');
 		});
 		$('#accordion .collapse').on('hidden.bs.collapse', function() {
 			$(this).prev().find('.fa').toggleClass('fa-rotate-180');
+			$(this).find('.fa-sm').toggleClass('fa-rotate-180');
 		});
 
 		/* ----------------------------------------------------------- */
