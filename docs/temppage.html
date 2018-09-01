@@ -43,227 +43,66 @@
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 
 <style>
-/* slideshow
------------- */
-/* .slideshow .slideshow-container { */
 .slideshow {
   display: block;
 	position: relative;
-  /* min-height: 12.5rem; */
+  max-height: 25rem;
 	overflow: hidden;
 }
 .slideshow .showslide {
 	display: none;
-	/* padding: 2.5rem 10rem; */
-	/* text-align: left; */
-  -webkit-transform: scaleY(1);
+  /* -webkit-transform: scaleY(1);
   -moz-transform: scaleY(1);
   -ms-transform: scaleY(1);
   -o-transform: scaleY(1);
-  transform: scaleY(1);
-	/* <!-- -webkit-transform: scaleY(0); -->
-	<!-- -moz-transform: scaleY(0); -->
-	<!-- -ms-transform: scaleY(0); -->
-	<!-- -o-transform: scaleY(0); -->
-	<!-- transform: scaleY(0); --> */
+  transform: scaleY(1); */
+	-webkit-transform: scaleY(0);
+	-moz-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	-o-transform: scaleY(0);
+	transform: scaleY(0);
 	-webkit-transform-origin: top;
 	-moz-transform-origin: top;
 	-ms-transform-origin: top;
 	-o-transform-origin: top;
 	transform-origin: top;
-	transition: -webkit-transform .3s, transform .3s;
-  min-height: 25rem;
+	transition: -webkit-transform .6s, transform .6s;
+  transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+  transition: transform .6s ease, -webkit-transform .6s ease;
+  /* min-height: 25rem; */
+  height: 25rem;
+}
+.slideshow .showslide.active {
+	display: block;
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  transform: scaleY(1);
 }
 
-/* .slideshow a.prev,
-.slideshow a.next {
+.slideshow-container .arrow,
+.slideshow-container .dot {
 	cursor: pointer;
-	position: absolute;
-	top: 40%;
-	width: auto;
-	margin-top: -2rem;
-	padding: 2rem;
-	color: #888;
-	font-weight: bolder;
-	font-size: 1.75rem;
-	border-radius: 0 12px 12px 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: opacity .2s ease-out;
-  -moz-transition: opacity .2s ease-out;
-  -o-transition: opacity .2s ease-out;
-  transition: opacity .2s ease-out;
-}
-.slideshow a.next {
-	position: absolute;
-	right: 0;
-	border-radius: 12px 0 0 12px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-.slideshow a.prev:hover,
-.slideshow a.next:hover {
-	font-size: 2rem;
-	color: #1d9c9e;
-	opacity: .8;
-	-webkit-transition: opacity .2s ease-in;
-	-moz-transition: opacity .2s ease-in;
-	-o-transition: opacity .2s ease-in;
-	transition: opacity .2s ease-in;
-} */
-
-/* .slideshow .dot-container {
-	text-align: center;
-	padding: .5rem;
-} */
-.slideshow .dot {
-	cursor: pointer;
-	/* height: 1.5rem;
-	width: 1.5rem;
-	margin: 0 .125rem; */
-	/* background-color: #bbb; */
-	/* border-radius: 50%;
-	display: inline-block; */
 	-webkit-transition: background-color .6s ease;
 	-moz-transition: background-color .6s ease;
 	-o-transition: background-color .6s ease;
 	transition: background-color .6s ease;
 }
-/* .slideshow .active,
-.slideshow .dot:hover { */
-.slideshow .active {
-	/* background-color: #777; */
-	/* background-color: #999; */
-	background-color: #f96332;
-	color: #fff !important;
-}
-.slideshow .dot:hover {
+.slideshow-container .arrow:hover,
+.slideshow-container .dot:hover {
 	background-color: #ffb236;
 	color: #777 !important;
 }
-
-/* .slideshow q {
-	font-style: normal;
-	font-family: 'Playfair Display', serif !important;
-	font-size: 2.5rem;
-	line-height: 3rem;
-  font-weight: 500;
-	color: #333;
-}
-.slideshow .author {
-	color: #ba6026;
-	font-weight: bold;
-  text-transform: uppercase;
-	letter-spacing: -.08rem;
-	word-spacing: .25rem;
-	font-size: 1.5rem;
-	line-height: 1.5rem;
-	padding: 1.5rem .5rem;
-}
-.slideshow .author i.neg-offset {
-	margin-top: -1rem;
-} */
-
-/* @media screen and (max-width: 768px) {
-  .slideshow .slides {
-	  padding: 1.5rem 5rem 1.5rem 6rem;
-  }
-  .slideshow q {
-    font-size: 2rem;
-  }
-  .slideshow .author i.neg-offset {
-    margin-top: -.5rem;
-    display: none;
-  }
-} */
-
-.nav-pills .nav-item .nav-link {
-	padding: 0 15.5px;
-	text-align: center;
-	height: 60px;
-	width: 60px;
-	font-weight: 400;
-	color: #999;
-	margin-right: 19px;
-	background-color: rgba(153,153,153,.3);
-	border-radius: 30px;
-	box-shadow: 0px 5px 35px 0px rgba(0,0,0,.1);
-	transition: background-color .6s ease, color .6s ease;
-}
-.nav-pills .nav-item .nav-link:hover {
-	/* background-color: rgba(222,222,222,.3); */
-	background-color: rgba(0,0,0,.5);
-	color: #fff;
-}
-.nav-pills .nav-item .nav-link.active,
-.nav-pills .nav-item .nav-link.active:focus,
-.nav-pills .nav-item .nav-link.active:hover {
-	background-color: #999;
-	color: #fff;
-	box-shadow: 0px 5px 35px 0px rgba(0,0,0,.3);
-}
-.nav-pills .nav-item .nav-link.disabled,
-.nav-pills .nav-item .nav-link:disabled,
-.nav-pills .nav-item .nav-link[disabled] {
-	opacity: .5;
-}
-
-.nav-pills .nav-item i {
-	display: block;
-	font-size: 20px;
-	line-height: 60px;
-}
-
-.nav-pills.nav-pills-neutral .nav-item .nav-link {
-	background-color: rgba(255,255,255,.2);
-	color: #fff;
-}
-.nav-pills.nav-pills-neutral .nav-item .nav-link.active,
-.nav-pills.nav-pills-neutral .nav-item .nav-link.active:focus,
-.nav-pills.nav-pills-neutral .nav-item .nav-link.active:hover {
-	background-color: #fff;
-	color: #f96332;
-}
-.nav-pills.nav-pills-primary .nav-item .nav-link.active,
-.nav-pills.nav-pills-primary .nav-item .nav-link.active:focus,
-.nav-pills.nav-pills-primary .nav-item .nav-link.active:hover {
+.slideshow-container .dot.active {
 	background-color: #f96332;
-}
-.nav-pills.nav-pills-info .nav-item .nav-link.active,
-.nav-pills.nav-pills-info .nav-item .nav-link.active:focus,
-.nav-pills.nav-pills-info .nav-item .nav-link.active:hover {
-	background-color: #2ca8ff;
-}
-.nav-pills.nav-pills-success .nav-item .nav-link.active,
-.nav-pills.nav-pills-success .nav-item .nav-link.active:focus,
-.nav-pills.nav-pills-success .nav-item .nav-link.active:hover {
-	background-color: #18ce0f;
-}
-.nav-pills.nav-pills-warning .nav-item .nav-link.active,
-.nav-pills.nav-pills-warning .nav-item .nav-link.active:focus,
-.nav-pills.nav-pills-warning .nav-item .nav-link.active:hover {
-	background-color: #ffb236;
-}
-.nav-pills.nav-pills-danger .nav-item .nav-link.active,
-.nav-pills.nav-pills-danger .nav-item .nav-link.active:focus,
-.nav-pills.nav-pills-danger .nav-item .nav-link.active:hover {
-	background-color: #ff3636;
-}
-
-.nav-align-center {
-	text-align: center;
-}
-.nav-align-center .nav-pills {
-	display: inline-flex;
+	color: #fff !important;
 }
 </style>
 
   </head>
-  <body id="top" class="bg-linear2">
+  <body id="top" class="bg-linear">
 		<!--[if lt IE 8]>
 				<p class="upgrade-browser">
           You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
@@ -347,8 +186,8 @@
 
 
     <!-- CONTENT -->
-    <main class="nspdr-background --raised ircles2 top-brown">
-      <article style="background:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAxIiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1ZjVmNSIgc3Ryb2tlLXdpZHRoPSIzIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1ZjVmNSIgc3Ryb2tlLXdpZHRoPSI0Ij48L3BhdGg+Cjwvc3ZnPg==');">
+    <main class="nspdr-background --raised top-brown">
+      <article class="bg-honeycomb bgblueprint bgchevrons bgshippo bgwaves">
 
       <section class="segment pb-1" draggable="true">
         <div class="container pt-3 pt-sm-4">
@@ -399,183 +238,130 @@
         </div>
       </section>
 
-      <div class="container"><hr class="dark"></div>
+      <!-- <div class="container"><hr class="dark"></div> -->
 
-      <section class="segment --headers" draggable="true">
+      <section class="segment --headers  d-none" draggable="true">
 	      <div class="container">
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-11">
-		          <div class="lead">
 
-        <div class="slideshow">
-          <!-- <div class="slideshow-container"> -->
-
-            <!-- <div class="showslide">
-              <p class="lead">The lack of the availability of up-to-date spatial datasets to the public and private sector causes extensive time wastage and insecurity as data quality, scale and recentness is undermined. Currently, most departments have standalone databases and tools that are being used for planning and reporting purposes. Many of these do not have integrated spatial referencing and some departments rely only on spreadsheets to manage their planning and business processes.</p>
-            </div>
-            <div class="showslide">
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo, id facilis ducimus suscipit, doloribus laboriosam eos, iusto necessitatibus sit velit mollitia quaerat tenetur. Amet eius, doloribus voluptatum animi eum aspernatur cum, facere commodi rerum aliquid quaerat perspiciatis dolor dignissimos, explicabo quidem exercitationem voluptatibus placeat magnam? Vero unde ratione sapiente?</p>
-            </div>
-            <div class="showslide">
-              <p class="lead mb-1">This was done between 2011 and 2014 and was concluded successfully with some key learnings being understood as follows:</p>
-              <ul class="lead flush">
-                <li>Datasets do not currently have official custodians as per the SDI Act with the responsibility to maintain and update the datasets;</li>
-                <li>Data standards pertaining to land use classes are not in place making it difficult to integrate datasets;</li>
-                <li>Some datasets that would form the basis of NSPDR such as wall-to-wall land use classification schemes do not exist;</li>
-                <li>The need to remove subjectivity from the planning function and move towards an evidence-based approach; and</li>
-                <li>The requirement of horizontal and vertical alignment of planning between the three spheres of government can only be managed or conceptualised through the use of a system such as the NSPDR Ecosystem.</li>
-              </ul>
-            </div> -->
-
-            <!-- 01 -->
-            <div class="showslide">
-              <div class="col-md-10 mxauto">
-                <h3 class="fw-600 text-geois mb-0">Setting the scene for <small class="fat">NSPDR</small></h3>
-                <div class="linear-divider my-2"></div>
-                <div class="lead mx-2">
-                  <h5 class="initial-subtitle mt-3">background</h5>
-                  <p class="pull-up1">The goal to achieve integrated development through effective spatial planning and land use management gained urgency with the passing of the Spatial Planning and Land Use Management Act (SPLUMA) in 2013, wherein the national government is mandated to develop mechanisms to support and strengthen the capacity of provinces and municipalities to adopt and implement an effective spatial planning and land use management system.</p>
-                  <p>To give effect to the call of developing a mechanism to support and strengthen the capability of provinces and municipalities in this regard, the Department of Rural Development and Land Reform has embarked on a process to develop the National Spatial Planning Data Repository (NSPDR) Ecosystem.</p>
-                  <h5 class="initial-subtitle mt-4">objectives</h5>
-                  <p class="pull-up1">The <small class="fat">NSPDR</small> ecosystem will enable sharing of spatial planning information and data across all spheres of government and the private sector and will aid municipalities in spatial planning and land use management. The <small class="fat">NSPDR</small> ecosystem will also facilitate the monitoring of defined KPI’s such as spatial budgets and SPLUMA compliance.</p>
-                  <p>The <small class="fat">NSPDR</small> ecosystem will also support the implementation of and compliance with multiple legislative and policy frameworks such as the National Development Plan (NDP), and the Spatial Data Infrastructure Act of 2003.</p>
+              <div class="-slideshow compact-paragraphs">
+                <!-- 01 -->
+                <div class="-showslide active">
+                  <h4 class="fw-600 text-geois">Setting the scene for <small class="fw-700">NSPDR</small></h4>
+                  <h5 class="initial-subtitle mt-2">background</h5>
+                  <p>The goal to achieve integrated development through effective spatial planning and land use management gained urgency with the passing of the Spatial Planning and Land Use Management Act (SPLUMA) in 2013, wherein the national government is mandated to develop mechanisms to support and strengthen the capacity of provinces and municipalities to adopt and implement an effective spatial planning and land use management system. To give effect to the call of developing a mechanism to support and strengthen the capability of provinces and municipalities in this regard, the Department of Rural Development and Land Reform has embarked on a process to develop the National Spatial Planning Data Repository (NSPDR) Ecosystem.</p>
+                  <h5 class="initial-subtitle mt-3">objectives</h5>
+                  <p>The NSPDR will enable sharing of spatial planning information and data across all spheres of government and the private sector and will aid municipalities in spatial planning and land use management. The NSPDR will also facilitate the monitoring of defined KPI’s such as spatial budgets and SPLUMA compliance. The NSPDR will also support the implementation of and compliance with multiple legislative and policy frameworks such as the National Development Plan (NDP), and the Spatial Data Infrastructure Act of 2003.</p>
+                </div>
+                <!-- 02 -->
+                <div class="-showslide">
+                  <h4 class="fw-600 text-geois"><small class="fw-700">NSPDR</small> as an enabler of <small class="fw-700">SPLUMA</small></h4>
+                  <h5 class="initial-subtitle mt-2">SPLUMA calls for the following:</h5>
+                  <ul class="flush">
+                    <li>A uniform, effective and comprehensive system of spatial planning and land use management.</li>
+                    <li>The national government must, in accordance with this act and the Intergovernmental Relations Framework Act, develop mechanisms to support and strengthen the capacity of provinces and municipalities to adopt and implement an effective spatial planning and land use management system.</li>
+                    <li>Procedures and processes for the preparation, submission and consideration of land development applications and related processes provided by provincial legislation.</li>
+                    <li>A coherent, planned approach to spatial development at the national, provincial and municipal spheres.</li>
+                  </ul>
+                </div>
+                <!-- 03 -->
+                <div class="-showslide">
+                  <h4 class="fw-600 text-geois">What does the <small class="fw-700">NSPDR</small> actually do?</h4>
+                  <h5 class="initial-subtitle mt-2">the ecosystem will provide for:</h5>
+                  <ul class="flush">
+                    <li>Facilitation of access to spatial information such as demographic, environmental, general infrastructure and cadastre data that is required for integrated spatial planning;</li>
+                    <li>E-Lodgement capability that will enable the lodging of land development applications to municipalities as well as storage and management of related documents;</li>
+                    <li>Offline spatial information access to remote municipalities;</li>
+                    <li>Enablement of horizontal and vertical alignment of spatial planning through the overlay of multi-level plans at different spheres of government;</li>
+                    <li>Provision of access to the guidelines and tools for the development of Spatial Development Frameworks (SDFs) and Land Use Schemes including Land Use Management capability;</li>
+                    <li>Town and regional planners will have a view of their spatial plans as well as adjacent spatial plans (local, district, regional, provincial, and national SDFs), in order to assess alignment; and</li>
+                    <li>Tools to monitor the equitable spending of capital budgets and resources across the country.</li>
+                  </ul>
+                </div>
+                <!-- 04 -->
+                <div class="-showslide">
+                  <h4 class="fw-600 text-geois">Who are the beneficiaries?</h4>
+                  <h5 class="initial-subtitle mt-2">targeted user-groups are:</h5>
+                  <ul class="flush">
+                    <li>Municipal Senior Management</li>
+                    <li>Municipal Spatial Planning professionals</li>
+                    <li>Municipal Land Use Management professionals</li>
+                    <li>National, Provincial and Municipal GIS professionals</li>
+                    <li>National and Provincial Senior Management responsible for Monitoring and Evaluation</li>
+                    <li>Contributors within state-owned enterprises, including the private and academic/research sectors</li>
+                  </ul>
+                </div>
+                <!-- 05 -->
+                <div class="-showslide">
+                  <h4 class="fw-600 text-geois">How is the <small class="fw-700">NSPDR</small> being developed?</h4>
+                  <h5 class="initial-subtitle mt-2">Awareness creation</h5>
+                  <ul class="flush">
+                    <li>Engage stakeholders at a national, provincial and municipal level</li>
+                    <li>Highlight policy and legislative objectives addressed by the NSPDR Ecosystem</li>
+                    <li>Inform stakeholders on the progress of the NSPDR Ecosystem development</li>
+                    <li>Secure buy-in of data custodians and other stakeholders for ongoing data sharing and maintenance</li>
+                  </ul>
+                  <h5 class="initial-subtitle mt-3">Data collection</h5>
+                  <ul class="flush">
+                    <li>Identify core datasets and host them in one central location</li>
+                    <li>Develop pathways for future data sourcing including automated data capture</li>
+                    <li>Formalise data sourcing agreements to secure commitment from data custodians</li>
+                  </ul>
+                </div>
+                <!-- 06 -->
+                <div class="-showslide">
+                  <h4 class="fw-600 text-geois">How is the <small class="fw-700">NSPDR</small> being developed?&ensp; [ continuted ]</h4>
+                  <h5 class="initial-subtitle mt-2">Systems &amp; technology</h5>
+                  <ul class="flush">
+                    <li>Develop an intuitive, user-friendly, web-based GIS spatial interface to share project information and other data</li>
+                    <li>Ability to handle tablet and mobile devices thereby aiding access to even more users</li>
+                    <li>Provide offline appliances for users with limited bandwidth</li>
+                    <li>Ability to create custom apps to analyse spatial information through the provision of APIs</li>
+                    <li>Provide the ability to link with external databases and/or portals of various stakeholders</li>
+                    <li>Provide the ability to generate performance reports on integrated spatial planning and information sharing</li>
+                  </ul>
+                  <h5 class="initial-subtitle mt-3">Education &amp; training</h5>
+                  <ul class="flush">
+                    <li>Assess and identify various training groups and training needs</li>
+                    <li>Develop an e-learning web portal with access to training</li>
+                    <li>Evaluate training programme and instructor effectiveness</li>
+                    <li>Assess knowledge and skill acquisition of the trainees</li>
+                  </ul>
                 </div>
               </div>
-            </div>
-            <!-- 02 -->
-            <div class="showslide">
-              <div class="col-md-10 mx-auto">
-                <h3 class="fw-600 text-geois mb-0"><small class="fat">NSPDR</small> as an enabler of <small class="fat">SPLUMA</small></h3>
-                <div class="linear-divider my-2"></div>
-                <h4 class="no-spacing fw-400 mx-1"><small class="fat">SPLUMA</small> calls for the following provisions:</h4>
-                <ul class="lead mx-2 flush pull-up1">
-                  <li>A uniform, effective and comprehensive system of spatial planning and land use management.</li>
-                  <li>The national government must, in accordance with this act and the Intergovernmental Relations Framework Act, develop mechanisms to support and strengthen the capacity of provinces and municipalities to adopt and implement an effective spatial planning and land use management system.</li>
-                  <li>Procedures and processes for the preparation, submission and consideration of land development applications and related processes provided by provincial legislation.</li>
-                  <li>A coherent, planned approach to spatial development at the national, provincial and municipal spheres.</li>
-                </ul>
-              </div>
-            </div>
-            <!-- 03 -->
-            <div class="showslide">
-              <div class="col-md-10 ml-auto">
-                <h3 class="fw-600 text-geois mb-0">What does the <small class="fat">NSPDR</small> actually do?</h3>
-                <div class="linear-divider my-2"></div>
-                <h4 class="no-spacing fw-400 mx-1">the <small class="fat">NSPDR</small> ecosystem provides for the following:</h4>
-                <ul class="lead mx-2 flush pull-up1">
-                  <li>Facilitation of access to spatial information such as demographic, environmental, general infrastructure and cadastre data that is required for integrated spatial planning;</li>
-                  <li>E-Lodgement capability that will enable the lodging of land development applications to municipalities as well as storage and management of related documents;</li>
-                  <li>Offline spatial information access to remote municipalities;</li>
-                  <li>Enablement of horizontal and vertical alignment of spatial planning through the overlay of multi-level plans at different spheres of government;</li>
-                  <li>Provision of access to the guidelines and tools for the development of Spatial Development Frameworks (SDFs) and Land Use Schemes including Land Use Management capability;</li>
-                  <li>Town and regional planners will have a view of their spatial plans as well as adjacent spatial plans (local, district, regional, provincial, and national SDFs), in order to assess alignment; and</li>
-                  <li>Tools to monitor the equitable spending of capital budgets and resources across the country.</li>
-                </ul>
-              </div>
-            </div>
-            <!-- 04 -->
-            <div class="showslide">
-              <div class="col-md-10 mx-auto">
-                <h3 class="fw-600 text-geois mb-0">Who are the beneficiaries?</h3>
-                <div class="linear-divider my-2"></div>
-                <h4 class="no-spacing fw-400 mx-1">the target user-groups are as follows:</h4>
-                <ul class="lead mx-2 flush pull-up1">
-                  <li>Municipal Senior Management</li>
-                  <li>Municipal Spatial Planning professionals</li>
-                  <li>Municipal Land Use Management professionals</li>
-                  <li>National, Provincial and Municipal GIS professionals</li>
-                  <li>National and Provincial Senior Management responsible for <abbr title="Monitoring and Evaluation">M&amp;E</abbr></li>
-                  <li>Contributors within state-owned enterprises, including the private and academic/research sectors</li>
-                </ul>
-              </div>
-            </div>
-            <!-- 05 -->
-            <div class="showslide">
-              <div class="col-md-10 mxauto">
-                <h3 class="fw-600 text-geois mb-0">How is the <small class="fat">NSPDR</small> being developed?</h3>
-                <div class="linear-divider my-2"></div>
-                <h4 class="initial-subtitle ml-1 mt-4">Awareness creation</h4>
-                <ul class="lead flush pull-up1">
-                  <li>Engage stakeholders at a national, provincial and municipal level</li>
-                  <li>Highlight policy and legislative objectives addressed by the <small class="fat">NSPDR</small> ecosystem</li>
-                  <li>Inform stakeholders on the progress of the <small class="fat">NSPDR</small> ecosystem development</li>
-                  <li>Secure buy-in of data custodians and other stakeholders for ongoing data sharing and maintenance</li>
-                </ul>
-                <h5 class="initial-subtitle ml-1 mt-4">Data collection</h5>
-                <ul class="lead flush pull-up1">
-                  <li>Identify core datasets and host them in one central location</li>
-                  <li>Develop pathways for future data sourcing including automated data capture</li>
-                  <li>Formalise data sourcing agreements to secure commitment from data custodians</li>
-                </ul>
-                <h5 class="initial-subtitle ml-1 mt-4">Systems &amp; technology</h5>
-                <ul class="lead flush pull-up1">
-                  <li>Develop an intuitive, user-friendly, web-based GIS spatial interface to share project information and other data</li>
-                  <li>Ability to handle tablet and mobile devices thereby aiding access to even more users</li>
-                  <li>Provide offline appliances for users with limited bandwidth</li>
-                  <li>Ability to create custom apps to analyse spatial information through the provision of <abbr title="Application Programming Interfaces">APIs</abbr></li>
-                  <li>Provide the ability to link with external databases and/or portals of various stakeholders</li>
-                  <li>Provide the ability to generate performance reports on integrated spatial planning and information sharing</li>
-                </ul>
-                <h5 class="initial-subtitle ml-1 mt-4">Education &amp; training</h5>
-                <ul class="lead flush pull-up1">
-                  <li>Assess and identify various training groups and training needs</li>
-                  <li>Develop an e-learning web portal with access to training</li>
-                  <li>Evaluate training programme and instructor effectiveness</li>
-                  <li>Assess knowledge and skill acquisition of the trainees</li>
-                </ul>
-              </div>
-            </div>
 
-            <!-- <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-2x fa-chevron-left"></i></a>
-            <a class="next" onclick="plusSlides(1)"><i class="fa fa-2x fa-chevron-right"></i></a> -->
-          <!-- </div> -->
+              <div class="slideshow-container">
+                <!-- <ul class="pagination pagination-lg justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link arrow" role="button" onclick="plusSlides(-1)">
+                      <i class="fa fa-sm fa-chevron-left"></i>&ensp;<i class="fa fa-sm fa-chevron-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(1)">1</a></li>
+                  <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(2)">2</a></li>
+                  <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(3)">3</a></li>
+                  <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(4)">4</a></li>
+                  <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(5)">5</a></li>
+                  <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(6)">6</a></li>
+                  <li class="page-item">
+                    <a class="page-link arrow" role="button" onclick="plusSlides(1)">
+                      <i class="fa fa-sm fa-chevron-right"></i>&ensp;<i class="fa fa-sm fa-chevron-right"></i>
+                    </a>
+                  </li>
+                </ul> -->
+              </div>
+                <!-- <ul class="nav nav-pills nav-pills-primary justify-content-center">
+                  <li class="nav-item text-center">
+                    <a class="nav-link active" href="javascript:void(0)" role="button" onclick="plusSlides(-1)"><i class="fa fa-angle-double-left"></i></a>
+                  </li>
+                  <li class="nav-item text-center">
+                    <a class="nav-link active" href="javascript:void(0)" role="button" onclick="plusSlides(1)"><i class="fa fa-angle-double-right"></i></a>
+                  </li>
+                </ul> -->
 
-          <!-- <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div> -->
-
-          <ul class="pagination pagination-lg justify-content-center">
-            <li class="page-item">
-              <a class="page-link" role="button" onclick="plusSlides(-1)"><i class="fa fa-sm fa-chevron-left"></i><i class="fa fa-sm fa-chevron-left"></i></a>
-            </li>
-            <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(1)">1</a></li>
-            <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(2)">2</a></li>
-            <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(3)">3</a></li>
-            <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(4)">4</a></li>
-            <li class="page-item"><a class="page-link dot fw-700" role="button" onclick="currentSlide(5)">5</a></li>
-            <li class="page-item">
-              <a class="page-link" role="button" onclick="plusSlides(1)"><i class="fa fa-sm fa-chevron-right"></i><i class="fa fa-sm fa-chevron-right"></i></a>
-            </li>
-          </ul>
-          <!-- <ul class="nav nav-pills nav-pills-primary justify-content-center">
-            <li class="nav-item text-center">
-              <a class="nav-link active" href="javascript:void(0)" role="button" onclick="plusSlides(-1)"><i class="fa fa-angle-double-left"></i></a>
-            </li>
-            <li class="nav-item text-center">
-              <a class="nav-link active" href="javascript:void(0)" role="button" onclick="plusSlides(1)"><i class="fa fa-angle-double-right"></i></a>
-            </li>
-          </ul> -->
-          <!-- <ul class="nav nav-pills nav-pills-primary justify-content-center" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#active" role="tablist"><i class="fa fa-anchor"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#link" role="tablist"><i class="fa fa-thermometer-full"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#link" role="tablist"><i class="fa fa-suitcase"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#link" role="tablist"><i class="fa fa-exclamation"></i></a>
-            </li>
-          </ul> -->
-
-        </div>
-        </div>
-        </div>
-        </div>
+            </div>
+          </div>
         </div>
 
         <hr class="space-4">
@@ -587,171 +373,220 @@
 	      <div class="container">
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-10">
-              <div class="compact-paragraphs">
 
-                <h2 class="h1 fw-600">BENEFITS OF THE NSPDR</h2>
-                <div class="linear-divider my-4"></div>
+              <h2 class="fw-700">BENEFITS OF THE NSPDR</h2>
+              <div class="linear-divider my-3"></div>
 
-                <h3 class="fw-600">Community GIS</h3>
-                <p>Community GIS mapping aims to tell a community’s story in a vibrant and visual way.</p>
-                <p>It highlights the rich array of community activities and makes them visible and accessible to people by providing spatial information linked to photographs and relevant data.</p>
-                <p>The NSPDR Ecosystem will help users communicate visually their future development needs to support more accurate planning and development of infrastructure in communities.</p>
-                <p>NSPDR will provide social and economic data relating to aspects of importance to communities such as; employment, wages, different job sectors, public transport, travel times, distances from work places, and demographics of workers.</p>
-                <p>The NSPDR’s dashboards can speak to a specific municipalities service provision activity and can outline the progress of a program for decision makers and other people who need to stay on top of unfolding situations.</p>
-                <p>The NSPDR will also make provision for a crowd-sourcing tool for collecting volunteered information from the public.</p>
-                <hr class="space-4">
+              <div class="slideshow compact-paragraphs">
 
-                <h3 class="fw-600">Electronic Lodgement</h3>
-                <p>NSPDR supports the electronic lodgement of applications and supporting documents relating to land development applications at a municipal level.</p>
-                <p>The NSPDR will enable municipalities not only to receive, but to also consider and process land development applications electronically.</p>
-                <p>Municipalities will be provided with access to a portal that they will manage and be able to assign user rights and restrictions to their officials and to applicants.</p>
-                <p>Applicants will have the ability to register their unique profiles allowing for improved tracking and communication through email or written mail regarding their application status.</p>
-                <p>Outputs from various stages of the application process will feed into dashboards that can be used for monitoring and evaluation by management to improve turnaround times.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">01.&ensp;Community GIS</h4>
+                  <p>Community GIS mapping aims to tell a community’s story in a vibrant and visual way.</p>
+                  <p>It highlights the rich array of community activities and makes them visible and accessible to people by providing spatial information linked to photographs and relevant data.</p>
+                  <p>The NSPDR Ecosystem will help users communicate visually their future development needs to support more accurate planning and development of infrastructure in communities.</p>
+                  <p>NSPDR will provide social and economic data relating to aspects of importance to communities such as; employment, wages, different job sectors, public transport, travel times, distances from work places, and demographics of workers.</p>
+                  <p>The NSPDR’s dashboards can speak to a specific municipalities service provision activity and can outline the progress of a program for decision makers and other people who need to stay on top of unfolding situations.</p>
+                  <p>The NSPDR will also make provision for a crowd-sourcing tool for collecting volunteered information from the public.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Monitoring and Evaluation (M&E)</h3>
-                <p>M&E is integral to the daily work of public sector officials and municipal officials at different managerial levels to evaluate effectiveness of implemented programmes.</p>
-                <p>The capacity of municipalities, national and provincial departments to perform their own M&E is increased through use of tools within NSPDR that allow for improved information management.</p>
-                <p>The NSPDR will support managers by allowing for an evidence-based approach to M&E through the provision of quantitative data relating to specific aspects of land development applications.</p>
-                <p>Municipal managers will be provided with dashboards that will allow them to monitor and track compliance within their municipality and thus be able to make improvements to their strategies.</p>
-                <p>The NSPDR will facilitate the monitoring of defined KPIs such as spatial budgets and SPLUMA compliance nationally.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">02.&ensp;Electronic Lodgement</h4>
+                  <p>NSPDR supports the electronic lodgement of applications and supporting documents relating to land development applications at a municipal level.</p>
+                  <p>The NSPDR will enable municipalities not only to receive, but to also consider and process land development applications electronically.</p>
+                  <p>Municipalities will be provided with access to a portal that they will manage and be able to assign user rights and restrictions to their officials and to applicants.</p>
+                  <p>Applicants will have the ability to register their unique profiles allowing for improved tracking and communication through email or written mail regarding their application status.</p>
+                  <p>Outputs from various stages of the application process will feed into dashboards that can be used for monitoring and evaluation by management to improve turnaround times.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Planning Support</h3>
-                <p>The NSPDR Ecosystem will provide municipalities with access to spatially referenced information that is required for developing Spatial Development Frameworks (SDFs) that are representative of its unique spatial form.</p>
-                <p>The Ecosystem removes subjectivity from planning functions by allowing for a more evidence-based approach through improved access to core, reference and secondary data that is critical for effective planning.</p>
-                <p>The NSPDR will also provide offline spatial information to remote municipalities without internet access.</p>
-                <p>Users will be provided with access to various planning related documents such as acts, by-laws and LUMS applications in one central place.</p>
-                <p>Planners and decision makers will have a clear reflection of the reality of the municipal spatial environment, social and economic systems, particularly related to infrastructure needs and capacity.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">03.&ensp;Monitoring and Evaluation (M&E)</h4>
+                  <p>M&E is integral to the daily work of public sector officials and municipal officials at different managerial levels to evaluate effectiveness of implemented programmes.</p>
+                  <p>The capacity of municipalities, national and provincial departments to perform their own M&E is increased through use of tools within NSPDR that allow for improved information management.</p>
+                  <p>The NSPDR will support managers by allowing for an evidence-based approach to M&E through the provision of quantitative data relating to specific aspects of land development applications.</p>
+                  <p>Municipal managers will be provided with dashboards that will allow them to monitor and track compliance within their municipality and thus be able to make improvements to their strategies.</p>
+                  <p>The NSPDR will facilitate the monitoring of defined KPIs such as spatial budgets and SPLUMA compliance nationally.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Metadata (data about data)</h3>
-                <p>The SDI requires that all custodians make metadata available with their spatial data and make it available to the department for use in the Electronic Metadata Catalogue (EMC).</p>
-                <p>The NSPDR will support the provision of metadata from participating custodians to the department through its proposal to integrate with SASDI’s EMC.</p>
-                <p>The NSPDR will communicates the requirement of custodians to maintain and provide metadata that describes the content, quality and condition of their spatial information as determined by SASDI.</p>
-                <p>NSPDR also supports the work of the Committee for Spatial Information (CSI) in recording gaps in terms of the ability of the custodians to provide metadata with their spatial data.</p>
-                <p>NSPDR also highlights the capacity challenges at local municipal level to capture and maintain metadata through feedback from stakeholder engagements.</p>
-                <hr class="space-4">
+                  <div class="showslide">
+                  <h4 class="fw-600">04.&ensp;Planning Support</h4>
+                  <p>The NSPDR Ecosystem will provide municipalities with access to spatially referenced information that is required for developing Spatial Development Frameworks (SDFs) that are representative of its unique spatial form.</p>
+                  <p>The Ecosystem removes subjectivity from planning functions by allowing for a more evidence-based approach through improved access to core, reference and secondary data that is critical for effective planning.</p>
+                  <p>The NSPDR will also provide offline spatial information to remote municipalities without internet access.</p>
+                  <p>Users will be provided with access to various planning related documents such as acts, by-laws and LUMS applications in one central place.</p>
+                  <p>Planners and decision makers will have a clear reflection of the reality of the municipal spatial environment, social and economic systems, particularly related to infrastructure needs and capacity.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Living Atlas</h3>
-                <p>One of the primary goals of the Living Atlas is to make the best information easy to discover and use through Esri’s ArcGIS Online application which is built in to the NSPDR Ecosystem.</p>
-                <p>Users of the NSPDR will be provided with a large collection of high quality spatial information that has ever been preassembled covering topics such as; demographics, boundaries, elevation, soils, and climate.</p>
-                <p>Users can access this spatial information from different devices, anywhere and at any time.</p>
-                <p>The spatial information will constantly be growing and changing as maps, apps, and layers are added or updated by the registered users of the system or the system administrators.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">05.&ensp;Metadata (data about data)</h4>
+                  <p>The SDI requires that all custodians make metadata available with their spatial data and make it available to the department for use in the Electronic Metadata Catalogue (EMC).</p>
+                  <p>The NSPDR will support the provision of metadata from participating custodians to the department through its proposal to integrate with SASDI’s EMC.</p>
+                  <p>The NSPDR will communicates the requirement of custodians to maintain and provide metadata that describes the content, quality and condition of their spatial information as determined by SASDI.</p>
+                  <p>NSPDR also supports the work of the Committee for Spatial Information (CSI) in recording gaps in terms of the ability of the custodians to provide metadata with their spatial data.</p>
+                  <p>NSPDR also highlights the capacity challenges at local municipal level to capture and maintain metadata through feedback from stakeholder engagements.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Distributed Database Systems</h3>
-                <p>Concept of distributed describes a set of databases stored on multiple computers that appears to applications as a single database.</p>
-                <p>NSPDR will support distributed processing by allowing application to distribute its tasks among different computers in a network.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">06.&ensp;Living Atlas</h4>
+                  <p>One of the primary goals of the Living Atlas is to make the best information easy to discover and use through Esri’s ArcGIS Online application which is built in to the NSPDR Ecosystem.</p>
+                  <p>Users of the NSPDR will be provided with a large collection of high quality spatial information that has ever been preassembled covering topics such as; demographics, boundaries, elevation, soils, and climate.</p>
+                  <p>Users can access this spatial information from different devices, anywhere and at any time.</p>
+                  <p>The spatial information will constantly be growing and changing as maps, apps, and layers are added or updated by the registered users of the system or the system administrators.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Big Data Analytics</h3>
-                <p>Big data analytics is the process of examining large and varied datasets to uncover hidden patterns, unknown correlations, market trends, customer preferences and other useful information.</p>
-                <p>Big data can help organisations make more informed business decisions.</p>
-                <p>The Ecosystem will have capability to support big data analytics by providing ArcGIS tools that allow users to analyse patterns and aggregate data in the context of both space and time.</p>
-                <p>Users are offered ability to play with large scale datasets pertaining to topics such as the number of emergency phone calls accumulated within specific municipal boundary over a decade.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">07.&ensp;Distributed Database Systems</h4>
+                  <p>Concept of distributed describes a set of databases stored on multiple computers that appears to applications as a single database.</p>
+                  <p>NSPDR will support distributed processing by allowing application to distribute its tasks among different computers in a network.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Creating New Data from Artificial Intelligence</h3>
-                <p>Concept of artificial intelligence generally refers to ability of machines to use language, form abstractions and concepts and solve kinds of problems now reserved for humans.</p>
-                <p>It speaks to technologies that allow us to ask a computer questions, sit back while semi-autonomous cars negotiate traffic and make use of handheld devices to translate speech or printed text across most languages.</p>
-                <p>Through use of artificial intelligence, correlations can be rapidly detected by combing through a lot of statistical data to answer specific questions.</p>
-                <p>Thereby new data is generated that allow humans to be able to predict outcomes.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">08.&ensp;Big Data Analytics</h4>
+                  <p>Big data analytics is the process of examining large and varied datasets to uncover hidden patterns, unknown correlations, market trends, customer preferences and other useful information.</p>
+                  <p>Big data can help organisations make more informed business decisions.</p>
+                  <p>The Ecosystem will have capability to support big data analytics by providing ArcGIS tools that allow users to analyse patterns and aggregate data in the context of both space and time.</p>
+                  <p>Users are offered ability to play with large scale datasets pertaining to topics such as the number of emergency phone calls accumulated within specific municipal boundary over a decade.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Analysing Settlement Patterns</h3>
-                <p>Settlement patterns refer to the distribution of human activities across a country and the spatial relationship between these activities.</p>
-                <p>There is a specific need for high resolution input demographic data that can provide enough detail to quantify rural settlement patterns and thus accurately measure population concentrations and accessibility.</p>
-                <p>Popular research approaches require contemporary population count data to be combined with detailed satellite-derived settlement extents to map population distribution at a finer resolution.</p>
-                <p>The NSPDR will support this approach by supplying the user with high-resolution imagery and land cover information from various custodians as well as a set of geoprocessing tools to determine extents of interest areas.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">09.&ensp;Creating New Data from Artificial Intelligence</h4>
+                  <p>Concept of artificial intelligence generally refers to ability of machines to use language, form abstractions and concepts and solve kinds of problems now reserved for humans.</p>
+                  <p>It speaks to technologies that allow us to ask a computer questions, sit back while semi-autonomous cars negotiate traffic and make use of handheld devices to translate speech or printed text across most languages.</p>
+                  <p>Through use of artificial intelligence, correlations can be rapidly detected by combing through a lot of statistical data to answer specific questions.</p>
+                  <p>Thereby new data is generated that allow humans to be able to predict outcomes.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Rapid Response Report Generation</h3>
-                <p>Rapid response functionality provides high speed text or email notifications to public officials, municipalities or communities provided there is a database or contact list provided through an opt-in web service to ArcGIS platform.</p>
-                <p>Through web mapping, the user can select one or more alert areas and view citizen information via online aerial or hybrid maps.</p>
-                <p>The NSPDR supports this functionality for rapid response notification through its dashboards and the municipal reporter.</p>
-                <p>System administrators will be able to share reports generated from dashboards and the reporter with thousands of officials within the municipalities in a matter of minutes.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">10.&ensp;Analysing Settlement Patterns</h4>
+                  <p>Settlement patterns refer to the distribution of human activities across a country and the spatial relationship between these activities.</p>
+                  <p>There is a specific need for high resolution input demographic data that can provide enough detail to quantify rural settlement patterns and thus accurately measure population concentrations and accessibility.</p>
+                  <p>Popular research approaches require contemporary population count data to be combined with detailed satellite-derived settlement extents to map population distribution at a finer resolution.</p>
+                  <p>The NSPDR will support this approach by supplying the user with high-resolution imagery and land cover information from various custodians as well as a set of geoprocessing tools to determine extents of interest areas.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">The Science of Where&trade;</h3>
-                <p>The Science of Where is the science of digital transformation; the science of exploration and navigation; the science of commerce and ecology.</p>
-                <p>It speaks to the mission of Esri to offer the most high-powered, high-performance mapping and analytics capabilities in the world.</p>
-                <p>From a NSPDR perspective, this vision is supported by streamlining of spatial analysis of geographic and enterprise data through intuitive maps, charts, and graphs built on the Esri platforms.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">11.&ensp;Rapid Response Report Generation</h4>
+                  <p>Rapid response functionality provides high speed text or email notifications to public officials, municipalities or communities provided there is a database or contact list provided through an opt-in web service to ArcGIS platform.</p>
+                  <p>Through web mapping, the user can select one or more alert areas and view citizen information via online aerial or hybrid maps.</p>
+                  <p>The NSPDR supports this functionality for rapid response notification through its dashboards and the municipal reporter.</p>
+                  <p>System administrators will be able to share reports generated from dashboards and the reporter with thousands of officials within the municipalities in a matter of minutes.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">No Charge E-Learning (MOOC)</h3>
-                <p>MOOC refers to a course of study made available over the internet without charge to a very large number of people.</p>
-                <p>Anyone who decides to take a MOOC simply logs on to the website and signs up.</p>
-                <p>NSPDR will provide its registered users with free training on the e-learning portal.</p>
-                <p>The e-learning portal is dedicated to help create and achieve a learning environment that appeals to all learning levels where the learner can confidently understand the training material presented on the platform.</p>
-                <p>The e-learning portal supports self-paced learning by allowing users to proceed from one module to the next based on their own learning speed.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">12.&ensp;The Science of Where&trade;</h4>
+                  <p>The Science of Where is the science of digital transformation; the science of exploration and navigation; the science of commerce and ecology.</p>
+                  <p>It speaks to the mission of Esri to offer the most high-powered, high-performance mapping and analytics capabilities in the world.</p>
+                  <p>From a NSPDR perspective, this vision is supported by streamlining of spatial analysis of geographic and enterprise data through intuitive maps, charts, and graphs built on the Esri platforms.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Support for Municipalities with Power to Plan</h3>
-                <p>The Ecosystem will enable sharing of spatial planning information and data across all spheres of government and the private sector and will aid municipalities in spatial planning and land use management.</p>
-                <p>It will help in facilitating effective and efficient collaboration amongst national government/sector departments to foster alignment of their programs and budgets to planning needs identified in the PGDP/PSDF/SDF/IDP processes.</p>
-                <p>The Ecosystem will save municipalities time where people involved with spatial planning are dispersed through use of E-Lodgement which reduces the time spent by employees on manually tracking and tracing planning applications.</p>
-                <p>The NSPDR Ecosystem will provide guidance for the municipality’s LUMS.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">13.&ensp;No Charge E-Learning (MOOC)</h4>
+                  <p>MOOC refers to a course of study made available over the internet without charge to a very large number of people.</p>
+                  <p>Anyone who decides to take a MOOC simply logs on to the website and signs up.</p>
+                  <p>NSPDR will provide its registered users with free training on the e-learning portal.</p>
+                  <p>The e-learning portal is dedicated to help create and achieve a learning environment that appeals to all learning levels where the learner can confidently understand the training material presented on the platform.</p>
+                  <p>The e-learning portal supports self-paced learning by allowing users to proceed from one module to the next based on their own learning speed.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Field GIS Using Collector for Community GIS</h3>
-                <p>Maps produced from GIS data provide in the Ecosystem that is collected through GPS’s and surveys can be used to depict relationships and significant hotspots within communities.</p>
-                <p>GIS maps which can be produced on the Ecosystem are more user-friendly than other forms of data presentation, helping community-based organisations to understand community data and facilitating a better understanding of the community.</p>
-                <p>Community assessment conducted through data collection is an integral component of communities which show relationships between health, individual geographic locations, population numbers, etc.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">14.&ensp;Support for Municipalities with Power to Plan</h4>
+                  <p>The Ecosystem will enable sharing of spatial planning information and data across all spheres of government and the private sector and will aid municipalities in spatial planning and land use management.</p>
+                  <p>It will help in facilitating effective and efficient collaboration amongst national government/sector departments to foster alignment of their programs and budgets to planning needs identified in the PGDP/PSDF/SDF/IDP processes.</p>
+                  <p>The Ecosystem will save municipalities time where people involved with spatial planning are dispersed through use of E-Lodgement which reduces the time spent by employees on manually tracking and tracing planning applications.</p>
+                  <p>The NSPDR Ecosystem will provide guidance for the municipality’s LUMS.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Support for SASDI-EMC</h3>
-                <p>In terms of the SDI Act (Act 54 of 2003) the SASDI EMC holds metadata records for all government spatial information.</p>
-                <p>NSPDR Ecosystem supports the objectives of SASDI to eliminate duplications in the capturing of data by improving access, discovery, retrieval and sharing of spatial information.</p>
-                <p>The NSPDR will make collected spatial information from government custodians available together with linkage to the SASDI EMC for metadata capturing.</p>
-                <p>Custodians of data who enter into data sharing partnerships with the NSPDR Ecosystem will be required to provide all associated metadata in prescribed format on the SASDI EMC.</p>
-                <p>The NSPDR will have capacity to have an automated Electronic Data Interchange to SASDI catalogue services for store, search, discovery and querying of metadata that is compliant with the SDI Act.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">15.&ensp;Field GIS Using Collector for Community GIS</h4>
+                  <p>Maps produced from GIS data provide in the Ecosystem that is collected through GPS’s and surveys can be used to depict relationships and significant hotspots within communities.</p>
+                  <p>GIS maps which can be produced on the Ecosystem are more user-friendly than other forms of data presentation, helping community-based organisations to understand community data and facilitating a better understanding of the community.</p>
+                  <p>Community assessment conducted through data collection is an integral component of communities which show relationships between health, individual geographic locations, population numbers, etc.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">SPLUMA Understanding</h3>
-                <p>In 2013, SPLUMA was signed into law and became South Africa’s principle policy and legislative framework guiding spatial planning and land use management and its objective is thus to provide for a uniform, effective and comprehensive system of spatial planning and land use management, that promotes social and economic inclusion and its referred to for the development of the NSPDR Ecosystem project.</p>
-                <p>The Ecosystem was developed using guidelines from SPLUMA (Act 16 of 2015) which speaks to: SPLUMA Regulations, provincial spatial planning and land use management legislation, municipal spatial planning and land use management by-law and the municipal land use scheme and spatial development framework.</p>
-                <p>The NSPDR Ecosystem will enable sharing of spatial planning information and data across all spheres of government and the private sector to support integrated planning and land use management.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">16.&ensp;Support for SASDI-EMC</h4>
+                  <p>In terms of the SDI Act (Act 54 of 2003) the SASDI EMC holds metadata records for all government spatial information.</p>
+                  <p>NSPDR Ecosystem supports the objectives of SASDI to eliminate duplications in the capturing of data by improving access, discovery, retrieval and sharing of spatial information.</p>
+                  <p>The NSPDR will make collected spatial information from government custodians available together with linkage to the SASDI EMC for metadata capturing.</p>
+                  <p>Custodians of data who enter into data sharing partnerships with the NSPDR Ecosystem will be required to provide all associated metadata in prescribed format on the SASDI EMC.</p>
+                  <p>The NSPDR will have capacity to have an automated Electronic Data Interchange to SASDI catalogue services for store, search, discovery and querying of metadata that is compliant with the SDI Act.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Historical Archive</h3>
-                <p>Archiving in ArcGIS provides the functionality to record and access changes made to all or a subset of data in a geodatabase and the NSPDR can archive such data as it is hosted on the ArcGIS platform.</p>
-                <p>An historical version represents the data at a specific moment in time and provides a read-only representation of the geodatabase and tools available in ArcGIS offer users the ability to easily investigate change to the data.</p>
-                <p>Adding the archive class directly to ArcMap allows users to perform queries to explore how the data has evolved over time and the NSPDR provides such tools.</p>
-                <p>Archiving allows users to connect to an historical version in a form of shapefiles or file geodatabases, as well as allowing historical versions to be updated.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">17.&ensp;SPLUMA Understanding</h4>
+                  <p>In 2013, SPLUMA was signed into law and became South Africa’s principle policy and legislative framework guiding spatial planning and land use management and its objective is thus to provide for a uniform, effective and comprehensive system of spatial planning and land use management, that promotes social and economic inclusion and its referred to for the development of the NSPDR Ecosystem project.</p>
+                  <p>The Ecosystem was developed using guidelines from SPLUMA (Act 16 of 2015) which speaks to: SPLUMA Regulations, provincial spatial planning and land use management legislation, municipal spatial planning and land use management by-law and the municipal land use scheme and spatial development framework.</p>
+                  <p>The NSPDR Ecosystem will enable sharing of spatial planning information and data across all spheres of government and the private sector to support integrated planning and land use management.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Open Source Software Packages</h3>
-                <p>Open source software is computer software with its source code made available with a licence in which the copyright holder proved the rights to study change and distribute the software to any user.</p>
-                <p>It’s a prominent example of open collaboration as it allows users in a particular field to develop and build upon their skills/expertise to advance a certain cause for the benefit of the broader user community.</p>
-                <p>The NSPDR will support this concept through the developmental adherence to open source standards such as OGC (Open Geospatial Consortium).</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">18.&ensp;Historical Archive</h4>
+                  <p>Archiving in ArcGIS provides the functionality to record and access changes made to all or a subset of data in a geodatabase and the NSPDR can archive such data as it is hosted on the ArcGIS platform.</p>
+                  <p>An historical version represents the data at a specific moment in time and provides a read-only representation of the geodatabase and tools available in ArcGIS offer users the ability to easily investigate change to the data.</p>
+                  <p>Adding the archive class directly to ArcMap allows users to perform queries to explore how the data has evolved over time and the NSPDR provides such tools.</p>
+                  <p>Archiving allows users to connect to an historical version in a form of shapefiles or file geodatabases, as well as allowing historical versions to be updated.</p>
+                  <hr class="space-4">
+                </div>
 
-                <h3 class="fw-600">Image Rendering</h3>
-                <p>Analysis of spatial information require visualisation the data and the spatial frame of data which is often depicted in 2D map or sometimes in a 3D representation of the terrain.</p>
-                <p>The NSPDR supports the rendering of 2D and 3D geographic information through the ArcGIS platform.</p>
-                <p>Terrain rendering techniques are useful for improving perception of spatial features and depth cues through means of drawing, shading or textures.</p>
-                <p>Processing times in rendering will be determined by application programming interfaces available on the windows operating system as well as hardware capabilities of computer systems.</p>
-                <hr class="space-4">
+                <div class="showslide">
+                  <h4 class="fw-600">19.&ensp;Open Source Software Packages</h4>
+                  <p>Open source software is computer software with its source code made available with a licence in which the copyright holder proved the rights to study change and distribute the software to any user.</p>
+                  <p>It’s a prominent example of open collaboration as it allows users in a particular field to develop and build upon their skills/expertise to advance a certain cause for the benefit of the broader user community.</p>
+                  <p>The NSPDR will support this concept through the developmental adherence to open source standards such as OGC (Open Geospatial Consortium).</p>
+                  <hr class="space-4">
+                </div>
+
+                <div class="showslide">
+                  <h4 class="fw-600">20.&ensp;Image Rendering</h4>
+                  <p>Analysis of spatial information require visualisation the data and the spatial frame of data which is often depicted in 2D map or sometimes in a 3D representation of the terrain.</p>
+                  <p>The NSPDR supports the rendering of 2D and 3D geographic information through the ArcGIS platform.</p>
+                  <p>Terrain rendering techniques are useful for improving perception of spatial features and depth cues through means of drawing, shading or textures.</p>
+                  <p>Processing times in rendering will be determined by application programming interfaces available on the windows operating system as well as hardware capabilities of computer systems.</p>
+                  <hr class="space-4">
+                </div>
 
               </div>
+
+              <div class="slideshow-container">
+                <ul class="pagination pagination-lg justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link arrow" role="button" onclick="plusSlides(-1)">
+                      <i class="fa fa-sm fa-chevron-left"></i>&ensp;<i class="fa fa-sm fa-chevron-left"></i>
+                    </a>
+                  </li>
+                  <li class="page-item disabled">
+                    <a class="page-link fw-700">&emsp;&ndash;&emsp;</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link arrow" role="button" onclick="plusSlides(1)">
+                      <i class="fa fa-sm fa-chevron-right"></i>&ensp;<i class="fa fa-sm fa-chevron-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
 	        	</div>
 	        </div>
         </div>
       </section>
 
-      <section class="segment bg-background" style="background-image:url('../img/proxy/bg-altstyled.svg')">
-	      <div class="container">
-		      <div class="row justify-content-center">
-			      <div class="col-12 col-md-10">
-							<hr class="space-9">
-							<hr class="space-9">
-	          </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- <hr class="space-4"> -->
+      <hr class="space-6">
       </article>
     </main>
 
@@ -817,13 +652,16 @@
           if (slides.length == 0) { return; }
           if (n > slides.length) { slideIndex = 1; }
           if (n < 1) { slideIndex = slides.length; }
+          // console.log(slides.length + ' ' + n);
           for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = 'none';
+            slides[i].className = slides[i].className.replace(' active', '');
+            // slides[i].style.display = 'none';
           }
           for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(' active', '');
           }
-        slides[slideIndex - 1].style.display = 'block';
+        slides[slideIndex - 1].className += ' active';
+        // slides[slideIndex - 1].style.display = 'block';
         dots[slideIndex - 1].className += ' active';
       }
     </script>

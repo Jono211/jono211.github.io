@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3000" height="2000" viewbox="0 0 1500 1000">
-<defs>
+	<defs>
     <style>
       .cls-0 { fill: transparent; } .cls-1, .cls-2, .cls-3 { fill-rule: evenodd; } .cls-1 { fill: url(#linear-gradient); } .cls-2 { fill: url(#linear-gradient-2); } .cls-3 { fill: url(#linear-gradient-3); }
 			#bg { transform: rotate(-180); }
