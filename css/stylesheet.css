@@ -13,13 +13,13 @@ body {
 }
 
 body.watermark {
-  background-image: url('../img/logos/icon-inner-opaque.png');
+  background-image: url('../img/logos/inners-opaque.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   -webkit-background-size: 80%;
   background-size: 80%;
-/* background: url('../img/logos/icon-inner-opaque.png') no-repeat fixed center 85%; */
+/* background: url('../img/logos/inners-opaque.png') no-repeat fixed center 85%; */
 }
 .start-of-page {
   padding: 4rem 0rem 2rem;
