@@ -633,7 +633,7 @@ a.text-nspdr4:hover {
   background: linear-gradient(180deg, #ccc 33%, #ddd 67%);
 }
 .bg-linear3 {
-  background: linear-gradient(180deg, #ccc 25%, #ddd 50%, #eee 75%);
+  background: linear-gradient(180deg, #bbb 25%, #ccc 50%, #ddd 75%);
 }
 
 .bg-greylinear {
@@ -932,6 +932,8 @@ a.text-nspdr4:hover {
   border-top-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
 }
+/* .nspdr-background .--override, */
+.nspdr-background .force-radius,
 .nspdr-background > :last-child {
   -webkit-border-bottom-right-radius: .75rem;
   -webkit-border-bottom-left-radius: .75rem;

@@ -1103,7 +1103,7 @@ ul.scroller li {
   display: block;
   position: fixed;
   visibility: hidden;
-  opacity: .5;
+  opacity: .25;
 	transition: all .5s ease;
   text-decoration: none;
   cursor: pointer;
@@ -1115,7 +1115,7 @@ ul.scroller li {
   background-color: transparent; }
   .debug-icon.visible {
     visibility: visible;
-    opacity: .5; }
+    opacity: .25; }
   .debug-icon:hover {
     color: #c32 !important;
     opacity: 1; }
