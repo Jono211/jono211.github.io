@@ -41,7 +41,7 @@
 		<![endif]-->
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
-  <body id="top" class="bg-linear">
+  <body id="top" class="bg-linear2">
 		<!--[if lt IE 8]>
 				<p class="upgrade-browser">
           You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
@@ -62,7 +62,7 @@
     <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow">
       <div class="container">
         <a id="scrollContext" class="navbar-brand acronym-icon swing" href="#" title="National Spatial Planning Data Repository">
-          <img class="png-shadow pb-1" src="../img/logos/acronym-light256.png" alt="NSPDR Brand">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-256.png" alt="NSPDR Brand">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle Navigation" onclick="displayHamburger()">
           <span class="navbar-toggler-icon override">
@@ -88,7 +88,7 @@
                 </a>
                 <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &infin;</span></a>
 								<div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
-                <a class="dropdown-item" href="documents.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+                <a class="dropdown-item" href="resources.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
             </li>
           </ul>
@@ -104,7 +104,7 @@
 
     <!-- HERO -->
     <section class="hero clear-filter mask-10">
-      <div class="hero-inner" style="background-image:url('../img/urban/viewpoint-1700x955.jpg')">
+      <div class="hero-inner" style="background-image:url('../img/views/viewpoint-1700x955.jpg')">
         <div class="container">
           <!-- <a class="chevronblock mx-auto" href="#getting-started">
             <svg viewbox="0 0 60 60">
@@ -121,72 +121,75 @@
     </section>
 
 
-    <!-- MAIN -->
-    <main class="nspdr-background --raised circular top-brown" style="margin-top:-90px!important;">
+    <!-- CONTENT -->
+    <main class="nspdr-background --raised circles2 top-brown" style="margin-top:-90px!important;">
+      <article class="bghoneycomb bgblueprint bgchevrons bgshippo bgwaves">
 
-      <section class="container">
-        <div class="start-of-page pb-0 mx-2 pull-up1">
-          <h2 class="display-2 condensed-3 fw-700 mini-shadow mb-2 text-trunc">Integrated</h2>
-          <h1 class="display-2 condensed-3 fw-700 mini-shadow text-secondary">Spatial Planning</h1>
+			<section class="segment pb-0" draggable="true">
+        <div class="container">
+          <div class="start-of-page pb-0 mx-2 pull-up2">
+            <h2 class="display-2 condensed-3 fw-700 mini-shadow mb-2 text-trunc">Integrated</h2>
+            <h1 class="display-2 condensed-3 fw-700 mini-shadow text-secondary">Spatial Planning</h1>
 
-          <div class="empty-space --single"></div>
-          <div class="row card-group">
-            <div class="col-md-6">
-              <div id="problem-statement" class="card card-raised border-danger">
-                <h3 class="card-header card-title text-danger border-danger rounded statement-link">
-                  <span class="statement-title">Problem Statement</span>
-                  <i class="float-right pt-2 fa fa-sm fa-chevron-down stated"></i>
-                </h3>
-                <div class="card-body toggle-statements">
-                  <p class="card-text">
-                    <!-- PROBLEM STATEMENT -->
-                    <ul class="h4 leading-2 statement pull-up1 pull-left text-secondary">
-                      <li>South Africa does not have a central repository that utilises data for spatial planning, monitoring and evaluation, and/or coordinating purposes.</li>
-                      <li>Currently, most departments have standalone databases and tools that are being used for planning and reporting purposes.</li>
-                      <li>Many of these do not have integrated spatial referencing and some departments rely only on spreadsheets to manage their planning and business processes.</li>
-                    </ul>
-                  </p>
+            <div class="empty-space --single"></div>
+            <div class="row card-group">
+              <div class="col-md-6">
+                <div id="problem-statement" class="card card-raised border-danger">
+                  <h3 class="card-header card-title text-danger border-danger rounded statement-link">
+                    <span class="statement-title">Problem Statement</span>
+                    <i class="float-right pt-2 fa fa-sm fa-chevron-down stated"></i>
+                  </h3>
+                  <div class="card-body toggle-statements">
+                    <p class="card-text">
+                      <!-- PROBLEM STATEMENT -->
+                      <ul class="h4 no-spacing leading-2 statement pull-up1 pull-left text-secondary">
+                        <li>South Africa does not have a central repository that utilises data for spatial planning, monitoring and evaluation, and/or coordinating purposes.</li>
+                        <li>Currently, most departments have standalone databases and tools that are being used for planning and reporting purposes.</li>
+                        <li>Many of these do not have integrated spatial referencing and some departments rely only on spreadsheets to manage their planning and business processes.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="empty-space --single d-lg-none d-inline"></div>
+              <div class="col-md-6">
+                <div id="solution-statement" class="card card-raised border-success">
+                  <h3 class="card-header card-title text-success border-success rounded statement-link">
+                    <span class="statement-title">Solution Statement</span>
+                    <i class="float-right pt-2 fa fa-sm fa-chevron-down stated"></i>
+                  </h3>
+                  <div class="card-body toggle-statements">
+                    <p class="card-text">
+                      <!-- SOLUTION STATEMENT -->
+                      <ul class="h4 no-spacing leading-2 statement pull-up1 pull-left text-dark">
+                        <li>Enables SPLUMA by supporting and strengthening the capacity of provinces and municipalities.</li>
+                        <li>Improves integrated planning by creating an ecosystem for real-time sharing of spatial data among various spheres of government, state-owned entities and the private sector.</li>
+                        <li>Removes subjectivity from the planning functions, and move towards an evidence-based approach.</li>
+                        <li>Develops mechanisms that will facilitate effective and efficient collaboration amongst government departments to foster alignment of their programs, budgets and processes.</li>
+                      </ul>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="empty-space --single d-lg-none d-inline"></div>
-            <div class="col-md-6">
-              <div id="solution-statement" class="card card-raised border-success">
-                <h3 class="card-header card-title text-success border-success rounded statement-link">
-                  <span class="statement-title">Solution Statement</span>
-                  <i class="float-right pt-2 fa fa-sm fa-chevron-down stated"></i>
-                </h3>
-                <div class="card-body toggle-statements">
-                  <p class="card-text">
-                    <!-- SOLUTION STATEMENT -->
-                    <ul class="h4 leading-2 statement pull-up1 pull-left">
-                      <li>Enables SPLUMA by supporting and strengthening the capacity of provinces and municipalities.</li>
-                      <li>Improves integrated planning by creating an ecosystem for real-time sharing of spatial data among various spheres of government, state-owned entities and the private sector.</li>
-                      <li>Removes subjectivity from the planning functions, and move towards an evidence-based approach.</li>
-                      <li>Develops mechanisms that will facilitate effective and efficient collaboration amongst government departments to foster alignment of their programs, budgets and processes.</li>
-                    </ul>
-                  </p>
-                </div>
+
+            <div class="empty-space --single"></div>
+            <div class="special-divider mx-auto w-75 mb-4"></div>
+            <div class="empty-space --half"></div>
+
+            <div class="row">
+              <div class="col-md-11">
+                <p class="h3 fw-500 text-dark ml-md-2 leading-3">
+                  The <small class="fat">NSPDR</small> ecosystem will enable sharing of spatial planning information across all spheres of government and the private sector and will support key objectives of the NDP.
+                </p>
               </div>
-            </div>
-          </div>
-
-          <div class="empty-space --single"></div>
-        	<div class="special-divider mx-auto w-75 mb-4"></div>
-          <div class="empty-space --half"></div>
-
-          <div class="row">
-            <div class="col-md-11">
-              <p class="h3 text-dark ml-md-2 leading-3">
-                The <small class="fat">NSPDR</small> ecosystem will enable sharing of spatial planning information across all spheres of government and the private sector and will support key objectives of the NDP.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
 
-      <section class="segment">
+      <section class="segment" draggable="true">
         <hr class="space-4">
         <div class="container">
           <div class="row">
@@ -211,14 +214,13 @@
 
             <div class="empty-space --halfish"></div>
             <div class="col-12 mx-auto">
-              <img class="img-fluid img-hover" src="../img/logos/icon-inner-color.png" alt="NSPDR Ecosystem">
+              <img class="img-fluid img-hover" src="../img/logos/inners-colour.png" alt="NSPDR Ecosystem">
             </div>
           </div>
         </div>
       </section>
 
-      <div class="container"><hr class="dark"></div>
-
+      <div id="technology" class="container"><hr class="dark"></div>
 			<section class="segment --headers" draggable="true">
         <div class="container">
           <div class="row pb-xl-5">
@@ -268,9 +270,8 @@
         <hr class="space-4">
       </section>
 
-    	<div class="container"><hr class="dark"></div>
-
-      <section id="spatial-data" class="segment" draggable="true">
+    	<div id="spatial-data" class="container"><hr class="dark"></div>
+      <section class="segment" draggable="true">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -352,7 +353,7 @@
                 <div class="card shadow-raised">
                   <h4 class="card-header bg-gradient border-tertiary text-dimgrey fw-700">Hydrology</h4>
                   <ul class="list-group list-group-flush lead">
-                    <li class="list-group-item">Dept of Water and Sanitation</li>
+                    <li class="list-group-item">Dept. of Water and Sanitation</li>
                     <li class="list-group-item">Catchment Management Agencies</li>
                   </ul>
                 </div>
@@ -370,7 +371,7 @@
                 <div class="card shadow-raised">
                   <h4 class="card-header bg-gradient border-tertiary text-dimgrey fw-700">Conservation Areas</h4>
                   <ul class="list-group list-group-flush lead">
-                    <li class="list-group-item">Dept of Environmental Affairs</li>
+                    <li class="list-group-item">Dept. of Environmental Affairs</li>
                     <li class="list-group-item">...</li>
                   </ul>
                 </div>
@@ -384,7 +385,7 @@
       </section>
 
 
-      <hr id="geo-tools" class="space-2">
+    	<div id="geo-tools" class="container"><hr class="space-2"></div>
       <section class="segment" draggable="true">
         <div class="container">
           <div class="row">
@@ -478,9 +479,8 @@
         </div>
       </section>
 
-    	<div class="container"><hr class="dark"></div>
-
-      <section id="e-learning" class="segment" draggable="true">
+    	<div id="e-learning" class="container"><hr class="dark"></div>
+      <section class="segment" draggable="true">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-md-11">
@@ -490,8 +490,8 @@
               </h2>
               <div class="linear-divider"></div>
               <div class="lead mx-1 mr-md-5">
-                <p>The <small class="fat">NSPDR</small> E-Learning Web Portal is a friendly online learning tool within everyone’s reach. The portal is dedicated to help create and achieve a learning environment that appeals to all learning levels where the learner can confidently understand the training material presented on the platform. It allows the learner to acquire skills faster, retain knowledge longer and apply their newly gained skills to the real world.</p>
-                <p class="text-tertiary mb-4">Below are some of the key features of the training platform:</p>
+                <p>The <strong>NSPDR</strong> E-Learning Web Portal is a friendly online learning tool within everyone’s reach. The portal is dedicated to help create and achieve a learning environment that appeals to all learning levels where the learner can confidently understand the training material presented on the platform. It allows the learner to acquire skills faster, retain knowledge longer and apply their newly gained skills to the real world.</p>
+                <p class="text-body mb-4">Below are some of the key features of the training platform:</p>
                 <!-- <ul class="flush pull-up1">
                   <li><strong>Courses</strong> - access to interactive courses with multimedia support</li>
                   <li><strong>Assessments</strong> - test your knowledge with the assessment modules</li>
@@ -505,29 +505,34 @@
 								<input type="radio" name="tab-group" id="tab1" checked aria-hidden="true">
 								<label for="tab1" aria-hidden="true" class="h3">Courses</label>
 								<div class="measure-wide ml-4">
-									<h3 class="text-dark pt-2">Access to interactive courses with multimedia support...</h3>
-                  <p class="lead">This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
+									<h3 class="text-dark fw-500 pt-2">Access to interactive courses with multimedia support...</h3>
+                  <p>This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels.
+                  <br>It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
 		            </div>
 
 								<input type="radio" name="tab-group" id="tab2" aria-hidden="true">
 								<label for="tab2" aria-hidden="true" class="h3">Assessments</label>
 								<div class="measure-wide ml-4">
-									<h3 class="text-dark pt-2">Test your knowledge with the assessment modules...</h3>
-                  <p class="lead">This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
+									<h3 class="text-dark fw-500 pt-2">Test your knowledge with the assessment modules...</h3>
+                  <p>This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels.
+                  <br>It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
 		            </div>
 
 								<input type="radio" name="tab-group" id="tab3" aria-hidden="true">
 								<label for="tab3" aria-hidden="true" class="h3">Dashboards</label>
 								<div class="measure-wide ml-4">
-									<h3 class="text-dark pt-2">Graphical representation of your training performance...</h3>
-                  <p class="lead">This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
+									<h3 class="text-dark fw-500 pt-2">Graphical representation of your training performance...</h3>
+                  <p>This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels.
+                  <br>It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
 								</div>
 
 								<input type="radio" name="tab-group" id="tab4" aria-hidden="true">
 								<label for="tab4" aria-hidden="true" class="h3">Surveys</label>
 								<div class="measure-wide ml-4">
-									<h3 class="text-dark pt-2">Quickly provide feedback on your training experience...</h3>
-                  <p class="lead">This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
+									<h3 class="text-dark fw-500 pt-2">Quickly provide feedback on your training experience...</h3>
+                  <p>This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels.
+                  <br>It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
+                  <!-- <p class="lead">This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p> -->
 								</div>
 	            </div>
 
@@ -585,7 +590,7 @@
                 </p>
               </div>
               <div class="col-lg-5 mx-auto align-self-center">
-                <img class="img-fluid" src="../img/logos/icon-inners.png" alt="NSPDR Portal">
+                <img class="img-fluid" src="../img/logos/inners-iconic.png" alt="NSPDR Portal">
               </div>
             </div>
           </div>
@@ -610,6 +615,7 @@
         </div>
       </section> -->
 
+      </article>
     </main>
 
 

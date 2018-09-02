@@ -830,6 +830,26 @@ a.text-nspdr4:hover {
   background-position: center;
 }
 
+.bg-honeycomb {
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAxIiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1ZjVmNSIgc3Ryb2tlLXdpZHRoPSIzIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1ZjVmNSIgc3Ryb2tlLXdpZHRoPSI0Ij48L3BhdGg+Cjwvc3ZnPg==');
+}
+.bg-blueprint {
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KPHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9IiNmZmYiPjwvcmVjdD4KPGcgZmlsbD0iI2Y1ZjVmNSI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMiIgeT0iMjAiPjwvcmVjdD4KPHJlY3Qgd2lkdGg9IjEwMCIgaGVpZ2h0PSIyIiB5PSI0MCI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjIiIHk9IjYwIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMiIgeT0iODAiPjwvcmVjdD4KPHJlY3Qgd2lkdGg9IjIiIGhlaWdodD0iMTAwIiB4PSIyMCI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMiIgaGVpZ2h0PSIxMDAiIHg9IjQwIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIyIiBoZWlnaHQ9IjEwMCIgeD0iNjAiPjwvcmVjdD4KPHJlY3Qgd2lkdGg9IjIiIGhlaWdodD0iMTAwIiB4PSI4MCI+PC9yZWN0Pgo8L2c+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjQiIHN0cm9rZT0iI2Y1ZjVmNSI+PC9yZWN0Pgo8L3N2Zz4=');
+}
+.bg-chevrons {
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjAiIGhlaWdodD0iMzAiPgo8ZGVmcz4KPHJlY3QgaWQ9InIiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxNSIgZmlsbD0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZT0iI2VlZSI+PC9yZWN0Pgo8ZyBpZD0icCI+Cjx1c2UgeGxpbms6aHJlZj0iI3IiPjwvdXNlPgo8dXNlIHk9IjE1IiB4bGluazpocmVmPSIjciI+PC91c2U+Cjx1c2UgeT0iMzAiIHhsaW5rOmhyZWY9IiNyIj48L3VzZT4KPHVzZSB5PSI0NSIgeGxpbms6aHJlZj0iI3IiPjwvdXNlPgo8L2c+CjwvZGVmcz4KPHVzZSB4bGluazpocmVmPSIjcCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMjUpIHNrZXdZKDQwKSI+PC91c2U+Cjx1c2UgeGxpbms6aHJlZj0iI3AiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwIDApIHNrZXdZKC00MCkiPjwvdXNlPgo8L3N2Zz4=');
+}
+.bg-checker {
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCI+CjxyZWN0IHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgZmlsbD0iI2ZmZiI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iNDIuNDIiIGhlaWdodD0iNDIuNDIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwIDApIHJvdGF0ZSg0NSkiIGZpbGw9IiNmNWY1ZjUiPjwvcmVjdD4KPC9zdmc+');
+}
+.bg-shippo {
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+CjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgZmlsbD0iI2ZmZiI+PC9yZWN0Pgo8Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSI0MCIgZmlsbD0iI2Y1ZjVmNSI+PC9jaXJjbGU+CjxwYXRoIGQ9Ik0wIDQwIEE0MCA0MCA0NSAwIDAgNDAgMCBBNDAgNDAgMzE1IDAgMCA4MCA0MCBBNDAgNDAgNDUgMCAwIDQwIDgwIEE0MCA0MCAyNzAgMCAwIDAgNDBaIiBmaWxsPSIjZmZmIj48L3BhdGg+Cjwvc3ZnPg==');
+}
+.bg-waves {
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3NSIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNzUiIGhlaWdodD0iMTAwIiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxjaXJjbGUgY3g9Ijc1IiBjeT0iNTAiIHI9IjI4LjMlIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2U9IiNmNWY1ZjUiIGZpbGw9Im5vbmUiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIwIiByPSIyOC4zJSIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlPSIjZjVmNWY1IiBmaWxsPSJub25lIj48L2NpcmNsZT4KPGNpcmNsZSBjeT0iMTAwIiByPSIyOC4zJSIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlPSIjZjVmNWY1IiBmaWxsPSJub25lIj48L2NpcmNsZT4KPC9zdmc+');
+}
+
+
 /* NSPDR BACKGROUND
 =================== */
 .nspdr-background {
@@ -843,9 +863,21 @@ a.text-nspdr4:hover {
   height: 100%;
   border-color: #aaa !important;
   margin: 0 7.5px;
-  -webkit-border-radius: .75rem !important;
+  /* -webkit-border-radius: .75rem !important;
   -moz-border-radius: .75rem !important;
-  border-radius: .75rem !important;
+  border-radius: .75rem !important; */
+  -webkit-border-top-right-radius: 1.5rem;
+  -webkit-border-top-left-radius: 1.5rem;
+  -moz-border-top-right-radius: 1.5rem;
+  -moz-border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  -webkit-border-bottom-right-radius: .75rem;
+  -webkit-border-bottom-left-radius: .75rem;
+  -moz-border-bottom-right-radius: .75rem;
+  -moz-border-bottom-left-radius: .75rem;
+  border-bottom-right-radius: .75rem;
+  border-bottom-left-radius: .75rem;
   -webkit-box-shadow: 0 1.6875rem 1.5rem -.875rem rgba(0,0,0,.33),
               0 2.875rem 4.8125rem 0 rgba(0,0,0,.22);
   -moz-box-shadow: 0 1.6875rem 1.5rem -.875rem rgba(0,0,0,.33),
@@ -867,6 +899,9 @@ a.text-nspdr4:hover {
 .nspdr-background.diagonal {
   background-image: repeating-linear-gradient(-45deg, #fafafa 0, #fafafa 10%, #f5f5f5 10%, #f5f5f5 20%) !important;
 }
+.nspdr-background.diagonally {
+  background-image: repeating-linear-gradient(-45deg, #f5f5f5 0, #f5f5f5 10%, #ebebeb 10%, #ebebeb 20%) !important;
+}
 
 /* .nspdr-main .nspdr-section, */
 /* .nspdr-background > :not(:first-child) { */
@@ -883,16 +918,19 @@ a.text-nspdr4:hover {
 .nspdr-background section.segment:first-of-type {
   padding-top: .75rem;
 }
-.nspdr-background.--raised {
-  margin-top: -120px !important;
-}
 .nspdr-background > :first-child {
-  -webkit-border-top-right-radius: .75rem;
+  /* -webkit-border-top-right-radius: .75rem;
   -webkit-border-top-left-radius: .75rem;
   -moz-border-top-right-radius: .75rem;
   -moz-border-top-left-radius: .75rem;
   border-top-right-radius: .75rem;
-  border-top-left-radius: .75rem;
+  border-top-left-radius: .75rem; */
+  -webkit-border-top-right-radius: 1.5rem;
+  -webkit-border-top-left-radius: 1.5rem;
+  -moz-border-top-right-radius: 1.5rem;
+  -moz-border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
 }
 .nspdr-background > :last-child {
   -webkit-border-bottom-right-radius: .75rem;
@@ -902,13 +940,16 @@ a.text-nspdr4:hover {
   border-bottom-right-radius: .75rem;
   border-bottom-left-radius: .75rem;
 }
+.nspdr-background.--raised {
+  margin-top: -128px !important;
+}
 
 @media (min-width: 576px) {
   .nspdr-background {
     margin: 0 10px;
   }
   .nspdr-background.--raised {
-    margin-top: -135px !important;
+    margin-top: -136px !important;
   }
   .nspdr-background section.segment {
     padding: 2rem .5rem;
@@ -930,10 +971,10 @@ a.text-nspdr4:hover {
     margin: 0 30px;
   }
   .nspdr-background.--raised {
-    margin-top: -165px !important;
+    margin-top: -168px !important;
   }
   .nspdr-background section.segment {
-    padding: 3.25rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
 }
 @media (min-width: 1200px) {
@@ -944,10 +985,10 @@ a.text-nspdr4:hover {
     margin-top: -180px !important;
   }
   .nspdr-background section.segment {
-    padding: 3.75rem 1.5rem;
+    padding: 3.5rem 1.5rem;
   }
 }
-@media (max-width: 480px) and (orientation: landscape) {
+@media (max-width: 479.98px) and (orientation: landscape) {
   .nspdr-background.--raised {
     margin-top: -30px !important;
   }
@@ -963,27 +1004,27 @@ section.segment.--headers h1 {
 }
 
 .top-green {
-  border-top: solid .3875rem #274 !important;
-  /* border-top: solid .3875rem #163 !important; */
+  /* border-top: solid .375rem #163 !important; */
+  border-top: solid .375rem #274 !important;
 }
 .top-brown {
-  /* border-top: solid .3875rem #a62 !important; */
-  border-top: solid .3875rem #a73 !important;
+  /* border-top: solid .375rem #a62 !important; */
+  border-top: solid .375rem #a73 !important;
 }
 .top-greyy {
-  border-top: solid .3875rem #998 !important;
+  /* border-top: solid .375rem #998 !important; */
+  border-top: solid .375rem #999 !important;
 }
 .top-beige {
-  /* border-top: solid .45rem #a96 !important; */
-  border-top: solid .45rem #985 !important;
+  /* border-top: solid .375rem #a96 !important; */
+  border-top: solid .375rem #985 !important;
 }
 
 .top-yello {
-  border-top: solid .45rem #da2 !important;
-  /* border-top: solid .45rem #ea1 !important; */
+  border-top: solid .375rem #da2 !important;
 }
 .top-orang {
-  border-top: solid .4rem #f63 !important;
+  border-top: solid .375rem #f63 !important;
 }
 
 
@@ -1241,7 +1282,7 @@ ul.underline-on-hover li a:hover::after {
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
-    transition-duration: .25s;
+    transition-duration: .22s;
     transition-timing-function: ease; }
   .hamburger-inner::before,
   .hamburger-inner::after {
@@ -1257,9 +1298,9 @@ ul.underline-on-hover li a:hover::after {
   transition-duration: .22s;
   transition-timing-function: cubic-bezier(.55,.055,.675,.19); }
   .hamburger--spin .hamburger-inner::before {
-    transition: top .1s .25s ease-in, opacity .1s ease-in; }
+    transition: top .18s .22s ease-in, opacity .1s ease-in; }
   .hamburger--spin .hamburger-inner::after {
-    transition: bottom .1s .25s ease-in, transform .22s cubic-bezier(.55,.055,.675,.19); }
+    transition: bottom .18s .22s ease-in, transform .22s cubic-bezier(.55,.055,.675,.19); }
 
 .hamburger--spin.is-active .hamburger-inner {
   transform: rotate(225deg);
@@ -1268,11 +1309,11 @@ ul.underline-on-hover li a:hover::after {
   .hamburger--spin.is-active .hamburger-inner::before {
     top: 0;
     opacity: 0;
-    transition: top .1s ease-out, opacity .1s .12s ease-out; }
+    transition: top .18s ease-out, opacity .1s .12s ease-out; }
   .hamburger--spin.is-active .hamburger-inner::after {
     bottom: 0;
     transform: rotate(-90deg);
-    transition: bottom .1s ease-out, transform .22s .12s cubic-bezier(.215,.61,.355,1); }
+    transition: bottom .18s ease-out, transform .22s .12s cubic-bezier(.215,.61,.355,1); }
 
 
 /* tabs
@@ -1713,10 +1754,10 @@ ul.underline-on-hover li a:hover::after {
 
 
 /* ----------------------------------------------
-* Title: 			NSPDR Ecosystem CSS
-* Author: 		Jonathan Cleary
-* Date: 			2018-08-12
-* Version: 		1.2.0
+ * Title: 			NSPDR Ecosystem CSS
+ * Author: 		Jonathan Cleary
+ * Date: 			2018-08-12
+ * Version: 		1.2.0
 ---------------------------------------------- */
 
 
@@ -1792,3 +1833,13 @@ html { font-size: calc(.13em + 1vw); }
 @media screen and (max-width: 768px) { html { font-size: calc(.14rem + 1.5vw); } }
 @media screen and (max-width: 480px) { html { font-size: calc(.12rem + 2.0vw); } } */
 
+
+
+/* // The type font size in a responsive layout should be able to adjust with each viewport. */
+/* // You can calculate the font size based on the viewport height and width using :root */
+/* :root { font-size: calc(1vw + 1vh + .5vmin); } */
+
+/* :root { font-size: calc(1vw + 1vh - .5vmin); } */
+
+/* // Now you can utilise the root em unit based on the value calculated by :root */
+/* body { font: 1em/1.6 sans-serif; } */
