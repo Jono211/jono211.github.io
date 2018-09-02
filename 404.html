@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 
 		<title>Page Not Found</title>
 		<style>
@@ -10,8 +10,11 @@
 				line-height: 1.5;
 				margin: 0; }
 			html {
-				color: #444;
-				background-color: whitesmoke;
+				color: #333;
+				color: white;
+				/* background-color: whitesmoke; */
+				background-color: #ddd;
+				background-color: #333;
 				display: table;
 				font-family: sans-serif;
 				text-align: center;
@@ -22,31 +25,34 @@
 				vertical-align: middle;
 				margin: 2em auto; }
 			h1 {
-				color: #555;
+				/* color: #555; */
+				color: whitesmoke;
 				font-size: 3em;
-				font-weight: 400; }
+				letter-spacing: -.025em;
+				font-weight: 600; }
 			p {
 				font-size: 1.5em;
 				margin: 0 auto;
 				width: 320px; }
 
-			@media only screen and (max-width: 320px) {
+			@media only screen and (max-width: 360px) {
 				body, p {
-					font-size: .75em;
-					width: 95%; }
+					font-size: 1em;
+					width: 90%; }
 				h1 {
-					font-size: 1.5em;
-					margin: 0 0 .5em; }
+					font-size: 2em;
+					margin: 0 0 .25em; }
 			}
 		</style>
 	</head>
 	<body>
 
 		<h1>Page Not Found</h1>
-		<p>Sorry, but the page you were trying to view does not exist.</p>
+		<p>Sorry, but the page you were trying to view doesn’t exist.</p>
 
 		<br>
-		<button onclick="goBack()">Go Back</button>
+		<br>
+		<button onclick="goBack()"><big>&ensp;<strong>GO BACK</strong>&ensp;</big></button>
 		<script>
 			function goBack() {
 				window.history.back();
