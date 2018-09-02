@@ -30,7 +30,8 @@ body.watermark {
 .lead-2 {
   font-size: 1.5rem;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 575.98px) {
+/* @media (max-width: 479.98px) { */
   .lead-2 {
     font-size: 1.25rem;
   }
@@ -907,7 +908,8 @@ hr[class^='space-'] {
     margin-right: -2rem !important;
   }
 }
-@media (max-width: 479.98px) {
+/* @media (max-width: 479.98px) { */
+@media (max-width: 575.98px) {
   .leading-3 {
     line-height: 1.5 !important;
   }
@@ -1023,7 +1025,7 @@ ul.scroller li {
   width: 100%;
   transition: all .5s ease !important; }
   .scrolling--above {
-    background-color: rgba(15,92,41,.1) !important;
+    background-color: rgba(15,92,41,.01) !important;
     -webkit-box-shadow: 0 !important;
     box-shadow: 0 !important; }
     @media (max-width: 768px) {
