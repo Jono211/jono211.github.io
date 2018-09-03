@@ -12,7 +12,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-
     <meta name="description" content="The National Spatial Planning Data Repository Ecosystem - Enabling Integrated Spatial Planning and Land Use Management.">
     <meta name="keywords" content="NSPDR, E-Lodgement, Ecosystem, Spatial Planning, Land Use Management, Rural Development, DRDLR, SPLUMA">
     <meta name="author" content="Agizo Solutions, on behalf of the Department of Rural Development and Land Reform">
@@ -20,87 +19,26 @@
     <title>NSPDR&ensp;|&ensp;Slideshow</title>
     <link rel="icon" href="../img/fluidicon.png">
     <script>
-      (function(){
+      (function() {
         // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
         var d = document, e = d.documentElement, s = d.createElement('style');
-        if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+        if (e.style.MozTransform === '') { // gecko 1.9.1 inference
           s.textContent = 'body{visibility:hidden}';
           var r = document.getElementsByTagName('script')[0];
-          r.parentNode.insertBefore(s, r);
-          function f(){ s.parentNode && s.parentNode.removeChild(s); }
-          addEventListener('load',f,false);
-          setTimeout(f,3000);
+							r.parentNode.insertBefore(s, r);
+          function f() { s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load', f, false);
+          setTimeout(f, 3000);
         }
       })();
     </script>
     <link rel="stylesheet" href="../css/bootstraps.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
-    <link rel="stylesheet" href="../css/stylestest.css">
 		<link rel="stylesheet" href="../css/fa/css/all.css">
 		<!--[if lt IE 9]>
 			<script src="../js/html5shiv.min.js"></script>
 		<![endif]-->
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
-
-<style>
-.slideshow {
-  display: block;
-	position: relative;
-  max-height: 25rem;
-	overflow: hidden;
-}
-.slideshow .showslide {
-	display: none;
-  /* -webkit-transform: scaleY(1);
-  -moz-transform: scaleY(1);
-  -ms-transform: scaleY(1);
-  -o-transform: scaleY(1);
-  transform: scaleY(1); */
-	-webkit-transform: scaleY(0);
-	-moz-transform: scaleY(0);
-	-ms-transform: scaleY(0);
-	-o-transform: scaleY(0);
-	transform: scaleY(0);
-	-webkit-transform-origin: top;
-	-moz-transform-origin: top;
-	-ms-transform-origin: top;
-	-o-transform-origin: top;
-	transform-origin: top;
-	transition: -webkit-transform .6s, transform .6s;
-  transition: -webkit-transform .6s ease;
-  transition: transform .6s ease;
-  transition: transform .6s ease, -webkit-transform .6s ease;
-  /* min-height: 25rem; */
-  height: 25rem;
-}
-.slideshow .showslide.active {
-	display: block;
-  -webkit-transform: scaleY(1);
-  -moz-transform: scaleY(1);
-  -ms-transform: scaleY(1);
-  -o-transform: scaleY(1);
-  transform: scaleY(1);
-}
-
-.slideshow-container .arrow,
-.slideshow-container .dot {
-	cursor: pointer;
-	-webkit-transition: background-color .6s ease;
-	-moz-transition: background-color .6s ease;
-	-o-transition: background-color .6s ease;
-	transition: background-color .6s ease;
-}
-.slideshow-container .arrow:hover,
-.slideshow-container .dot:hover {
-	background-color: #ffb236;
-	color: #777 !important;
-}
-.slideshow-container .dot.active {
-	background-color: #f96332;
-	color: #fff !important;
-}
-</style>
-
   </head>
   <body id="top" class="bg-linear">
 		<!--[if lt IE 8]>
@@ -145,7 +83,7 @@
                 <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
 								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &infin;</span></a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &nbsp;&ctdot;</span></a>
                 <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="resources.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
@@ -374,10 +312,10 @@
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-10">
 
-              <h2 class="fw-700">BENEFITS OF THE NSPDR</h2>
+              <h2 class="fw-700 px-1 px-md-3">BENEFITS OF THE NSPDR</h2>
               <div class="linear-divider my-3"></div>
 
-              <div class="slideshow compact-paragraphs">
+              <div class="slideshow compact-paragraphs px-1 px-md-3 bg-white-50">
 
                 <div class="showslide">
                   <h4 class="fw-600">01.&ensp;Community GIS</h4>
@@ -414,7 +352,7 @@
                   <h4 class="fw-600">04.&ensp;Planning Support</h4>
                   <p>The NSPDR Ecosystem will provide municipalities with access to spatially referenced information that is required for developing Spatial Development Frameworks (SDFs) that are representative of its unique spatial form.</p>
                   <p>The Ecosystem removes subjectivity from planning functions by allowing for a more evidence-based approach through improved access to core, reference and secondary data that is critical for effective planning.</p>
-                  <p>The NSPDR will also provide offline spatial information to remote municipalities without internet access.</p>
+                  <p>The NSPDR will also provide offline spatial information to remote municipalities with extemely limited bandwidth/internet access.</p>
                   <p>Users will be provided with access to various planning related documents such as acts, by-laws and LUMS applications in one central place.</p>
                   <p>Planners and decision makers will have a clear reflection of the reality of the municipal spatial environment, social and economic systems, particularly related to infrastructure needs and capacity.</p>
                   <hr class="space-4">
@@ -424,9 +362,9 @@
                   <h4 class="fw-600">05.&ensp;Metadata (data about data)</h4>
                   <p>The SDI requires that all custodians make metadata available with their spatial data and make it available to the department for use in the Electronic Metadata Catalogue (EMC).</p>
                   <p>The NSPDR will support the provision of metadata from participating custodians to the department through its proposal to integrate with SASDI’s EMC.</p>
-                  <p>The NSPDR will communicates the requirement of custodians to maintain and provide metadata that describes the content, quality and condition of their spatial information as determined by SASDI.</p>
-                  <p>NSPDR also supports the work of the Committee for Spatial Information (CSI) in recording gaps in terms of the ability of the custodians to provide metadata with their spatial data.</p>
-                  <p>NSPDR also highlights the capacity challenges at local municipal level to capture and maintain metadata through feedback from stakeholder engagements.</p>
+                  <p>The NSPDR will communicate the requirements of custodians to maintain and provide metadata that describes the content, quality and condition of their spatial information as determined by SASDI.</p>
+                  <p>NSPDR also supports the work of the Committee for Spatial Information (CSI), in recording gaps in terms of the ability of the custodians to provide metadata with their spatial data.</p>
+                  <p>NSPDR also highlights the capacity challenges at a local/municipal level to capture and maintain metadata through feedback obtained from stakeholder engagements.</p>
                   <hr class="space-4">
                 </div>
 
@@ -459,8 +397,8 @@
                   <h4 class="fw-600">09.&ensp;Creating New Data from Artificial Intelligence</h4>
                   <p>Concept of artificial intelligence generally refers to ability of machines to use language, form abstractions and concepts and solve kinds of problems now reserved for humans.</p>
                   <p>It speaks to technologies that allow us to ask a computer questions, sit back while semi-autonomous cars negotiate traffic and make use of handheld devices to translate speech or printed text across most languages.</p>
-                  <p>Through use of artificial intelligence, correlations can be rapidly detected by combing through a lot of statistical data to answer specific questions.</p>
-                  <p>Thereby new data is generated that allow humans to be able to predict outcomes.</p>
+                  <p>Through the use of artificial intelligence, correlations can be rapidly detected by combing through a lot of statistical data to answer specific questions.</p>
+                  <p>Thereby new data is generated that allows human beings to be able to predict the outcomes.</p>
                   <hr class="space-4">
                 </div>
 
@@ -475,7 +413,7 @@
 
                 <div class="showslide">
                   <h4 class="fw-600">11.&ensp;Rapid Response Report Generation</h4>
-                  <p>Rapid response functionality provides high speed text or email notifications to public officials, municipalities or communities provided there is a database or contact list provided through an opt-in web service to ArcGIS platform.</p>
+                  <p>Rapid response functionality provides high-speed text or email notifications to public officials, municipalities or communities so long as there is a database or contact list provided through an opt-in web service to the ArcGIS platform.</p>
                   <p>Through web mapping, the user can select one or more alert areas and view citizen information via online aerial or hybrid maps.</p>
                   <p>The NSPDR supports this functionality for rapid response notification through its dashboards and the municipal reporter.</p>
                   <p>System administrators will be able to share reports generated from dashboards and the reporter with thousands of officials within the municipalities in a matter of minutes.</p>
@@ -484,7 +422,7 @@
 
                 <div class="showslide">
                   <h4 class="fw-600">12.&ensp;The Science of Where&trade;</h4>
-                  <p>The Science of Where is the science of digital transformation; the science of exploration and navigation; the science of commerce and ecology.</p>
+                  <p>The Science of Where&trade; is the science of digital transformation; the science of exploration and navigation; the science of commerce and ecology.</p>
                   <p>It speaks to the mission of Esri to offer the most high-powered, high-performance mapping and analytics capabilities in the world.</p>
                   <p>From a NSPDR perspective, this vision is supported by streamlining of spatial analysis of geographic and enterprise data through intuitive maps, charts, and graphs built on the Esri platforms.</p>
                   <hr class="space-4">
@@ -494,7 +432,7 @@
                   <h4 class="fw-600">13.&ensp;No Charge E-Learning (MOOC)</h4>
                   <p>MOOC refers to a course of study made available over the internet without charge to a very large number of people.</p>
                   <p>Anyone who decides to take a MOOC simply logs on to the website and signs up.</p>
-                  <p>NSPDR will provide its registered users with free training on the e-learning portal.</p>
+                  <p>NSPDR will provide its registered users with free training on the e&NoBreak;-&NoBreak;learning portal.</p>
                   <p>The e-learning portal is dedicated to help create and achieve a learning environment that appeals to all learning levels where the learner can confidently understand the training material presented on the platform.</p>
                   <p>The e-learning portal supports self-paced learning by allowing users to proceed from one module to the next based on their own learning speed.</p>
                   <hr class="space-4">
@@ -504,7 +442,7 @@
                   <h4 class="fw-600">14.&ensp;Support for Municipalities with Power to Plan</h4>
                   <p>The Ecosystem will enable sharing of spatial planning information and data across all spheres of government and the private sector and will aid municipalities in spatial planning and land use management.</p>
                   <p>It will help in facilitating effective and efficient collaboration amongst national government/sector departments to foster alignment of their programs and budgets to planning needs identified in the PGDP/PSDF/SDF/IDP processes.</p>
-                  <p>The Ecosystem will save municipalities time where people involved with spatial planning are dispersed through use of E-Lodgement which reduces the time spent by employees on manually tracking and tracing planning applications.</p>
+                  <p>The Ecosystem will save municipalities time where people involved with spatial planning are dispersed through use of E&NoBreak;-&NoBreak;Lodgement which reduces the time spent by employees on manually tracking and tracing planning applications.</p>
                   <p>The NSPDR Ecosystem will provide guidance for the municipality’s LUMS.</p>
                   <hr class="space-4">
                 </div>
@@ -548,7 +486,7 @@
                   <h4 class="fw-600">19.&ensp;Open Source Software Packages</h4>
                   <p>Open source software is computer software with its source code made available with a licence in which the copyright holder proved the rights to study change and distribute the software to any user.</p>
                   <p>It’s a prominent example of open collaboration as it allows users in a particular field to develop and build upon their skills/expertise to advance a certain cause for the benefit of the broader user community.</p>
-                  <p>The NSPDR will support this concept through the developmental adherence to open source standards such as OGC (Open Geospatial Consortium).</p>
+                  <p>The NSPDR will support this concept through developmental adherence to open source standards such as the Open Geospatial Consortium (OGC).</p>
                   <hr class="space-4">
                 </div>
 
@@ -606,12 +544,12 @@
 		            <li><a href="../index.html">Home</a></li>
 		            <li><a href="newsblog.html">News</a></li>
 		            <li><a href="about.html">About</a></li>
-		            <li><a href="termsofuse.html">Terms</a></li>
+		            <li><a href="privacy.html">Terms</a></li>
 		          </ul>
 		        </div>
       		</div>
           <div class="col-12 col-md-8 col-lg-4 order-lg-2">
-		        <div class="pt-3 pt-md-1 pt-lg-0">
+		        <div class="pt-2 pt-md-1 pt-lg-0">
 		          <ul class="social-media">
 		            <li class="--facebook"><a href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" target="_blank" class="fab fa-facebook-f" title="Facebook"></a></li>
 		            <li class="--twitter"><a href="https://twitter.com/DRDLR_online" target="_blank" class="fab fa-twitter" title="Twitter"></a></li>

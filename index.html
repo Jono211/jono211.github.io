@@ -11,31 +11,29 @@
 		</script> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="description" content="The National Spatial Planning Data Repository (NSPDR Ecosystem) - Enabling Integrated Spatial Planning and Land Use Management.">
     <meta name="keywords" content="NSPDR, E-Lodgement, Ecosystem, Spatial Planning, Land Use Management, Rural Development, DRDLR, SPLUMA">
     <meta name="author" content="Agizo Solutions, on behalf of the Department of Rural Development and Land Reform">
 
     <title>NSPDR Ecosystem</title>
+    <link rel="icon" href="img/fluidicon.png">
     <script>
-      (function(){
+      (function() {
         // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
         var d = document, e = d.documentElement, s = d.createElement('style');
-        if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+        if (e.style.MozTransform === '') { // gecko 1.9.1 inference
           s.textContent = 'body{visibility:hidden}';
           var r = document.getElementsByTagName('script')[0];
-          r.parentNode.insertBefore(s, r);
-          function f(){ s.parentNode && s.parentNode.removeChild(s); }
-          addEventListener('load',f,false);
-          setTimeout(f,3000);
+							r.parentNode.insertBefore(s, r);
+          function f() { s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load', f, false);
+          setTimeout(f, 3000);
         }
       })();
     </script>
-    <link rel="icon" href="img/fluidicon.png">
     <link rel="stylesheet" href="css/bootstraps.css">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/stylestest.css">
 		<link rel="stylesheet" href="css/fa/css/all.css">
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv.min.js"></script>
@@ -76,7 +74,7 @@
                 <a class="dropdown-item" href="docs/spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
 								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="docs/ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
-                <a class="dropdown-item" href="docs/elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &infin;</span></a>
+                <a class="dropdown-item" href="docs/elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &nbsp;&ctdot;</span></a>
                 <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="docs/resources.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
@@ -103,9 +101,8 @@
         <div class="carousel-inner slide-hero" style="background-image:url('img/nspdr-hero.jpg')">
 
           <div class="carousel-item active">
-            <!-- <div id="slide-hero1" class="first-slide"></div> -->
             <div class="slide-nspdr png-shadow pull-lg-up1" style="background-image:url('img/title-ecosystem.png')"></div>
-            <!-- <div class="hero-inner" id="slide-hero1">
+            <!-- <div class="hero-inner">
               <div class="container">
                 <img class="hero-brand img-fluid png-shadows w-75" src="img/title-ecosystem.png" alt="NSPDR Ecosystem">
               </div>
@@ -113,8 +110,6 @@
           </div>
 
           <div class="carousel-item">
-            <!-- <div id="slide-flag1" class="second-slide"> -->
-            <!-- <div class="slide-flags"></div> -->
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1 class="display-4">Inclusive framework</h1>
@@ -129,8 +124,6 @@
           </div>
 
           <div class="carousel-item">
-            <!-- <div id="slide-flag2" class="third-slide"> -->
-            <!-- <div class="slide-flags"></div> -->
             <div class="container">
               <div class="carousel-caption text-center">
                 <h1 class="display-4">Fulfilling commitments</h1>
@@ -140,20 +133,10 @@
           </div>
 
           <div class="carousel-item">
-            <!-- <div id="slide-hero2" class="fourth-slide"></div> -->
             <div class="slide-nspdr png-shadow pull-lg-up1" style="background-image:url('img/title-elodgement.png')"></div>
-            <!-- <div class="container">
-              <div class="carousel-caption text-right pull-left mr-md-5">
-                <h3 class="text-white expanded-3 fw-300 pull-left mt-2">
-                  <br class="show-on-mobile">welcome to ...
-                </h3>
-              </div>
-            </div> -->
           </div>
 
           <div class="carousel-item">
-            <!-- <div id="slide-flag3" class="fifth-slide"></div> -->
-            <!-- <div class="slide-flags"></div> -->
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1 class="display-4">Empowering municipalities</h1>
@@ -180,7 +163,6 @@
 
       <section class="segment --headers" draggable="true">
         <div class="container pt-4 pt-sm-5">
-        <!-- <div class="container pt-3 pt-sm-4"> -->
           <div class="row text-center text-lg-left align-items-center">
             <div class="col-9 col-md-7 col-lg-5 col-xl-4 m-auto m-lg-0">
               <img alt="NSPDR Ecosystem" class="img-fluid png-raised p-2" src="img/logos/nspdr-500x500.png">
@@ -191,11 +173,11 @@
               <div class="row text-left mt-3">
                 <div class="col-12 col-sm-6">
                   <h4 class="text-tertiary"><strong>Data Repository</strong></h4>
-                  <p>The NSPDR Ecosystem will enable the sharing of spatial planning information across all three spheres of government, as well as the private sector, and will support key objectives of the NDP and most importantly, SPLUMA.</p>
+                  <p>The NSPDR Ecosystem enables the sharing of spatial planning information across all spheres of government, as well as the private sector, and supports key objectives of the NDP, and most importantly, SPLUMA. <a class="ml2" href="docs/ecosystem.html">[Learn&nbsp;More]</a></p>
                 </div>
                 <div class="col-12 col-sm-6 pt-3 pt-sm-0">
                   <h4 class="text-tertiary"><strong>E-Lodgement</strong></h4>
-                  <p>From the very beginning, our application was developed with SPLUMA at the centre of the design process. Resulting in a workflow that’s completely aligned both with the act itself, but also its regulations.</p>
+                  <p>From the very beginning, our application was developed with SPLUMA at the centre of the design process. Resulting in a workflow that’s completely aligned both with the act itself, but also its regulations. <a class="ml2" href="docs/elodgement.html">[Learn&nbsp;More]</a></p>
                 </div>
               </div>
             </div>
@@ -218,7 +200,7 @@
           </div>
           <div class="row mt-5 align-items-center no-gutters">
             <div class="col-11 col-sm-10 col-md-8 col-lg-4 mx-auto">
-              <div class="box-block top-brown pull-lg-right2 p-4 pr-lg-5">
+              <div class="box-block top-brown pull-lg-right2 p-4 pr-lg-5 bg-honeycomb">
                 <img alt="NSPDR Icon" class="icon-150 mt-2" src="img/icons/icon4.png">
                 <h2 class="h1">Data Repository</h2>
                 <hr class="dark mx-4">
@@ -226,7 +208,7 @@
                 <p class="pt-4"><a href="docs/ecosystem.html" class="btn btn-lg btn-pill btn-nspdr2 btn-shadow px-4 py-1">Read More</a></p>
               </div>
             </div>
-            <div class="col-11 col-sm-10 col-md-8 col-lg-4 mx-auto mt-5 mt-lg-0 py-0 py-lg-3 box-block --main top-green">
+            <div class="col-11 col-sm-10 col-md-8 col-lg-4 mx-auto mt-5 mt-lg-0 py-0 py-lg-3 box-block --main top-green bg-honeycomb">
               <div class="p-4">
                 <img alt="NSPDR Icon" class="icon-150 mt-2" src="img/icons/icon1.png">
                 <h2 class="h1">E&NoBreak;-&NoBreak;Lodgement <sup><small class="h4">new</small></sup></h2>
@@ -236,7 +218,7 @@
               </div>
             </div>
             <div class="col-11 col-sm-10 col-md-8 col-lg-4 mx-auto mt-5 mt-lg-0">
-              <div class="box-block top-greyy pull-lg-left2 p-4 pl-lg-5">
+              <div class="box-block top-greyy pull-lg-left2 p-4 pl-lg-5 bg-honeycomb">
                 <img alt="NSPDR Icon" class="icon-150 mt-2" src="img/icons/icon2.png">
                 <h2 class="h1">Enabling SPLUMA</h2>
                 <hr class="dark mx-4">
@@ -343,7 +325,7 @@
           <!-- <hr class="space-5"> -->
           <div class="row justify-content-center">
             <div class="col-12 text-left mb-2 mb-lg-5">
-              <h2 class="display-4 condensed-1 fw-600 text-nspdr2 ml-3">
+              <h2 class="display-4 condensed-1 fw-600 text-dark textnspdr2 ml-3">
                 responsively designed&nbsp;&nbsp;<a href="docs/ecosystem.html#technology" class="textdark fw-400">&gt;&gt;&gt;</a>
               </h2>
             </div>
@@ -356,7 +338,7 @@
             <div class="col-12 text-right mt-2 mt-lg-4">
               <h2 class="display-5 condensed-1 fw-600 text-nspdr1 mr-3">
                 PCs,&nbsp;laptops, tablets and&nbsp;phones
-                <br><span class="text-nspdr11">(basically any device)</span>
+                <br><span class="text-nspdr22">(basically any device)</span>
               </h2>
             </div>
           </div>
@@ -813,12 +795,12 @@
 		            <li><a href="#top">Home</a></li>
 		            <li><a href="docs/newsblog.html">News</a></li>
 		            <li><a href="docs/about.html">About</a></li>
-		            <li><a href="docs/termsofuse.html">Terms</a></li>
+		            <li><a href="docs/privacy.html">Terms</a></li>
 		          </ul>
 		        </div>
       		</div>
           <div class="col-12 col-md-8 col-lg-4 order-lg-2">
-		        <div class="pt-3 pt-md-1 pt-lg-0">
+		        <div class="pt-2 pt-md-1 pt-lg-0">
 		          <ul class="social-media">
 		            <li class="--facebook"><a href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" target="_blank" class="fab fa-facebook-f" title="Facebook"></a></li>
 		            <li class="--twitter"><a href="https://twitter.com/DRDLR_online" target="_blank" class="fab fa-twitter" title="Twitter"></a></li>

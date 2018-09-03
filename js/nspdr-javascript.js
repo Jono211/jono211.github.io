@@ -153,4 +153,7 @@ function displayHamburger() {
 }(jQuery));
 
 
-var rellax = new Rellax('.rellax');
+// var rellax = new Rellax('.rellax');
+
+try {	var rellax = new Rellax('.rellax'); }
+catch (e) {}
