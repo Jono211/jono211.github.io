@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/js\\custom.js"
+      "program": "${workspaceFolder}/js\\nspdr-javascript.js"
     }
   ]
 }

@@ -19,22 +19,21 @@
     <title>NSPDR&ensp;|&ensp;Latest News</title>
     <link rel="icon" href="../img/fluidicon.png">
     <script>
-      (function(){
+      (function() {
         // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
         var d = document, e = d.documentElement, s = d.createElement('style');
-        if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+        if (e.style.MozTransform === '') { // gecko 1.9.1 inference
           s.textContent = 'body{visibility:hidden}';
           var r = document.getElementsByTagName('script')[0];
-          r.parentNode.insertBefore(s, r);
-          function f(){ s.parentNode && s.parentNode.removeChild(s); }
-          addEventListener('load',f,false);
-          setTimeout(f,3000);
+							r.parentNode.insertBefore(s, r);
+          function f() { s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load', f, false);
+          setTimeout(f, 3000);
         }
       })();
     </script>
     <link rel="stylesheet" href="../css/bootstraps.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
-    <link rel="stylesheet" href="../css/stylestest.css">
 		<link rel="stylesheet" href="../css/fa/css/all.css">
 		<!--[if lt IE 9]>
 			<script src="../js/html5shiv.min.js"></script>
