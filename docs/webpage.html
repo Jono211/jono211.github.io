@@ -274,10 +274,23 @@
 
     <!-- =========== JavaScript ===========  -->
     <!-- Placed at end so pages load faster. -->
+    <script src="../js/modernizr-3.6.0.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/rellax.min.js"></script>
     <script src="../js/twbs-popper.min.js"></script>
     <script src="../js/nspdr-javascript.js"></script>
+
+	  <script src="../js/flowtype.js"></script>
+    <script>
+      $('main').flowtype({
+      // $('.showcase').flowtype({
+        minimum   : 500,
+        maximum   : 1200,
+        minFont   : 40,
+        maxFont   : 120,
+        fontRatio : 36
+      });
+    </script>
 
   </body>
 </html>
