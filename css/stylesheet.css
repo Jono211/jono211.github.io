@@ -2178,6 +2178,37 @@ ul.underline-on-hover li a {
 			background-color: #f96332;
 			color: #fff !important; }
 
+.bi-slideshow {
+	background: #333;
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0; left: 0;
+	z-index: -1;
+	padding: 0;
+	margin: 0; }
+	.bi-slideshow li {
+		position: absolute;
+		width: 101%;
+		height: 101%;
+		top: -0.5%;
+		left: -0.5%;
+		opacity: 0;
+		-webkit-transition: opacity 3s;
+		-moz-transition: opacity 3s;
+		transition: opacity 3s; }
+	.bi-slideshow li {
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center; }
+		.bi-slideshow li img {
+			display: none; }
+		.bi-slideshow li img {
+			display: block;
+			min-width: 100%; }
 
 /* boomerang
 ------------ */
@@ -2233,9 +2264,10 @@ ul.underline-on-hover li a {
 .upgrade-browser {
   background: #ccc;
   color: #111;
+  font-size: 1.15em;
   text-align: center;
   margin: .2em 0;
-  padding: .2em 0; }
+  padding: .2em 2em; }
 
 /* background-overides */
 .background,
