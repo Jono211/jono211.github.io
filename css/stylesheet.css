@@ -77,17 +77,22 @@ footer#footer:not(.end-of-page) {
 ----------- */
 .carousel {
   margin-bottom: 0; }
-	.carousel-caption {
+	/* .carousel-caption {
+		position: relative; */
+		/* top: 0; left: 0; */
+		/* min-width: 100%; */
+		/* z-index: 10; } */
+	.carousel-hero .carousel-caption {
 		top: 30%;
 		bottom: 30%;
 		z-index: 10;
 		text-shadow: .125rem .125rem 1.375rem rgba(0,0,0,.5); }
-		.carousel-caption h1 {
+		.carousel-hero .carousel-caption h1 {
 			font-weight: 600;
 			margin-bottom: .5rem;
 			font-size: 2.25rem !important;
 			color: inherit; }
-		.carousel-caption p {
+		.carousel-hero .carousel-caption p {
 			font-weight: 500; }
 
 .carousel-control-prev:hover {
@@ -99,10 +104,10 @@ footer#footer:not(.end-of-page) {
   transition: background .5s linear;
   background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.2)); }
 
-.carousel-item {
+.carousel-hero .carousel-item {
   width: 100%;
   height: 100vh; }
-	.carousel-item > [id^='slide-'] {
+	.carousel-hero .carousel-item > [id^='slide-'] {
 		position: relative;
 		top: 0; left: 0;
 		min-width: 100%;
@@ -380,9 +385,9 @@ h2.showcase {
 @media (min-width: 40em) {
   .featurette-heading {
     font-size: 2.67rem; }
-  .carousel-caption h1 {
+  .carousel-hero .carousel-caption h1 {
 		font-size: 2.75rem !important; }
-  .carousel-caption p {
+  .carousel-hero .carousel-caption p {
     font-size: 1.25rem;
     line-height: 1.25;
     margin-bottom: 1rem; } }
@@ -393,9 +398,9 @@ h2.showcase {
 			margin-top: 5rem; }
 		.featurette-heading {
 			font-size: 3rem; }
-  .carousel-caption h1 {
+  .carousel-hero .carousel-caption h1 {
 		font-size: 3.5rem !important; }
-  .carousel-caption p {
+  .carousel-hero .carousel-caption p {
     font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom: 1.25rem; } }
@@ -1601,19 +1606,16 @@ hr[class^='space-'] {
     margin-top: -7.5rem !important; } }
 
 
-/* Fallback for older browsers = Chrome 10-25, Safari 5.1-6 */
-/* W3C: IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 .filter-00::after {
   background: rgba(0,0,0,.5);
+  /* Fallback for older browsers = Chrome 10-25, Safari 5.1-6 */
+  /* W3C: IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: -webkit-linear-gradient(180deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.1) 100%);
   background: linear-gradient(180deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.1) 100%); }
-
 .filter-01::after {
   background: rgba(33,22,11,.5);
   background: -webkit-linear-gradient(0deg, rgba(84,187,157,.3) 33%, rgba(51,48,103,.7) 67%);
-  background: linear-gradient(0deg, rgba(84,187,157,.3) 33%, rgba(51,48,103,.7) 67%); }
-
+  background: linear-gradient(0deg, rgba(84,187,157,.4) 33%, rgba(51,48,103,.6) 67%); }
 .filter-06::after {
   background: linear-gradient(90deg, 
     rgba(35,210,255,.25) 0.3%, 
@@ -1622,7 +1624,6 @@ hr[class^='space-'] {
     rgba(198,59,243,.25) 52.5%, 
     rgba(250,84,118,.25) 68.8%, 
     rgba(255,223,67,.25) 99.9%); }
-
 .filter-07::after {
   background: linear-gradient(90deg, 
     rgba(63,81,177,.5) 0%, 
@@ -1634,7 +1635,6 @@ hr[class^='space-'] {
     rgba(241,130,113,.5) 75%, 
     rgba(243,164,105,.5) 87%, 
     rgba(247,201,120,.5) 100%); }
-
 .filter-10::after {
   background: linear-gradient(0deg, 
     rgba(79,181,118,.3) 0%, 
@@ -1644,7 +1644,6 @@ hr[class^='space-'] {
     rgba(76,119,136,.7) 71%, 
     rgba(67,44,57,.9) 100%); }
   /* background: linear-gradient(180deg, rgba(79,181,118,.5) 0%, rgba(68,196,137,.5) 30%, rgba(40,169,174,.5) 46%, rgba(40,162,183,.5) 59%, rgba(76,119,136,.5) 71%, rgba(67,44,57,.5) 100%); } */
-
 /* .filter-55::after {
   background: radial-gradient(circle 575px at 50.6% -1.5%, rgba(76,119,136,.8) 6.2%, rgba(76,119,136,.4) 100.2%); } */
 
