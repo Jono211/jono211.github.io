@@ -1615,7 +1615,7 @@ hr[class^='space-'] {
 .filter-01::after {
   background: rgba(33,22,11,.5);
   background: -webkit-linear-gradient(0deg, rgba(84,187,157,.3) 33%, rgba(51,48,103,.7) 67%);
-  background: linear-gradient(0deg, rgba(84,187,157,.4) 33%, rgba(51,48,103,.6) 67%); }
+  background: linear-gradient(0deg, rgba(84,187,157,.3) 33%, rgba(51,48,103,.7) 67%); }
 .filter-06::after {
   background: linear-gradient(90deg, 
     rgba(35,210,255,.25) 0.3%, 
@@ -2184,7 +2184,8 @@ ul.underline-on-hover li a {
   display: block;
 	position: relative;
   max-height: 25rem;
-	overflow: hidden; }
+  /* overflow: hidden; */
+	overflow-y: auto; }
 	.slideshow .showslide {
 		display: none;
 		/* -webkit-transform: scaleY(1);
@@ -2207,7 +2208,7 @@ ul.underline-on-hover li a {
 		transition: transform .6s ease;
 		transition: transform .6s ease, -webkit-transform .6s ease;
 		/* min-height: 25rem; */
-		height: 25rem; }
+		height: 24rem; }
 		.slideshow .showslide.active {
 			display: block;
 			-webkit-transform: scaleY(1);
@@ -2216,20 +2217,22 @@ ul.underline-on-hover li a {
 			-o-transform: scaleY(1);
 			transform: scaleY(1); }
 
-.slideshow-container .arrow,
-.slideshow-container .dot {
-	cursor: pointer;
-	-webkit-transition: background-color .6s ease;
-	-moz-transition: background-color .6s ease;
-	-o-transition: background-color .6s ease;
-	transition: background-color .6s ease; }
-	.slideshow-container .arrow:hover,
-	.slideshow-container .dot:hover {
-		background-color: #ffb236;
-		color: #777 !important; }
-		.slideshow-container .dot.active {
-			background-color: #f96332;
-			color: #fff !important; }
+.slideshow-container {
+  margin-top: 1rem; }
+  .slideshow-container .arrow,
+  .slideshow-container .dot {
+    cursor: pointer;
+    -webkit-transition: background-color .6s ease;
+    -moz-transition: background-color .6s ease;
+    -o-transition: background-color .6s ease;
+    transition: background-color .6s ease; }
+    .slideshow-container .arrow:hover,
+    .slideshow-container .dot:hover {
+      background-color: #ffb236;
+      color: #777 !important; }
+      .slideshow-container .dot.active {
+        background-color: #f96332;
+        color: #fff !important; }
 
 .bi-slideshow {
 	background: #333;
@@ -2252,6 +2255,13 @@ ul.underline-on-hover li a {
 		-moz-transition: opacity 3s;
 		transition: opacity 3s; }
 	.bi-slideshow li {
+		/* position: relative; */
+  /* display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center; */
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		background-size: cover;
