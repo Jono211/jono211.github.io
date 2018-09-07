@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-ZA">
 	<head>
     <meta charset="utf-8">
@@ -46,8 +46,7 @@
 		<![endif]-->
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling scrolling--below" data-scrolling-offset="411">
-      <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-nspdr drop-shadow"> -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling scrolling--below" data-scrolling-offset="444">
       <div class="container">
         <a id="scrollContext" class="navbar-brand acronym-icon swing" href="#" title="National Spatial Planning Data Repository">
           <img class="png-shadow pb-1" src="img/logos/acronym-256.png" alt="NSPDR Brand">
@@ -88,6 +87,7 @@
     <!-- CAROUSEL -->
     <section class="carousel-hero mask-10" style="position:relative;top:0px!important;z-index:1;margin-top:-48px!important;">
       <div id="slideCarousel" class="carousel slide drop-shadow" data-ride="carousel">
+
         <ol class="carousel-indicators">
           <li data-target="#slideCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#slideCarousel" data-slide-to="1"></li>
@@ -96,13 +96,14 @@
           <li data-target="#slideCarousel" data-slide-to="4"></li>
           <li data-target="#slideCarousel" data-slide-to="5"></li>
         </ol>
+
         <div class="carousel-inner slide-hero" style="background-image:url('img/nspdr-hero.jpg')">
 
           <div class="carousel-item active">
             <div class="slide-nspdr png-shadow pull-lg-up1" style="background-image:url('img/title-ecosystem.png')"></div>
             <!-- <div class="hero-inner">
               <div class="container">
-                <img class="hero-brand img-fluid png-shadows w-75" src="img/title-ecosystem.png" alt="NSPDR Ecosystem">
+                <img class="img-fluid png-shadows" src="img/title-ecosystem.png" alt="NSPDR Ecosystem">
               </div>
             </div> -->
           </div>
@@ -156,8 +157,9 @@
     </section>
 
 
-    <!-- CONTENT -->
+    <!-- MAIN-CONTENT -->
     <main class="nspdr-background --raised circular top-brown" style="margin-top:-60px!important">
+      <article class="bg-honeycomb bgshippo">
 
       <section class="segment --headers" draggable="true">
         <div class="container pt-4 pt-sm-5">
@@ -171,11 +173,11 @@
               <div class="row text-left mt-3">
                 <div class="col-12 col-sm-6">
                   <h4 class="text-tertiary"><strong>Data Repository</strong></h4>
-                  <p>The NSPDR Ecosystem enables the sharing of spatial planning information across all spheres of government, as well as the private sector, and supports key objectives of the NDP, and most importantly, SPLUMA. <a class="ml2" href="docs/ecosystem.html">[Learn&nbsp;More]</a></p>
+                  <p>The NSPDR Ecosystem enables the sharing of spatial planning information across all spheres of government, as well as the private sector, and supports key objectives of the NDP, and most importantly, SPLUMA. <a href="docs/ecosystem.html">[Learn&nbsp;More]</a></p>
                 </div>
                 <div class="col-12 col-sm-6 pt-3 pt-sm-0">
                   <h4 class="text-tertiary"><strong>E-Lodgement</strong></h4>
-                  <p>From the very beginning, our application was developed with SPLUMA at the centre of the design process. Resulting in a workflow that’s completely aligned both with the act itself, but also its regulations. <a class="ml2" href="docs/elodgement.html">[Learn&nbsp;More]</a></p>
+                  <p>From the very beginning, our application was developed with SPLUMA at the centre of the design process. Resulting in a workflow that’s completely aligned both with the act itself, but also its regulations. <a href="docs/elodgement.html">[Learn&nbsp;More]</a></p>
                 </div>
               </div>
             </div>
@@ -228,61 +230,23 @@
         </div>
       </section>
 
-			<!-- <section class="segment --headers" draggable="true">
-        <div class="container">
-          <div class="row align-items-center no-gutters">
-            <div class="col-11 col-sm-10 col-md-8 col-lg-4 mx-auto">
-              <div class="box-block top-brown pull-lg-right2 p-4 pr-lg-5">
-                <img alt="NSPDR Icon" class="icon-150 mt-2" src="img/icons/icon4.png">
-                <h2 class="h1">Spatial Data</h2>
-                <hr class="dark mx-4">
-                <p class="">Source datasets and models derived from spatial data provided by base data custodians, as well as the E&NoBreak;-&NoBreak;Lodgement application layer, can be used to design custom data models, validations and a whole lot more.</p>
-                <p class="pt-3"><a href="docs/ecosystem.html#spatial-data" class="btn btn-lg btn-pill btn-nspdr2 btn-shadow px-4 py-1">Read More</a></p>
-              </div>
-            </div>
-            <div class="col-11 col-sm-10 col-md-8 col-lg-4 mx-auto mt-5 mt-lg-0 py-0 py-lg-3 box-block --main top-green">
-              <div class="p-4">
-                <img alt="NSPDR Icon" class="icon-150 mt-2" src="img/icons/icon1.png">
-                <h2 class="h1">Geo-Analysis</h2>
-                <hr class="dark mx-4">
-                <p class="">NSPDR hosts and contains an amazing collection of advanced GIS tools and functions. The portal will be the main place where users can access various web maps and services, metadata, and E&NoBreak;-&NoBreak;Lodgement amongst others.</p>
-                <p class="pt-3"><a href="docs/ecosystem.html#geo-tools" class="btn btn-lg btn-pill btn-nspdr1 btn-shadow px-4 py-1">Learn More</a></p>
-              </div>
-            </div>
-            <div class="col-11 col-sm-10 col-md-8 col-lg-4 mx-auto mt-5 mt-lg-0">
-              <div class="box-block top-greyy pull-lg-left2 p-4 pl-lg-5">
-                <img alt="NSPDR Icon" class="icon-150 mt-2" src="img/icons/icon2.png">
-                <h2 class="h1">E-Learning</h2>
-                <hr class="dark mx-4">
-                <p class="">This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
-                <p class="pt-3"><a href="docs/ecosystem.html#e-learning" class="btn btn-lg btn-pill btn-nspdr4 btn-shadow px-4 py-1">Know More</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <hr class="space-4">
-      <div class="container"><hr class="light"></div>
+      <div class="container"><hr class="space-4"><hr class="light"></div>
 
 			<section class="segment --headers" draggable="true">
         <div class="container">
           <div class="row pb-3 pb-lg-5">
             <div class="col-12 col-md-10 ml-md-3">
-              <!-- <h2 class="display-5 grey-102 fw-500">Inclusive Framework</h2> -->
-              <h2 class="display-5 grey-102 fw500">Statutory Framework</h2>
+              <h2 class="display-5 grey-102 fw-500">Statutory Framework</h2>
               <div class="linear-divider my-3"></div>
               <p class="lead grey-85">The <strong>NSPDR</strong> Ecosystem will enable sharing of spatial planning information across all spheres of government and the private sector and will support key objectives of the NDP.</p>
             </div>
           </div>
-          <!-- <hr class="space-5"> -->
           <div class="row text-right align-items-center">
             <div class="col-10 col-sm-7 col-lg-4 m-auto">
               <img alt="NSPDR" class="img-fluid png-raised" src="img/uiux/ipad2.png">
             </div>
             <div class="col-12 col-lg-6 col-xl-5 m-lg-auto text-left pt-5 pt-lg-0">
-              <!-- <h2 class="h1 fw-600">Policy and Legislation</h2> -->
-              <h2 class="h1 fw-600">Driven by Policy</h2>
+              <h2 class="h1 text-nspdr1 fw-700">Driven by Policy</h2>
               <p class="lead pb-xl-2">The NSPDR Ecosystem will be a major enabler in the implementation of SPLUMA. Two ways this will be achieved is by <strong>providing</strong> provinces and municipalities with . . .</p>
               <div class="row pt-4">
                 <div class="col-3">
@@ -297,7 +261,7 @@
                   <p class="lead">... the necessary tools and capacity building to enable <strong>SPLUMA</strong>-compliant spatial planning and land use management practices.</p>
                 </div>
                 <div class="col-3">
-                  <img alt="NDP" class="img-fluid img-raised icon-125 grow-large rounded-circle" src="img/logos/spluma-200x198.png">
+                  <img alt="SPLUMA" class="img-fluid img-raised icon-125 grow-large rounded-circle" src="img/logos/spluma-200x198.png">
                 </div>
               </div>
             </div>
@@ -305,13 +269,12 @@
         </div>
       </section>
 
-      <hr class="space-4">
-      <div class="container"><hr class="dark mb-0"></div>
+      <div class="container"><hr class="space-4"><hr class="dark mb-0"></div>
 
 			<section class="segment --headers" draggable="true">
         <div class="container">
           <div class="row text-center pb-4 pb-md-5">
-            <div class="col-12 col-md11">
+            <div class="col-12">
               <!-- <h2 class="display-3 grey-119 fw-600">Modern <a href="docs/ecosystem.html#technology">Technology</a></h2> -->
               <h2 class="display-3 grey-119 fw-600">Modern Technology</h2>
               <!-- <div class="llinear-divider my-3 my-lg-4"></div> -->
@@ -320,11 +283,10 @@
               </div>
             </div>
           </div>
-          <!-- <hr class="space-5"> -->
           <div class="row justify-content-center">
             <div class="col-12 text-left mb-2 mb-lg-5">
-              <h2 class="display-4 condensed-1 fw-600 text-dark textnspdr2 ml-3">
-                responsively designed&nbsp;&nbsp;<a href="docs/ecosystem.html#technology" class="textdark fw-400">&gt;&gt;&gt;</a>
+              <h2 class="display-4 condensed-1 fw-600 text-dark ml-3">
+                responsively designed&nbsp;&nbsp;<a href="docs/ecosystem.html#technology" class="fw-400">&gt;&gt;&gt;</a>
               </h2>
             </div>
             <div class="col-11 mx-auto align-self-center">
@@ -336,7 +298,7 @@
             <div class="col-12 text-right mt-2 mt-lg-4">
               <h2 class="display-5 condensed-1 fw-600 text-nspdr1 mr-3">
                 PCs,&nbsp;laptops, tablets and&nbsp;phones
-                <br><span class="text-nspdr22">(basically any device)</span>
+                <br><span class="text-nspdr22 fw-500">(basically any device)</span>
               </h2>
             </div>
           </div>
@@ -354,7 +316,7 @@
 								<!-- Something that makes a website great is when it is compatible in multiple browsers regardless of version. ... Multi-browser means a website will work in several web browsers like Safari, Chrome, Firefox, Internet Explorer. While cross-browser means a website works in any browser, and any version of the browser, being used. -->
 								<!-- The ecosystem is cross-browser compatibile; works in any browser, and any version of the browser, being used. -->
 							<!-- </p> -->
-              <p class="lead-2 pl-2 mt-5">Works in all <strong>modern</strong> browsers . . .</p>
+              <p class="lead-2 pl-2 mt-5">Works in all <strong>modern</strong> browsers&nbsp;.&nbsp;.&nbsp;.</p>
               <div class="container">
                 <div class="row justify-content-start">
                   <img alt="Chrome" title="Chrome" class="browser-icon grow-large" src="img/logos/browser-chrome-128x128.png"/>
@@ -366,7 +328,7 @@
               </div>
             </div>
             <div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
-              <img alt="NSPDR Ecosystem" class="img-fluid png-raised" src="img/uiux/imacbook2.png">
+              <img alt="NSPDR Ecosystem" class="img-fluid png-raised" src="img/uiux/imacbook.png">
             </div>
           </div>
         </div>
@@ -374,89 +336,12 @@
         <hr class="space-7" id="nspdr-countdown">
       </section>
 
-      <!-- <div class="container"><hr class="dark"></div> -->
-
-      <!-- <section id="portfolio" class="portfolio">
-        <hr class="space-2">
-        <div class="container marketing"> -->
-          <!-- <div class="row opaque-50">
-
-            <div class="col-lg-4">
-              <img class="rounded-circle shadow d-none" src="img/logos/nspdr-256x256.png" width="180px" height="180px" alt="NSPDR Ecosystem">
-              <img class="icon-175 grow mt-2" alt="NSPDR Icon" src="img/icons/icon1.png">
-              <h2 class=""><br>Spatial Data</h2>
-              <div class="special-divider mx-4"></div>
-              <p class="text-tertiary lead mx-3">
-                Source datasets and models derived from spatial data provided by base data custodians, <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout04">SDF</a> guidelines, as well as the E&NoBreak;-&NoBreak;Lodgement application layer, can be used to design customised data models, validations and a whole lot more.
-              </p>
-              <p>
-                <a class="btn btn-pill btn-outline-nspdr1 btn-shadow fw-700 mt-3" href="404.html" role="button" style="font-size:1.15rem;">
-                  Available datasets<i class="fa fa-sm fa-angle-double-right ml-2"></i>
-                </a>
-              </p>
-              <div class="empty-space --single show-on-laptop"></div>
-            </div>
-
-            <div class="col-lg-4">
-              <img class="rounded-circle shadow d-none" src="img/logos/nspdr-256x256.png" width="180px" height="180px" alt="NSPDR Ecosystem">
-              <img class="icon-175 grow mt-2" alt="NSPDR Icon" src="img/icons/icon4.png">
-              <h2 class=""><br>Geo-Analysis</h2>
-              <div class="special-divider mx-4"></div>
-              <p class="text-tertiary lead mx-3">
-                The portal hosts and contains an amazing variety of advanced <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout05">GIS</a> tools and functions. The portal will be the main place where users can access various web maps, mapping services, metadata, and E&NoBreak;-&NoBreak;Lodgement amongst others.
-              </p>
-              <p>
-                <a class="btn btnlg btn-pill btn-outline-nspdr2 btn-shadow fw-700 mt-3" href="404.html" role="button" style="font-size:1.15rem;">
-                  Tools and features<i class="fa fa-sm fa-angle-double-right ml-2"></i>
-                </a>
-              </p>
-              <div class="empty-space --single show-on-laptop"></div>
-            </div>
-
-            <div class="col-lg-4">
-              <img class="rounded-circle shadow d-none" src="img/logos/nspdr-256x256.png" width="180px" height="180px" alt="NSPDR Ecosystem">
-              <img class="icon-175 grow mt-2" alt="NSPDR Icon" src="img/icons/icon2.png">
-              <h2 class=""><br>E-Learning</h2>
-              <div class="special-divider mx-4"></div>
-              <p class="text-tertiary lead mx-3">
-                This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.
-              </p>
-              <p>
-                <a class="btn btn-pill btn-outline-nspdr4 btn-shadow fw-700 lead mt-3" href="404.html" role="button" style="font-size:1.15rem;">
-                  Training platform<i class="fa fa-sm fa-angle-double-right ml-2"></i>
-                </a>
-              </p>
-            </div>
-          </div> -->
-
-          <!-- <hr class="featurette-divider mx-5">
-
-          <div class="row">
-            <div class="col-lg-11 mx-auto">
-              <h2 class="display-3 condensed-2 fw-600 ml-1">responsive design&nbsp;&nbsp;<span class="text-dark fw-400">&gt;&gt;&gt;</span></h2>
-              <div class="empty-space --half"></div>
-            </div>
-            <div class="col-lg-11 mx-auto align-self-center">
-              <img class="img-fluid png-raised" src="img/uiux/responsive2.png" alt="NSPDR User Interface">
-            </div>
-            <div class="col-lg-11 mx-auto text-right">
-              <div class="empty-space --half"></div>
-              <h2 class="featurette-heading text-muted fw-600 mr-1">PCs,&nbsp;laptops, tablets and&nbsp;phones</h2>
-            </div>
-          </div>
-        </div>
-
-        <hr class="space-7" id="nspdr-countdown">
-      </section> -->
-
-
       <!-- CALL-TO-ACTION -->
-      <section class="start-of-page mx-2 mx-sm-3 mx-md-4 mx-lg-5 rounded bg-background" draggable="true" style="background-image:url('img/proxy/bg-greyy.svg')">
-      <!-- <section class="start-of-page mx-2 mx-sm-3 mx-md-4 mx-lg-5 rounded bg-background" draggable="true" style="background-image:url('img/proxy/bg-beige.svg')"> -->
+      <section class="start-of-page mx-2 mx-sm-3 mx-md-4 mx-lg-5 rounded bg-background" draggable="true" style="background-image:url('img/theme/bg-greyy.svg')">
         <div class="container">
           <div class="row text-center">
             <div class="col-12 mx-auto">
-              <h2 id="countDown" class="display-4 condensed-2 fat text-secondary">COMING SOON !</h2>
+              <h2 id="countDown" class="display-4 condensed-2 fw-700 text-secondary">COMING SOON !</h2>
               <div class="col-md-6 mx-auto"><div class="special-divider m-4"></div></div>
             </div>
           </div>
@@ -497,8 +382,6 @@
         </div>
       </section>
 
-      <!-- <div class="container"><hr class="dark-divider"></div> -->
-      <!-- <hr class="featurette-divider mx-5"> -->
       <hr class="dark-divider mx-5 px-5">
 
       <!-- THE FEATURETTES -->
@@ -511,8 +394,8 @@
                 Share spatial data<br><span class="text-muted">with anyone anywhere.</span>
               </h2>
               <p class="lead">
-                the <small class="fat">NSPDR</small> ecosystem will ensure the most up-to-date integration of government project data for <strong>efficient and effective</strong> spatial planning.&nbsp; It enables the sharing of spatial data throughout the country, across all spheres of government including the private sector, through and with the guidance of the <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout06">SDI</a> Act.
-                <!-- The development of the <small class="fat">NSPDR</small> ecosystem will enable sharing of spatial planning information across all spheres of government and the private sector and will support a key objective of the NDP. -->
+                the <small class="fw-700">NSPDR</small> ecosystem will ensure the most up-to-date integration of government project data for <strong>efficient and effective</strong> spatial planning.&nbsp; It enables the sharing of spatial data throughout the country, across all spheres of government including the private sector, through and with the guidance of the <a class="pointer fat" role="button" data-toggle="modal" data-target="#modalCallout06">SDI</a> Act.
+                <!-- The development of the <small class="fw-700">NSPDR</small> ecosystem will enable sharing of spatial planning information across all spheres of government and the private sector and will support a key objective of the NDP. -->
               </p>
             </div>
             <div class="col-lg-6 mx-auto align-self-center">
@@ -532,7 +415,7 @@
                 Capital expenditure<br><span class="text-muted">represented spatially.</span>
               </h2>
               <p class="lead">
-                the <small class="fat">NSPDR</small> ecosystem will support the monitoring of all capital and operational expenditure within the public sector (which currently is not done in a collaborative manner), through the digital <strong>representation</strong> of such projects <strong>spatially</strong>.&nbsp; Furthermore, the level and access to data will have modern encryption and security protocols to ensure sensitive data is protected where needed.
+                the <small class="fw-700">NSPDR</small> ecosystem will support the monitoring of all capital and operational expenditure within the public sector (which currently is not done in a collaborative manner), through the digital <strong>representation</strong> of such projects <strong>spatially</strong>.&nbsp; Furthermore, the level and access to data will have modern encryption and security protocols to ensure sensitive data is protected where needed.
               </p>
             </div>
             <div class="col-lg-5 mx-auto order-lg-1 align-self-center">
@@ -553,7 +436,7 @@
                 Visually monitored<br><span class="text-muted">decision-making.</span>
               </h2>
               <p class="lead">
-                the <small class="fat">NSPDR</small> ecosystem enables management to monitor contributions and data maintenance by all departments through a comprehensive, visual monitoring <strong>dashboard system</strong>.<br>
+                the <small class="fw-700">NSPDR</small> ecosystem enables management to monitor contributions and data maintenance by all departments through a comprehensive, visual monitoring <strong>dashboard system</strong>.<br>
                 By indicating the status of the contribution, as well as the status of the individual projects themselves, the ecosystem ensures planning is done with the most recent information at hand.
               </p>
             </div>
@@ -575,8 +458,8 @@
               </h2>
               <p class="lead">
                 Currently, there’s only one online portal which is accessible in just two provinces that can assist municipalities with spatial planning and land use management issues.<br>
-                Addressing this deficiency, the <small class="fat">NSPDR</small> ecosystem through it’s <strong>E&NoBreak;&middot;&NoBreak;Lodgement</strong> application, provides a portal readily available to all municipalities in all provinces, thereby ensuring national coverage.
-                <a class="ml-2" href="docs/elodgement.html#learn-more">[Learn More]</a>
+                Addressing this deficiency, the <small class="fw-700">NSPDR</small> ecosystem through it’s <strong>E&NoBreak;&middot;&NoBreak;Lodgement</strong> application, provides a portal readily available to all municipalities in all provinces, thereby ensuring national coverage. 
+                <a href="docs/elodgement.html#learn-more">[Learn&nbsp;More]</a>
               </p>
             </div>
             <div class="col-lg-6 mx-auto order-lg-1 align-self-center">
@@ -591,16 +474,13 @@
         </div> <!-- /.container .marketing -->
       </section>
 
-      <hr class="space-7">
-      <!-- <hr class="dark mx-5"> -->
-      <!-- <hr class="space-6"> -->
-      <div class="container"><hr class="dark-divider my-3"></div>
+      <div class="container"><hr class="space-7"><hr class="dark-divider my-3"></div>
 
 			<section class="segment --headers" draggable="true">
         <div class="container">
           <div class="row justify-content-center pb-xl-3">
             <div class="col-12 col-md-10 text-center">
-              <h2 class="h1 fw-600"><strong>Data&nbsp;Driven</strong> Spatial&nbsp;Planning</h2>
+              <h2 class="h1 fw-600">Data&nbsp;Driven <strong>Spatial&nbsp;Planning</strong></h2>
               <div class="col-10 col-md-8 mx-auto">
                 <div class="special-divider my-2 my-lg-3"></div>
               </div>
@@ -609,7 +489,7 @@
           </div>
           <div class="row text-right align-items-center-lg align-items-end pt-5">
             <div class="col-8 col-md-4 m-auto my-md-0 m-lg-auto">
-              <img alt="NSPDR" class="img-fluid png-raised" src="img/uiux/iphone7.png">
+              <img alt="NSPDR" class="img-fluid png-raised" src="img/uiux/iphone.png">
             </div>
             <div class="col-12 col-md-7 col-lg-6 col-xl-5 m-auto text-left pt-5 pt-md-0">
               <p class="mt-5 mt-md-3 mb-5"><img alt="NSPDR" height="40" src="img/logos/acronym-dark.png"></p>
@@ -629,16 +509,13 @@
         </div>
       </section>
 
-      <hr class="space-4">
-      <!-- <div class="container"><hr class="light"></div> -->
-      <div class="container"><hr class="dark"></div>
+      <div class="container"><hr class="space-4"><hr class="dark"></div>
 
       <section class="segment --headers" draggable="true">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-sm-11 text-left">
               <h3 class="fw-600 no-spacing ml-2">Proudly brought to you by ...</h3>
-              <!-- <hr class="my-3"> -->
               <div class="linear-divider my-3"></div>
               <a class="card-link" href="http://www.drdlr.gov.za" target="_blank">
                 <img class="img-fluid p-3 mt-5" alt="DRDLR Logo" src="img/logos/drdlr-layer.png">
@@ -648,10 +525,9 @@
         </div>
       </section>
 
-      <!-- <div class="container"><hr class="dark"></div> -->
       <hr class="space-4">
 
-      <section class="segment --headers bg-background" draggable="true" style="background-image:url('img/proxy/bg-greener.svg')">
+      <section class="segment --headers bg-background" draggable="true" style="background-image:url('img/theme/bg-greener.svg')">
 			  <div class="container">
 			    <div class="row align-items-center py-5">
 			      <div class="col-12 col-sm-8 col-md-9 text-left">
@@ -693,88 +569,13 @@
                 <a class="text-tertiary" href="mailto:support.nspdr@drdlr.gov.za">support.nspdr@drdlr.gov.za</a><br>
                 <a class="h3 fw-500 textdark no-spacing" href="http://www.drdlr.gov.za" target="_blank">www.drdlr.gov.za</a>
                 <!-- <br><span class="text-silver">&bullet;</span> -->
-                <!-- <br>&nbsp; -->
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- <section id="featurettes" class="marketing d-none">
-        <div class="empty-space --double"></div>
-        <div class="featurette">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <h2 class="featurette-heading with-image">
-                  Share spatial data<br><span class="text-muted">with anyone anywhere.</span>
-                </h2>
-                <p class="lead">
-                  the <small class="fat">NSPDR</small> ecosystem will ensure the most up-to-date integration of government project data for <strong>efficient and effective</strong> spatial planning.<br>
-                  It enables the sharing of spatial data throughout the country, across all spheres of government including the private sector, through and with the guidance of the SDI Act.
-                </p>
-              </div>
-              <div class="col-lg-6 mx-auto align-self-center px-lg-5">
-                <img class="featurette-image img-fluid img-shadow" src="img/uiux/ecosystem-1.png" alt="NSPDR Portal">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="featurette">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 order-lg-2">
-                <h2 class="featurette-heading with-image">
-                  Capital expenditure<br><span class="text-muted">spatially represented.</span>
-                </h2>
-                <p class="lead">
-                  the <small class="fat">NSPDR</small> ecosystem will support the monitoring of all capital and operational expenditure within the public sector (which currently is not done in a collaborative manner), through the digital <strong>representation</strong> of such projects <strong>spatially</strong>.&nbsp; Furthermore, the level and access to data will have modern encryption and security protocols to ensure sensitive data is protected where needed.
-                </p>
-              </div>
-              <div class="col-lg-6 mx-auto order-lg-1 align-self-center px-lg-5">
-                <img class="featurette-image img-fluid img-shadow" src="img/logos/wordcloud-drdlr.png" alt="NSPDR Word Cloud">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="featurette">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <h2 class="featurette-heading with-image">
-                  Decision-making<br><span class="text-muted">by visual monitoring.</span>
-                </h2>
-                <p class="lead">
-                  the <small class="fat">NSPDR</small> ecosystem enables management to monitor contributions and data maintenance by all departments through a comprehensive, visual monitoring <strong>dashboard system</strong>.&nbsp;
-                  By indicating the status of the contribution, as well as the status of the individual projects themselves, the ecosystem ensures planning is done with the most recent information at hand.
-                </p>
-              </div>
-              <div class="col-lg-6 mx-auto align-self-center px-lg-4">
-                <img class="featurette-image img-fluid img-shadow" src="img/uiux/front-end.jpg" alt="NSPDR Portal">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="featurette">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 order-lg-2">
-                <h2 class="featurette-heading with-image">
-                  Land use innovation<br><span class="text-muted">through automation.</span>
-                </h2>
-                <p class="lead">
-                  Currently, there’s only one online portal which is accessible in just two provinces that can assist municipalities with spatial planning and land use management issues.<br>
-                  Addressing this deficiency, the <small class="fat">NSPDR</small> ecosystem through it’s <strong>E&NoBreak;&middot;&NoBreak;Lodgement</strong> application, provides a portal readily available to all municipalities in all provinces, thereby ensuring national coverage.
-                </p>
-              </div>
-              <div class="col-lg-6 mx-auto order-lg-1 align-self-center px-lg-3">
-                <img class="featurette-image img-fluid img-shadow" src="img/uiux/elodgement-1.jpg" alt="E-Lodgement Portal">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
+      </article>
     </main>
 
 
@@ -787,7 +588,7 @@
 		          &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
 		        </div>
 	        </div>
-          <div class="col-8 col-sm-6 col-lg-4 order-lg-3">
+          <div class="col-auto col-sm-6 col-lg-4 order-lg-3">
 		        <div class="float-sm-right text-sm-right">
 		          <ul class="underline-on-hover sibling-fade">
 		            <li><a href="#top">Home</a></li>
@@ -814,7 +615,6 @@
       <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
       <i id="point-breaks" class="media-breakpoint swing d-none fa fa-sm fa-tv">&nbsp;</i>
     </footer>
-
 
     <!-- MODALS -->
     <div id="acronym-modals">
