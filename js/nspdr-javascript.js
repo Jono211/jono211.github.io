@@ -43,8 +43,7 @@ function displayHamburger() {
 				$('#scroll-to-top').fadeOut();
 			}
 		});
-
-		$('#backToTop,#scrollToTop').click(function() {
+		$('#scroll-to-top').click(function() {
 			$('body,html').animate({
 				scrollTop: 0
 			}, 900);
@@ -154,6 +153,5 @@ function displayHamburger() {
 
 
 // var rellax = new Rellax('.rellax');
-
 try {	var rellax = new Rellax('.rellax'); }
 catch (e) {}
