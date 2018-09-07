@@ -2053,7 +2053,7 @@ ul.underline-on-hover li a {
 	opacity: 1;
   margin-top: 2rem;
   margin-bottom: .25rem;
-  border-bottom: 1px solid #aaa;
+  /* border-bottom: 1px solid #aaa; */
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
