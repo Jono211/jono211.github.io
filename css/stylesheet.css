@@ -547,16 +547,13 @@ hr[class^='space-'] {
   .space-8 { padding-top: 6rem; }
   .space-9 { padding-top: 9rem; }
 
-.fw-800 { font-weight: 800 !important; }
+.fat { font-weight: bolder !important; }
+
 .fw-700 { font-weight: 700 !important; }
 .fw-600 { font-weight: 600 !important; }
 .fw-500 { font-weight: 500 !important; }
 .fw-400 { font-weight: 400 !important; }
 .fw-300 { font-weight: 300 !important; }
-.fw-200 { font-weight: 200 !important; }
-
-.fat  { font-weight: 700 !important; }
-.thin { font-weight: 300 !important; }
 
 .leading-1 { line-height: 1 !important }
 .leading-2 { line-height: 1.25 !important }
