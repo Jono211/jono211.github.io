@@ -112,7 +112,7 @@ function displayHamburger() {
 		$('#scrollContext').click(function() {
 			var scrolled = Math.floor($(window).scrollTop() /
 															 ($(document).height() - $(window).height()) * 100);
-				if (scrolled > 50) {
+				if (scrolled > 67) {
 					$('html,body').animate({scrollTop: 0}, 1000);
 				} else {
 					$('html,body').animate({scrollTop: $('body').height()}, 1000);

@@ -146,10 +146,10 @@
 
               <p class="lead mt-5">Follow us and ask more on:</p>
               <p class="lead-2">
-                <a class="text-nspdr1 mr-4 ml-2" href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386"><i class="fab fa-3x fa-facebook-f grow-large"></i></a>
-                <a class="text-nspdr4 mr-4" href="https://twitter.com/DRDLR_online"><i class="fab fa-3x fa-twitter grow-large"></i></a>
-                <a class="text-nspdr3 mr-4" href="https://www.instagram.com/drdlr_sa"><i class="fab fa-3x fa-instagram grow-large"></i></a>
-                <a class="text-nspdr2" href="https://www.youtube.com/user/DRDLROnline"><i class="fab fa-3x fa-youtube grow-large"></i></a>
+                <a class="text-nspdr1 mr-4 ml-2" href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386"><i class="fab fa-2x fa-facebook-f grow-large"></i></a>
+                <a class="text-nspdr4 mr-4" href="https://twitter.com/DRDLR_online"><i class="fab fa-2x fa-twitter grow-large"></i></a>
+                <a class="text-nspdr3 mr-4" href="https://www.instagram.com/drdlr_sa"><i class="fab fa-2x fa-instagram grow-large"></i></a>
+                <a class="text-nspdr2" href="https://www.youtube.com/user/DRDLROnline"><i class="fab fa-2x fa-youtube grow-large"></i></a>
               </p>
             </div>
           </div>
@@ -164,15 +164,15 @@
               <p class="lead">Helpdesk, account management and technical support services are only available in English.</p>
 
               <div class="row pt-4 pt-xl-5">
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-sm-5">
                   <p class="lead"><strong>Technical Support</strong></p>
-                  <p class="mb-1">(012) 312-9665</p>
-                  <p class="mb-1"><a href="mailto:support.nspdr@drdlr.gov.za">Contact Support</a></p>
+                  <p class="mb-2">(012) 312-9665</p>
+                  <p class="mb-2"><a href="mailto:support.nspdr@drdlr.gov.za">Contact Support</a></p>
                 </div>
-                <div class="col-12 col-md-5 m-auto pt-3 pt-md-0">
+                <div class="col-12 col-sm-5 m-auto pt-3 pt-sm-0">
                   <p class="lead"><strong>Helpdesk Service</strong></p>
-                  <p class="mb-1">(012) 312-9852</p>
-                  <p class="mb-1"><a href="mailto:nspdr@nspdr.info">Contact Helpdesk</a></p>
+                  <p class="mb-2">(012) 312-9852</p>
+                  <p class="mb-2"><a href="mailto:nspdr@nspdr.info">Contact Helpdesk</a></p>
                 </div>
               </div>
 
@@ -232,7 +232,7 @@
                 </div>
                 <div class="row mt-4">
                   <div class="col mt-2">
-                    <button type="submit" class="btn btn-pill btn-outline-nspdr2 shadow-sm fw-600">Click to submit</button>
+                    <button type="submit" class="btn btn-pill btn-outline-nspdr1 shadow-sm fw-600">Click to submit</button>
                   </div>
                 </div>
 
@@ -248,7 +248,7 @@
           <hr class="space-8">
           <div class="row text-center justify-content-center">
             <div class="col-12 col-md-8 col-lg-7">
-              <p class="h3 text-nspdr1 text-truncate mb-2"><strong>support.nspdr@drdlr.gov.za</strong></p>
+              <p class="h3 text-nspdr2 text-truncate mb-2"><strong>support.nspdr@drdlr.gov.za</strong></p>
               <p class="lead">Based on the nature of your feedback, a member of our team will be in touch with you soon.</p>
               <p><br></p>
             </div>
@@ -352,10 +352,14 @@
         var replyTo = target.elements['replyTo'].value;
         var message = target.elements['message'].value;
         // build message body with all input fields
-        body += message + '\r\n\r\n';
-        body += 'Name: ' + name + '\r\n';
-        body += 'Province: ' + region + '\r\n';
-        body += 'Email: ' + replyTo + '\r\n';
+        body += message + '\r\n\r\n\r\n';
+        // body += 'Name: ' + name + '\r\n';
+        // body += 'Province: ' + region + '\r\n';
+        // body += 'Email: ' + replyTo + '\r\n';
+        body += 'Regards,' + '\r\n';
+        body += name + '\r\n\r\n';
+        body += region + ' Province' + '\r\n';
+        body += replyTo + '\r\n';
         // build final mailto uri
         uri += '?subject=' + encodeURIComponent(subject);
         uri += '&body=' + encodeURIComponent(body);

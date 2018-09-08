@@ -185,7 +185,7 @@
         </div>
       </section>
 
-      <div class="container"><hr class="light"></div>
+      <div class="container"><hr class="dark"></div>
 
       <!-- MARKETING -->
 			<section class="segment --headers" draggable="true">
@@ -305,7 +305,7 @@
         </div>
       </section>
 
-      <div class="container"><hr class="light"></div>
+      <!-- <div class="container"><hr class="light"></div> -->
 
 			<section class="segment --headers" draggable="true">
         <div class="container">
@@ -333,11 +333,11 @@
           </div>
         </div>
 
-        <hr class="space-7" id="nspdr-countdown">
+        <hr class="space-6" id="nspdr-countdown">
       </section>
 
       <!-- CALL-TO-ACTION -->
-      <section class="start-of-page mx-2 mx-sm-3 mx-md-4 mx-lg-5 rounded bg-background imgshadow" draggable="true" style="background-image:url('img/theme/bg-greyy.svg')">
+      <section class="start-of-page mx-2 mx-sm-3 mx-md-4 mx-lg-5 rounded bg-background" draggable="true" style="background-image:url('img/theme/bg-greyy.svg')">
         <div class="container">
           <div class="row text-center">
             <div class="col-12 mx-auto">
@@ -351,12 +351,12 @@
                 <tbody class="mini-shadow">
                   <tr class="display-2 condensed-3">
                     <td id="countDays" class="grey-51 fw-700">00</td>
-                    <td class="clock-splitter text-danger pl-4">:</td>
+                    <td class="clock-splitter text-danger huered pl-4">:</td>
                     <td id="countHour" class="grey-85 fw-700">00</td>
                     <td class="clock-splitter hide-on-mobile">:</td>
                     <td id="countMins" class="grey-102 hide-on-mobile fw-500">00</td>
                     <td class="clock-splitter hide-on-laptop pr-4">:</td>
-                    <td id="countSecs" class="hide-on-laptop fw-300 text-danger huepink text-left pl-4">00</td>
+                    <td id="countSecs" class="hide-on-laptop fw-300 textdanger hue-red text-left pl-4">00</td>
                   </tr>
                 </tbody>
                 <tbody class="text-center">
@@ -373,13 +373,15 @@
               </table>
             </div>
           </div>
-          <hr class="space-5">
+          <!-- <hr class="space-5"> -->
           <div class="row text-right">
-            <div class="col-11">
-              <a class="btn btn-pill btn-outline-nspdr4 btn-shadow fw-700 mr-0 mr-md-3" href="docs/spluma.html#spluma-countdown" role="button" style="font-size:1.15rem;">and&nbsp; SPLUMA?<i class="fa fa-sm fa-angle-double-right ml-2"></i></a>
+            <div class="col-11 mt-3">
+              <a class="btn btn-md btn-pill btn-outline-nspdr4 btn-shadow fw-700 mr-0 mr-md-3" href="docs/spluma.html#spluma-countdown" role="button">
+                and&nbsp; SPLUMA?<i class="fa fa-sm fa-angle-double-right ml-2"></i>
+              </a>
             </div>
           </div>
-          <hr class="space-3">
+          <hr class="space-5">
         </div>
       </section>
 
@@ -496,15 +498,15 @@
               <p class="mt-5 mt-md-3 mb-5"><img alt="NSPDR" height="40" src="img/logos/acronym-dark.png"></p>
               <h3><strong>Spatial Data</strong></h3>
               <p class="mb-2">Source datasets and models derived from spatial data provided by base data custodians, SDF guidelines, as well as the E⁠-⁠Lodgement application layer, can be used to design customised data models, validations and a whole lot more.</p>
-              <p class="fw-600"><a href="docs/ecosystem.html#spatial-data">Available datasets &gt;</a></p>
+              <p class="lead fw-600"><a href="docs/ecosystem.html#spatial-data">Available datasets &gt;</a></p>
 
               <h3 class="mt-5"><strong>Geo-Analytics</strong></h3>
               <p class="mb-2">The portal hosts and contains an amazing variety of advanced GIS tools and functions. The portal will be the main place where users can access various web maps, mapping services, metadata, and E⁠-⁠Lodgement amongst others.</p>
-              <p class="fw-600"><a href="docs/ecosystem.html#geo-tools">Tools and features &gt;</a></p>
+              <p class="lead fw-600"><a href="docs/ecosystem.html#geo-tools">Tools and features &gt;</a></p>
 
               <h3 class="mt-5"><strong>E-Learning</strong></h3>
               <p class="mb-2">This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
-              <p class="fw-600"><a href="docs/ecosystem.html#e-learning">Training platform &gt;</a></p>
+              <p class="lead fw-600"><a href="docs/ecosystem.html#e-learning">Training platform &gt;</a></p>
             </div>
           </div>
         </div>
@@ -714,24 +716,25 @@
     <script src="js/scrollpos.js"></script>
 
     <script>
-      var countDownDate = new Date("Nov 5, 2018 08:00:00").getTime();
-      var countdownfunction = setInterval(function() {
+      var countDownDate = new Date('Nov 5, 2018 08:00:00').getTime();
+      var countdownFunction = setInterval(function() {
         var now = new Date().getTime();
         var distance = countDownDate - now;
         var day = Math.floor(distance / (1000 * 60 * 60 * 24));
+            // day = (day < 100 ? '0' : '') + day;
         var hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            hrs = (hrs < 10 ? "0" : "") + hrs;
+            hrs = (hrs < 10 ? '0' : '') + hrs;
         var min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            min = (min < 10 ? "0" : "") + min;
+            min = (min < 10 ? '0' : '') + min;
         var sec = Math.floor((distance % (1000 * 60)) / 1000);
-            sec = (sec < 10 ? "0" : "") + sec;
-          document.getElementById("countDays").innerHTML = day;
-          document.getElementById("countHour").innerHTML = hrs;
-          document.getElementById("countMins").innerHTML = min;
-          document.getElementById("countSecs").innerHTML = sec;
+            sec = (sec < 10 ? '0' : '') + sec;
+          document.getElementById('countDays').innerHTML = day;
+          document.getElementById('countHour').innerHTML = hrs;
+          document.getElementById('countMins').innerHTML = min;
+          document.getElementById('countSecs').innerHTML = sec;
         if (distance < 0) {
-          clearInterval(countdownfunction);
-          document.getElementById("countDown").innerHTML = "IT’S HERE!";
+          clearInterval(countdownFunction);
+          document.getElementById('countDown').innerHTML = 'IT’S HERE!';
         }
       }, 1000);
     </script>

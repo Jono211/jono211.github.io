@@ -47,8 +47,7 @@
 
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
+ * Copyright 2011-2018 The Bootstrap Authors and Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
@@ -83,7 +82,8 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 }
 body {
   margin: 0;
-  font-family: 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  /* font-family: 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-family: 'SF Pro Display', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -332,7 +332,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
   font-weight: 400;
   line-height: 1.15;
-  /* color: #5a5a5a; */
   color: #555;
 }
 .h1, h1 {
