@@ -205,7 +205,7 @@
                 <h2 class="h1">Data Repository</h2>
                 <hr class="dark mx-4">
                 <p class="lead">A digital and innovative ecosystem for national spatial planning, that will enable the sharing of spatial planning information and data across all three spheres of government.</p>
-                <p class="pt-4"><a href="docs/ecosystem.html" class="btn btn-lg btn-pill btn-nspdr2 btn-shadow px-4 py-1">Read More</a></p>
+                <p class="pt-4"><a href="docs/ecosystem.html" class="btn btn-lg btn-pill btn-nspdr2 btn-shadow --push px-4 py-1">Read More</a></p>
               </div>
             </div>
             <div class="col-11 col-sm-10 col-md-8 col-lg-4 mx-auto mt-5 mt-lg-0 py-0 py-lg-3 box-block --main top-green">
@@ -214,7 +214,7 @@
                 <h2 class="h1">E&NoBreak;-&NoBreak;Lodgement <sup><small class="h4">new</small></sup></h2>
                 <hr class="dark mx-4">
                 <p class="lead">This application’s main objective is to honour the Department’s responsibility in terms of SPLUMA, by fully automating the land development application process.</p>
-                <p class="pt-4"><a href="docs/elodgement.html" class="btn btn-lg btn-pill btn-nspdr1 btn-shadow px-4 py-1">Learn More</a></p>
+                <p class="pt-4"><a href="docs/elodgement.html" class="btn btn-lg btn-pill btn-nspdr1 btn-shadow --pop px-4 py-1">Learn More</a></p>
               </div>
             </div>
             <div class="col-11 col-sm-10 col-md-8 col-lg-4 mx-auto mt-5 mt-lg-0">
@@ -223,7 +223,7 @@
                 <h2 class="h1">Enabling SPLUMA</h2>
                 <hr class="dark mx-4">
                 <p class="lead">With mechanisms to support and strengthen provincial and municipal capacity to adopt and implement an effective spatial planning and land use management system.</p>
-                <p class="pt-4"><a href="docs/spluma.html" class="btn btn-lg btn-pill btn-nspdr4 btn-shadow px-4 py-1">Know More</a></p>
+                <p class="pt-4"><a href="docs/spluma.html" class="btn btn-lg btn-pill btn-nspdr4 btn-shadow --push px-4 py-1">Know More</a></p>
               </div>
             </div>
           </div>
@@ -246,7 +246,7 @@
               <img alt="NSPDR" class="img-fluid png-raised" src="img/uiux/ipad2.png">
             </div>
             <div class="col-12 col-lg-6 col-xl-5 m-lg-auto text-left pt-5 pt-lg-0">
-              <h2 class="h1 text-nspdr1 mini-shadow fw-700">Driven by Policy</h2>
+              <h2 class="h1 text-nspdr11 mini-shadow fw-700">Driven by Policy</h2>
               <p class="lead pb-xl-2">The NSPDR Ecosystem will be a major enabler in the implementation of SPLUMA. Two ways this will be achieved is by <strong>providing</strong> provinces and municipalities with . . .</p>
               <div class="row pt-4">
                 <div class="col-3">
@@ -318,7 +318,7 @@
 							<!-- </p> -->
               <p class="lead-2 pl-2 mt-5">Works in all <strong>modern</strong> browsers&nbsp;.&nbsp;.&nbsp;.</p>
               <div class="container">
-                <div class="row justify-content-between justify-content-lg-start mx-4ml-lg-0">
+                <div class="row justify-content-between justify-content-lg-start">
                   <img alt="Chrome" title="Chrome" class="browser-icon grow-large" src="img/logos/browser-chrome-128x128.png"/>
                   <img alt="Firefox" title="Firefox" class="browser-icon grow-large ml-1 ml-sm-3" src="img/logos/browser-firefox-128x128.png"/>
                   <img alt="Opera" title="Opera" class="browser-icon grow-large ml-1 ml-sm-3" src="img/logos/browser-opera-128x128.png"/>
@@ -351,12 +351,12 @@
                 <tbody class="mini-shadow">
                   <tr class="display-2 condensed-3">
                     <td id="countDays" class="grey-51 fw-700">00</td>
-                    <td class="clock-splitter text-danger huered pl-4">:</td>
-                    <td id="countHour" class="grey-85 fw-700">00</td>
+                    <td class="clock-splitter text-danger pl-4">:</td>
+                    <td id="countHour" class="grey-85 fw-600">00</td>
                     <td class="clock-splitter hide-on-mobile">:</td>
                     <td id="countMins" class="grey-102 hide-on-mobile fw-500">00</td>
                     <td class="clock-splitter hide-on-laptop pr-4">:</td>
-                    <td id="countSecs" class="hide-on-laptop fw-300 textdanger hue-red text-left pl-4">00</td>
+                    <td id="countSecs" class="hide-on-laptop fw-300 hue-red text-left pl-4">00</td>
                   </tr>
                 </tbody>
                 <tbody class="text-center">
@@ -539,7 +539,7 @@
 							</h2>
 			      </div>
 			      <div class="col-12 col-sm-4 col-md-3 text-center mt-4 mt-sm-0">
-			        <a class="btn btn-lg btn-pill btn-outline-nspdr2 btn-shadow fw-600" href="#nspdr-countdown">&ensp;Take a Tour&ensp;</a>
+			        <a class="btn btn-lg btn-pill btn-outline-nspdr2 btn-shadow --wobble fw-600" href="#nspdr-countdown">&ensp;Take a Tour&ensp;</a>
 			      </div>
 			    </div>
 			  </div>
@@ -718,12 +718,13 @@
     <script src="js/scrollpos.js"></script>
 
     <script>
-      var countDownDate = new Date('Nov 5, 2018 08:00:00').getTime();
+      // var countDownDate = new Date('Nov 5, 2018 08:00:00').getTime();
+      var countDownDate = new Date('2018-11-05 08:00:00').getTime();
       var countdownFunction = setInterval(function() {
         var now = new Date().getTime();
         var distance = countDownDate - now;
         var day = Math.floor(distance / (1000 * 60 * 60 * 24));
-            // day = (day < 100 ? '0' : '') + day;
+            // day = (day < 10 ? '0' : '') + day;
         var hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             hrs = (hrs < 10 ? '0' : '') + hrs;
         var min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
