@@ -71,7 +71,7 @@
         <div class="collapse navbar-collapse" id="navigator">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link pr-md-3" href="newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="news.html">News</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
@@ -108,8 +108,8 @@
           <li><img src="../img/views/boland-landscape-960x472.jpg"/></li>
           <li><img src="../img/views/sowetownship-1280x720.jpg"/></li>
           <li><img src="../img/views/sani-pass-1440x810.jpg"/></li>
-          <li><img src="../img/views/collage-1260x708.jpg"/></li>
           <li><img src="../img/views/landscape-1280x719.jpg"/></li>
+          <li><img src="../img/views/sani-pass-1280x720.jpg"/></li>
           <li><img src="../img/views/mountain-landscape-960x432.jpg"/></li>
           <li><img src="../img/views/johannesburg-1280x720.jpg"/></li>
         </ul>
@@ -512,16 +512,15 @@
               </div>
 
               <div class="slideshow-container">
-                <ul class="pagination paginationlg justify-content-center">
+                <ul class="pagination justify-content-center">
                   <li class="page-item">
                     <a class="page-link arrow" role="button" onclick="plusSlides(-1)">
                       &ensp;<i class="fa fa-sm fa-chevron-left"></i> <i class="fa fa-sm fa-chevron-left"></i> <i class="fa fa-sm fa-chevron-left"></i>&ensp;
                     </a>
                   </li>
                   <li class="page-item disabled">
-                    <!-- <a class="page-link fw-700">&emsp;&ndash;&emsp;</a> -->
-                    <!-- <a class="page-link fw-700">&ensp;&bullet;&ensp;</a> -->
-                    <a class="page-link fw-700">&emsp;<i class="fa falg fa-asterisk"></i>&emsp;</a>
+                    <!-- <a class="page-link fw-700">&emsp;<i class="fa fa-asterisk"></i>&emsp;</a> -->
+                    <a class="page-link fw-700">&ensp;<i class="fa fa-asterisk"></i>&ensp;</a>
                   </li>
                   <li class="page-item">
                     <a class="page-link arrow" role="button" onclick="plusSlides(1)">
@@ -646,18 +645,18 @@
 
               <div class="owl-carousel owl-theme">
                 <!-- <div class="item"><img class="img-fluid" src="../img/preloader.gif"></div> -->
-                <div class="item"><img class="img-fluid" src="../img/logos/nspdr-256x256.png" width="256px"></div>
+                <!-- <div class="item"><img class="img-fluid" src="../img/logos/nspdr-256x256.png" width="256px"></div> -->
                 <!-- <div class="item"><img class="img-fluid" src="../img/logos/ndp-426x426.jpg" width="128"></div> -->
                 <div class="item"><img class="img-fluid" src="../img/icons/icon1.png" width="128px" ></div>
                 <div class="item"><img class="img-fluid" src="../img/icons/icon2.png" width="128px" height=""></div>
                 <div class="item"><img class="img-fluid" src="../img/icons/icon3.png" width="128px" height=""></div>
                 <div class="item"><img class="img-fluid" src="../img/icons/icon4.png" width="128px" height=""></div>
-                <div class="item"><img class="img-fluid" src="../img/logos/nspdr-256x256.png" width="256px"></div>
+                <!-- <div class="item"><img class="img-fluid" src="../img/logos/nspdr-256x256.png" width="256px"></div> -->
                 <!-- <div class="item"><img class="img-fluid" src="../img/logos/ndp-426x426.jpg" width="128" height=""></div> -->
-                <div class="item"><img class="img-fluid" src="../img/icons/icon1.png" width="128" height=""></div>
+                <!-- <div class="item"><img class="img-fluid" src="../img/icons/icon1.png" width="128" height=""></div>
                 <div class="item"><img class="img-fluid" src="../img/icons/icon2.png" width="128" height=""></div>
                 <div class="item"><img class="img-fluid" src="../img/icons/icon3.png" width="128" height=""></div>
-                <div class="item"><img class="img-fluid" src="../img/icons/icon4.png" width="128" height=""></div>
+                <div class="item"><img class="img-fluid" src="../img/icons/icon4.png" width="128" height=""></div> -->
                 <!-- <div class="item"><h4>10</h4></div>
                 <div class="item"><h4>11</h4></div>
                 <div class="item"><h4>12</h4></div> -->
@@ -686,7 +685,7 @@
 		        <div class="float-sm-right text-sm-right">
 		          <ul class="underline-on-hover sibling-fade">
 		            <li><a href="../index.html">Home</a></li>
-		            <li><a href="newsblog.html">News</a></li>
+		            <li><a href="news.html">News</a></li>
 		            <li><a href="about.html">About</a></li>
 		            <li><a href="privacy.html">Terms</a></li>
 		          </ul>
@@ -705,9 +704,9 @@
       	</div>
       </div>
 
-      <a id="scroll-to-top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
-	    <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
-	    <i id="point-breaks" class="media-breakpoint swing d-none fa fa-sm fa-tv">&nbsp;</i>
+			<i id="scroll-to-top" title="Scroll Top" class="fa fa-2x fa-caret-square-up"></i>
+			<i id="debug-grid" title="Debugger" class="debug-icon visible fa fa-2x fa-bug"></i>
+			<i id="point-breaks" class="media-breakpoint swing  d-none fa fa-sm fa-tv">&nbsp;</i>
     </footer>
 
     <!-- =========== JavaScript ===========  -->
@@ -786,22 +785,21 @@
       function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName('showslide');
-        var dots = document.getElementsByClassName('dot');
-          // Some weirdness is happening, so bail
+        // var dots = document.getElementsByClassName('dot');
+          // some weirdness is happening here, so bail.
           if (slides.length == 0) { return; }
           if (n > slides.length) { slideIndex = 1; }
           if (n < 1) { slideIndex = slides.length; }
-          // console.log(slides.length + ' ' + n);
           for (i = 0; i < slides.length; i++) {
-            slides[i].className = slides[i].className.replace(' active', '');
             // slides[i].style.display = 'none';
+            slides[i].className = slides[i].className.replace(' active', '');
           }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(' active', '');
-          }
-        slides[slideIndex - 1].className += ' active';
+          // for (i = 0; i < dots.length; i++) {
+          //   dots[i].className = dots[i].className.replace(' active', '');
+          // }
         // slides[slideIndex - 1].style.display = 'block';
-        dots[slideIndex - 1].className += ' active';
+        slides[slideIndex - 1].className += ' active';
+        // dots[slideIndex - 1].className += ' active';
       }
     </script>
 

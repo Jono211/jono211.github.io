@@ -56,7 +56,7 @@
     </header>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr1 navbar-shadow">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bgnspdr1 bg-spatial navbar-shadow">
       <div class="container">
         <a id="scrollContext" class="navbar-brand acronym-icon swing" href="#" title="National Spatial Planning Data Repository">
           <img class="png-shadow pb-1" src="../img/logos/acronym-256.png" alt="NSPDR Brand">
@@ -69,7 +69,7 @@
         <div class="collapse navbar-collapse" id="navigator">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link pr-md-3" href="newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="news.html">News</a></li>
             <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
@@ -103,12 +103,9 @@
     <section class="page-hero mask-25 rellax" data-rellax-speed="-4">
       <!-- <div class="hero-header base-filter" style="background-image:url('../img/views/mandela-bridge-1440x810.jpg');background-position:bottom!important;"> -->
       <!-- <div class="hero-header brown-filter" style="background-image:url('../img/views/klaus-leidorf-980x551.jpg')"> -->
-      <div class="hero-header greyyfilter filter-01" style="background-image:url('../img/views/johannesburg-1280x720.jpg')">
+      <div class="hero-header filter-01" style="background-image:url('../img/views/johannesburg-1280x720.jpg')">
         <div class="container clear-filter">
           <div class="row justify-content-center">
-            <!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
-              <img class="img-fluid png-shadows opaque-90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/inners-square.png" alt="NSPDR">
-            </div> -->
             <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto">
               <img class="img-fluid png-shadows opaque-85 pull-up1 p-md-3 p-xl-2 d-none d-md-block rellax" data-rellax-speed="2" src="../img/logos/inners-square.png" alt="NSPDR Ecosystem">
               <img class="img-fluid png-shadows opaque-99 pull-up1 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-1" src="../img/logos/inners-square.png" alt="NSPDR Ecosystem">
@@ -131,9 +128,9 @@
 
     <!-- CONTENT -->
     <main class="nspdr-background --raised circular top-brown">
-      <article class="bg-honeycomb bgshippo bgwaves">
+      <article class="bg-honeycomb">
 
-      <section class="segment py-3">
+      <section class="segment py-3" draggable="true">
 	      <div class="container-fluid">
 		      <div class="row justify-content-center">
 			      <div class="col-12 d-none d-md-block">
@@ -144,7 +141,9 @@
 		          </div>
 	          </div>
 			      <div class="col-12 d-block d-md-none">
-              <h1 class="display-2 text-nspdr11 text-center pt-3 fw-700">SPLUMA</h1>
+              <h1 class="display-2 text-nspdr11 text-center pt-3 fw-700">
+                <span class="text-dimgrey">[ &nbsp;</span>SPLUMA<span class="text-dimgrey">&nbsp; ]</span>
+              </h1>
 	          </div>
 	        </div>
 		      <div class="row justify-content-center">
@@ -172,7 +171,7 @@
 	          </div>
 	        </div> -->
 
-      <section class="segment pt-2 pt-md-0">
+      <section class="segment pt-2 pt-md-0" draggable="true">
 	      <div class="container">
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-11">
@@ -191,13 +190,13 @@
 
       <!-- <hr class="space-4"> -->
 
-      <section class="segment">
+      <section class="segment" draggable="true">
 	      <div class="container">
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-11">
 							<h2 class="fw-600 mb-0">
 	              <span class="text-nspdr1">
-                  <span class="condensed-2">E&hybull;</span>Lodgement’s workflow is completely aligned to <a class="pointer fw-600 text-nspdr" style="text-decoration:underline;" role="button" data-toggle="modal" data-target="#modalSpluma">SPLUMA</a>
+                  <span class="condensed-2">E&hybull;</span>Lodgement’s workflow is completely aligned to <a class="pointer fw-700 text-nspdr" style="text-decoration:underline;" role="button" data-toggle="modal" data-target="#modalSpluma">SPLUMA</a>
                 </span>
 	            </h2>
 	            <div class="linear-divider my-3"></div>
@@ -251,7 +250,7 @@
                     <tr class="display-2 condensed-3">
                       <td id="countDays" class="grey-51 fw-700">00</td>
                       <td class="clock-splitter hue-olive pl-4">:</td>
-                      <td id="countHour" class="grey-85 fw-700">00</td>
+                      <td id="countHour" class="grey-85 fw-600">00</td>
                       <td class="clock-splitter hide-on-mobile">:</td>
                       <td id="countMins" class="grey-102 hide-on-mobile fw-500">00</td>
                       <td class="clock-splitter hide-on-laptop pr-4">:</td>
@@ -302,7 +301,7 @@
 		        <div class="float-sm-right text-sm-right">
 		          <ul class="underline-on-hover sibling-fade">
 		            <li><a href="../index.html">Home</a></li>
-		            <li><a href="newsblog.html">News</a></li>
+		            <li><a href="news.html">News</a></li>
 		            <li><a href="about.html">About</a></li>
 		            <li><a href="privacy.html">Terms</a></li>
 		          </ul>
@@ -321,9 +320,9 @@
       	</div>
       </div>
 
-      <a id="scroll-to-top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
-      <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
-      <i id="point-breaks" class="media-breakpoint swing d-none fa fa-sm fa-tv">&nbsp;</i>
+			<i id="scroll-to-top" title="Scroll Top" class="fa fa-2x fa-caret-square-up"></i>
+			<i id="debug-grid" title="Debugger" class="debug-icon visible fa fa-2x fa-bug"></i>
+			<i id="point-breaks" class="media-breakpoint swing  d-none fa fa-sm fa-tv">&nbsp;</i>
     </footer>
 
     <!-- MODAL -->
@@ -364,7 +363,7 @@
     <script src="../js/nspdr-javascript.js"></script>
 
     <script>
-      var countDownDate = new Date('Jun 30, 2020 00:00:00').getTime();
+      var countDownDate = new Date('2020-06-30 00:00:00').getTime();
       var countdownFunction = setInterval(function() {
         var now = new Date().getTime();
         var distance = countDownDate - now;

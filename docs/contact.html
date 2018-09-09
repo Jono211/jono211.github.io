@@ -37,7 +37,7 @@
 		<link rel="stylesheet" href="../css/fa/css/all.css">
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
-  <body id="top" class="bg-smoke watermark">
+  <body id="top" class="bg-smokey watermark">
 		<!--[if lt IE 9]>
 				<p class="upgrade-browser">
           You are using an <strong>outdated</strong> browser.&nbsp; 
@@ -66,11 +66,10 @@
             <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
           </span>
         </button>
-
         <div class="collapse navbar-collapse" id="navigator">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link pr-md-3" href="newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="news.html">News</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
@@ -88,7 +87,6 @@
               </div>
             </li>
           </ul>
-
           <form class="form-inline mt-2 mt-md-0">
             <div class="btn-group mr-3 my-3 my-md-0">
               <button type="button" class="btn btn-outline-warning dropdown-toggle override px-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -99,7 +97,7 @@
                 <a class="dropdown-item" href="contact/thanks.html">Thank You&thinsp;!</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item active" href="template.html">[template]</a>
-                <a class="dropdown-item" href="twenty18.html">temporary</a>
+                <a class="dropdown-item" href="twenty18.html">twenty18</a>
                 <a class="dropdown-item" href="slideshow.html">slideshow</a>
                 <a class="dropdown-item" href="webpage.html">webpage</a>
                 <a class="dropdown-item" href="template1.html">template<span class="fw-700">&sup1;</span></a>
@@ -117,7 +115,7 @@
         <div class="container">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a class="mx-2" href="../index.html">Home</a></li>
-            <li class="breadcrumb-item"><a class="mx-2" href="newsblog.html">News</a></li>
+            <li class="breadcrumb-item"><a class="mx-2" href="news.html">News</a></li>
             <li class="breadcrumb-item"><a class="mx-2" href="about.html">About</a></li>
             <li class="breadcrumb-item d-none"><a href="ecosystem.html">Ecosystem</a></li>
             <li class="breadcrumb-item d-none"><a href="elodgement.html">ELodgement</a></li>
@@ -131,7 +129,7 @@
     <main role="main" class="">
     <!-- <main class="nspdr-background circular top-brown"> -->
 
-      <section class="segment --headers pt-0">
+      <section class="segment --headers pt-0" draggable="true">
         <div class="container">
           <hr class="space-6">
           <div class="row text-left">
@@ -140,7 +138,7 @@
               <h3 class="display-4 condensed-1 fw-700 text-secondary mt-1">Get in touch with us...</h3>
 
               <div class="linear-divider"></div>
-              <p class="lead-2">Believe it or not, but we really do want to hear from you.&nbsp; <strong>So, get in touch!</strong>
+              <p class="lead-2">Believe it or not, but we really want to hear from you.&nbsp; <strong>So, get in touch!</strong>
                 <br>All you need to do is simply complete the contact form below and send us your feedback.
               </p>
 
@@ -218,7 +216,7 @@
                 </div>
                 <div class="row mt-4">
                   <div class="col">
-                    <textarea class="form-control verify" name="message" rows="4" placeholder="How can we help you...?" minlength="4" required></textarea>
+                    <textarea class="form-control verify" name="message" rows="3" placeholder="How can we help you...?" minlength="4" required></textarea>
                   </div>
                 </div>
                 <div class="row mt-4">
@@ -243,7 +241,7 @@
         </div>
       </section>
 
-      <section class="segment --headers">
+      <section class="segment --headers" draggable="true">
         <div class="container">
           <hr class="space-8">
           <div class="row text-center justify-content-center">
@@ -280,7 +278,7 @@
 		        <div class="float-sm-right text-sm-right">
 		          <ul class="underline-on-hover sibling-fade">
 		            <li><a href="../index.html">Home</a></li>
-		            <li><a href="newsblog.html">News</a></li>
+		            <li><a href="news.html">News</a></li>
 		            <li><a href="about.html">About</a></li>
 		            <li><a href="privacy.html">Terms</a></li>
 		          </ul>
@@ -299,9 +297,9 @@
       	</div>
       </div>
 
-      <a id="scroll-to-top" title="Scroll Top"><i class="fa fa-2x fa-caret-square-up"></i></a>
-      <a id="toggle-debugger" class="debug-icon visible" title="Debug"><i class="fa fa-2x fa-bug"></i></a>
-			<i id="point-breaks" class="media-breakpoint swing d-none fa fa-sm fa-tv">&nbsp;</i>
+			<i id="scroll-to-top" title="Scroll Top" class="fa fa-2x fa-caret-square-up"></i>
+			<i id="debug-grid" title="Debugger" class="debug-icon visible fa fa-2x fa-bug"></i>
+			<i id="point-breaks" class="media-breakpoint swing  d-none fa fa-sm fa-tv">&nbsp;</i>
     </footer>
 
 
@@ -367,28 +365,6 @@
         window.open(uri,'_blank');
       }
     </script>
-
-    <!-- <script>
-     /*
-      * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
-      * @private
-      * @author Todd Motto
-      * @link https://github.com/toddmotto/foreach
-      * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
-      * @callback requestCallback      callback   - Callback function for each iteration.
-      * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
-      * @returns {}
-      */
-      var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
-      var hamburgers = document.querySelectorAll(".hamburger");
-      if (hamburgers.length > 0) {
-        forEach(hamburgers, function(hamburger) {
-          hamburger.addEventListener("click", function() {
-            this.classList.toggle("is-active");
-          }, false);
-        });
-      }
-    </script> -->
 
   </body>
 </html>
