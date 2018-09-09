@@ -68,7 +68,7 @@ function displayHamburger() {
 		/* ----------------------------------------------------------- */
 		/*  05. Toggle Debugger
 		/* ----------------------------------------------------------- */
-		$('#toggle-debugger').click(function() {
+		$('#debug-grid').click(function() {
 			if ($('body,html').hasClass('debugger')) {
 				$('body,html').removeClass('debugger');
 			} else {
