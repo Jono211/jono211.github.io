@@ -37,7 +37,7 @@
 		<link rel="stylesheet" href="../css/fa/css/all.css">
     <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
-  <body id="top" class="bg-smoke watermark">
+  <body id="top" class="bg-smokey watermark">
 		<!--[if lt IE 9]>
 				<p class="upgrade-browser">
           You are using an <strong>outdated</strong> browser.&nbsp; 
@@ -66,11 +66,10 @@
             <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
           </span>
         </button>
-
         <div class="collapse navbar-collapse" id="navigator">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link pr-md-3" href="newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="news.html">News</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
@@ -88,7 +87,6 @@
               </div>
             </li>
           </ul>
-
           <form class="form-inline mt-2 mt-md-0">
             <div class="btn-group mr-3 my-3 my-md-0">
               <button type="button" class="btn btn-outline-warning dropdown-toggle override px-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -99,7 +97,7 @@
                 <a class="dropdown-item" href="contact/thanks.html">Thank You&thinsp;!</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item active" href="template.html">[template]</a>
-                <a class="dropdown-item" href="twenty18.html">temporary</a>
+                <a class="dropdown-item" href="twenty18.html">twenty18</a>
                 <a class="dropdown-item" href="slideshow.html">slideshow</a>
                 <a class="dropdown-item" href="webpage.html">webpage</a>
                 <a class="dropdown-item" href="template1.html">template<span class="fw-700">&sup1;</span></a>
@@ -117,7 +115,7 @@
         <div class="container">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a class="mx-2" href="../index.html">Home</a></li>
-            <li class="breadcrumb-item"><a class="mx-2" href="newsblog.html">News</a></li>
+            <li class="breadcrumb-item"><a class="mx-2" href="news.html">News</a></li>
             <li class="breadcrumb-item"><a class="mx-2" href="about.html">About</a></li>
             <li class="breadcrumb-item d-none"><a href="ecosystem.html">Ecosystem</a></li>
             <li class="breadcrumb-item d-none"><a href="elodgement.html">ELodgement</a></li>
@@ -280,7 +278,7 @@
 		        <div class="float-sm-right text-sm-right">
 		          <ul class="underline-on-hover sibling-fade">
 		            <li><a href="../index.html">Home</a></li>
-		            <li><a href="newsblog.html">News</a></li>
+		            <li><a href="news.html">News</a></li>
 		            <li><a href="about.html">About</a></li>
 		            <li><a href="privacy.html">Terms</a></li>
 		          </ul>
@@ -367,28 +365,6 @@
         window.open(uri,'_blank');
       }
     </script>
-
-    <!-- <script>
-     /*
-      * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
-      * @private
-      * @author Todd Motto
-      * @link https://github.com/toddmotto/foreach
-      * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
-      * @callback requestCallback      callback   - Callback function for each iteration.
-      * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
-      * @returns {}
-      */
-      var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
-      var hamburgers = document.querySelectorAll(".hamburger");
-      if (hamburgers.length > 0) {
-        forEach(hamburgers, function(hamburger) {
-          hamburger.addEventListener("click", function() {
-            this.classList.toggle("is-active");
-          }, false);
-        });
-      }
-    </script> -->
 
   </body>
 </html>

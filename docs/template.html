@@ -69,7 +69,7 @@
         <div class="collapse navbar-collapse" id="navigator">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active"><a class="nav-link" href="../index.html" title="You are here!">Home<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link pr-md-3" href="newsblog.html">News</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="news.html">News</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
@@ -830,7 +830,7 @@
 		        <div class="float-sm-right text-sm-right">
 		          <ul class="underline-on-hover sibling-fade">
 		            <li><a href="../index.html">Home</a></li>
-		            <li><a href="newsblog.html">News</a></li>
+		            <li><a href="news.html">News</a></li>
 		            <li><a href="about.html">About</a></li>
 		            <li><a href="privacy.html">Terms</a></li>
 		          </ul>
@@ -870,6 +870,28 @@
         // $('[data-toggle="popover"]').popover()
         $('[data-toggle="tooltip"]').tooltip()
       })
+    </script> -->
+
+    <!-- <script>
+     /*
+      * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+      * @private
+      * @author Todd Motto
+      * @link https://github.com/toddmotto/foreach
+      * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+      * @callback requestCallback      callback   - Callback function for each iteration.
+      * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+      * @returns {}
+      */
+      var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+      var hamburgers = document.querySelectorAll(".hamburger");
+      if (hamburgers.length > 0) {
+        forEach(hamburgers, function(hamburger) {
+          hamburger.addEventListener("click", function() {
+            this.classList.toggle("is-active");
+          }, false);
+        });
+      }
     </script> -->
 
   </body>
