@@ -193,7 +193,7 @@
           <div class="row">
             <div class="col-12 col-md-10">
               <!-- <h2 class="display-5 grey-102 fw-500">A Framework for Planning</h2> -->
-              <h2 class="display-5 grey-102 mini-shadow fw-500">A New Paradigm In Planning</h2>
+              <h2 class="display-5 grey-102 mini-shadow fw-600">A New Paradigm In Planning</h2>
               <div class="linear-divider my-3"></div>
               <p class="lead-2 grey-85">The CHALLENGE for any planning framework in South Africa, has always been the question of how to balance the technicality of spatial planning and land use management, with the broader issues of socio&NoBreak;-&NoBreak;economic development.</p>
             </div>
@@ -236,7 +236,7 @@
         <div class="container">
           <div class="row pb-3 pb-lg-5">
             <div class="col-12 col-md-10 ml-md-3">
-              <h2 class="display-5 grey-102 mini-shadow fw-500">Statutory Framework</h2>
+              <h2 class="display-5 grey-102 mini-shadow fw-600">Statutory Framework</h2>
               <div class="linear-divider my-3"></div>
               <p class="lead-2 grey-85">The <strong>NSPDR</strong> Ecosystem will enable sharing of spatial planning information across all spheres of government and the private sector and will support key objectives of the NDP.</p>
             </div>
@@ -332,16 +332,16 @@
             </div>
           </div>
         </div>
-
-        <hr class="space-6" id="nspdr-countdown">
       </section>
+
+      <hr class="space-8" id="nspdr-countdown">
 
       <!-- CALL-TO-ACTION -->
       <section class="start-of-page mx-2 mx-sm-3 mx-md-4 mx-lg-5 rounded bg-background" draggable="true" style="background-image:url('img/theme/bg-greyy.svg')">
         <div class="container">
           <div class="row text-center">
             <div class="col-12 mx-auto">
-              <h2 id="countDown" class="display-4 condensed-2 fw-700 text-secondary">COMING SOON !</h2>
+              <h2 id="countText" class="display-4 condensed-2 fw-700 text-secondary">COMING SOON&nbsp;!</h2>
               <div class="col-md-6 mx-auto"><div class="special-divider m-4"></div></div>
             </div>
           </div>
@@ -349,9 +349,9 @@
             <div class="col-12 col-lg-11 col-xl-10 mx-auto">
               <table class="table table-borderless">
                 <tbody class="mini-shadow">
-                  <tr class="display-2 condensed-3">
+                  <tr id="circa" class="display-2 condensed-3">
                     <td id="countDays" class="grey-51 fw-700">00</td>
-                    <td class="clock-splitter text-danger pl-4">:</td>
+                    <td class="clock-splitter text-danger pl-sm-4">:</td>
                     <td id="countHour" class="grey-85 fw-600">00</td>
                     <td class="clock-splitter hide-on-mobile">:</td>
                     <td id="countMins" class="grey-102 hide-on-mobile fw-500">00</td>
@@ -373,7 +373,6 @@
               </table>
             </div>
           </div>
-          <!-- <hr class="space-5"> -->
           <div class="row text-right">
             <div class="col-11 mt-3">
               <a class="btn btn-md btn-pill btn-outline-nspdr4 btn-shadow fw-700 mr-0 mr-md-3" href="docs/spluma.html#spluma-countdown" role="button">
@@ -553,7 +552,6 @@
               <p class="h4 fw-500 expanded-1 leading-3">
 								(012) 312-9665 &nbsp;/
                 <br>012 312-9852
-                <!-- <br><span class="text-silver">&bullet;</span> -->
 							</p>
             </div>
 
@@ -561,7 +559,6 @@
 							<a class="fa fa-5x fa-map-marked-alt mb-4 text-nspdr2 mini-shadow"></a>
               <p class="h4 fw-500 no-spacing leading-3">
 								224 Helen Joseph Street
-                <!-- <br>Capitol Towers, Pretoria -->
                 <br>Capitol Towers
                 <br>Pretoria
 							</p>
@@ -572,13 +569,11 @@
               <p class="h4 fw-500 no-spacing leading-3">
                 <a class="text-tertiary" href="mailto:support.nspdr@drdlr.gov.za">support.nspdr@drdlr.gov.za</a><br>
                 <a class="h3 fw-500 textdark no-spacing" href="http://www.drdlr.gov.za" target="_blank">www.drdlr.gov.za</a>
-                <!-- <br><span class="text-silver">&bullet;</span> -->
               </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- <hr class="space-2"> -->
 
       </article>
     </main>
@@ -717,9 +712,8 @@
     <script src="js/nspdr-javascript.js"></script>
     <script src="js/scrollpos.js"></script>
 
-    <script>
-      // var countDownDate = new Date('Nov 5, 2018 08:00:00').getTime();
-      var countDownDate = new Date('2018-11-05 08:00:00').getTime();
+    <!-- <script>
+      var countDownDate = new Date('Nov 05, 2018 08:00:00').getTime();
       var countdownFunction = setInterval(function() {
         var now = new Date().getTime();
         var distance = countDownDate - now;
@@ -737,9 +731,33 @@
           document.getElementById('countSecs').innerHTML = sec;
         if (distance < 0) {
           clearInterval(countdownFunction);
-          document.getElementById('countDown').innerHTML = 'IT’S HERE!';
+          document.getElementById('countText').innerHTML = 'IT’S HERE!';
         }
       }, 1000);
+    </script> -->
+
+    <script>
+      $(document).ready(function() {
+        var dueDate = new Date('Nov 05, 2017 08:00:00').getTime();
+        var chronograph = setInterval(function() {
+        var now = new Date().getTime();
+          if (dueDate > now) {
+            var diff = dueDate - now;
+          } else {
+            var diff = now - dueDate;
+            $('#countText').html('WE’VE BEEN LIVE FOR');
+          }
+          var dd = Math.floor(diff / (1000 * 3600 * 24)),
+              hh = Math.floor((diff % (1000 * 3600 * 24)) / (1000 * 3600)),
+              mm = Math.floor((diff % (1000 * 3600)) / (1000 * 60)),
+              ss = Math.floor((diff % (1000 * 60)) / 1000);
+          var times = [dd, hh, mm, ss];
+          for (var i = 0; i < times.length; i++) {
+            times[i] = (times[i] < 10 ? '0' : '') + times[i];
+            $('#circa td:eq(' + (i * 2) + ')').html(times[i]);
+          }
+        }, 1000);
+      });
     </script>
 
   </body>

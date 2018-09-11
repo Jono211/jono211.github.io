@@ -5,7 +5,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
     <title>NSPDR&ensp;|&ensp;Enabling SPLUMA</title>
     <meta name="description" content="NSPDR Ecosystem - Spatial Planning and Land Use Management Act">
-
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="keywords" content="NSPDR, E-Lodgement, Ecosystem, SPLUMA, DRDLR, Spatial Planning, Land Use Management">
     <meta name="author" content="Agizo Solutions, on behalf of the Department of Rural Development and Land Reform">
@@ -35,10 +34,9 @@
     <link rel="stylesheet" href="../css/bootstraps.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
 		<link rel="stylesheet" href="../css/fa/css/all.css">
-    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
 	</head>
   <body id="top" class="bg-linear2">
-		<!--[if lt IE 9]>
+		<!--[if lte IE 9]>
 				<p class="upgrade-browser">
           You are using an <strong>outdated</strong> browser.&nbsp; 
           Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.
@@ -101,7 +99,7 @@
 
     <!-- HERO -->
     <section class="page-hero mask-25 rellax" data-rellax-speed="-4">
-      <!-- <div class="hero-header base-filter" style="background-image:url('../img/views/mandela-bridge-1440x810.jpg');background-position:bottom!important;"> -->
+      <!-- <div class="hero-header filter-00" style="background-image:url('../img/views/mandela-bridge-1440x810.jpg');background-position:bottom!important;"> -->
       <!-- <div class="hero-header brown-filter" style="background-image:url('../img/views/klaus-leidorf-980x551.jpg')"> -->
       <div class="hero-header filter-01" style="background-image:url('../img/views/johannesburg-1280x720.jpg')">
         <div class="container clear-filter">
@@ -112,12 +110,8 @@
             </div>
             <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
               <div class="row text-left">
-                <div class="col-12">
-                  <h1 class="showcase text-white opaque-90 fw-600">SPLUMA</h1>
-                </div>
-                <div class="col-12">
-                  <h1 class="showcase text-white opaque-75">Enablement</h1>
-                </div>
+                <div class="col-12"><h1 class="showcase text-white opaque-90 fw-600">SPLUMA</h1></div>
+                <div class="col-12"><h1 class="showcase text-white opaque-75">Enablement</h1></div>
               </div>
             </div>
           </div>
@@ -154,23 +148,6 @@
 	      </div>
 	    </section>
 
-      <!-- <section class="segment">
-	      <div class="container">
-		      <div class="row justify-content-center pt-4">
-			      <div class="col-12 col-md-11">
-		          <div class="text-center pt-2">
-		            <h1 class="display-2 condensed-3 fw-700 text-left text-geois">Spatial Planning <span class="fw-500">and</span></h1>
-		            <h2 class="display-3 condensed-2 fw-700 text-tertiary">Land Use Management</h2>
-		            <h2 class="display-4 condensed-1 fw-700 text-right text-secondary">Act of Parliament, &numero; 16 of 2013</h2>
-		          </div>
-	          </div>
-	        </div>
-		      <div class="row justify-content-center">
-			      <div class="col-11 col-md-10">
-		          <div class="special-divider my-4"></div>
-	          </div>
-	        </div> -->
-
       <section class="segment pt-2 pt-md-0" draggable="true">
 	      <div class="container">
 		      <div class="row justify-content-center">
@@ -187,8 +164,6 @@
       	  </div>
       	</div>
       </section>
-
-      <!-- <hr class="space-4"> -->
 
       <section class="segment" draggable="true">
 	      <div class="container">
@@ -239,7 +214,7 @@
           <div class="container">
             <div class="row text-center">
               <div class="col-12 mx-auto">
-                <h2 id="countDown" class="display-4 condensed-2 text-secondary fw-700">SPLUMA COMPLIANCE</h2>
+                <h2 id="countText" class="display-4 condensed-2 text-secondary fw-700">SPLUMA COUNTDOWN</h2>
                 <div class="col-md-8 mx-auto"><div class="special-divider m-4"></div></div>
               </div>
             </div>
@@ -247,9 +222,9 @@
               <div class="col-12 col-lg-11 col-xl-10 mx-auto">
                 <table class="table table-borderless">
                   <tbody class="lite-shadow">
-                    <tr class="display-2 condensed-3">
+                    <tr id="circa" class="display-2 condensed-3">
                       <td id="countDays" class="grey-51 fw-700">00</td>
-                      <td class="clock-splitter hue-olive pl-4">:</td>
+                      <td class="clock-splitter hue-olive pl-sm-4">:</td>
                       <td id="countHour" class="grey-85 fw-600">00</td>
                       <td class="clock-splitter hide-on-mobile">:</td>
                       <td id="countMins" class="grey-102 hide-on-mobile fw-500">00</td>
@@ -363,26 +338,27 @@
     <script src="../js/nspdr-javascript.js"></script>
 
     <script>
-      var countDownDate = new Date('2020-06-30 00:00:00').getTime();
-      var countdownFunction = setInterval(function() {
+      $(document).ready(function() {
+        var dueDate = new Date('Jun 30, 2020 00:00:00').getTime();
+        var chronograph = setInterval(function() {
         var now = new Date().getTime();
-        var distance = countDownDate - now;
-        var day = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            hrs = (hrs < 10 ? '0' : '') + hrs;
-        var min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            min = (min < 10 ? '0' : '') + min;
-        var sec = Math.floor((distance % (1000 * 60)) / 1000);
-            sec = (sec < 10 ? '0' : '') + sec;
-          document.getElementById('countDays').innerHTML = day;
-          document.getElementById('countHour').innerHTML = hrs;
-          document.getElementById('countMins').innerHTML = min;
-          document.getElementById('countSecs').innerHTML = sec;
-        if (distance < 0) {
-          clearInterval(countdownFunction);
-          document.getElementById('countDown').innerHTML = 'IT’S HERE!';
-        }
-      }, 1000);
+          if (dueDate > now) {
+            var diff = dueDate - now;
+          } else {
+            var diff = now - dueDate;
+            $('#countText').html('ACT IN EFFECT FOR');
+          }
+          var dd = Math.floor(diff / (1000 * 3600 * 24)),
+              hh = Math.floor((diff % (1000 * 3600 * 24)) / (1000 * 3600)),
+              mm = Math.floor((diff % (1000 * 3600)) / (1000 * 60)),
+              ss = Math.floor((diff % (1000 * 60)) / 1000);
+          var times = [dd, hh, mm, ss];
+          for (var i = 0; i < times.length; i++) {
+            times[i] = (times[i] < 10 ? '0' : '') + times[i];
+            $('#circa td:eq(' + (i * 2) + ')').html(times[i]);
+          }
+        }, 1000);
+      });
     </script>
 
   </body>
