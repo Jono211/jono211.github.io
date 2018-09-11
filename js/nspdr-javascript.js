@@ -3,7 +3,7 @@
 function displayHamburger() {
   var hamburger = document.getElementById('burgers');
   if (hamburger != null) {
-    hamburger.classList.toggle("is-active");
+    hamburger.classList.toggle('is-active');
 	} else { return; }
 }
 
