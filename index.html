@@ -9,14 +9,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="keywords" content="NSPDR, E-Lodgement, Ecosystem, Spatial Planning, Land Use Management, Rural Development, DRDLR, SPLUMA">
     <meta name="author" content="Agizo Solutions, on behalf of the Department of Rural Development and Land Reform">
-		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359766-1"></script>
-		<script>
-			// Google Analytics - site tag (gtag.js)
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-123359766-1');
-		</script> -->
     <script>
       (function() {
         // if firefox 3.5+, hide content till load (or 3 secs) to prevent FOUT
@@ -35,10 +27,17 @@
     <link rel="stylesheet" href="css/bootstraps.css">
     <link rel="stylesheet" href="css/stylesheet.css">
 		<link rel="stylesheet" href="css/fa/css/all.css">
-    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359766-1"></script>
+		<script>
+			// Google Analytics - site tag (gtag.js)
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-123359766-1');
+		</script> -->
 	</head>
   <body id="top" class="bg-linear2 pt-5">
-		<!--[if lt IE 9]>
+		<!--[if lte IE 9]>
 				<p class="upgrade-browser">
           You are using an <strong>outdated</strong> browser.&nbsp; 
           Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.
@@ -386,7 +385,7 @@
 
       <hr class="dark-divider mx-5 px-5">
 
-      <!-- THE FEATURETTES -->
+      <!-- FEATURETTES -->
       <section id="features" class="features" draggable="true">
         <div class="container marketing">
 
@@ -712,40 +711,16 @@
     <script src="js/nspdr-javascript.js"></script>
     <script src="js/scrollpos.js"></script>
 
-    <!-- <script>
-      var countDownDate = new Date('Nov 05, 2018 08:00:00').getTime();
-      var countdownFunction = setInterval(function() {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-        var day = Math.floor(distance / (1000 * 60 * 60 * 24));
-            // day = (day < 10 ? '0' : '') + day;
-        var hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            hrs = (hrs < 10 ? '0' : '') + hrs;
-        var min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            min = (min < 10 ? '0' : '') + min;
-        var sec = Math.floor((distance % (1000 * 60)) / 1000);
-            sec = (sec < 10 ? '0' : '') + sec;
-          document.getElementById('countDays').innerHTML = day;
-          document.getElementById('countHour').innerHTML = hrs;
-          document.getElementById('countMins').innerHTML = min;
-          document.getElementById('countSecs').innerHTML = sec;
-        if (distance < 0) {
-          clearInterval(countdownFunction);
-          document.getElementById('countText').innerHTML = 'IT’S HERE!';
-        }
-      }, 1000);
-    </script> -->
-
     <script>
       $(document).ready(function() {
-        var dueDate = new Date('Nov 05, 2017 08:00:00').getTime();
+        var dueDate = new Date('Nov 05, 2018 08:00:00').getTime();
         var chronograph = setInterval(function() {
         var now = new Date().getTime();
           if (dueDate > now) {
             var diff = dueDate - now;
           } else {
             var diff = now - dueDate;
-            $('#countText').html('WE’VE BEEN LIVE FOR');
+            $('#countText').html('LIVE!&nbsp; FOR THE PAST');
           }
           var dd = Math.floor(diff / (1000 * 3600 * 24)),
               hh = Math.floor((diff % (1000 * 3600 * 24)) / (1000 * 3600)),
