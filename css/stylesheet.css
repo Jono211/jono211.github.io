@@ -106,6 +106,12 @@ footer#footer:not(.end-of-page) {
 		.carousel-hero .carousel-caption p {
 			font-weight: 500; }
 
+/* .carousel-control-prev {
+  background: transparent;
+  transition: background 1.5s color ease-out; }
+.carousel-control-next {
+  background: transparent;
+  transition: background 1.5s ease-out; } */
 .carousel-control-prev:hover {
   background: transparent;
   transition: background .5s linear;
@@ -185,6 +191,9 @@ footer#footer:not(.end-of-page) {
 	#drdlr-flag {
 		background-image: url('../img/logos/sa-flag.png');
 		background-position: center right !important; }
+	/* #drdlr-rsaf {
+		background-image: url('../img/sa-flag.svg');
+		background-position: center right !important; } */
 	#drdlr-bloc {
 		background-image: url('../img/logos/nspdr-block.png');
 		background-position: center right !important; }
@@ -472,30 +481,6 @@ h2.showcase {
 		.navbar-dark .navbar-text.override a:hover {
 			color: rgba(255,255,255,.9); }
 
-.dropdown-menu {
-  display: none;
-  padding: .3125rem 0;
-  border: 0;
-  opacity: 0;
-  transform: scale(0);
-  transform-origin: 0 0;
-  will-change: transform, opacity;
-  transition: transform .5s cubic-bezier(.4,0,.2,1),
-								opacity .4s cubic-bezier(.4,0,.2,1);
-  box-shadow: 0 .125rem .3125rem 0 rgba(0,0,0,.26); }
-	.dropdown-menu.show {
-		animation-name: dropdown-animation;
-		animation-duration: .5s;
-		animation-fill-mode: both;
-		animation-timing-function: cubic-bezier(.4,0,.2,1); }
-	.dropdown-menu.show {
-		display: block;
-		opacity: 1;
-		transform: scale(1); }
-	.dropdown-menu.hide {
-		display: block;
-		opacity: 0;
-		transform: scale(0); }
 .dropdown-toggle.override::after {
   border: 0 !important; }
 	.dropdown-toggle.override i {
@@ -509,7 +494,41 @@ h2.showcase {
 			transform: rotate(180deg);
 			color: #ed3; }
 
-@keyframes dropdown-animation {
+.dropdown-menu {
+  display: none;
+  padding: .3125rem 0;
+  border: 0;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: 0 0;
+  will-change: transform, opacity;
+  transition: transform .5s cubic-bezier(.4,0,.2,1),
+								opacity .4s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 .125rem .3125rem 0 rgba(0,0,0,.26); }
+	.dropdown-menu.show {
+		animation-name: dd-animation;
+		animation-duration: .5s;
+		/* animation-fill-mode: both; */
+    animation-fill-mode: forwards;
+		animation-timing-function: cubic-bezier(.4,0,.2,1);
+		/* animation-timing-function: cubic-bezier(.4,0,.2,1); }
+	.dropdown-menu.show { */
+		display: block;
+		opacity: 1;
+		transform: scale(1); }
+	.dropdown-menu.hide {
+		display: block;
+		opacity: 0;
+		transform: scale(0); }
+
+@-webkit-keyframes dd-animation {
+  from {
+    opacity: 0;
+    transform: scale(0); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+@keyframes dd-animation {
   from {
     opacity: 0;
     transform: scale(0); }
@@ -951,6 +970,7 @@ hr[class^='space-'] {
 .text-silver    { color: #ccc; }
 .text-lightgrey { color: #eee; }
 
+.grey-34  { color: #222; }
 .grey-51  { color: #333; }
 .grey-68  { color: #444; }
 .grey-85  { color: #555; }
@@ -2556,8 +2576,8 @@ ul.underline-on-hover li a {
 	.--pop:hover, .--pop:focus, .--pop:active {
 		-webkit-animation-name: --pop;
 		animation-name: --pop;
-		-webkit-animation-duration: .3s;
-		animation-duration: .3s;
+		-webkit-animation-duration: .4s;
+		animation-duration: .4s;
 		-webkit-animation-timing-function: linear;
 		animation-timing-function: linear;
 		-webkit-animation-iteration-count: 1;
@@ -2587,8 +2607,8 @@ ul.underline-on-hover li a {
   .--push:hover, .--push:focus, .--push:active {
     -webkit-animation-name: --push;
     animation-name: --push;
-    -webkit-animation-duration: .3s;
-    animation-duration: .3s;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
