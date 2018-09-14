@@ -505,18 +505,18 @@ h2.showcase {
   transition: transform .5s cubic-bezier(.4,0,.2,1),
 								opacity .4s cubic-bezier(.4,0,.2,1);
   box-shadow: 0 .125rem .3125rem 0 rgba(0,0,0,.26); }
-	.dropdown-menu.show {
+	/* .dropdown-menu.show, */
+  .dropdown-menu.showing {
 		animation-name: dd-animation;
 		animation-duration: .5s;
-		/* animation-fill-mode: both; */
     animation-fill-mode: forwards;
-		animation-timing-function: cubic-bezier(.4,0,.2,1);
-		/* animation-timing-function: cubic-bezier(.4,0,.2,1); }
-	.dropdown-menu.show { */
+		animation-timing-function: cubic-bezier(.4,0,.2,1); }
+	/* .dropdown-menu.show { */
+  .open > .dropdown-menu, .dropdown-menu.show {
 		display: block;
 		opacity: 1;
 		transform: scale(1); }
-	.dropdown-menu.hide {
+	.dropdown-menu.hiding {
 		display: block;
 		opacity: 0;
 		transform: scale(0); }
@@ -946,7 +946,7 @@ hr[class^='space-'] {
 
 .bg-spatial {
   background: #0f5c29; /* fallback */
-  background: linear-gradient(to right, #152, #284) !important; }
+  background: linear-gradient(to right, #163, #284) !important; }
 
 .text-black    { color: #111 !important; }
 .text-tertiary { color: #4e545a !important; }
@@ -2010,9 +2010,9 @@ ul.underline-on-hover li a {
 .navbar-toggler-icon.override {
   background-image: none; }
 	.navbar-dark .navbar-toggler-icon.override .hamburger-inner {
-		background-color: rgba(255,255,255,.5); }
+		background-color: rgba(255,255,255,.75); }
 	.navbar-light .navbar-toggler-icon.override .hamburger-inner {
-		background-color: rgba(0,0,0,.5); }
+		background-color: rgba(0,0,0,.75); }
 
 /* hamburgers */
 .hamburger {
@@ -2615,7 +2615,7 @@ ul.underline-on-hover li a {
     animation-iteration-count: 1; }
 
 /* Wobble Vertical */
-@-webkit-keyframes --wobble {
+@-webkit-keyframes --wobbleY {
   16.65% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px); }
@@ -2634,7 +2634,7 @@ ul.underline-on-hover li a {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
-@keyframes --wobble {
+@keyframes --wobbleY {
   16.65% {
     -webkit-transform: translateY(8px);
     transform: translateY(8px); }
@@ -2653,15 +2653,70 @@ ul.underline-on-hover li a {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
-.--wobble {
+.--wobbleY {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0,0,0,0); }
-.--wobble:hover, .--wobble:focus, .--wobble:active {
-  -webkit-animation-name: --wobble;
-  animation-name: --wobble;
+.--wobbleY:hover, .--wobbleY:focus, .--wobbleY:active {
+  -webkit-animation-name: --wobbleY;
+  animation-name: --wobbleY;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
+/* Wobble Horizontal */
+@-webkit-keyframes --wobbleX {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px); }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@keyframes --wobbleX {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px); }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px); }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px); }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px); }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+.--wobbleX {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0,0,0,0); }
+.--wobbleX:hover, .--wobbleX:focus, .--wobbleX:active {
+  -webkit-animation-name: --wobbleX;
+  animation-name: --wobbleX;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
