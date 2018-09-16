@@ -24,6 +24,7 @@
       })();
     </script>
     <link rel="icon" href="../fluidicon.png">
+    <!-- <link rel="stylesheet" href="../css/animate.css"> -->
     <link rel="stylesheet" href="../css/bootstraps.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
 		<link rel="stylesheet" href="../css/fa/css/all.css">
@@ -46,6 +47,15 @@
         Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
+
+    <!-- LOADER -->
+    <div id="preloader">
+      <div class="loader">
+        <!-- <img src="../loader.svg"> -->
+        <img src="../img/preloader.gif">
+        <span>Please wait, loading...</span>
+      </div>
+    </div>
 
     <!-- BANNER -->
     <header class="container-fluid bg-white">
@@ -326,6 +336,7 @@
               <div class="linear-divider my-3"></div>
 
               <div class="slideshow compact-paragraphs px-1 px-md-3 bg-white-67">
+              <!-- <div class="owl-carousel-fullwidth owl-theme compact-paragraphs px-1 px-md-3"> -->
 
                 <div class="showslide">
                   <h4 class="fw-600">01.&ensp;Community GIS</h4>
@@ -335,7 +346,7 @@
                   <p>NSPDR will provide social and economic data relating to aspects of importance to communities such as; employment, wages, different job sectors, public transport, travel times, distances from work places, and demographics of workers.</p>
                   <p>The NSPDR’s dashboards can speak to a specific municipalities service provision activity and can outline the progress of a program for decision makers and other people who need to stay on top of unfolding situations.</p>
                   <p>The NSPDR will also make provision for a crowd-sourcing tool for collecting volunteered information from the public.</p>
-                  <hr class="space-4">
+                  <!-- <hr class="space-4"> -->
                 </div>
 
                 <div class="showslide">
@@ -345,7 +356,7 @@
                   <p>Municipalities will be provided with access to a portal that they will manage and be able to assign user rights and restrictions to their officials and to applicants.</p>
                   <p>Applicants will have the ability to register their unique profiles allowing for improved tracking and communication through email or written mail regarding their application status.</p>
                   <p>Outputs from various stages of the application process will feed into dashboards that can be used for monitoring and evaluation by management to improve turnaround times.</p>
-                  <hr class="space-4">
+                  <!-- <hr class="space-4"> -->
                 </div>
 
                 <div class="showslide">
@@ -355,17 +366,16 @@
                   <p>The NSPDR will support managers by allowing for an evidence-based approach to M&E through the provision of quantitative data relating to specific aspects of land development applications.</p>
                   <p>Municipal managers will be provided with dashboards that will allow them to monitor and track compliance within their municipality and thus be able to make improvements to their strategies.</p>
                   <p>The NSPDR will facilitate the monitoring of defined KPIs such as spatial budgets and SPLUMA compliance nationally.</p>
-                  <hr class="space-4">
+                  <!-- <hr class="space-4"> -->
                 </div>
 
-                  <div class="showslide">
+                <div class="showslide">
                   <h4 class="fw-600">04.&ensp;Planning Support</h4>
                   <p>The NSPDR Ecosystem will provide municipalities with access to spatially referenced information that is required for developing Spatial Development Frameworks (SDFs) that are representative of its unique spatial form.</p>
                   <p>The Ecosystem removes subjectivity from planning functions by allowing for a more evidence-based approach through improved access to core, reference and secondary data that is critical for effective planning.</p>
                   <p>The NSPDR will also provide offline spatial information to remote municipalities with extemely limited bandwidth/internet access.</p>
                   <p>Users will be provided with access to various planning related documents such as acts, by-laws and LUMS applications in one central place.</p>
                   <p>Planners and decision makers will have a clear reflection of the reality of the municipal spatial environment, social and economic systems, particularly related to infrastructure needs and capacity.</p>
-                  <hr class="space-4">
                 </div>
 
                 <div class="showslide">
@@ -375,7 +385,6 @@
                   <p>The NSPDR will communicate the requirements of custodians to maintain and provide metadata that describes the content, quality and condition of their spatial information as determined by SASDI.</p>
                   <p>NSPDR also supports the work of the Committee for Spatial Information (CSI), in recording gaps in terms of the ability of the custodians to provide metadata with their spatial data.</p>
                   <p>NSPDR also highlights the capacity challenges at a local/municipal level to capture and maintain metadata through feedback obtained from stakeholder engagements.</p>
-                  <hr class="space-4">
                 </div>
 
                 <div class="showslide">
@@ -384,7 +393,6 @@
                   <p>Users of the NSPDR will be provided with a large collection of high quality spatial information that has ever been preassembled covering topics such as; demographics, boundaries, elevation, soils, and climate.</p>
                   <p>Users can access this spatial information from different devices, anywhere and at any time.</p>
                   <p>The spatial information will constantly be growing and changing as maps, apps, and layers are added or updated by the registered users of the system or the system administrators.</p>
-                  <hr class="space-4">
                 </div>
 
                 <div class="showslide">
@@ -400,7 +408,6 @@
                   <p>Big data can help organisations make more informed business decisions.</p>
                   <p>The Ecosystem will have capability to support big data analytics by providing ArcGIS tools that allow users to analyse patterns and aggregate data in the context of both space and time.</p>
                   <p>Users are offered ability to play with large scale datasets pertaining to topics such as the number of emergency phone calls accumulated within specific municipal boundary over a decade.</p>
-                  <hr class="space-4">
                 </div>
 
                 <div class="showslide">
@@ -518,9 +525,12 @@
                       &ensp;<i class="fa fa-sm fa-chevron-left"></i> <i class="fa fa-sm fa-chevron-left"></i> <i class="fa fa-sm fa-chevron-left"></i>&ensp;
                     </a>
                   </li>
-                  <li class="page-item disabled">
-                    <!-- <a class="page-link fw-700">&emsp;<i class="fa fa-asterisk"></i>&emsp;</a> -->
-                    <a class="page-link fw-700">&ensp;<i class="fa fa-asterisk"></i>&ensp;</a>
+                  <!-- <li class="page-item disabled">
+                    <a class="page-link fw-700"> -->
+                  <li class="page-item">
+                    <a class="page-link dot fw-700" role="button" onclick="currentSlide(1)">
+                      &ensp;<i class="fa fa-asterisk"></i>&ensp;
+                    </a>
                   </li>
                   <li class="page-item">
                     <a class="page-link arrow" role="button" onclick="plusSlides(1)">
@@ -739,20 +749,23 @@
           loop:true,
           margin:24,
           // nav:true,
+          dots:true,
           // autoWidth:true,
           // autoHeight:true,
           responsive:{
             0:{
               items:1,
-              nav:false,
+              // nav:false,
+              dots:true,
             },
             480:{
               items:2,
-              nav:false,
+              // nav:false,
+              dots:true,
             },
             768:{
               items:4,
-              // nav:true,
+              dots:true,
             },
             // 992:{
             //   items:5,
@@ -765,13 +778,29 @@
         })
         owl.on('mousewheel', '.owl-stage', function(e) {
           if (e.deltaY > 0) {
-            owl.trigger('next.owl');
-          } else {
             owl.trigger('prev.owl');
+          } else {
+            owl.trigger('next.owl');
           }
           e.preventDefault();
         });
       });
+      // var owl1 = $('.owl-carousel-fullwidth');
+      //     owl1.owlCarousel({
+      //     items:1,
+      //     loop:true,
+      //     center:true,
+      //     margin:0,
+      //     responsiveClass:true,
+      //     nav:false,
+      //     dots:true,
+      //     smartSpeed:500,
+      //     autoWidth:true,
+      //     autoHeight:true,
+      //     autoplay:true,
+      //     autoplayTimeout:3000,
+      //     autoplayHoverPause:true,
+      // });
     </script>
 
     <script>
