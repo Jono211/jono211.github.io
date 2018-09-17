@@ -521,7 +521,8 @@
               <div class="linear-divider my-3"></div>
 
               <div class="slideshow compact-paragraphs px-1 px-md-3 bg-white-67">
-                <div class="showslide --change">
+
+                <div class="showslide">
                   <h4 class="fw-600">01.&ensp;Community GIS</h4>
                   <p>Community GIS mapping aims to tell a community’s story in a vibrant and visual way.</p>
                   <p>It highlights the rich array of community activities and makes them visible and accessible to people by providing spatial information linked to photographs and relevant data.</p>
@@ -529,9 +530,8 @@
                   <p>NSPDR will provide social and economic data relating to aspects of importance to communities such as; employment, wages, different job sectors, public transport, travel times, distances from work places, and demographics of workers.</p>
                   <p>The NSPDR’s dashboards can speak to a specific municipalities service provision activity and can outline the progress of a program for decision makers and other people who need to stay on top of unfolding situations.</p>
                   <p>The NSPDR will also make provision for a crowd-sourcing tool for collecting volunteered information from the public.</p>
-                  <!-- <hr class="space-4"> -->
                 </div>
-                <div class="showslide --change">
+                <div class="showslide">
                   <h4 class="fw-600">02.&ensp;Electronic Lodgement</h4>
                   <p>NSPDR supports the electronic lodgement of applications and supporting documents relating to land development applications at a municipal level.</p>
                   <p>The NSPDR will enable municipalities not only to receive, but to also consider and process land development applications electronically.</p>
@@ -539,7 +539,7 @@
                   <p>Applicants will have the ability to register their unique profiles allowing for improved tracking and communication through email or written mail regarding their application status.</p>
                   <p>Outputs from various stages of the application process will feed into dashboards that can be used for monitoring and evaluation by management to improve turnaround times.</p>
                 </div>
-                <div class="showslide --change">
+                <div class="showslide">
                   <h4 class="fw-600">03.&ensp;Monitoring and Evaluation (M&E)</h4>
                   <p>M&E is integral to the daily work of public sector officials and municipal officials at different managerial levels to evaluate effectiveness of implemented programmes.</p>
                   <p>The capacity of municipalities, national and provincial departments to perform their own M&E is increased through use of tools within NSPDR that allow for improved information management.</p>
@@ -674,8 +674,13 @@
                       &ensp;<i class="fa fa-sm fa-chevron-left"></i> <i class="fa fa-sm fa-chevron-left"></i> <i class="fa fa-sm fa-chevron-left"></i>&ensp;
                     </a>
                   </li>
-                  <li class="page-item disabled">
+                  <!-- <li class="page-item disabled">
                     <a class="page-link fw-700">&ensp;<i class="fa fa-asterisk"></i>&ensp;</a>
+                  </li> -->
+                  <li class="page-item">
+                    <a class="page-link dot fw-700" role="button" onclick="currentSlide(1)">
+                      &ensp;<i class="fa fa-asterisk"></i>&ensp;
+                    </a>
                   </li>
                   <li class="page-item">
                     <a class="page-link arrow" role="button" onclick="plusSlides(1)">
@@ -882,6 +887,8 @@
             slides[i].className = slides[i].className.replace(' active', '');
           }
         // slides[slideIndex - 1].style.display = 'block';
+				// console.log('n: ' + n)
+        // slides[slideIndex - 1].style.transform = 'tranlateX(' + Math.sign(n) * 100% + ')';
         slides[slideIndex - 1].className += ' active';
       }
     </script>
