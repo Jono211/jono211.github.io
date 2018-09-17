@@ -145,8 +145,47 @@ function displayHamburger() {
 		});
 
 		/* ----------------------------------------------------------- */
+		/*  09. Preloader
+		/* ----------------------------------------------------------- */
+		var $preloader = $('#preloader');
+		if ($preloader != null) {
+			var $loader = $preloader.find('.loader');
+			$loader.delay(2000).fadeOut();
+			$preloader.delay(2000).fadeOut('slow');
+		} else { return; }
+
+		/* ----------------------------------------------------------- */
 		/*  09. JavaScript
 		/* ----------------------------------------------------------- */
+		var animateWayPoint = function() {
+			var i = 0;
+			$('.animate-box').waypoint(function(direction) {
+				if (direction === 'down' && !$(this.element).hasClass('animated')) {
+					i++;
+					$(this.element).addClass('item-animate');
+					setTimeout(function() {
+						$('body .animate-box.item-animate').each(function(k) {
+							var el = $(this);
+							setTimeout(function() {
+								var effect = el.data('animate-effect');
+								// if (effect === 'fadeIn') {
+								// 	el.addClass('fadeIn animated');
+								// } else if (effect === 'fadeInLeft') {
+								// 	el.addClass('fadeInLeft animated');
+								// } else if (effect === 'fadeInRight') {
+								// 	el.addClass('fadeInRight animated');
+								// } else {
+								// 	el.addClass('fadeInUp animated');
+								// }
+								el.addClass(effect + ' animated');
+								el.removeClass('item-animate');
+							}, k * 200, 'easeInOutExpo');
+						});
+					}, 100);
+				}
+			}, { offset: '85%' });
+		};
+		animateWayPoint();
 
 	});
 }(jQuery));
@@ -155,3 +194,4 @@ function displayHamburger() {
 // var rellax = new Rellax('.rellax');
 try {	var rellax = new Rellax('.rellax'); }
 catch (e) {}
+
