@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <title>NSPDR&ensp;|&ensp;Testing Page</title>
+    <meta name="description" content="The National Spatial Planning Data Repository Ecosystem - Enabling Integrated Spatial Planning and Land Use Management.">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="keywords" content="NSPDR, E-Lodgement, Ecosystem, Spatial Planning, Land Use Management, Rural Development, DRDLR, SPLUMA">
+    <meta name="author" content="Agizo Solutions, on behalf of the Department of Rural Development and Land Reform">
+    <script>
+      (function() {
+        // if firefox 3.5+, hide content till load (or 3 secs) to prevent FOUT
+        var d = document, e = d.documentElement, s = d.createElement('style');
+        if (e.style.MozTransform === '') { // gecko 1.9.1 inference
+          s.textContent = 'body{visibility:hidden}';
+          var r = document.getElementsByTagName('script')[0];
+							r.parentNode.insertBefore(s, r);
+          function f() { s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load', f, false);
+          setTimeout(f, 3000);
+        }
+      })();
+    </script>
+    <link rel="icon" href="../fluidicon.png">
+    <link rel="stylesheet" href="../css/bootstraps.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+		<link rel="stylesheet" href="../css/fa/css/all.css">
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359766-1"></script>
+		<script>
+			// Google Analytics - site tag (gtag.js)
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-123359766-1');
+		</script> -->
+
+<style>
+
+#slideshow {
+  height: 28rem;
+  display: block;
+	position: relative;
+  overflow-x: hidden;
+	overflow-y: auto; }
+  @media (min-width: 576px) {
+  #slideshow { height: 26rem; } }
+  @media (min-width: 992px) {
+  #slideshow { height: 24rem; } }
+
+	#slideshow .slidetext > p {
+		color: #222 !important; }
+	#slideshow .slidetext > h4 {
+    font-weight: 600;
+		color: #465 !important; }
+	#slideshow .slidetext {
+		display: none; }
+		#slideshow .slidetext.active {
+			display: block;
+		  transition: 1s; }
+
+.slideRight {
+  -webkit-animation: slideRight 1s both;
+  animation: slideRight 1s both; }
+  @-webkit-keyframes slideRight {
+    from { opacity: 0;
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%); }
+    to { opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0); } }
+  @keyframes slideRight {
+    from { opacity: 0;
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%); }
+    to { opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0); } }
+
+.slideLeft {
+  -webkit-animation: slideLeft 1s both;
+  animation: slideLeft 1s both; }
+  @-webkit-keyframes slideLeft {
+    from { opacity: 0;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%); }
+    to { opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0); } }
+  @keyframes slideLeft {
+    from { opacity: 0;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%); }
+    to { opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0); } }
+
+.slideOne {
+  -webkit-animation: slideOne 1.2s both;
+  animation: slideOne 1.2s both; }
+  @-webkit-keyframes slideOne {
+    from { opacity: 0;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); }
+    to { opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0); } }
+  @keyframes slideOne {
+    from { opacity: 0;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); }
+    to { opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0); } }
+
+#slideshow + .controls-container {
+  border-top: 1px solid #ccc;
+  padding-top: 1.5rem; }
+  #slideshow + .controls-container .middle,
+  #slideshow + .controls-container .arrows {
+    cursor: pointer;
+    -webkit-transition: color, background-color, .6s ease;
+    -o-transition: color, background-color, .6s ease;
+    transition: color, background-color, .6s ease; }
+    #slideshow + .controls-container .arrows:hover {
+      background-color: #f96332;
+      color: #fafafa !important; }
+    #slideshow + .controls-container .middle:hover {
+      background-color: #ffb236;
+      color: #4d4d4d !important; }
+
+
+#rdlr-banner img {
+  height: 84px !important;
+  width: auto; }
+
+</style>
+
+	</head>
+  <body id="top" class="bg-linear3">
+		<!--[if lte IE 9]>
+				<p class="upgrade-browser">
+          You are using an <strong>outdated</strong> browser.&nbsp; 
+          Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+		<![endif]-->
+
+    <!-- BANNER -->
+    <header class="container-fluid bg-white">
+      <div class="container">
+        <!-- <div class="row p-2">
+          <div class="col-sm-8 pl-1"><div id="drdlr-logo"></div></div>
+          <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-flag"></div></div>
+        </div> -->
+        <div class="row py-2">
+          <div class="col-12 no-gutters" id="rdlr-banner">
+            <img class="float-left pl-3 pull-left" src="../img/logos/drdlr-logo.png" alt="DRDLR">
+            <img class="float-right p-2 hide-on-mobile" src="../img/logos/sa-flag.png" alt="RSA">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-spatial navbar-shadow">
+      <div class="container">
+        <a id="scrollContext" class="navbar-brand acronym-icon swing" href="#" title="National Spatial Planning Data Repository">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-256.png" alt="NSPDR Brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle Navigation" onclick="displayHamburger()">
+          <span class="navbar-toggler-icon override">
+            <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigator">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="news.html">News</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-2"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider d-none d-md-block"></div>
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
+								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &nbsp;&ctdot;</span></a>
+                <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item" href="resources.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+              </div>
+            </li>
+          </ul>
+          <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
+            <a id="display-count" title="“T”-minus" href="../index.html#nspdr-countdown">nspdr.info</a>
+          </span>
+          <form class="form-inline mt-2 mt-md-0 pr-1">
+            <a class="btn btn-outline-light opaque-75 mr-1 my-2 my-md-0" href="contact.html"><small>CONTACT</small>&nbsp;<i class="fa fa-sm fa-phone"></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-hero mask-25 rellax" data-rellax-speed="-4">
+      <div class="hero-header base-filter" style="background-image:url('../img/views/boland-landscape-960x472.jpg')">
+        <div class="container clear-filter">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
+              <!-- <img class="img-fluid png-shadows opaque-90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/inner-outline.png" alt="NSPDR"> -->
+              <img class="img-fluid png-shadows opaque-90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/inners-iconic.png" alt="NSPDR">
+            </div>
+            <!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto">
+              <img class="img-fluid png-shadows opaque-90 pull-up1 p-md-3 p-xl-2 d-none d-md-block rellax" data-rellax-speed="2" src="../img/logos/inners-square.png" alt="NSPDR Ecosystem">
+              <img class="img-fluid png-shadows opaque-75 pull-up1 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-1" src="../img/logos/inners-square.png" alt="NSPDR Ecosystem">
+            </div> -->
+            <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
+              <div class="row text-left">
+                <!-- <div class="col-12"><h1 class="showcase text-white opaque-90 fw-600">integrated</h1></div>
+                <div class="col-12"><h2 class="showcase text-white opaque-75">Spatial Planning</h2></div> -->
+                <!-- <div class="col-12"><h2 class="showcase text-white opaque-90 fw-700">N.S.P.D.R.</h2></div> -->
+                <div class="col-12">
+                  <img class="img-fluid opaque-90 mb-4" src="../img/logos/acronym-lite.png" alt="NSPDR" style="height:75px">
+                </div>
+                <div class="col-12">
+                  <!-- <img class="img-fluid opaque-85 mt-4" src="../img/title-elodgement.png" alt="E-Lodgement" style="height:105px"> -->
+                  <img class="img-fluid opaque-85 mt-4" src="../img/title-elodgement.png" alt="E-Lodgement">
+                  <!-- <h1 class="showcase text-white opaque-75 fw-600">ecosystem</h1> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTENT -->
+    <main class="nspdr-background --raised circular top-greyy">
+      <article class="bg-honeycomb force-radius">
+
+      <section class="segment pb-1" draggable="true">
+        <div class="container pt-3 pt-sm-4">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-11">
+		          <div class="text-center">
+		            <h1 class="showcase text-nspdr1">slideshow <br class="d-inline d-md-none"><span class="text-nspdr2">viewer</span></h1>
+		          </div>
+	          </div>
+	        </div>
+		      <div class="row justify-content-center">
+			      <div class="col-11 col-md-10">
+		          <div class="special-divider my-2 my-md-4"></div>
+	          </div>
+	        </div>
+        </div>
+      </section>
+
+      <!-- <div class="container"><div class="container"><hr class="dark mx-5"></div></div> -->
+
+      <section class="segment --headers" draggable="true">
+	      <div class="container">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-10">
+
+              <div class="text-center">
+                <h2 class="display-5 expanded-3 fw-300 text-nspdr3 mini-shadow">BENEFITS OF NSPDR</h2>
+                <div class="special-divider my-3 mb-4"></div>
+              </div>
+
+              <div id="slideshow" class="compact-paragraphs px-1 px-md-3">
+
+                <div class="slidetext">
+                  <h4>01.&ensp;Community GIS</h4>
+                  <p>Community GIS mapping aims to tell a community’s story in a vibrant and visual way.</p>
+                  <p>It highlights the rich array of community activities and makes them visible and accessible to people by providing spatial information linked to photographs and relevant data.</p>
+                  <p>The NSPDR Ecosystem will help users visually communicate their future development needs to support more accurate planning and development of infrastructure in communities.</p>
+                  <p>NSPDR will provide social and economic data relating to aspects of importance to communities such as; employment, wages, different job sectors, public transport, travel times, distances from work places, and demographics of workers.</p>
+                  <p>The NSPDR’s dashboards can speak to a specific municipalities service provision activity and can outline the progress of a program for decision makers and other people who need to stay on top of unfolding situations.</p>
+                  <p>The NSPDR will also make provision for a crowd-sourcing tool for collecting volunteered information from the public.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>02.&ensp;Electronic Lodgement</h4>
+                  <p>NSPDR supports the electronic lodgement of applications and supporting documents relating to land development applications at a municipal level.</p>
+                  <p>The NSPDR will enable municipalities not only to receive, but to also consider and process land development applications electronically.</p>
+                  <p>Municipalities will be provided with access to a portal that they will manage and be able to assign user rights and restrictions to their officials and to applicants.</p>
+                  <p>Applicants will have the ability to register their unique profiles allowing for improved tracking and communication through email or written mail regarding their application status.</p>
+                  <p>Outputs from various stages of the application process will feed into dashboards that can be used for monitoring and evaluation by management to improve turnaround times.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>03.&ensp;Monitoring and Evaluation (M&E)</h4>
+                  <p>M&E is integral to the daily work of public sector officials and municipal officials at different managerial levels to evaluate effectiveness of implemented programmes.</p>
+                  <p>The capacity of municipalities, national and provincial departments to perform their own M&E is increased through use of tools within NSPDR that allow for improved information management.</p>
+                  <p>The NSPDR will support managers by allowing for an evidence-based approach to M&E through the provision of quantitative data relating to specific aspects of land development applications.</p>
+                  <p>Municipal managers will be provided with dashboards that will allow them to monitor and track compliance within their municipality and thus be able to make improvements to their strategies.</p>
+                  <p>The NSPDR will facilitate the monitoring of defined KPIs such as spatial budgets and SPLUMA compliance nationally.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>04.&ensp;Planning Support</h4>
+                  <p>The NSPDR will provide municipalities with access to spatially referenced information that is required for developing Spatial Development Frameworks (SDFs) that are representative of its unique spatial form.</p>
+                  <p>The ecosystem removes subjectivity from planning functions by allowing for a more evidence-based approach through improved access to core, reference and secondary data that is critical for effective planning.</p>
+                  <p>The NSPDR will also provide offline spatial information to remote municipalities with extemely limited bandwidth/internet access.</p>
+                  <p>Users will be provided with access to various planning related documents such as acts, by-laws and LUMS applications in one central place.</p>
+                  <p>Planners and decision makers will have a clear reflection of the reality of the municipal spatial environment, social and economic systems, particularly related to infrastructure needs and capacity.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>05.&ensp;Metadata (data about data)</h4>
+                  <p>The SDI requires that all custodians make metadata available with their spatial data and make it available to the department for use in the Electronic Metadata Catalogue (EMC).</p>
+                  <p>The NSPDR will support the provision of metadata from participating custodians to the department through its proposal to integrate with SASDI’s EMC.</p>
+                  <p>The NSPDR will communicate the requirements of custodians to maintain and provide metadata that describes the content, quality and condition of their spatial information as determined by SASDI.</p>
+                  <p>NSPDR also supports the work of the Committee for Spatial Information (CSI), in recording gaps in terms of the ability of the custodians to provide metadata with their spatial data.</p>
+                  <p>NSPDR also highlights the capacity challenges at a local/municipal level to capture and maintain metadata through feedback obtained from stakeholder engagements.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>06.&ensp;Living Atlas</h4>
+                  <p>One of the primary goals of the Living Atlas is to make the best information easy to discover and use through Esri’s ArcGIS Online application which is built in to the NSPDR Ecosystem.</p>
+                  <p>Users of the NSPDR will be provided with a large collection of high quality spatial information that has ever been preassembled covering topics such as; demographics, boundaries, elevation, soils, and climate.</p>
+                  <p>Users can access this spatial information from different devices, anywhere and at any time.</p>
+                  <p>The spatial information will constantly be growing and changing as maps, apps, and layers are added or updated by the registered users of the system or the system administrators.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>07.&ensp;Distributed Database Systems</h4>
+                  <p>Concept of distributed describes a set of databases stored on multiple computers that appears to applications as a single database.</p>
+                  <p>NSPDR will support distributed processing by allowing application to distribute its tasks among different computers in a network.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>08.&ensp;Big Data Analytics</h4>
+                  <p>Big data analytics is the process of examining large and varied datasets to uncover hidden patterns, unknown correlations, market trends, customer preferences and other useful information.</p>
+                  <p>Big data can help organisations make more informed business decisions.</p>
+                  <p>The NSPDR will have capability to support big data analytics by providing ArcGIS tools that allow users to analyse patterns and aggregate data in the context of both space and time.</p>
+                  <p>Users are offered ability to play with large scale datasets pertaining to topics such as the number of emergency phone calls accumulated within specific municipal boundary over a decade.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>09.&ensp;Creating New Data from Artificial Intelligence</h4>
+                  <p>Concept of artificial intelligence generally refers to ability of machines to use language, form abstractions and concepts and solve kinds of problems now reserved for humans.</p>
+                  <p>It speaks to technologies that allow us to ask a computer questions, sit back while semi-autonomous cars negotiate traffic and make use of handheld devices to translate speech or printed text across most languages.</p>
+                  <p>Through the use of artificial intelligence, correlations can be rapidly detected by combing through a lot of statistical data to answer specific questions.</p>
+                  <p>Thereby new data is generated that allows human beings to be able to predict the outcomes.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>10.&ensp;Analysing Settlement Patterns</h4>
+                  <p>Settlement patterns refer to the distribution of human activities across a country and the spatial relationship between these activities.</p>
+                  <p>There is a specific need for high resolution input demographic data that can provide enough detail to quantify rural settlement patterns and thus accurately measure population concentrations and accessibility.</p>
+                  <p>Popular research approaches require contemporary population count data to be combined with detailed satellite-derived settlement extents to map population distribution at a finer resolution.</p>
+                  <p>The NSPDR will support this approach by supplying the user with high-resolution imagery and land cover information from various custodians as well as a set of geoprocessing tools to determine extents of interest areas.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>11.&ensp;Rapid Response Report Generation</h4>
+                  <p>Rapid response functionality provides high-speed text or email notifications to public officials, municipalities or communities so long as there is a database or contact list provided through an opt-in web service to the ArcGIS platform.</p>
+                  <p>Through web mapping, the user can select one or more alert areas and view citizen information via online aerial or hybrid maps.</p>
+                  <p>The NSPDR supports this functionality for rapid response notification through its dashboards and the municipal reporter.</p>
+                  <p>System administrators will be able to share reports generated from dashboards and the reporter with thousands of officials within the municipalities in a matter of minutes.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>12.&ensp;The Science of Where&trade;</h4>
+                  <p>The Science of Where&trade; is the science of digital transformation; the science of exploration and navigation; the science of commerce and ecology.</p>
+                  <p>It speaks to the mission of Esri to offer the most high-powered, high-performance mapping and analytics capabilities in the world.</p>
+                  <p>From a NSPDR perspective, this vision is supported by streamlining of spatial analysis of geographic and enterprise data through intuitive maps, charts, and graphs built on the Esri platforms.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>13.&ensp;No Charge E-Learning (MOOC)</h4>
+                  <p>MOOC refers to a course of study made available over the internet without charge to a very large number of people.</p>
+                  <p>Anyone who decides to take a MOOC simply logs on to the website and signs up.</p>
+                  <p>NSPDR will provide its registered users with free training on the e&NoBreak;-&NoBreak;learning portal.</p>
+                  <p>The e-learning portal is dedicated to help create and achieve a learning environment that appeals to all learning levels where the learner can confidently understand the training material presented on the platform.</p>
+                  <p>The e-learning portal supports self-paced learning by allowing users to proceed from one module to the next based on their own learning speed.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>14.&ensp;Support for Municipalities with Power to Plan</h4>
+                  <p>The NSPDR will enable sharing of spatial planning information and data across all spheres of government and the private sector and will aid municipalities in spatial planning and land use management.</p>
+                  <p>It will help in facilitating effective and efficient collaboration amongst national government/sector departments to foster alignment of their programs and budgets to planning needs identified in the PGDP/PSDF/SDF/IDP processes.</p>
+                  <p>The ecosystem will save municipalities time where people involved with spatial planning are dispersed through use of E&NoBreak;-&NoBreak;Lodgement which reduces the time spent by employees on manually tracking and tracing planning applications.</p>
+                  <p>The NSPDR Ecosystem will provide guidance for the municipality’s LUMS.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>15.&ensp;Field GIS Using Collector for Community GIS</h4>
+                  <p>Maps produced from GIS data provided through the ecosystem, that is collected through GPS’s and surveys can be used to depict relationships and significant hotspots within communities.</p>
+                  <p>GIS maps which can be produced on the ecosystem are more user-friendly than other forms of data presentation, helping community-based organisations to understand community data and facilitating a better understanding of the community.</p>
+                  <p>Community assessment conducted through data collection is an integral component of communities which show relationships between health, individual geographic locations, population numbers, etc.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>16.&ensp;Support for SASDI-EMC</h4>
+                  <p>In terms of the SDI Act (Act 54 of 2003) the SASDI-EMC holds metadata records for all government spatial information.</p>
+                  <p>The NSPDR Ecosystem supports the objectives of SASDI to eliminate duplications in the capturing of data by improving access, discovery, retrieval and sharing of spatial information.</p>
+                  <p>The NSPDR will make collected spatial information from government custodians available together with linkage to the SASDI-EMC for metadata capturing.</p>
+                  <p>Custodians of data who enter into data sharing partnerships with the NSPDR Ecosystem will be required to provide all associated metadata in prescribed format on the SASDI-EMC.</p>
+                  <p>The NSPDR will have capacity to have an automated Electronic Data Interchange to SASDI catalogue services for store, search, discovery and querying of metadata that is compliant with the SDI Act.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>17.&ensp;SPLUMA Understanding</h4>
+                  <p>In 2013, SPLUMA was signed into law and became South Africa’s principle policy and legislative framework guiding spatial planning and land use management and its objective is thus to provide for a uniform, effective and comprehensive system of spatial planning and land use management, that promotes social and economic inclusion and its referred to for the development of the NSPDR Ecosystem project.</p>
+                  <p>The NSPDR was developed using guidelines from SPLUMA (Act 16 of 2015) which speaks to: SPLUMA regulations, provincial spatial planning and land use management legislation, municipal spatial planning and land use management by-law and the municipal land use scheme and spatial development framework.</p>
+                  <p>The NSPDR Ecosystem will enable sharing of spatial planning information and data across all spheres of government and the private sector to support integrated planning and land use management.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>18.&ensp;Historical Archive</h4>
+                  <p>Archiving in ArcGIS provides the functionality to record and access changes made to all or a subset of data in a geodatabase and the NSPDR can archive such data as it is hosted on the ArcGIS platform.</p>
+                  <p>An historical version represents the data at a specific moment in time and provides a read-only representation of the geodatabase and tools available in ArcGIS offer users the ability to easily investigate change to the data.</p>
+                  <p>Adding the archive class directly to ArcMap allows users to perform queries to explore how the data has evolved over time and the NSPDR provides such tools.</p>
+                  <p>Archiving allows users to connect to an historical version in a form of shapefiles or file geodatabases, as well as allowing historical versions to be updated.</p>
+                </div>
+                <div class="slidetext">
+                  <h4>19.&ensp;Open Source Software Packages</h4>
+                  <p>Open source software is computer software with its source code made available with a licence in which the copyright holder proved the rights to study change and distribute the software to any user.</p>
+                  <p>It’s a prominent example of open collaboration as it allows users in a particular field to develop and build upon their skills/expertise to advance a certain cause for the benefit of the broader user community.</p>
+                  <p>The NSPDR will support this concept through developmental adherence to open source standards such as the Open Geospatial Consortium (OGC).</p>
+                </div>
+                <div class="slidetext">
+                  <h4>20.&ensp;Image Rendering</h4>
+                  <p>Analysis of spatial information require visualisation the data and the spatial frame of data which is often depicted in 2D map or sometimes in a 3D representation of the terrain.</p>
+                  <p>The NSPDR supports the rendering of 2D and 3D geographic information through the ArcGIS platform.</p>
+                  <p>Terrain rendering techniques are useful for improving perception of spatial features and depth cues through means of drawing, shading or textures.</p>
+                  <p>Processing times in rendering will be determined by application programming interfaces available on the windows operating system as well as hardware capabilities of computer systems.</p>
+                </div>
+              </div>
+
+              <div class="controls-container">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link arrows" role="button" onclick="leftOrRight(-1,2)">
+                      &ensp;<i class="fa fa-sm fa-chevron-left"></i> <i class="fa fa-sm fa-chevron-left"></i> <i class="fa fa-sm fa-chevron-left"></i>&ensp;
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link middle fw-700" role="button" title="#1" onclick="firstSlide()">
+                      &ensp;<i class="fa fa-search"></i>&ensp;
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link arrows" role="button" onclick="leftOrRight(1,1)">
+                      &ensp;<i class="fa fa-sm fa-chevron-right"></i> <i class="fa fa-sm fa-chevron-right"></i> <i class="fa fa-sm fa-chevron-right"></i>&ensp;
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+	        	</div>
+	        </div>
+        </div>
+      </section>
+
+      <hr class="space-5">
+      </article>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="nspdr-footer" id="end">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-4">
+		        <div class="copyright float-sm-left text-sm-left">
+		          &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
+		        </div>
+	        </div>
+          <div class="col-auto col-sm-6 col-lg-4 order-lg-3">
+		        <div class="float-sm-right text-sm-right">
+		          <ul class="underline-on-hover sibling-fade">
+		            <li><a href="../index.html">Home</a></li>
+		            <li><a href="news.html">News</a></li>
+		            <li><a href="about.html">About</a></li>
+		            <li><a href="privacy.html">Terms</a></li>
+		          </ul>
+		        </div>
+      		</div>
+          <div class="col-12 col-md-8 col-lg-4 order-lg-2">
+		        <div class="pt-2 pt-md-1 pt-lg-0">
+		          <ul class="social-media">
+		            <li class="--facebook"><a href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" target="_blank" class="fab fa-facebook-f" title="Facebook"></a></li>
+		            <li class="--twitter"><a href="https://twitter.com/DRDLR_online" target="_blank" class="fab fa-twitter" title="Twitter"></a></li>
+		            <li class="--instagram"><a href="https://www.instagram.com/drdlr_sa" target="_blank" class="fab fa-instagram" title="Instagram"></a></li>
+		            <li class="--youtube"><a href="https://www.youtube.com/user/DRDLROnline" target="_blank" class="fab fa-youtube" title="YouTube"></a></li>
+		          </ul>
+		        </div>
+	        </div>
+      	</div>
+      </div>
+
+			<i id="scroll-to-top" title="Scroll Top" class="fa fa-2x fa-caret-square-up"></i>
+			<i id="debug-grid" title="Debugger" class="debug-icon visible fa fa-2x fa-bug"></i>
+			<i id="point-breaks" class="media-breakpoint swing  d-none fa fa-sm fa-tv">&nbsp;</i>
+    </footer>
+
+    <!-- =========== JavaScript ===========  -->
+    <!-- Placed at end so pages load faster. -->
+    <script src="../js/modernizr.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/rellax.min.js"></script>
+    <script src="../js/twbsmd-popper.min.js"></script>
+    <script src="../js/nspdr-javascript.js"></script>
+
+    <script>
+      var slideNdx = 1; handleSlides(slideNdx);
+      function firstSlide() { handleSlides(slideNdx = 1); }
+      function leftOrRight(n, a) { handleSlides(slideNdx += n,a); }
+      function handleSlides(n, a) {
+        // var slides = document.getElementsByClassName('slidetext');
+		    var slides = $('#slideshow .slidetext');
+        // some weirdness is happening here, so bail.
+        if (slides.length == 0) { return; }
+        if (n > slides.length) { slideNdx = 1; }
+        if (n < 1) { slideNdx = slides.length; }
+        var arr = ['active ','slideRight','slideLeft','slideOne'];
+        for (var i = 0; i < slides.length; i++) {
+          for (var x = 0; x < arr.length; x++) {
+            $(slides[i]).removeClass(arr[x]);
+          }
+        }
+        if (a === undefined) a = 3;
+        // $(slides[slideNdx - 1]).addClass(arr[0]).addClass(arr[a]);
+        $(slides[slideNdx - 1]).addClass(arr[0] + arr[a]);
+        // if (b == true) {
+        //   $(slides[slideNdx - 1]).addClass(arr[1]);
+        // } else if (b == false) {
+        //   $(slides[slideNdx - 1]).addClass(arr[2]);
+        // } else {
+        //   $(slides[slideNdx - 1]).addClass(arr[3]);
+        //   // slides[slideNdx - 1].className += ' active slideOne';
+        // }
+      }
+    </script>
+
+  </body>
+</html>

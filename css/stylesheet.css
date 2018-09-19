@@ -1038,6 +1038,8 @@ hr[class^='space-'] {
 .bg-rural { background-color: #fc6 !important; }
 .bg-geois { background-color: #597 !important; }
 
+.bg-nspdr22 { background-color: #a73 !important; }
+
 .bg-spatial {
   background: #0f5c29; /* fallback */
   background: -webkit-gradient(linear, left top, right top, from(#163), to(#284)) !important;
