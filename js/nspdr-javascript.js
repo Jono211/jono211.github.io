@@ -157,35 +157,35 @@ function displayHamburger() {
 		/* ----------------------------------------------------------- */
 		/*  09. JavaScript
 		/* ----------------------------------------------------------- */
-		var animateWayPoint = function() {
-			var i = 0;
-			$('.animate-box').waypoint(function(direction) {
-				if (direction === 'down' && !$(this.element).hasClass('animated')) {
-					i++;
-					$(this.element).addClass('item-animate');
-					setTimeout(function() {
-						$('body .animate-box.item-animate').each(function(k) {
-							var el = $(this);
-							setTimeout(function() {
-								var effect = el.data('animate-effect');
-								// if (effect === 'fadeIn') {
-								// 	el.addClass('fadeIn animated');
-								// } else if (effect === 'fadeInLeft') {
-								// 	el.addClass('fadeInLeft animated');
-								// } else if (effect === 'fadeInRight') {
-								// 	el.addClass('fadeInRight animated');
-								// } else {
-								// 	el.addClass('fadeInUp animated');
-								// }
-								el.addClass(effect + ' animated');
-								el.removeClass('item-animate');
-							}, k * 200, 'easeInOutExpo');
-						});
-					}, 100);
-				}
-			}, { offset: '85%' });
-		};
-		animateWayPoint();
+		// var animateWayPoint = function() {
+		// 	var i = 0;
+		// 	$('.animate-box').waypoint(function(direction) {
+		// 		if (direction === 'down' && !$(this.element).hasClass('animated')) {
+		// 			i++;
+		// 			$(this.element).addClass('item-animate');
+		// 			setTimeout(function() {
+		// 				$('body .animate-box.item-animate').each(function(k) {
+		// 					var el = $(this);
+		// 					setTimeout(function() {
+		// 						var effect = el.data('animate-effect');
+		// 						// if (effect === 'fadeIn') {
+		// 						// 	el.addClass('fadeIn animated');
+		// 						// } else if (effect === 'fadeInLeft') {
+		// 						// 	el.addClass('fadeInLeft animated');
+		// 						// } else if (effect === 'fadeInRight') {
+		// 						// 	el.addClass('fadeInRight animated');
+		// 						// } else {
+		// 						// 	el.addClass('fadeInUp animated');
+		// 						// }
+		// 						el.addClass(effect + ' animated');
+		// 						el.removeClass('item-animate');
+		// 					}, k * 200, 'easeInOutExpo');
+		// 				});
+		// 			}, 100);
+		// 		}
+		// 	}, { offset: '85%' });
+		// };
+		// animateWayPoint();
 
 	});
 }(jQuery));
@@ -195,3 +195,11 @@ function displayHamburger() {
 try {	var rellax = new Rellax('.rellax'); }
 catch (e) {}
 
+try {
+	// new WOW().init();
+	var wow = new WOW({
+		offset: 10, 	 // distance to element when triggering  (default is 0)
+		mobile: false, // trigger animations on mobile devices (default is true)
+	});
+	wow.init();	}
+catch (e) {}
