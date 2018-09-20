@@ -3106,6 +3106,17 @@ ul.underline-on-hover li a {
 .measure-wide   { max-width: 56rem; }
 .measure-narrow { max-width: 32rem; }
 
+.svg-container {
+	/* width: 2rem;
+	height: 2rem; */
+  width: 100%;
+  /* height: 100%; */
+  height: auto;
+	position: relative; }
+  /* .svg-container > svg {
+    top: 0; left: 0;
+    position: absolute; } */
+
 
 
 /* ----------------------------------------------
