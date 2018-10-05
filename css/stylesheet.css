@@ -1042,10 +1042,10 @@ hr[class^='space-'] {
 
 .bg-spatial {
   background: #0f5c29; /* fallback */
-  background: -webkit-gradient(linear, left top, right top, from(#163), to(#284)) !important;
-  background: -webkit-linear-gradient(left, #163, #284) !important;
-  background: -o-linear-gradient(left, #163, #284) !important;
-  background: linear-gradient(to right, #163, #284) !important; }
+  background: -webkit-gradient(linear, left top, right top, from(#0f5c29), to(#237534)) !important;
+  background: -webkit-linear-gradient(left, #0f5c29, #237534) !important;
+  background: -o-linear-gradient(left, #0f5c29, #237534) !important;
+  background: linear-gradient(to right, #0f5c29, #237534) !important; }
 
 .text-black    { color: #111 !important; }
 .text-tertiary { color: #4e545a !important; }
