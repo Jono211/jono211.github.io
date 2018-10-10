@@ -150,8 +150,8 @@ function displayHamburger() {
 		var $preloader = $('#preloader');
 		if ($preloader != null) {
 			var $loader = $preloader.find('.loader');
-			$loader.delay(2000).fadeOut();
-			$preloader.delay(2000).fadeOut('slow');
+			$loader.delay(1750).fadeOut();
+			$preloader.delay(1750).fadeOut('slow');
 		} else { return; }
 
 		/* ----------------------------------------------------------- */
