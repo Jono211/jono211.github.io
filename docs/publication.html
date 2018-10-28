@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <title>NSPDR&ensp;|&ensp;Project Publication</title>
+    <meta name="description" content="The National Spatial Planning Data Repository Ecosystem - Enabling Integrated Spatial Planning and Land Use Management.">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="keywords" content="NSPDR, E-Lodgement, Ecosystem, Spatial Planning, Land Use Management, Rural Development, DRDLR, SPLUMA">
+    <meta name="author" content="Agizo Solutions, on behalf of the Department of Rural Development and Land Reform">
+    <script>
+      (function() {
+        // if firefox 3.5+, hide content till load (or 3 secs) to prevent FOUT
+        var d = document, e = d.documentElement, s = d.createElement('style');
+        if (e.style.MozTransform === '') { // gecko 1.9.1 inference
+          s.textContent = 'body{visibility:hidden}';
+          var r = document.getElementsByTagName('script')[0];
+							r.parentNode.insertBefore(s, r);
+          function f() { s.parentNode && s.parentNode.removeChild(s); }
+          addEventListener('load', f, false);
+          setTimeout(f, 3000);
+        }
+      })();
+    </script>
+    <link rel="icon" href="../fluidicon.png">
+    <link rel="stylesheet" href="../css/bootstraps.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+		<link rel="stylesheet" href="../css/fa/css/all.css">
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359766-1"></script>
+		<script>
+			// Google Analytics - site tag (gtag.js)
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-123359766-1');
+		</script> -->
+		<style>
+			#publication h2 {
+				font-weight: 300;
+				margin-bottom: 1.5rem;
+				color: #964 !important; }
+			#publication h3 {
+				font-weight: 400;
+				margin-bottom: 1rem;
+				color: #365 !important; }
+			#publication figcaption {
+				letter-spacing: .1rem;
+				text-align: center;
+				font-size: .875rem;
+				font-weight: 600;
+				color: #546; }
+		</style>
+	</head>
+  <body id="top" class="bg-linear">
+		<!--[if lte IE 9]>
+				<p class="upgrade-browser">
+          You are using an <strong>outdated</strong> browser.&nbsp; 
+          Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+		<![endif]-->
+
+    <!-- LOADER -->
+    <div id="preloader"><div class="loader"><img src="../img/preloader.gif"></div></div>
+
+    <!-- BANNER -->
+    <header class="container-fluid bg-white">
+      <div class="container">
+        <div class="row p-2">
+          <div class="col-sm-8 pl-1"><div id="drdlr-logo"></div></div>
+          <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-flag"></div></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-spatial navbar-shadow">
+      <div class="container">
+        <a id="scrollContext" class="navbar-brand acronym-icon swing" href="#" title="National Spatial Planning Data Repository">
+          <img class="png-shadow pb-1" src="../img/logos/acronym-256.png" alt="NSPDR Brand">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle Navigation" onclick="displayHamburger()">
+          <span class="navbar-toggler-icon override">
+            <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigator">
+          <ul class="navbar-nav --menu mr-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link pr-md-3" href="news.html">News</a></li>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About<i class="fa fa-sm fa-angle-down ml-2"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
+								<div class="dropdown-divider d-none d-md-block"></div>
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
+                <!-- <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-building mr-3"></i>Enabling SPLUMA</a> -->
+								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &nbsp;&ctdot;</span></a>
+                <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item active" href="#top" title="You are here!">
+                  <i class="fa fa-sm fa-flag mr-3"></i>Project Publication<span class="sr-only">(current)</span>
+                </a>
+                <a class="dropdown-item" href="resources.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+              </div>
+            </li>
+          </ul>
+          <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
+            <a id="display-count" title="“T”-minus" href="../index.html#nspdr-countdown">nspdr.info</a>
+          </span>
+          <form class="form-inline mt-2 mt-md-0 pr-1">
+            <a class="btn btn-outline-light opaque-75 mr-1 my-2 my-md-0" href="contact.html"><small>CONTACT</small>&nbsp;<i class="fa fa-sm fa-phone"></i></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="page-hero mask-25 rellax" data-rellax-speed="-4">
+      <div class="hero-header filter-01" style="background-image:url('../img/views/landscape-1280x719.jpg')">
+      <!-- <div class="hero-header filter-00" style="background-image:url('../img/views/landscape-1440x810.jpg')"> -->
+      <!-- <div class="hero-header base-filter" style="background-image:url('../img/maps/lusail-stadium-1200x738.jpg')"> -->
+        <div class="container clear-filter">
+          <div class="row justify-content-center">
+            <!-- <div class="col-12 m-auto">
+              <img class="img-fluid png-shadows opaque-75 pull-md-up2 d-none d-md-block rellax" data-rellax-speed="2" alt="NSPDR Ecosystem" src="../img/logos/inners-inline.png">
+              <img class="img-fluid png-shadows opaque-67 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-2" alt="NSPDR Ecosystem" src="../img/logos/inners-square.png">
+            </div> -->
+            <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto">
+              <img class="img-fluid png-shadows opaque-99 pull-up1 p-md-3 p-xl-2 d-none d-md-block rellax" data-rellax-speed="2" src="../img/logos/inners-square.png" alt="NSPDR Ecosystem">
+              <img class="img-fluid png-shadows opaque-99 pull-up1 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-1" src="../img/logos/inners-square.png" alt="NSPDR Ecosystem">
+            </div>
+            <!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
+              <img class="img-fluid png-shadows opaque-90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/inners-square.png" alt="NSPDR Ecosystem">
+            </div> -->
+            <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
+              <div class="row text-left">
+                <div class="col-12">
+                  <h1 class="showcase text-white opaque-85 fw-600">integrated</h1>
+                </div>
+                <div class="col-12">
+                  <h2 class="showcase text-white opaque-75">Spatial Planning</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTENT -->
+    <main class="nspdr-background --raised circular topbrown top-yello">
+      <article class="bg-honeycomb bgshippo">
+
+      <section class="segment mt-2 pb-2" draggable="true">
+	      <div class="container">
+		      <div class="row justify-content-center">
+			      <div class="col-12">
+		          <div class="text-center pt-4">
+		            <h2 class="showcase">
+                  <span class="text-nspdr11">NSPDR</span>
+                  <!-- <em class="text-nspdr22 fw-600"> &amp;&nbsp; </em> -->
+                  <!-- <span class="text-dark">E&NoBreak;-&NoBreak;Lodgement</span> -->
+                  <em class="text-midgrey fw-600"> &amp;&nbsp; </em>
+                  <span class="text-nspdr22">E&NoBreak;-&NoBreak;Lodgement</span>
+                </h2>
+		          </div>
+	          </div>
+	        </div>
+
+		      <div class="row justify-content-center">
+			      <div class="col-11 col-md-10">
+		          <div class="special-divider my-4 my-md-5"></div>
+	          </div>
+	        </div>
+	      </div>
+      </section>
+
+      <!-- <div class="container"><hr class="dark"></div> -->
+
+      <section class="segment --headers pt-0" draggable="true">
+	      <div class="container">
+		      <div class="row justify-content-center">
+			      <div class="col-12 col-md-10">
+
+							<div id="publication">
+
+								<div class="mb-5">
+									<div class="mb-4 d-none">
+										<!-- <h2 class="h1 fw-600">National Spatial Planning Data Repository &amp; E&NoBreak;-&NoBreak;Lodgement</h2> -->
+										<h2 class="display-3 fw-600"><span class="fw-700">NSPDR</span> &amp; E&NoBreak;-&NoBreak;Lodgement</h2>
+									</div>
+
+									<!-- <div class="mb-5 lead-2 text-tertiary">
+										<p class="mb-0">M Gama &bull; Dept. of Rural Development and Land Reform &bull; mfanafuti.gama@drdlr.gov.za</p>
+										<p class="mb-2">P Strydom &bull; Dept. of Rural Development and Land Reform &bull; paul.strydom@drdlr.gov.za</p>
+										<p class="mb-0">M Kangethe &bull; Agizo Solutions (Pty) Ltd., Johannesburg &bull; matheri.kangethe@agizo.co.za</p>
+										<p class="mb-0">L Mamabolo &bull; Agizo Solutions (Pty) Ltd., Johannesburg &bull; lerato.mamabolo@agizo.co.za</p>
+										<p class="mb-2">J R Cleary &bull; Agizo Solutions (Pty) Ltd., Johannesburg &bull; jonathan.cleary@agizo.co.za</p>
+										<p class="mb-0">C Guichard &bull; ESRI South Africa, Johannesburg &bull; cguichard@esri-southafrica.com</p>
+										<p class="mb-0">R Kaufholz &bull; ESRI South Africa, Johannesburg &bull; rkaufholz@esri-southafrica.com</p>
+										<p class="mb-0">N de sa Santos &bull; ESRI South Africa, Johannesburg &bull; ndesasantos@esri-southafrica.com</p>
+									</div> -->
+
+									<div class="mb-5">
+										<h4 class="h3 fw-600 text-dark">ABSTRACT</h4>
+										<p class="lead">The goal of enhancing the coordination and sharing of spatial data amongst the different spheres of government has long been a priority of the Department of Rural Development and Land Reform (DRDLR). This goal gained urgency with the passing of the Spatial Planning and Land Use Management Act (SPLUMA) in 2013, wherein the government was mandated to develop mechanisms that support and strengthen the capacity of provinces and municipalities, by adopting and implementing an effective spatial planning and land use management system. To give effect to this mandate, the DRDLR has embarked on a process to develop the National Spatial Planning Data Repository (NSPDR) and the E&NoBreak;-&NoBreak;Lodgement system to facilitate the development application process in municipalities. The NSPDR is a digital ecosystem for national spatial planning, enabling sharing of spatial planning information and data across all spheres of government and will support key objectives of the SPLUMA and the NDP.</p>
+										<p class="lead mb-1">The project aims to:</p>
+										<ul class="lead flush">
+											<li>Assist municipalities in the implementation of the SPLUM Act.</li>
+											<li>Improve integrated planning by creating an ecosystem for sharing of spatial data among various spheres of government and other state-owned entities.</li>
+											<li>Support the implementation of and compliance with multiple legislative and policy frameworks such as the NDP, PAIA and the SDI Act.</li>
+											<li>Remove subjectivity from planning functions and move towards an evidence-based approach to planning and land use management.</li>
+											<li>Develop mechanisms that facilitate effective and efficient collaboration amongst government departments, fostering alignment of their programs and budgets to the planning needs identified and specified in SDF/IDP processes</li>
+											<li>Provide a digital platform for municipalities for lodgement and processing of development applications</li>
+											<li>Facilitate the monitoring of defined KPI’s such as spatial budgets and SPLUMA compliance.</li>
+										</ul>
+									</div>
+
+								</div>
+								<br>
+
+
+								<div class="mb-5">
+									<h2 class="h1">1.&ensp;&nbsp;Introduction</h2>
+
+									<div class="mb-5">
+										<h3>1.1&emsp;Enabling SPLUMA</h3>
+										<p class="mb-1">SPLUMA calls for the provision of a uniform, effective and comprehensive system of spatial planning and land use management.  Through the provisions stipulated within the Act, and in accordance with the Intergovernmental Relations Framework Act, SPLUMA requires that the national government must;</p>
+										<em>“…develop mechanisms to support and strengthen the capacity of provinces and municipalities to adopt and implement an effective spatial planning and land use management system.”</em><br>
+
+										<p class="text-center mb-2"><img class="img-fluid png-raised mx-auto" width="500" alt="SPLUMA Principles" src="../img/theme/new/spluma-principles.png"></p>
+										<figcaption class="figure-caption mb-4"><strong>Fig.&nbsp;1</strong>&ensp;&ndash;&ensp;Five Legislative Principles of SPLUMA.</figcaption>
+
+										<p>With the development of the NSPDR, the national government will now be able to facilitate access to spatial information that is required for integrated spatial planning when developing SDFs and land use schemes. It also will enable the horizontal and vertical alignment of spatial plans, as well as spatial budgeting and spending.</p>
+										<p>Furthermore, with the provision of an E&NoBreak;-&NoBreak;Lodgement component, it’ll be able to assist municipalities with the development applications process. Finally, the ecosystem will help in capacitating municipalities through the provision of an online electronic training facility.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>1.2&emsp;Background</h3>
+										<p>The NSPDR &amp; E&NoBreak;-&NoBreak;Lodgement project was first conceptualised in to assist in the implementation of the Spatial Planning and Land Use Management Act (SPLUMA). The solution will enable the sharing of spatial planning information and data across all three spheres of government, and the private sector and will aid municipalities in their spatial planning and land use management needs.</p>
+										<p>The objectives the NSPDR are to; improve integrated planning by creating an ecosystem for sharing of spatial data among various spheres of government and other state-owned entities; remove subjectivity from the planning functions and move towards an evidence-based approach to planning through improving access to core spatial data; and develop mechanisms that will facilitate effective and efficient collaboration amongst government/sector departments to foster alignment of their programs and budgets to planning needs identified and specified in the PGDP/PSDF/SDF/IDP processes.</p>
+										<p>Along with SPLUMA, the NSPDR &amp; E&NoBreak;-&NoBreak;Lodgement will support the implementation of and compliance with multiple legislative and policy frameworks such as the National Development Plan (NDP), Intergovernmental Relations Framework (IGRF) Act, and the Spatial Data Infrastructure (SDI) Act.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>1.3&emsp;Target Users</h3>
+										<p class="mb-1">The following user groups are targeted by the NSPDR &amp; E&NoBreak;-&NoBreak;Lodgement solutions:</p>
+										<ul class="flush">
+											<li>Municipal senior management</li>
+											<li>Municipal spatial planning professionals</li>
+											<li>Municipal land use management professionals</li>
+											<li>National, provincial and municipal GIS professionals</li>
+											<li>National and provincial senior management responsible for M&amp;E</li>
+											<li>Contributors and users within the public, private and academic sectors</li>
+										</ul>
+
+										<p class="text-center pt-2 mb-2"><img class="img-fluid png-raised mx-auto px-4" alt="User Groups" src="../img/theme/new/user-groups-1839x678.png"></p>
+										<figcaption class="figure-caption mb-5"><strong>Fig.&nbsp;2</strong>&ensp;&ndash;&ensp;NSPDR and E&NoBreak;-&NoBreak;Lodgement’s Target User Groups.</figcaption>
+									</div>
+
+								</div>
+								<br>
+
+
+								<div class="mb-5">
+									<h2 class="h1">2.&ensp;The Rationale</h2>
+
+									<div class="mb-5">
+										<h3>2.1&emsp;Why a Repository&nbsp;?</h3>
+										<p>South Africa does not currently have a central repository that utilises spatial data and information for spatial planning, monitoring and evaluation, and coordinating purposes. One of the key challenges identified by the NDP when it comes to development of sustainable human settlements, is weak spatial planning and governance capabilities within government structures. Currently most departments have standalone databases that are being used for planning and reporting purposes, and these tools are not always accessible to the relevant officials. Planning is, therefore, often done in isolation, without any cognisance of associated needs and impacts from other services. An integrated planning approach which ensures harmony between environmental, social and economic factors on a given geographic space is therefore required to support effective spatial planning.</p>
+										<p>Section 21 of the SPLUMA emphasises the development of the Spatial Development Framework. Which must include the following: current and future spatial form, economy estimates, housing demand, a written and spatial representation of a five-year Spatial Development Framework (SDF) for the municipality. Through the NSPDR, municipalities will now be able to retrieve the required base data from government and the private sector, to generate spatial expressions of their spaces that demonstrate coordination, alignment and integration of existing sectoral policies.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>2.2&emsp;What is E&NoBreak;-&NoBreak;Lodgement&nbsp;?</h3>
+										<p>Rural municipalities are still overly reliant on paper-based systems when it comes to accepting, processing and tracking land development applications. This often results in undue delays regarding processing time, haphazard approvals or dismissals and incorrect land uses being allocated to a piece of land. Municipalities also do not have access to interactive monitoring and evaluation (M&amp;E) mechanisms to assess compliance as required by SPLUMA regulations. The E&NoBreak;-&NoBreak;Lodgement application will allow municipalities to overcome these deficiencies and improve overall delivery of this key service to the public.</p>
+										<p>The monitoring of operational and capital expenditure in the public sector through the representation of projects spatially, is also not being carried out in any collaborative manner. Information from the E&NoBreak;-&NoBreak;Lodgement solution will enable more accurate and comprehensive monitoring.</p>
+									</div>
+
+								</div>
+								<br>
+
+
+								<div class="mb-5">
+									<h2 class="h1">3.&ensp;&nbsp;Component Development</h2>
+
+									<div class="mb-5">
+										<h3>3.1&emsp;Data Repository</h3>
+										<p>The vision of the NSPDR was to develop a central repository with the capability of storing, searching, retrieving and generating spatial information. An intuitive interface which allows for ease of use and better experience was developed. Users are able search according to information type, region and other descriptive criteria that are based fundamentally on the SDF development guidelines themes.</p>
+										<p>Several of the capabilities offered to users include geoprocessing and analysis tools those lacking desktop GIS, dashboards supporting monitoring and evaluation which enable municipal managers to report on key performance indicators within their boundaries. Service related information can be gathered from the public by means of the citizen reporting tool offering the municipal user an innovative way of determining citizen needs.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>3.2&emsp;E&NoBreak;-&NoBreak;Lodgement</h3>
+										<p>The aim and development of the E&NoBreak;-&NoBreak;Lodgement component was to provide a facility for the electronic lodgement, assessment and consideration of land development applications through a secure online portal that would be accessible to users on multiple platforms. Through dedicated workshops with provincial officials and use of guiding frameworks, a SPLUMA compliant workflow was developed that formed the basis for E&NoBreak;-&NoBreak;Lodgement solution development. The workflow is aligned to the required procedures of processing land development applications, from the commencement of the administration phase right through to the decisions phase. Moreover, the timeframes for the workflow are set according to the SPLUMA.</p>
+										<p>The system currently offers three main interfaces: NSPDR data administrator, the municipal administrator and the applicant. The data administrator plays a coordinating role of registering municipalities and their appointed officials to use the E&NoBreak;-&NoBreak;Lodgement system. The municipal administrators will manage their own municipality’s profile on the system. They are responsible for assigning municipal officials with appropriate user rights and restrictions and ensuring the correct administrative information is captured for the municipality. Municipal officials are responsible for processing development applications from the applicants.</p>
+										<p>Citizens will be able to lodge their development application on the municipality’s profile once they have registered themselves on the system. They are then able to view communications sent to them and track the progress of their application.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>3.3&emsp;E&NoBreak;-&NoBreak;Learning</h3>
+										<p>The ADKAR model was selected as the overarching training framework that would guide the design, development and facilitation of the training material for the NSPDR. The model considers various change management principles that are crucial for stakeholder acceptance of organisational changes that the project would bring.</p>
+										<p>The project team began by convening a training needs analysis workshop aimed at understanding the user needs. They determined existing skills and competencies amongst the various user groups through guided discussions. Additional factors that posed a risk to the successful implantation of the NSPDR were also defined. A set of recommendations was then presented to the client.</p>
+
+										<p class="text-center pt-2 mb-1"><img class="img-fluid png-raised mx-auto px-3" alt="E-Learning" src="../img/uiux/elearning-1279x615.jpg"></p>
+										<figcaption class="figure-caption mb-4"><strong>Fig.&nbsp;3</strong>&ensp;&ndash;&ensp;Screenshot of the E&NoBreak;-&NoBreak;Learning User Interface.</figcaption>
+
+										<p>Due to the diverse user groups that need to be trained (ranging from highly technical to administrative) and the geographic spread of users, a blended learning approach was recommended. This requires the identification of a select group of regional champions who will be trained as provincial trainers once the project is rolled out. The need to provide training throughout the country and at various levels of governance could then be met through the provision of a dedicated electronic platform to be accessed remotely.</p>
+										<p>The E&NoBreak;-&NoBreak;Learning platform was hence developed as an online learning tool dedicated to creating such an environment. Any user of the ecosystem is now provided with access to a full suite of training modules from within their own organisation. By means of an initial assessment, a learner’s ability and level of knowledge is determined to create the best possible learning path. The content and delivery method can then be chosen according to the identified learning level and/or special needs that may or may not exist.</p>
+									</div>
+
+								</div>
+								<br>
+
+
+								<div class="mb-5">
+									<h2 class="h1">4.&ensp;&nbsp;Key Learning Areas</h2>
+
+									<div class="mb-5">
+										<h3>4.1&emsp;Stakeholder Management</h3>
+										<p>An aggregated approach to communications and engagement with identified stakeholders’ group has proven to yield the best results due to the institutional dynamics at play in each individual environment. The levels of reception towards the NSPDR &amp; E&NoBreak;-&NoBreak;Lodgement differed across the national and provincial department’s and the districts and local municipalities as illustrated in Figure 4 below.</p>
+
+										<p class="text-center mb-1"><img class="img-fluid png-raised mx-auto px-4 pull-up1" alt="Engagements" src="../img/theme/new/engagements-1950x713.png"></p>
+										<figcaption class="figure-caption mb-4"><strong>Fig.&nbsp;4</strong>&ensp;&ndash;&ensp;NSPDR’s Stakeholder Engagement and Onboarding Process.</figcaption>
+
+										<p>The national stakeholders are open to the notion of improving current means of disseminating information and creating awareness of their own spatial holdings through collaboration with the NSPDR. They indicated that the project provides them with a platform for them to reach their external stakeholders and get a more accurate view of the information that is in the possession of other departments.</p>
+										<p>Provincial stakeholders perform a key supporting role in assisting districts and municipalities in the fulfilment of some their core functions from a spatial, land use and economic development point of view. They work closely with municipalities to ensure compliance with applicable sector policies. Provincial governments are embracing the solutions being developed as they will assist them in capacitating municipalities.</p>
+										<p>Most district municipalities offer corporate geospatial support to their municipalities and are responsible for housing and sharing of spatial information on behalf of the local municipalities the municipal stakeholders have, by far, been more receptive to the offerings of the project due to increasing demands for compliance from national departments and decreasing annual budgets. The opportunity offered by the NSPDR to capacitate their land use management and planning officials is appealing to the managers due to the lack of required skills and resources in their jurisdictions. Issues of connectivity and bandwidth are repeatedly being highlighted as an existing barrier towards utilisation of the system. E&NoBreak;-&NoBreak;Lodgement has attracted a lot of attention due to the opportunity to transition into an electronic means of managing development applications thereby improving their overall ability to deliver on a key municipal function.</p>
+										<p>Metropolitan municipalities demonstrated a stronger ability to manage their information with most of them having already developed their own electronic lodgement systems along with policies in place that govern dissemination of data and data quality management. They are also ahead of their counter parts when it comes to compliance with multiple legislative frameworks including SPLUMA and the prescriptions of the SDI Act.</p>
+										<p>Lack of response by officials and lengthy turnaround times in securing meetings with required officials from the identified stakeholder groups poses a challenge towards the project team meeting their desired engagement targets.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>4.2&emsp;Data Acquisition and Management</h3>
+										<p>Developing a thorough understanding of the true nature of spatial data contributions from national departments, district and local departments was critical to formulating an accurate picture of the inputs to NSPDR. A comprehensive data strategy was developed in which core spatial data sets (see Figure 5) and Spatial Development Framework data themes based on the bio-physical, built environment and socio-economic environment were identified. The custodians or owners of this information were approached to provide these datasets. The success rate in acquiring information and the quality of the data received varied across different stakeholders.</p>
+										<p>Common relationships and distinguishing factors in terms of data management at various levels of government became evident. The team members realised that the capturing of spatial information is widely geared towards fulfilling the internal needs of the organisations and meeting internal standards and not necessary aligned to requirements proposed by spatial data standards generating entities such as National Spatial Infrastructure Framework, the South African Bureau of Standards, and the International Standards Organisation.</p>
+
+										<p class="text-center mb-1"><img class="img-fluid png-raised mx-auto px-4" alt="Data Themes" src="../img/theme/new/data-themes-1325x656.png"></p>
+										<figcaption class="figure-caption mb-4"><strong>Fig.&nbsp;5</strong>&ensp;&ndash;&ensp;Spatial Data Themes as defined by the CSI.</figcaption>
+
+										<p>A key finding was the lack of consistency and accuracy in terms of the capturing of spatial information that is meant to inform and support the objectives of the municipality’s developmental frameworks and land use schemes. The existing policies and guidelines that have been put in place to give direction to municipal planning are readily available, yet it is evident that these foundational principles are failing to be translated by those analysing and mapping the municipal spaces on the ground.</p>
+										<p>Measures are currently not in place to ensure the integrity and accuracy of data by those responsible for capturing and disseminating data. This can be attributed to a lack of required skills as well as a lack of implementation of legislation relating to spatial information management. The value of data and metadata overall is only appreciated by those who are working directly with it to inform their day-to-day activities and these are the individuals who are best able to ascertain the quality of contributions that can be made to the project. The burden of ensuring standardisation and the determination of quality by default will still lie with the user community who are reliant on spatial information to inform their strategies and plans.</p>
+										<p>In light of these findings, the need for agreements such as the NSPDR’s Spatial Data Partnership Protocol (an implementation protocol in terms of section 35(1) of the IGRF Act; the protocol establishes the terms and conditions for the sharing, usage and maintenance of spatial planning data), to be adopted by data custodians becomes pivotal to ensuring ongoing contributions of data are provided to the project within the prescribed formats and conditions. It will also ensure that stakeholders who agree to becoming contributors of spatial information to the system are accountable.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>4.3&emsp;Marketing and Communications</h3>
+										<p>The marketing and communications strategy for the project is built around three main principles of: creating awareness, securing by in and promoting ongoing dialogue with stakeholders. A breakdown of what each of the three principles entails can be found in Figure 6 below.</p>
+										<p>The decision to make use of multiple channels of communications has proven to be most effective in creating awareness and building interest around the NSPDR &amp; E&NoBreak;-&NoBreak;Lodgement. By leveraging on existing platforms such as municipal planning forums, audiences that would not have had the means to host stand-alone engagement meetings, are also being reached. District and municipal stakeholders are showing an appreciation for the effort demonstrated by project team members who come out to meet with them in their own working environments. All these communication efforts are also being strengthened through strategic partnerships with entities who are mandated to offer specialised services across the provinces and are already active in these spaces. </p>
+
+										<p class="text-center mb-2"><img class="img-fluid png-raised mx-auto px-4" alt="Communications Strategy" src="../img/theme/new/marketing-1854x671.png"></p>
+										<figcaption class="figure-caption mb-4"><strong>Fig.&nbsp;6</strong>&ensp;&ndash;&ensp;Marketing and Communications Strategy and Principles.</figcaption>
+
+										<p>Through directly engaging representatives from each stakeholder group, key understandings of the needs of the users are drawn which help to direct the development of deliverables as understood by the project team and informs future marketing approaches. Barriers towards successful utilisation of the NSPDR &amp; E&NoBreak;-&NoBreak;Lodgement as communicated by the different stakeholder groups are documented and shared with the department for consideration.</p>
+										<p>Distribution of branded materials and use of an electronic communication platform has allowed stakeholders to remain connected with NSPDR as a solution and easily share the key message with individuals within their own work environments. The maintenance of open dialogue and communication by the project members with representatives has ensured that recent developments and milestones reached can be shared throughout the different phases of the project.</p>
+									</div>
+
+								</div>
+								<br>
+
+
+								<div class="mb-5">
+									<h2 class="h1">5.&ensp;&nbsp;Project Methodology</h2>
+
+									<div class="mb-5">
+										<h3>5.1&emsp;Administration and Governance</h3>
+										<p>The project is governed and managed according to the PRINCE2™ framework (Projects in a Controlled Environment) and the PMBOK™ (Project Management Book of Knowledge) project management methodology. The management of the project follows a phased approach with gateways after each phase, in which with the sign-off of certain project deliverables and/or documents is associated.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>5.2&emsp;Scope Management</h3>
+										<p>Scope management is the sole responsibility of the respective project managers. The scope for the project was defined in the Inception Report. With a detailed description and breakdown in the user requirements and the technical specification. The respective project managers established and approved the documentation for measuring the project’s scope, which included deliverable quality checklists and work performance measurements as and when required.</p>
+										<p>Proposed scope changes may be initiated by any of the project stakeholders and will follow the change request process as described in section 5.4 of this document. The client’s project manager is responsible for formally accepting the project’s final deliverable. This acceptance will be based on a review of all project documentation, testing results, and completion of all tasks or work packages and product functionality.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>5.3&emsp;Schedule Management</h3>
+										<p>The work breakdown structure (WBS) for the project consists of work packages, which correspond to the project deliverables and associated tasks. Work packages were finalised through close collaboration among project team members. This happened once the business/user requirements document was signed off. The schedule is maintained by the service provider’s project managers, with the client conducting regular quarterly schedule reviews. Schedule changes without cost or final project completion date implications were agreed to between the service provider’s project managers and the client project manager.</p>
+
+										<p class="text-center mb-2"><img class="img-fluid png-raised img-thumbnail border-0 mx-auto" width="800" alt="Project Schedule" src="../img/theme/new/schedule-1836x715.png"></p>
+										<figcaption class="figure-caption mb-4"><strong>Fig.&nbsp;7</strong>&ensp;&ndash;&ensp;Gantt Chart representing the Project’s Lifecycle.</figcaption>
+
+										<p>The WBS links back to the use cases, which identify the specific work packages that are performed to complete each deliverable. Use cases and priorities are set out by the project team and stakeholders. Resource optimisation and deliverable estimation techniques were used to determine the order of work packages and ultimately to calculate the project’s schedule, as shown in Figure 7 above. Project milestones that have been defined, as listed in the Inception Report, were done based on the project schedule and deliverables.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>5.4&emsp;Change Management</h3>
+										<p>The requirements and the scope of a project were agreed to before the start of a project. However, as new facts became known or events happened that impacted upon the project, changes become necessary and were managed according to our change control process. </p>
+										<p class="mb-1">The change control process being applied contains the following steps:</p>
+										<ul class="flush">
+											<li>Identify the need for a change</li>
+											<li>Submit a change request to the project managers</li>
+											<li>Log the request in the change log</li>
+											<li>Evaluate the change in terms of impact on cost, risk, schedule and scope</li>
+											<li>Internally review the change and propose a way forward</li>
+											<li>Meet with the client who decides on whether to accept the change</li>
+											<li>Present the change request to the project steering committee for approval</li>
+											<li>If approved, the change is communicated to the team and any concerned stakeholders</li>
+										</ul>
+										<p>One example of this process is E&NoBreak;-&NoBreak;Lodgement where functional requirements were not detailed. When it first came up for review it was clear that the understanding of this component was not mutually agreed upon by the service provider and the client. An ad-hoc change control process was initiated, and intense workshops were held in order to reach a consensus and plan the way forward.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>5.5&emsp;Risk Management</h3>
+										<p>The approach for managing risks includes a methodical process to identify, score and rank the various project risks (as per Figure 8). Every effort is be made to proactively identify risks ahead of time to implement a mitigation strategy as soon as possible. The risk register is maintained by the service provider’s project managers and used to document all risk mitigation actions taken by the project team.</p>
+
+										<p class="text-center mb-1"><img class="img-fluid mx-auto pull-up2" width="800" alt="Risk Matrix" src="../img/theme/new/risk-matrix-1822x763.png"></p>
+										<figcaption class="figure-caption mb-4"><strong>Fig.&nbsp;8</strong>&ensp;&ndash;&ensp;Project Team’s Risk Classification Matrix.</figcaption>
+
+										<p>Upon the completion of the project, during the closing process, the service provider’s project managers will analyse each risk as well as the risk management process. Based on this analysis, the service provider’s project managers will identify any improvements that can be made to the risk management process for future projects. These improvements will be captured as part of a lessons learned knowledge base and will be included as part of the project close-out documentation.</p>
+									</div>
+
+									<div class="mb-5">
+										<h3>5.6&emsp;Quality Management</h3>
+										<p>All team members from the service provider and the client play a key role in quality management. It was imperative that teams ensure work was completed at an agreed level of quality from the individual work packages to the final project deliverable.</p>
+									</div>
+
+								</div>
+								<br>
+
+
+								<div class="mb-3">
+									<h2 class="h1">6.&ensp;&nbsp;Moving Forward</h2>
+
+									<div class="mb-5">
+										<h3>6.1&emsp;Closing Statement</h3>
+										<p>The vast array of stakeholders engaged and large and disparate amounts of data to be acquired makes this a complex project to deliver. The project also provides significant insights into the nature and extent of data available to support spatial planning activities.</p>
+										<p>The project will significantly change the way municipalities, particularly in rural areas, undertake their spatial planning and land use management activities.</p>
+
+										<p class="text-center pt-3 mb-2"><img class="img-fluid png-raised mx-auto px-4" alt="NSPDR Interface" src="../img/uiux/responsive2.png"></p>
+										<figcaption class="figure-caption mb-5"><strong>Fig.&nbsp;9</strong>&ensp;&ndash;&ensp;Screenshots of the NSPDR Ecosystem’s User Interfaces.</figcaption>
+									</div>
+
+									<br>
+
+									<div class="mb-3">
+										<h3>6.2&emsp;Acknowledgements</h3>
+										<!-- <h5 class="fw-700 text-dark">ACKNOWLEDGEMENTS</h5> -->
+										<p>We wish to acknowledge the Project Steering Committee and management of the Department of Rural Development and Land Reform for the support and guidance provided throughout the implementation of this project.</p>
+									</div>
+
+								</div>
+
+							</div>
+
+	        	</div>
+	        </div>
+	      </div>
+      </section>
+
+      <section class="segment pt-0" draggable="true">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10 mx-auto">
+              <div class="special-divider"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="space-4">
+      </article>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="nspdr-footer" id="end">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-4">
+		        <div class="copyright float-sm-left text-sm-left">
+		          &copy;&nbsp;2018 &middot; Rural&nbsp;Development &amp;&nbsp;Land&nbsp;Reform
+		        </div>
+	        </div>
+          <div class="col-auto col-sm-6 col-lg-4 order-lg-3">
+		        <div class="float-sm-right text-sm-right">
+		          <ul class="underline-on-hover sibling-fade">
+		            <li><a href="../index.html">Home</a></li>
+		            <li><a href="news.html">News</a></li>
+		            <li><a href="about.html">About</a></li>
+		            <li><a href="privacy.html">Terms</a></li>
+		          </ul>
+		        </div>
+      		</div>
+          <div class="col-12 col-md-8 col-lg-4 order-lg-2">
+		        <div class="pt-2 pt-md-1 pt-lg-0">
+		          <ul class="social-media">
+		            <li class="--facebook"><a href="template.html" class="fab fa-facebook-f" title="Facebook"></a></li>
+		            <li class="--twitter"><a href="template1.html" class="fab fa-twitter" title="Twitter"></a></li>
+		            <li class="--instagram"><a href="slideshow.html" class="fab fa-instagram" title="Instagram"></a></li>
+		            <li class="--youtube"><a href="webpage.html" class="fab fa-youtube" title="YouTube"></a></li>
+		          </ul>
+		        </div>
+	        </div>
+      	</div>
+      </div>
+
+			<i id="scroll-to-top" title="Scroll Top" class="fa fa-2x fa-caret-square-up"></i>
+			<i id="debug-grid" title="Debugger" class="debug-icon visible fa fa-2x fa-bug"></i>
+			<i id="point-breaks" class="media-breakpoint swing  d-none fa fa-sm fa-tv">&nbsp;</i>
+    </footer>
+
+    <!-- =========== JavaScript ===========  -->
+    <!-- Placed at end so pages load faster. -->
+    <script src="../js/modernizr.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/rellax.min.js"></script>
+    <script src="../js/twbsmd-popper.min.js"></script>
+    <script src="../js/nspdr-javascript.js"></script>
+
+  </body>
+</html>

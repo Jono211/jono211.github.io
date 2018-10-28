@@ -26,9 +26,13 @@ body {
 ============= */
 .lead-2 {
   font-size: 1.5rem; }
+.lead-1 {
+  font-size: 1.125rem; }
 	@media (max-width: 575.98px) {
 		.lead-2 {
 			font-size: 1.25rem; }
+		.lead-1 {
+			font-size: 1.0625rem; }
 		.lead {
 			font-size: 1.15rem; } }
 
@@ -46,6 +50,9 @@ ol.flush,
 ul.flush {
   margin-left: .5rem;
   padding-left: 1rem; }
+  ol.flush.paragraph > li,
+  ul.flush.paragraph > li {
+    margin-bottom: .5rem; }
 
 footer#footer.end-of-page {
   background-color: #bbc1c7;
@@ -931,11 +938,11 @@ hr[class^='space-'] {
 		pointer-events: none; }
 .modal-subtitle {
   text-transform: uppercase;
-  margin-bottom: .3rem;
-  letter-spacing: .1rem;
+  margin-bottom: .5rem;
+  letter-spacing: .25rem;
   line-height: 1.2;
   font-weight: 400;
-  color: #555; }
+  color: #000; }
 
 .card-img-left {
 	width: 12.5rem;
@@ -1057,9 +1064,15 @@ hr[class^='space-'] {
 
 .text-geois { color: #375 !important; }
 .text-gisci { color: #a73 !important; }
+.text-ecodb { color: #486 !important; }
+
+.text-drdlr1 { color: #365 !important; }
+.text-drdlr2 { color: #964 !important; }
 
 .text-nspdr11 { color: #375 !important; }
 .text-nspdr22 { color: #a73 !important; }
+.text-nspdr33 { color: #a95 !important; }
+.text-nspdr44 { color: #887 !important; }
 
 .text-dimgrey   { color: #4d4d4d; }
 .text-darkgrey  { color: #333; }
@@ -2260,7 +2273,8 @@ ul.underline-on-hover li a {
 	.navbar-light .navbar-toggler-icon.override .hamburger-inner {
 		background-color: rgba(0,0,0,.75); }
 
-/* hamburgers */
+/* hamburgers
+------------- */
 .hamburger {
   padding: -.25rem -.75rem;
   width: 100%;
@@ -2413,8 +2427,8 @@ ul.underline-on-hover li a {
 		.tabs > label:focus {
 			color: #555;
 			border-bottom: .125rem solid; }
-	.tabs > [type="radio"],
-	.tabs > [type="checkbox"] {
+	.tabs > [type=radio],
+	.tabs > [type=checkbox] {
 		display: none;
 		visibility: hidden; }
 	.tabs > label + div {
@@ -2487,6 +2501,89 @@ ul.underline-on-hover li a {
 				-ms-flex-order: initial;
 				order: initial;
 				margin-left: -.05rem !important; } }
+
+/* togglebutton
+--------------- */
+.togglebutton {
+  vertical-align: middle; }
+	.togglebutton,
+	.togglebutton label,
+	.togglebutton input,
+	.togglebutton .toggle {
+		user-select: none; }
+	.togglebutton label {
+		cursor: pointer;
+		font-weight: 600;
+		color: #666; }
+
+.form-group.is-focused .togglebutton label {
+  color: rgba(0,0,0,.3); }
+	.form-group.is-focused .togglebutton label:hover,
+	.form-group.is-focused .togglebutton label:focus {
+		color: rgba(0,0,0,.6); }
+  fieldset[disabled] .form-group.is-focused .togglebutton label {
+    color: rgba(0,0,0,.3); }
+
+.togglebutton label input[type=checkbox] {
+  opacity: 0;
+  width: 0; height: 0; }
+	.togglebutton label .toggle {
+		text-align: left;
+		margin-left: .2rem; }
+	.togglebutton label .toggle,
+	.togglebutton label input[type=checkbox][disabled] + .toggle {
+		content: "";
+		display: inline-block;
+		width: 2rem;
+		height: 1rem;
+		background-color: rgba(80,80,80,.8);
+		border-radius: 1rem;
+		/* margin-right: 1rem; */
+		/* margin-right: .75rem; */
+		margin-right: .67rem;
+		/* margin-right: .5rem; */
+		transition: background .3s ease;
+		vertical-align: middle; }
+	.togglebutton label .toggle::after {
+		content: "";
+		display: inline-block;
+		width: 1.25rem;
+		height: 1.25rem;
+		background-color: #fff;
+		border-radius: 1.25rem;
+		position: relative;
+		box-shadow: 0 .125rem .25rem .125rem rgba(0,0,0,.5);
+		top: -2.5px; left: -5px;
+		border: 1px solid rgba(0,0,0,.6);
+		transition: left .3s ease, background .3s ease, box-shadow .1s ease; }
+
+.togglebutton label input[type=checkbox][disabled] + .toggle::after,
+.togglebutton label input[type=checkbox][disabled]:checked + .toggle::after {
+  background-color: #bdbdbd; }
+	.togglebutton label input[type=checkbox] + .toggle:active::after,
+	.togglebutton label input[type=checkbox][disabled] + .toggle:active::after {
+		box-shadow: 0 .125rem .25rem .125rem rgba(0,0,0,.5), 0 0 0 1rem rgba(0,0,0,.1); }
+
+.togglebutton label input[type=checkbox]:checked + .toggle:after {
+  left: 15px; }
+	.togglebutton label input[type=checkbox]:checked + .toggle {
+		background-color: rgba(0,0,0,.9); }
+		.togglebutton label input[type=checkbox]:checked + .toggle::after {
+			border-color: #333; }
+		.togglebutton label input[type=checkbox]:checked + .toggle:active::after {
+			box-shadow: 0 .125rem .25rem .125rem rgba(0,0,0,.5), 0 0 0 1rem rgba(0,0,0,.1); }
+	.togglebutton label input[type=checkbox]:checked + .toggle.one {
+		background-color: rgba(17,102,51,.9); }
+		.togglebutton label input[type=checkbox]:checked + .toggle.one::after {
+			border-color: #163; }
+		.togglebutton label input[type=checkbox]:checked + .toggle.one:active::after {
+			box-shadow: 0 .125rem .25rem .125rem rgba(0,0,0,.5), 0 0 0 1rem rgba(17,102,51,.1); }
+	.togglebutton label input[type=checkbox]:checked + .toggle.two {
+		background-color: rgba(170,102,34,.9); }
+		.togglebutton label input[type=checkbox]:checked + .toggle.two::after {
+			border-color: #a62; }
+		.togglebutton label input[type=checkbox]:checked + .toggle.two:active::after {
+			box-shadow: 0 .125rem .25rem .125rem rgba(0,0,0,.5), 0 0 0 1rem rgba(170,102,34,.1); }
 
 /* slideshow
 ------------ */

@@ -494,9 +494,8 @@ pre code {
   word-break: normal;
 }
 .pre-scrollable {
-  /* max-height: 340px; */
-  max-height: 320px;
-  max-height: 20rem;
+  max-height: 340px;
+  /* max-height: 20rem; */
   overflow-y: scroll;
 }
 
