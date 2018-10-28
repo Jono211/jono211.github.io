@@ -16,7 +16,7 @@ function displayHamburger() {
 		/* ----------------------------------------------------------- */
 		var counter = $('#display-count');
 		if (counter != null) {
-      var calcDays = Math.round((new Date('2018-11-05') - new Date()) / (1000 * 3600 * 24));
+      var calcDays = Math.round((new Date('2018-11-26') - new Date()) / (1000 * 3600 * 24));
 			counter.html(calcDays + ' days to go!');
 		} else { return; }
 

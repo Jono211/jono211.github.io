@@ -1082,15 +1082,21 @@ hr[class^='space-'] {
 .text-silver    { color: #ccc; }
 .text-lightgrey { color: #eee; }
 
+.text-grey077   { color: #4d4d4d; }
+.text-grey128   { color: #808080; }
+
 .grey-34  { color: #222; }
 .grey-51  { color: #333; }
 .grey-68  { color: #444; }
 .grey-85  { color: #555; }
 .grey-102 { color: #666; }
 .grey-119 { color: #777; }
+.grey-136 { color: #888; }
 .grey-153 { color: #999; }
 .grey-170 { color: #aaa; }
+.grey-187 { color: #bbb; }
 .grey-204 { color: #ccc; }
+.grey-221 { color: #ddd; }
 .grey-238 { color: #eee; }
 
 .c-purple { color: #6d2da6; }
