@@ -52,7 +52,7 @@ function displayHamburger() {
 		/* ----------------------------------------------------------- */
 		/*  04. Toggle Statements
 		/* ----------------------------------------------------------- */
-		$('.toggle-statements').hide();
+		// $('.toggle-statements').hide();
 			$('#solution-statement,#problem-statement').click(function() {
 			var $panel = $(this);
 				$panel.children('h3').find('.fa').toggleClass('fa-rotate-180');
