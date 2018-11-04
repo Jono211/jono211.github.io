@@ -52,8 +52,8 @@ function displayHamburger() {
 		/* ----------------------------------------------------------- */
 		/*  04. Toggle Statements
 		/* ----------------------------------------------------------- */
-		// $('.toggle-statements').hide();
-			$('#solution-statement,#problem-statement').click(function() {
+		$('.toggle-statements').hide(); $('.toggle-statements').show();
+		$('#solution-statement,#problem-statement').click(function() {
 			var $panel = $(this);
 				$panel.children('h3').find('.fa').toggleClass('fa-rotate-180');
 				$panel.children('div.toggle-statements').slideToggle('slow');
@@ -193,7 +193,7 @@ function displayHamburger() {
 
 // var rellax = new Rellax('.rellax');
 try {	var rellax = new Rellax('.rellax'); }
-catch (e) {}
+catch(e){}
 
 try {
 	// new WOW().init();
@@ -202,4 +202,94 @@ try {
 		mobile: false, // trigger animations on mobile devices (default is true)
 	});
 	wow.init();	}
-catch (e) {}
+catch(e){}
+
+try {
+	(function() {
+		var lineMaker = new LineMaker({
+				parent: { element: '.nspdr-background', position: 'append' },
+				// parent: { element: '.segment', position: 'prepend' },
+				// position: 'fixed',
+				lines: [
+					// {top: 0, left: '12.5%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '25%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '37.5%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '50%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '62.5%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '75%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '87.5%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+
+					{top: 0, left: '6.7%', width: 2, height: '100%', color: '#F44336', },
+					{top: 0, left: '14%', width: 3, height: '100%', color: '#8BC34A', },
+					{top: 0, left: '50%', width: 2, height: '100%', color: '#2196F3', },
+					{top: 0, left: '86%', width: 3, height: '100%', color: '#8BC34A', },
+					{top: 0, left: '93.3%', width: 2, height: '100%', color: '#F44336', },
+
+					// {top: 0, left: '8.333333%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '16.666667%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '25%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '33.333333%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '41.666667%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '50%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '58.333333%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '66.666667%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '75%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '83.333333%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '91.666667%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+
+					// {top: 0, left: '12.5vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '25vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '37.5vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '50vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '62.5vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '75vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '87.5vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+
+					// {top: '12.5vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
+					// {top: '25vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
+					// {top: '37.5vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
+					// {top: '50vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
+					// {top: '62.5vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
+					// {top: '75vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
+					// {top: '87.5vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
+				]
+		});
+
+		// lineMaker.animateLinesIn();
+		setTimeout(function() {
+			lineMaker.animateLinesIn();
+		}, 500);
+
+		// setTimeout(function() {
+		// 	disableButtons();
+		// 	lineMaker.animateLinesIn(enableButtons);
+		// }, 500);
+
+		// // Shows all lines.
+		// - lineMaker.showLines();
+		// // hides all lines.
+		// - lineMaker.hideLines();
+
+		// var ctrls = [].slice.call(document.querySelectorAll('.actions > button'));
+		// ctrls.forEach(function(ctrl) {
+		// 	ctrl.setAttribute('disabled', true);
+		// });
+		// function enableButtons() {
+		// 	ctrls.forEach(function(ctrl) {
+		// 		ctrl.removeAttribute('disabled');
+		// 	});
+		// }
+		// function disableButtons() {
+		// 	ctrls.forEach(function(ctrl) {
+		// 		ctrl.setAttribute('disabled', true);
+		// 	});
+		// }
+		// document.querySelector('#hideAll').addEventListener('click', function() {
+		// 	lineMaker.hideLines();
+		// });
+		// document.querySelector('#showAll').addEventListener('click', function() {
+		// 	lineMaker.showLines();
+		// });
+
+	})(); }
+catch(e){}

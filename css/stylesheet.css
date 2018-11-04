@@ -90,8 +90,34 @@ footer#footer:not(.end-of-page) {
 
 /* Page-Structure
 ================= */
-.debugger * { outline: 1px dashed magenta; }
 .unselectable { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.debugger * { outline: 1px dashed magenta; }
+
+.debug-grid { background: transparent url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFElEQVR4AWPAC97/9x0eCsAEPgwAVLshdpENIxcAAAAASUVORK5CYII= ) repeat top left; }
+.debug-grid-16 { background: transparent url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII= ) repeat top left; }
+.debug-grid-8-solid { background: white url( data:image/gif;base64,R0lGODdhCAAIAPEAAADw/wDx/////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw== ) repeat top left; }
+.debug-grid-16-solid { background: white url( data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7 ) repeat top left; }
+
+.decolines {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+  z-index: 10000 !important;
+	pointer-events: none;}
+  .decolines--fixed {
+    position: fixed;
+    width: 100vw;
+    height: 100vh; }
+  .decoline {
+    position: absolute; }
+/* .actions {
+	margin: 1em 0 0 0;
+	z-index: 100;
+	position: relative; } */
+
 
 /* Carousel
 ----------- */
@@ -392,10 +418,14 @@ ul.bullet li::before {
   font-weight: 600;
   line-height: 1;
   letter-spacing: -.05rem; }
-  @media (min-width: 40em) { 
-    .section-title { font-size: 2.75rem; } }
-  @media (min-width: 62em) { 
-    .section-title { font-size: 3rem; } }
+  @media (min-width: 40em) {
+    .section-title {
+      font-size: 2.75rem;
+      letter-spacing: -.1rem; } }
+  @media (min-width: 62em) {
+    .section-title {
+      font-size: 3rem;
+      letter-spacing: -.15rem; } }
 
 .display-5 {
   font-size: 3rem;
@@ -1550,14 +1580,23 @@ hr[class^='space-'] {
   border-left: 1px solid #dee2e6; */
   border: 1px solid #dee2e6;
   border-top: 0;
+  padding: .5rem;
   overflow: hidden; }
-	.box-block p:first-of-type {
-		min-height: 150px; }
 	.box-block h2 {
 		color: #444;
 		font-weight: 300; }
 	.box-block.--main {
 		z-index: 2; }
+	.box-block p:first-of-type {
+		min-height: 75px; }
+	@media (min-width: 768px) {
+    .box-block {
+      padding: .75rem; }
+	  .box-block p:first-of-type {
+			min-height: 150px; } }
+	@media (min-width: 992px) {
+    .box-block {
+      padding: 1.5rem !important; } }
 
 
 .db-block .db-box {
