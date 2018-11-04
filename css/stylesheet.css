@@ -385,12 +385,25 @@ ul.bullet li::before {
 	#featurettes .featurette:nth-child(odd) {
 		background-color: #dfe5ea !important; }
 
+
+.section-title {
+  color: #666 !important;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.05rem; }
+  @media (min-width: 40em) { 
+    .section-title { font-size: 2.75rem; } }
+  @media (min-width: 62em) { 
+    .section-title { font-size: 3rem; } }
+
 .display-5 {
   font-size: 3rem;
   font-weight: 300;
   line-height: 1.1;
   letter-spacing: -.05rem; }
-h1.showcase {
+h1.showcase,
+.h1.showcase {
   font-size: calc(.6em + 8vw);
   font-weight: 700;
   line-height: .85;
@@ -399,7 +412,8 @@ h1.showcase {
   white-space: nowrap;
   opacity: .85;
   color: #343a40; }
-h2.showcase {
+h2.showcase,
+.h2.showcase {
   font-size: calc(.6em + 6vw);
   font-weight: 700;
   line-height: .85;
@@ -408,10 +422,12 @@ h2.showcase {
   white-space: nowrap;
   color: #343a40; }
 	@media (max-width: 48em) {
-		h1.showcase {
+		h1.showcase,
+		.h1.showcase {
 			letter-spacing: -.15rem;
 			white-space: normal; }
-		h2.showcase {
+		h2.showcase,
+		.h2.showcase {
 			font-size: calc(.6em + 7vw);
 			letter-spacing: -.1rem;
 			white-space: normal; } }

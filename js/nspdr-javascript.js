@@ -16,7 +16,7 @@ function displayHamburger() {
 		/* ----------------------------------------------------------- */
 		var counter = $('#display-count');
 		if (counter != null) {
-      var calcDays = Math.round((new Date('2018-11-26') - new Date()) / (1000 * 3600 * 24));
+      var calcDays = Math.round((new Date('2019-02-01') - new Date()) / (1000 * 3600 * 24));
 			counter.html(calcDays + ' days to go!');
 		} else { return; }
 
@@ -150,8 +150,8 @@ function displayHamburger() {
 		var $preloader = $('#preloader');
 		if ($preloader != null) {
 			var $loader = $preloader.find('.loader');
-			$loader.delay(1000).fadeOut();
-			$preloader.delay(1000).fadeOut('slow');
+			$loader.delay(1500).fadeOut();
+			$preloader.delay(1500).fadeOut('slow');
 		} else { return; }
 
 		/* ----------------------------------------------------------- */
@@ -198,7 +198,7 @@ catch (e) {}
 try {
 	// new WOW().init();
 	var wow = new WOW({
-		offset: 10, 	 // distance to element when triggering  (default is 0)
+		offset: 20, 	 // distance to element when triggering  (default is 0)
 		mobile: false, // trigger animations on mobile devices (default is true)
 	});
 	wow.init();	}
