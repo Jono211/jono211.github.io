@@ -16,7 +16,7 @@ function displayHamburger() {
 		/* ----------------------------------------------------------- */
 		var counter = $('#display-count');
 		if (counter != null) {
-      var calcDays = Math.round((new Date('2018-11-05') - new Date()) / (1000 * 3600 * 24));
+      var calcDays = Math.round((new Date('2019-03-01') - new Date()) / (1000 * 3600 * 24));
 			counter.html(calcDays + ' days to go!');
 		} else { return; }
 
@@ -52,13 +52,15 @@ function displayHamburger() {
 		/* ----------------------------------------------------------- */
 		/*  04. Toggle Statements
 		/* ----------------------------------------------------------- */
-		$('.toggle-statements').hide();
-			$('#solution-statement,#problem-statement').click(function() {
+		// $('.toggle-statements').hide();
+		// $('.toggle-statements').show();
+		$('#solution-statement,#problem-statement').click(function() {
 			var $panel = $(this);
 				$panel.children('h3').find('.fa').toggleClass('fa-rotate-180');
 				$panel.children('div.toggle-statements').slideToggle('slow');
 				$panel.children('h3').toggleClass('rounded');
-			if ($panel.children('h3').hasClass('border-danger')) {
+			// if ($panel.children('h3').hasClass('border-danger')) {
+			if ($panel.hasClass('stated')) {
 				$panel.toggleClass('border-danger');
 			} else {
 				$panel.toggleClass('border-success');
@@ -145,13 +147,13 @@ function displayHamburger() {
 		});
 
 		/* ----------------------------------------------------------- */
-		/*  09. Preloader
+		/*  09. Fake Preloader
 		/* ----------------------------------------------------------- */
 		var $preloader = $('#preloader');
 		if ($preloader != null) {
 			var $loader = $preloader.find('.loader');
-			$loader.delay(2000).fadeOut();
-			$preloader.delay(2000).fadeOut('slow');
+			$loader.delay(1500).fadeOut();
+			$preloader.delay(1500).fadeOut('slow');
 		} else { return; }
 
 		/* ----------------------------------------------------------- */
@@ -192,14 +194,77 @@ function displayHamburger() {
 
 
 // var rellax = new Rellax('.rellax');
-try {	var rellax = new Rellax('.rellax'); }
-catch (e) {}
+try {	var rellax = new Rellax('.rellax'); } catch(e){}
 
 try {
 	// new WOW().init();
 	var wow = new WOW({
-		offset: 10, 	 // distance to element when triggering  (default is 0)
+		offset: 20, 	 // distance to element when triggering  (default is 0)
 		mobile: false, // trigger animations on mobile devices (default is true)
 	});
 	wow.init();	}
-catch (e) {}
+catch(e){}
+
+
+try {
+	(function() {
+		var lineMaker = new LineMaker({
+				parent: { element: '.nspdr-background', position: 'append' },
+				// position: 'fixed',
+				lines: [
+					{ top: 0, left: '6.7%', width: 2, height: '100%', color: '#F44336', hidden: true, },
+					{ top: 0, left: '14%', width: 3, height: '100%', color: '#8BC34A', hidden: true, },
+					{ top: 0, left: '50%', width: 2, height: '100%', color: '#2196F3', hidden: true, },
+					{ top: 0, left: '86%', width: 3, height: '100%', color: '#8BC34A', hidden: true, },
+					{ top: 0, left: '93.3%', width: 2, height: '100%', color: '#F44336', hidden: true, },
+
+					// {top: 0, left: '8.333333%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '16.666667%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '25%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '33.333333%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '41.666667%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '50%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '58.333333%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '66.666667%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '75%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '83.333333%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+					// {top: 0, left: '91.666667%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
+				]
+		});
+
+		setTimeout(function() {
+			lineMaker.animateLinesIn();
+		}, 500);
+		// setTimeout(function() {
+		// 	disableButtons();
+		// 	lineMaker.animateLinesIn(enableButtons);
+		// }, 500);
+
+		// // Shows all lines.
+		// - lineMaker.showLines();
+		// // hides all lines.
+		// - lineMaker.hideLines();
+
+		// var ctrls = [].slice.call(document.querySelectorAll('.actions > button'));
+		// ctrls.forEach(function(ctrl) {
+		// 	ctrl.setAttribute('disabled', true);
+		// });
+		// function enableButtons() {
+		// 	ctrls.forEach(function(ctrl) {
+		// 		ctrl.removeAttribute('disabled');
+		// 	});
+		// }
+		// function disableButtons() {
+		// 	ctrls.forEach(function(ctrl) {
+		// 		ctrl.setAttribute('disabled', true);
+		// 	});
+		// }
+		// document.querySelector('#hideAll').addEventListener('click', function() {
+		// 	lineMaker.hideLines();
+		// });
+		// document.querySelector('#showAll').addEventListener('click', function() {
+		// 	lineMaker.showLines();
+		// });
+
+	})(); }
+catch(e){}

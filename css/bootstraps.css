@@ -73,6 +73,8 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
 }
+html { font-size: 14px; }
+@media (min-width: 768px) { html { font-size: 16px; } }
 
 @-ms-viewport {
   width: device-width;
@@ -87,10 +89,13 @@ body {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
-  color: #333;
   text-align: left;
-  background-color: whitesmoke;
+  /* color: #333; */
+  /* background-color: whitesmoke; */
+  color: #222;
+  background-color: #fafafa;
 }
+
 [tabindex='-1']:focus {
   outline: 0 !important;
 }
@@ -494,9 +499,8 @@ pre code {
   word-break: normal;
 }
 .pre-scrollable {
-  /* max-height: 340px; */
-  max-height: 320px;
-  max-height: 20rem;
+  max-height: 340px;
+  /* max-height: 20rem; */
   overflow-y: scroll;
 }
 
@@ -508,23 +512,29 @@ pre code {
   margin-left: auto;
 }
 @media (min-width: 576px) {
+  /* small */
   .container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
+  /* medium */
   .container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
+  /* large */
   .container {
-    max-width: 960px;
+    /* max-width: 960px; */
+    max-width: 928px;
   }
 }
 @media (min-width: 1200px) {
+  /* xtra-large */
   .container {
-    max-width: 1140px;
+    /* max-width: 1140px; */
+    max-width: 1120px;
   }
 }
 .container-fluid {

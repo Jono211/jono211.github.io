@@ -44,6 +44,9 @@
         </p>
 		<![endif]-->
 
+    <!-- LOADER -->
+    <div id="preloader"><div class="loader"><img src="../img/preloader.gif"></div></div>
+
     <!-- BANNER -->
     <header class="container-fluid bg-white">
       <div class="container">
@@ -76,7 +79,7 @@
               <div class="dropdown-menu" aria-labelledby="navDropdown">
                 <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
 								<div class="dropdown-divider d-none d-md-block"></div>
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About&nbsp; <span class="expanded-1 fw-700">NSPDR</span></a>
                 <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
 								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
@@ -84,6 +87,7 @@
                   <i class="fa fa-sm fa-user mr-3"></i>E&hybull;Lodgement &nbsp;&ctdot;<span class="sr-only">(current)</span>
                 </a>
 								<div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item" href="publication.html"><i class="fa fa-sm fa-flag mr-3"></i>2018 Publication</a>
                 <a class="dropdown-item" href="resources.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
             </li>
@@ -145,10 +149,10 @@
             <div class="empty-space --halfish"></div>
             <div class="row card-group">
               <div class="col-md-6">
-                <div id="problem-statement" class="card card-raised border-danger">
-                  <h3 class="card-header card-title text-danger border-danger rounded statement-link">
+                <div id="problem-statement" class="card card-raised border-danger stated">
+                  <h3 class="card-header card-title text-danger border-danger statement-link">
                     <span class="statement-title">Problem Statement</span>
-                    <i class="float-right pt-2 fa fa-sm fa-chevron-down stated"></i>
+                    <i class="float-right py-1 fa fa-sm fa-chevron-up"></i>
                   </h3>
                   <div class="card-body toggle-statements">
                     <p class="card-text">
@@ -167,9 +171,9 @@
 
               <div class="col-md-6">
                 <div id="solution-statement" class="card card-raised border-success">
-                  <h3 class="card-header card-title text-success border-success rounded statement-link">
+                  <h3 class="card-header card-title text-success border-success statement-link">
                     <span class="statement-title">Solution Statement</span>
-                    <i class="float-right pt-2 fa fa-sm fa-chevron-down stated"></i>
+                    <i class="float-right py-1 fa fa-sm fa-chevron-up"></i>
                   </h3>
                   <div class="card-body toggle-statements">
                     <p class="card-text">
@@ -246,12 +250,13 @@
 
 
       <div id="explore-app" class="container"><hr class="dark my-0"></div>
+
 			<section class="segment --headers" draggable="true">
         <div class="container align-items-end justify-content-center">
           <div class="row align-items-top text-left">
             <div class="col-12 col-md-6">
               <p class="mt-md-5 mb-5"><img alt="NSPDR" height="40" src="../img/logos/acronym-dark.png"></p>
-              <h2 class="h1 fw-600">Land Use Applications</h2>
+              <h2 class="section-title">Land Use Applications</h2>
               <p class="lead mr-lg-4 mr-xl-5">
 								The Department of Rural Development and Land Reform has made the National Spatial Planning Data Repository and E&NoBreak;-&NoBreak;Lodgement available for use by all municipalities in South Africa as well as the public. E&NoBreak;-&NoBreak;Lodgement allows members from the public to electronically lodge land use applications. The respective municipality will be informed of the application and process the application electronically, using E&NoBreak;-&NoBreak;Lodgement.
 							</p>
@@ -259,7 +264,7 @@
 								<a href="../index.html#nspdr-countdown" class="btn btn-lg btn-pill btn-outline-nspdr2 btn-shadow --wobbleX fw-600">Explore Features</a>
 							</p>
 
-              <hr class="space-2 d-none d-xl-block">
+              <!-- <hr class="space-2 d-none d-xl-block"> -->
               <p class="lead-2 mt-5">Follow us and ask more on:</p>
               <p class="lead">
                 <a class="text-nspdr1 mr-4 ml-1" title="Facebook" href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386"><i class="fab fa-2x fa-facebook-f grow-large"></i></a>
@@ -276,9 +281,14 @@
         </div>
       </section>
 
+
       <div id="user-profiles" class="container"><hr class="light"></div>
+
 			<section class="segment --headers" draggable="true">
         <div class="container">
+          <div class="row justify-content-center no-gutters">
+            <div class="col-12 col-lg-11">
+
           <div class="row text-center">
             <div class="col-12">
               <h2 class="display-3 fw-600"><span class="condensed-3">E<span class="fw-700">&middot;</span></span>Lodgement’s User Profiles</h2>
@@ -319,13 +329,18 @@
             </div>
           </div>
         </div>
+        </div>
+        </div>
       </section>
 
 
       <div id="learn-more" class="container"><hr class="dark"></div>
+
 			<section class="segment" draggable="true">
         <div class="container marketing">
           <div class="empty-space --half"></div>
+          <div class="row justify-content-center no-gutters">
+            <div class="col-12 col-lg-11">
 
           <div class="row featurette">
             <div class="col-md-11 mx-auto">
@@ -349,12 +364,19 @@
               <img class="rounded img-fluid img-shadow" src="../img/uiux/elodgement-banner.png" alt="NSPDR E-Lodgement">
             </div>
           </div>
+          </div>
+          </div>
         </div> <!-- /.container .marketing -->
       </section>
 
+
       <div id="seven-benefits" class="container"><hr class="dark"></div>
+
 			<section class="segment" draggable="true">
         <div class="container marketing">
+          <div class="row justify-content-center no-gutters">
+            <div class="col-12 col-lg-11">
+
           <h2 class="featurette-heading condensed-1 ml-2">
             Top Benefits <br class="show-on-mobile"><span class="text-muted">of E&NoBreak;-&NoBreak;Lodgement.</span>
           </h2>
@@ -365,7 +387,8 @@
               <tr class="h4">
                 <th scope="col" class="fat pl-4">&numero;</th>
                 <th scope="col" class="pl-3">&nbsp;</th>
-                <th scope="col" class="fat pl-4">Benefits of E&NoBreak;-&NoBreak;Lodgement</th>
+                <!-- <th scope="col" class="fat pl-4">Benefits of E&NoBreak;-&NoBreak;Lodgement</th> -->
+                <th scope="col" class="fat pl-4">Benefit Description</th>
                 <th scope="col" class="pl-3">&nbsp;</th>
                 <th scope="col" class="fat pl-4">Value</th>
               </tr>
@@ -426,6 +449,9 @@
           <div class="empty-space --single"></div>
           <div class="col-md-10 mx-auto"><div class="special-divider"></div></div>
           <div class="empty-space --half"></div>
+
+          </div>
+          </div>
         </div> <!-- /.container .marketing -->
 
         <hr class="space-6">
@@ -477,6 +503,7 @@
     <script src="../js/modernizr.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/rellax.min.js"></script>
+		<!-- <script src="../js/line-maker.js"></script> -->
     <script src="../js/twbsmd-popper.min.js"></script>
     <script src="../js/nspdr-javascript.js"></script>
 
