@@ -1099,9 +1099,9 @@ hr[class^='space-'] {
 .bg-spatial {
   background: #0f5c29; /* fallback */
   background: -webkit-gradient(linear, left top, right top, from(#0f5c29), to(#237534)) !important;
-  background: -webkit-linear-gradient(left, #0f5c29, #237534) !important;
-  background: -o-linear-gradient(left, #0f5c29, #237534) !important;
-  background: linear-gradient(to right, #0f5c29, #237534) !important; }
+  background: -webkit-linear-gradient(left, #0f5c29, #037534) !important;
+  background: -o-linear-gradient(left, #0f5c29, #037534) !important;
+  background: linear-gradient(to right, #0f5c29, #037534) !important; }
 
 .text-black    { color: #111 !important; }
 .text-tertiary { color: #4e545a !important; }
@@ -1675,7 +1675,7 @@ hr[class^='space-'] {
 		        box-shadow: 0 1.6875rem 1.5rem -.875rem rgba(0,0,0,.33),
 								0 2.875rem 4.8125rem 0 rgba(0,0,0,.22); }
 
-.card.panel-raised {
+.shadow-on-hover {
   -webkit-box-shadow: 0 .3125rem .1875rem rgba(0,0,0,.12),
               0 .0625rem .125rem rgba(0,0,0,.24);
           box-shadow: 0 .3125rem .1875rem rgba(0,0,0,.12),
@@ -1683,7 +1683,7 @@ hr[class^='space-'] {
   -webkit-transition: all .3s cubic-bezier(.55,.44,.44,.55);
   -o-transition: all .3s cubic-bezier(.55,.44,.44,.55);
   transition: all .3s cubic-bezier(.55,.44,.44,.55); }
-	.card.panel-raised:hover {
+	.shadow-on-hover:hover {
 		-webkit-box-shadow: 0 1.6875rem 1.5rem -.875rem,
 								0 2.875rem 4.8125rem 0 rgba(0,0,0,.22);
 		        box-shadow: 0 1.6875rem 1.5rem -.875rem,
@@ -1699,6 +1699,11 @@ hr[class^='space-'] {
               0 1.875rem 3.125rem 0 rgba(0,0,0,.22);
   box-shadow: 0 1.275rem 1.5rem -.75rem rgba(0,0,0,.33),
               0 1.875rem 3.125rem 0 rgba(0,0,0,.22); }
+.panel-shadow-lg {
+  -webkit-box-shadow: 0 1.6875rem 1.5rem -.875rem rgba(0,0,0,.33),
+              0 2.875rem 4.8125rem 0 rgba(0,0,0,.22);
+  box-shadow: 0 1.6875rem 1.5rem -.875rem rgba(0,0,0,.33),
+              0 2.875rem 4.8125rem 0 rgba(0,0,0,.22); }
 .panel-shadow-sm {
   -webkit-box-shadow: 0 1.275rem 1.5rem -.75rem rgba(0,0,0,.33),
               0 1.875rem 3.125rem 0 rgba(0,0,0,.22) !important;
