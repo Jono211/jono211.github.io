@@ -136,7 +136,7 @@
 
     <!-- CONTENT -->
     <main class="nspdr-background --raised circular top-brown" style="margin-top:-105px!important;">
-      <article class="bg-honeycomb bgshippo">
+      <article class="bg-honeycomb">
 
         <section class="segment pb-0" draggable="true">
           <div class="container">
@@ -147,10 +147,10 @@
               <div class="empty-space --single"></div>
               <div class="row card-group">
                 <div class="col-md-6">
-                  <div id="problem-statement" class="card card-raised border-danger">
-                    <h3 class="card-header card-title text-danger border-danger rounded statement-link">
+                  <div id="problem-statement" class="card card-raised border-danger stated">
+                    <h3 class="card-header card-title text-danger border-danger statement-link">
                       <span class="statement-title">Problem Statement</span>
-                      <i class="float-right pt-2 fa fa-sm fa-chevron-down stated"></i>
+                      <i class="float-right py-1 fa fa-sm fa-chevron-up"></i>
                     </h3>
                     <div class="card-body toggle-statements">
                       <p class="card-text">
@@ -167,9 +167,9 @@
                 <div class="empty-space --single d-lg-none d-inline"></div>
                 <div class="col-md-6">
                   <div id="solution-statement" class="card card-raised border-success">
-                    <h3 class="card-header card-title text-success border-success rounded statement-link">
+                    <h3 class="card-header card-title text-success border-success statement-link">
                       <span class="statement-title">Solution Statement</span>
-                      <i class="float-right pt-2 fa fa-sm fa-chevron-down stated"></i>
+                      <i class="float-right py-1 fa fa-sm fa-chevron-up"></i>
                     </h3>
                     <div class="card-body toggle-statements">
                       <p class="card-text">
@@ -190,13 +190,19 @@
               <div class="special-divider mx-auto w-75 mb-4"></div>
               <div class="empty-space --half"></div>
 
-              <div class="row">
-                <div class="col-md-11">
+            <div class="row justify-content-center no-gutters">
+              <div class="col-12 col-lg-10">
+              <!-- <div class="row"> -->
+                <!-- <div class="col-md-11"> -->
                   <p class="h3 fw-500 text-dark ml-md-2 leading-3">
                     The <span class="fat">NSPDR</span> Ecosystem will enable sharing of spatial planning information across all spheres of government and the private sector and will support key objectives of the NDP.
                   </p>
                 </div>
+              <div class="col-12">
+              <div class="nspdr-divider1 mx-auto mb-4"></div>
               </div>
+              </div>
+
             </div>
           </div>
         </section>
@@ -204,6 +210,7 @@
         <section class="segment" draggable="true">
           <hr class="space-4">
           <div class="container">
+
             <div class="row">
               <div class="col-md-4">
                 <h2 class="fw-600 mb-1 mx-2"><big class="text-nspdr1 fw-400 condensed-2">01</big> &nbsp; Share Spatially</h2>
@@ -258,8 +265,11 @@
 
         <section class="segment --headers" draggable="true">
           <div class="container">
-            <div class="row pb-xl-5">
-              <div class="col-12 col-md-10">
+            <div class="row justify-content-center no-gutters">
+              <div class="col-12 col-lg-11 pb-xl-5">
+
+            <!-- <div class="row pb-xl-5"> -->
+              <!-- <div class="col-12 col-md-10"> -->
                 <h2 class="display-4 fw-600 mb-0">Esri’s ArcGIS<sup>&reg;</sup> platform</h2>
                 <div class="linear-divider w-90 my-3"></div>
                 <p class="lead-2">The ArcGIS&reg; platform diagram can be unpacked into the various components, workflows and methods to show how each component contributes to the system.</p>
@@ -268,7 +278,7 @@
 
             <div class="row text-lg-right align-items-center">
 
-              <div class="col-12 col-sm-6 col-lg-3">
+              <div class="col-11 col-sm-6 col-lg-3">
                 <i class="fa fa-3x fa-database text-grey mb-1"></i>
                 <h4 class="my-1"><strong>Data Management</strong></h4>
                 <p>The central database storing all relevant geospatial data, providing a range of data management tools.</p>
@@ -282,7 +292,7 @@
                 <p>Services provide a ‘live view’ into the geodatabase in a very fast and reliable way.</p>
               </div>
 
-              <div class="col-12 col-sm-6 col-lg-3 text-left pt-3 pt-sm-0 order-lg-12">
+              <div class="col-11 col-sm-6 col-lg-3 text-left pt-3 pt-sm-0 order-lg-12">
                 <i class="fa fa-3x fa-cube text-dimgrey mb-1"></i>
                 <h4 class="my-1"><strong>Host Items</strong></h4>
                 <p>The portal is the place where users can go to discover, use, make and share maps.</p>
@@ -305,10 +315,15 @@
           <hr class="space-4">
         </section>
 
+
         <div id="spatial-data" class="container"><hr class="dark"></div>
 
         <section class="segment" draggable="true">
           <div class="container">
+            <div class="row justify-content-center no-gutters">
+              <div class="col-12 col-lg-11">
+              <!-- <div class="col-12 col-md-11 col-lg10"> -->
+
             <div class="row">
               <div class="col-12">
                 <h2 class="featurette-heading condensed-1 fw-700">
@@ -323,8 +338,9 @@
               <div class="row card-group">
                 <div class="col-md-4">
                   <div class="card shadow-raised">
-                    <h4 class="card-header bg-gradient border-tertiary text-truncate text-dimgrey fw-700">Administrative Boundaries</h4>
-                    <ul class="list-group list-group-flush lead">
+                    <!-- <h4 class="card-header bg-gradient border-tertiary text-truncate text-dimgrey fw-700">Administrative Boundaries</h4> -->
+                    <h4 class="card-header bg-gradient border-tertiary text-truncate fw-600">Admin. Boundaries</h4>
+                    <ul class="list-group list-group-flush">
                       <li class="list-group-item">Municipal Demarcation Board</li>
                       <li class="list-group-item">Independent Electoral Commission</li>
                     </ul>
@@ -332,8 +348,8 @@
                 </div>
                 <div class="col-md-4 my-5 my-md-0">
                   <div class="card shadow-raised">
-                    <h4 class="card-header bg-gradient border-tertiary text-dimgrey fw-700">Imagery</h4>
-                    <ul class="list-group list-group-flush lead">
+                    <h4 class="card-header bg-gradient border-tertiary fw-600">Imagery</h4>
+                    <ul class="list-group list-group-flush">
                       <li class="list-group-item">National Geospatial Information</li>
                       <li class="list-group-item">SA National Space Agency</li>
                     </ul>
@@ -341,8 +357,8 @@
                 </div>
                 <div class="col-md-4">
                   <div class="card shadow-raised">
-                    <h4 class="card-header bg-gradient border-tertiary text-dimgrey fw-700">Road Networks</h4>
-                    <ul class="list-group list-group-flush lead">
+                    <h4 class="card-header bg-gradient border-tertiary fw-600">Road Networks</h4>
+                    <ul class="list-group list-group-flush">
                       <li class="list-group-item">Department of Transport</li>
                       <li class="list-group-item">SA National Roads Agency Limited</li>
                     </ul>
@@ -355,8 +371,8 @@
               <div class="row card-group">
                 <div class="col-md-4">
                   <div class="card shadow-raised">
-                    <h4 class="card-header bg-gradient border-tertiary text-dimgrey fw-700">Social Statistics</h4>
-                    <ul class="list-group list-group-flush lead">
+                    <h4 class="card-header bg-gradient border-tertiary fw-600">Social Statistics</h4>
+                    <ul class="list-group list-group-flush">
                       <li class="list-group-item">Statistics South Africa</li>
                       <li class="list-group-item">...</li>
                     </ul>
@@ -364,8 +380,8 @@
                 </div>
                 <div class="col-md-4 my-5 my-md-0">
                   <div class="card shadow-raised">
-                    <h4 class="card-header bg-gradient border-tertiary text-dimgrey fw-700">Land Use / Cover</h4>
-                    <ul class="list-group list-group-flush lead">
+                    <h4 class="card-header bg-gradient border-tertiary fw-600">Land Use / Cover</h4>
+                    <ul class="list-group list-group-flush">
                       <li class="list-group-item">National Geospatial Information</li>
                       <li class="list-group-item">Rural Development &amp; Land Reform</li>
                     </ul>
@@ -373,8 +389,8 @@
                 </div>
                 <div class="col-md-4">
                   <div class="card shadow-raised">
-                    <h4 class="card-header bg-gradient border-tertiary text-dimgrey fw-700">Cadastre</h4>
-                    <ul class="list-group list-group-flush lead">
+                    <h4 class="card-header bg-gradient border-tertiary fw-600">Cadastre</h4>
+                    <ul class="list-group list-group-flush">
                       <li class="list-group-item">Chief Surveyor-General</li>
                       <li class="list-group-item">Agriculture, Forestry and Fisheries</li>
                     </ul>
@@ -387,8 +403,8 @@
               <div class="row card-group">
                 <div class="col-md-4">
                   <div class="card shadow-raised">
-                    <h4 class="card-header bg-gradient border-tertiary text-dimgrey fw-700">Hydrology</h4>
-                    <ul class="list-group list-group-flush lead">
+                    <h4 class="card-header bg-gradient border-tertiary fw-600">Hydrology</h4>
+                    <ul class="list-group list-group-flush">
                       <li class="list-group-item">Dept. of Water and Sanitation</li>
                       <li class="list-group-item">Catchment Management Agencies</li>
                     </ul>
@@ -396,8 +412,8 @@
                 </div>
                 <div class="col-md-4 my-5 my-md-0">
                   <div class="card shadow-raised">
-                    <h4 class="card-header bg-gradient border-tertiary text-dimgrey fw-700">Geodesy</h4>
-                    <ul class="list-group list-group-flush lead">
+                    <h4 class="card-header bg-gradient border-tertiary fw-600">Geodesy</h4>
+                    <ul class="list-group list-group-flush">
                       <li class="list-group-item">National Geospatial Information</li>
                       <li class="list-group-item">...</li>
                     </ul>
@@ -405,8 +421,8 @@
                 </div>
                 <div class="col-md-4">
                   <div class="card shadow-raised">
-                    <h4 class="card-header bg-gradient border-tertiary text-dimgrey fw-700">Conservation Areas</h4>
-                    <ul class="list-group list-group-flush lead">
+                    <h4 class="card-header bg-gradient border-tertiary fw-600">Conservation Areas</h4>
+                    <ul class="list-group list-group-flush">
                       <li class="list-group-item">Dept. of Environmental Affairs</li>
                       <li class="list-group-item">...</li>
                     </ul>
@@ -417,15 +433,18 @@
 
             <div class="empty-space --half"></div>
           </div>
+          </div>
+          </div>
           <!-- <hr class="space-9"> -->
         </section>
+
 
         <div id="geo-tools" class="container"><hr class="space-2"></div>
 
         <section class="segment" draggable="true">
           <div class="container">
             <div class="row justify-content-center no-gutters">
-              <div class="col-12 col-lg-10">
+              <div class="col-12 col-lg-11 col-lg10">
 
             <div class="row">
               <div class="col-12">
@@ -520,11 +539,13 @@
           </div>
         </section>
 
+
         <div id="e-learning" class="container"><hr class="light"></div>
+
         <section class="segment" draggable="true">
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col-12 col-md-11">
+              <div class="col-12 col-md-11 col-lg10">
 
                 <h2 class="featurette-heading condensed-1 fw-700">
                   E-Learning: <br class="show-on-mobile"><span class="text-muted">Training Platform</span>
@@ -663,8 +684,11 @@
 
         <section class="segment --headers bg-background force-radius" draggable="true" style="background-image:url('../img/theme/bg-altstyle1.svg')">
           <div class="container">
+            <div class="row justify-content-center no-gutters">
+              <div class="col-12 col-lg-11">
+
             <div class="row">
-              <div class="col-12 col-sm-10 col-md-8 col-lg-6 text-left">
+              <div class="col-12 col-sm-10 col-md-8 col-lg6 text-left">
                 <div class="ml-2">
                   <h2 class="h1 mb-3 fw-600"><strong>NSPDR</strong> E&NoBreak;-&NoBreak;Lodgement</h2>
                   <p class="lead">
@@ -679,7 +703,9 @@
               </div>
             </div>
           </div>
-          <hr class="space-4">
+          </div>
+          </div>
+          <hr class="space-6">
         </section>
 
       </article>
@@ -728,7 +754,7 @@
     <script src="../js/modernizr.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/rellax.min.js"></script>
-		<script src="../js/line-maker.js"></script>
+		<!-- <script src="../js/line-maker.js"></script> -->
     <script src="../js/twbsmd-popper.min.js"></script>
     <script src="../js/nspdr-javascript.js"></script>
 

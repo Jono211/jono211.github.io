@@ -16,7 +16,7 @@ function displayHamburger() {
 		/* ----------------------------------------------------------- */
 		var counter = $('#display-count');
 		if (counter != null) {
-      var calcDays = Math.round((new Date('2019-02-01') - new Date()) / (1000 * 3600 * 24));
+      var calcDays = Math.round((new Date('2019-03-01') - new Date()) / (1000 * 3600 * 24));
 			counter.html(calcDays + ' days to go!');
 		} else { return; }
 
@@ -52,13 +52,15 @@ function displayHamburger() {
 		/* ----------------------------------------------------------- */
 		/*  04. Toggle Statements
 		/* ----------------------------------------------------------- */
-		$('.toggle-statements').hide(); $('.toggle-statements').show();
+		// $('.toggle-statements').hide();
+		// $('.toggle-statements').show();
 		$('#solution-statement,#problem-statement').click(function() {
 			var $panel = $(this);
 				$panel.children('h3').find('.fa').toggleClass('fa-rotate-180');
 				$panel.children('div.toggle-statements').slideToggle('slow');
 				$panel.children('h3').toggleClass('rounded');
-			if ($panel.children('h3').hasClass('border-danger')) {
+			// if ($panel.children('h3').hasClass('border-danger')) {
+			if ($panel.hasClass('stated')) {
 				$panel.toggleClass('border-danger');
 			} else {
 				$panel.toggleClass('border-success');
@@ -145,7 +147,7 @@ function displayHamburger() {
 		});
 
 		/* ----------------------------------------------------------- */
-		/*  09. Preloader
+		/*  09. Fake Preloader
 		/* ----------------------------------------------------------- */
 		var $preloader = $('#preloader');
 		if ($preloader != null) {
@@ -192,8 +194,7 @@ function displayHamburger() {
 
 
 // var rellax = new Rellax('.rellax');
-try {	var rellax = new Rellax('.rellax'); }
-catch(e){}
+try {	var rellax = new Rellax('.rellax'); } catch(e){}
 
 try {
 	// new WOW().init();
@@ -204,26 +205,18 @@ try {
 	wow.init();	}
 catch(e){}
 
+
 try {
 	(function() {
 		var lineMaker = new LineMaker({
 				parent: { element: '.nspdr-background', position: 'append' },
-				// parent: { element: '.segment', position: 'prepend' },
 				// position: 'fixed',
 				lines: [
-					// {top: 0, left: '12.5%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '25%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '37.5%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '50%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '62.5%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '75%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '87.5%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-
-					{top: 0, left: '6.7%', width: 2, height: '100%', color: '#F44336', },
-					{top: 0, left: '14%', width: 3, height: '100%', color: '#8BC34A', },
-					{top: 0, left: '50%', width: 2, height: '100%', color: '#2196F3', },
-					{top: 0, left: '86%', width: 3, height: '100%', color: '#8BC34A', },
-					{top: 0, left: '93.3%', width: 2, height: '100%', color: '#F44336', },
+					{ top: 0, left: '6.7%', width: 2, height: '100%', color: '#F44336', hidden: true, },
+					{ top: 0, left: '14%', width: 3, height: '100%', color: '#8BC34A', hidden: true, },
+					{ top: 0, left: '50%', width: 2, height: '100%', color: '#2196F3', hidden: true, },
+					{ top: 0, left: '86%', width: 3, height: '100%', color: '#8BC34A', hidden: true, },
+					{ top: 0, left: '93.3%', width: 2, height: '100%', color: '#F44336', hidden: true, },
 
 					// {top: 0, left: '8.333333%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
 					// {top: 0, left: '16.666667%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
@@ -236,30 +229,12 @@ try {
 					// {top: 0, left: '75%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
 					// {top: 0, left: '83.333333%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
 					// {top: 0, left: '91.666667%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-
-					// {top: 0, left: '12.5vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '25vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '37.5vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '50vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '62.5vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '75vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-					// {top: 0, left: '87.5vw', width: 1, height: '100%', color: '#7599E4', hidden: true, },
-
-					// {top: '12.5vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
-					// {top: '25vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
-					// {top: '37.5vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
-					// {top: '50vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
-					// {top: '62.5vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
-					// {top: '75vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
-					// {top: '87.5vh', left: 0, width: '100%', height: 1, color: '#7599E4', hidden: true, },
 				]
 		});
 
-		// lineMaker.animateLinesIn();
 		setTimeout(function() {
 			lineMaker.animateLinesIn();
 		}, 500);
-
 		// setTimeout(function() {
 		// 	disableButtons();
 		// 	lineMaker.animateLinesIn(enableButtons);
