@@ -137,6 +137,17 @@
 /* svg > g * { cursor: pointer; } */
 #south-africa > g * { cursor: pointer; }
 
+#municipal {
+  height: 28rem;
+  display: block;
+	position: relative;
+  /* overflow-x: hidden; */
+	overflow-y: auto; }
+  @media (min-width: 576px) {
+    #municipal { height: 26rem; } }
+  @media (min-width: 992px) {
+    #municipal { height: 24rem; } }
+
 /* td.colNdx {  */
 .colNdx { 
   font-weight: 400;
@@ -251,21 +262,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navigator">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link px-md-2" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-md2" href="../index.html">Home</a></li>
             <!-- <li class="nav-item"><a class="nav-link pr-md-3" href="news.html">News</a></li> -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Features<i class="fa fa-sm fa-angle-down ml-1"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navDropdown">
-                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
-								<div class="dropdown-divider d-none d-md-block"></div>
-                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Ecosystem</span></a>
-                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement</span></a>
-                <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
-                <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
-              </div>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
@@ -273,17 +271,33 @@
               <div class="dropdown-menu" aria-labelledby="navDropdown2">
                 <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
 								<div class="dropdown-divider d-none d-md-block"></div>
-                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About&nbsp; <span class="expanded-1 fw-700">NSPDR</span></a>
+                <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About&nbsp; <span class="expanded1 fw-700">NSPDR</span></a>
+                <!-- <a class="dropdown-item" href="publication.html"><i class="fa fa-sm fa-flag mr-3"></i>2018 Publication</a> -->
+                <a class="dropdown-item" href="publication.html"><i class="fa fa-sm fa-share-alt mr-3"></i>2018 Publication</a>
                 <!-- <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a> -->
 								<!-- <div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div> -->
                 <!-- <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a> -->
                 <!-- <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &nbsp;&ctdot;</span></a> -->
-                <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
-                <a class="dropdown-item" href="publication.html"><i class="fa fa-sm fa-flag mr-3"></i>2018 Publication</a>
+                <div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <!-- <a class="dropdown-item" href="news.html"><i class="fa fa-sm fa-newspaper mr-1"></i>&ensp;News &amp; Updates</a> -->
+                <a class="dropdown-item" href="news.html"><i class="fa fa-sm fa-info-circle mr-3"></i>News &amp; Updates</a>
                 <a class="dropdown-item" href="resources.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
             </li>
-            <li class="nav-item"><a class="nav-link px-md-1" href="news.html">News</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Features<i class="fa fa-sm fa-angle-down ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Feature Set</small></div>
+								<div class="dropdown-divider d-none d-md-block"></div>
+                <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
+                <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement</span></a>
+                <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
+                <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
+              </div>
+            </li>
+            <!-- <li class="nav-item"><a class="nav-link px-md-1" href="news.html">News</a></li> -->
           </ul>
           <span class="navbar-text override d-none d-lg-inline-flex mr-3 pr-3">
             <a id="display-count" title="“T”-minus" href="../index.html#nspdr-countdown">nspdr.info</a>
@@ -329,7 +343,7 @@
 
 
     <!-- CONTENT -->
-    <main class="nspdr-background --raised circular top-yello">
+    <main class="nspdr-background --raised circular top-brown">
       <article class="bg-honeycomb force-radius">
 
       <section class="segment pb-1" draggable="true">
@@ -337,7 +351,7 @@
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-11">
 		          <div class="text-center">
-		            <h1 class="showcase text-nspdr1">slideshow <br class="d-inline d-md-none"><span class="text-nspdr2">viewer</span></h1>
+		            <h1 class="showcase text-nspdr1">slideshow <br class="d-inline d-md-none"><span class="text-dark">viewer</span></h1>
 		          </div>
 	          </div>
 	        </div>
@@ -1634,13 +1648,12 @@
       <section class="segment --headers" draggable="true">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-11 col-xl-10 mx-auto">
+            <div class="col-12 col-md-11 col-lg-10 mx-auto">
 
               <div class="header">
-                <h2 class="display5 h1 grey-85 fw-300">Table with all Municipalities Listed</h2>
-                <!-- <h3 class="grey-85 mb-3 ml-1 fw-400">Here’s the details below are related to the NSPDR project specifically</h3> -->
+                <h2 class="display5 h1 grey-85 fw-300 mb-1">Table of Listed Municipalities</h2>
                 <h3 class="grey-136 mb-3 ml-1 fw-400">The details below relate specifically to the NSPDR project</h3>
-                <hr class="space-3">
+                <hr class="space-2">
               </div>
               <div id="switchers" class="switcher d-none">
                 <a class="btn-sm btn-pill btn-outline-nspdr2 fw-700 mr-2" role="button" href="javascript:void;" id="switcher-showall">Show All</a>
@@ -1649,88 +1662,7 @@
                 <a class="btn-sm btn-pill btn-outline-nspdr1 fw-500 mr-3" role="button" href="javascript:void;" id="switcher-locals">Locals</a>
               </div>
 
-              <div class="table-responsive table-full-width">
-              <!-- <table class="table table-hover table-sm" style="font-size:14px!important;">
-                <thead class="grey-136 bg-light">
-                  <th></th>
-                  <th scope="col">_ID</th>
-                  <th>NAME</th>
-                  <th>TYPE</th>
-                  <th>CODE</th>
-                  <th>PROV</th>
-                  <th>DM-C</th>
-                  <th>ENGAGED</th>
-                  <th>SP DATA</th>
-                </thead>
-                <tbody class="text-body bg-white-67">
-                  <tr>
-                    <td></td>
-                    <td class="colNdx">001</td>
-                    <td>City of Johannesburg</td>
-                    <td>Metropol</td>
-                    <td>JHB</td>
-                    <td>Gauteng</td>
-                    <td>Gauteng</td>
-                    <td>Completed</td>
-                    <td>Partial Only</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td class="colNdx">002</td>
-                    <td>Minerva Hooper</td>
-                    <td>District</td>
-                    <td>DC42</td>
-                    <td>Curaçao</td>
-                    <td>Curaçao</td>
-                    <td>Pending</td>
-                    <td>Not Applicable</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td class="colNdx">003</td>
-                    <td>Sage Rodriguez</td>
-                    <td>Local</td>
-                    <td>LIM303</td>
-                    <td>Limpopo</td>
-                    <td>Limpopo</td>
-                    <td>Pending</td>
-                    <td>N/A</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td class="colNdx">004</td>
-                    <td>Philip Chaney</td>
-                    <td>Local</td>
-                    <td>KZN099</td>
-                    <td>KwaZulu-Natal</td>
-                    <td>KwaZulu-Natal</td>
-                    <td>Pending</td>
-                    <td>Not Applicable</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td class="colNdx">005</td>
-                    <td>Mogale City</td>
-                    <td>Local</td>
-                    <td>GT421</td>
-                    <td>Gauteng</td>
-                    <td>Gauteng</td>
-                    <td>Unresponsive</td>
-                    <td>NA</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td class="colNdx">006</td>
-                    <td>Alfred Nzo</td>
-                    <td>District</td>
-                    <td>DC4</td>
-                    <td>Eastern Cape</td>
-                    <td>Eastern Cape</td>
-                    <td>Completed</td>
-                    <td>Collected</td>
-                  </tr>
-                </tbody>
-              </table> -->
+              <div id="municipal" class="table-responsive table-full-width">
 
 <table id="muni-table" class="table table-hover table-sm" style="font-size:12.5px!important;">
   <thead class="grey-136 bg-light">
@@ -1742,7 +1674,7 @@
     <th><b>PROVINCE</b></th>
     <th><b>DISTRICT</b></th>
     <th><b>ENGAGED</b></th>
-    <th><b>HAS DATA</b></th>
+    <th><b>HAS&nbsp;DATA</b></th>
   </thead>
   <tbody class="text-body bg-white-67">
   <tr>
