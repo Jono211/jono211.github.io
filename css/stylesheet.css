@@ -544,8 +544,8 @@ h2.showcase,
 			transition: transform .3s;
 			transition: transform .3s, -webkit-transform .3s;
 			-webkit-transition-timing-function: cubic-bezier(1,.68,.16,.9);
-			-o-transition-timing-function: cubic-bezier(1,.68,.16,.9);
-			   transition-timing-function: cubic-bezier(1,.68,.16,.9); }
+          -o-transition-timing-function: cubic-bezier(1,.68,.16,.9);
+            transition-timing-function: cubic-bezier(1,.68,.16,.9); }
 			.navbar-nav .nav-link:hover::before {
 				-webkit-transform: scale3d(1,1,1);
 				transform: scale3d(1,1,1); }
@@ -2002,9 +2002,12 @@ hr[class^='space-'] {
   background: -o-linear-gradient(left, rgba(58,28,113,.5), rgba(215,109,119,.5), rgba(255,175,122,.5));
   background: linear-gradient(to right, rgba(58,28,113,.5), rgba(215,109,119,.5), rgba(255,175,122,.5)); }
 .filter-51::after {
-  background: -webkit-linear-gradient(315deg, rgba(255,207,113,.5) 10%, rgba(35,118,221,.5) 100%);
-  background: -o-linear-gradient(315deg, rgba(255,207,113,.5) 10%, rgba(35,118,221,.5) 100%);
-  background: linear-gradient(135deg, rgba(255,207,113,.5) 10%, rgba(35,118,221,.5) 100%); }
+  background: -webkit-linear-gradient(315deg, rgba(179,145,78,.5) 10%, rgba(24,69,124,.5) 100%);
+  background: -o-linear-gradient(315deg, rgba(179,145,78,.5) 10%, rgba(24,69,124,.5) 100%);
+  background: linear-gradient(135deg, rgba(179,145,78,.5) 10%, rgba(24,69,124,.5) 100%); }
+  /* background: -o-linear-gradient(315deg, rgba(255,207,113,.5) 10%, rgba(35,118,221,.5) 100%); */
+  /* background: linear-gradient(135deg, rgba(255,207,113,.5) 10%, rgba(35,118,221,.5) 100%); } */
+  /* background: linear-gradient(135deg, rgba(255,207,113,.5) 10%, rgba(35,118,221,.5) 100%); } */
 .filter-52::after {
   background: -webkit-radial-gradient(10% 20%, circle farthest-corner, rgba(233,41,41,.5) 0%, rgba(63,47,47,.5) 90%);
   background: -o-radial-gradient(10% 20%, circle farthest-corner, rgba(233,41,41,.5) 0%, rgba(63,47,47,.5) 90%);
@@ -2092,7 +2095,7 @@ hr[class^='space-'] {
 .bg-waves {
   background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3NSIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNzUiIGhlaWdodD0iMTAwIiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxjaXJjbGUgY3g9Ijc1IiBjeT0iNTAiIHI9IjI4LjMlIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2U9IiNmNWY1ZjUiIGZpbGw9Im5vbmUiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIwIiByPSIyOC4zJSIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlPSIjZjVmNWY1IiBmaWxsPSJub25lIj48L2NpcmNsZT4KPGNpcmNsZSBjeT0iMTAwIiByPSIyOC4zJSIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlPSIjZjVmNWY1IiBmaWxsPSJub25lIj48L2NpcmNsZT4KPC9zdmc+'); }
 
-/* NSPDR Background
+/* Theme Background
 =================== */
 .nspdr-background {
   position: relative;
@@ -2219,7 +2222,7 @@ section.segment.--headers h1 {
 .top-purpl { border-top: solid .375rem #657 !important; }
 .top-touch { border-top: solid .375rem #58f !important; }
 
-/* NSPDR Footer
+/* Theme Footer
 =============== */
 footer.nspdr-footer {
   padding-top: 1.5rem;
@@ -2369,8 +2372,10 @@ ul.underline-on-hover li a {
 		margin-left: -.2rem;
 		width: 100px;
 		height: auto; }
-.navbar form > .btn {
+/* .navbar form > .btn { */
+.navbar form .btn {
   padding: .2rem .875rem;
+  font-weight: 600;
   font-size: .875rem; }
 
 .navbar-toggler-icon.override {
