@@ -1,4 +1,4 @@
-// basic javaScript functions ...
+// Simple JavaScript functions ...
 
 function displayHamburger() {
   var hamburger = document.getElementById('burgers');
@@ -125,7 +125,7 @@ function displayHamburger() {
 		});
 
 		/* ----------------------------------------------------------- */
-		/*  08. Breakpoints Alert
+		/*  08. Breakpoint Alerts
 		/* ----------------------------------------------------------- */
 		$('#point-breaks').click(function() {
 			var win = $(window);

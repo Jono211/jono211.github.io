@@ -48,6 +48,33 @@ ul.flush {
   ol.flush.paragraph > li,
   ul.flush.paragraph > li {
     margin-bottom: .5rem; }
+  ol.lists-paragraph > li,
+  ul.lists-paragraph > li {
+    margin-bottom: .5rem; }
+
+ul.bulleted-list {
+  list-style-type: none; }
+  ul.bulleted-list > li {
+    margin-bottom: .5rem;
+    display: inline-block;
+    position: relative; }
+    ul.bulleted-list > li::before {
+      left: -2rem;
+      width: 2rem;
+      /* "▪ ◆ ⬥ ◼ ☑ ➨ ✔ ▶" */
+      /* content: "•"; */
+      /* line-height: .9; */
+      /* font-size: 125%; */
+      /* content: "●"; */
+      /* font-size: 80%; */
+      content: "⯁";
+      /* color: chocolate; */
+      /* color: #aa733c; */
+      /* color: #b7622d; */
+      color: #a63;
+      display: inline-block;
+      position: absolute; }
+
 
 footer#footer.end-of-page {
   background-color: #bbc1c7;
@@ -65,8 +92,10 @@ footer#footer:not(.end-of-page) {
 .opaque-50 { opacity: .5  !important; }
 .opaque-67 { opacity: .67 !important; }
 .opaque-75 { opacity: .75 !important; }
+.opaque-80 { opacity: .8  !important; }
 .opaque-85 { opacity: .85 !important; }
 .opaque-90 { opacity: .9  !important; }
+.opaque-95 { opacity: .95 !important; }
 .opaque-99 { opacity: .99 !important; }
 
 .img-hover {
@@ -347,6 +376,7 @@ ul.statement > li {
 ul.bullet li::before {
   content: "•";
   color: dimgrey;
+  color: chocolate;
   display: inline-block;
   font-size: 110%;
   line-height: 1.15;
