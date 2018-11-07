@@ -19,8 +19,8 @@ function displayHamburger() {
       var calcDays = Math.round((new Date('2019-03-01') - new Date()) / (1000 * 3600 * 24));
 			counter.html(calcDays + ' days to go!');
 		} else { return; }
+		// $('#display-count').addClass('d-none');
 		$('#display-count').hide();
-		$('#display-count').addClass('d-none');
 
 		/* ----------------------------------------------------------- */
 		/*  02. Bootstrap Accordion
