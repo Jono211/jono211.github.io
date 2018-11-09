@@ -1171,6 +1171,9 @@ hr[class^='space-'] {
 .text-grey077   { color: #4d4d4d; }
 .text-grey128   { color: #808080; }
 
+.grey-077 { color: #4d4d4d; }
+.grey-128 { color: #808080; }
+
 .grey-34  { color: #222; }
 .grey-51  { color: #333; }
 .grey-68  { color: #444; }
