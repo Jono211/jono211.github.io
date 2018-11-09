@@ -53,6 +53,7 @@ ul.flush {
     margin-bottom: .5rem; }
 
 ul.bulleted-list {
+  width: 95%;
   list-style-type: none; }
   ul.bulleted-list > li {
     margin-bottom: .5rem;

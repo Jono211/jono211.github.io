@@ -190,6 +190,19 @@ function displayHamburger() {
 		// 	}, { offset: '85%' });
 		// };
 		// animateWayPoint();
+    // Headroom - show/hide navbar on scroll
+
+    if ($('.headroom')[0]) {
+			var headroom  = new Headroom(document.querySelector("#navigator-nav"), {
+				offset: 300,
+				tolerance: {
+					up: 30,
+					down: 30
+				},
+			});
+			headroom.init();
+    };
+
 
 	});
 }(jQuery));
