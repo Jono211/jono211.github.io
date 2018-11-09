@@ -59,18 +59,16 @@ ul.bulleted-list {
     display: inline-block;
     position: relative; }
     ul.bulleted-list > li::before {
-      left: -2rem;
-      width: 2rem;
+      left: -2.25rem;
+      width: 2.25rem;
       /* "▪ ◆ ⬥ ◼ ☑ ➨ ✔ ▶" */
-      /* content: "•"; */
-      /* line-height: .9; */
-      /* font-size: 125%; */
-      /* content: "●"; */
-      /* font-size: 80%; */
-      content: "⯁";
-      /* color: chocolate; */
-      /* color: #aa733c; */
-      /* color: #b7622d; */
+      /* content: "•";
+      line-height: .9;
+      font-size: 125%; */
+      /* content: "●";
+      font-size: 80%; */
+      /* content: "⯁"; */
+      content: "▶";
       color: #a63;
       display: inline-block;
       position: absolute; }
@@ -861,19 +859,28 @@ hr[class^='space-'] {
 
 .nspdr-divider1 {
   margin: 1.5rem 0 2rem;
-  width: 120px;
-  height: 6px !important;
+  width: 7.5rem;
+  height: .375rem;
 	background-color: rgba(17,102,51,.8); }
 .nspdr-divider2 {
   margin: 1.5rem 0 2rem;
   width: 7.5rem;
-  height: .375rem !important;
+  height: .375rem;
 	background-color: rgba(170,102,34,.8); }
+/* .nspdr-divider2.--extra { width: 10rem; } */
 .nspdr-divider3 {
   margin: 1.5rem 0 2rem;
   width: 7.5rem;
-  height: .375rem !important;
+  height: .375rem;
 	background-color: rgba(136,136,119,.8); }
+/* .nspdr-divider3.--extra { width: 10rem; } */
+[class^='nspdr-divider'].--extra { width: 10rem; }
+
+.drdlr-divider {
+  margin: 2rem 0;
+  width: 10rem;
+  height: .625rem;
+	background-color: #da2; }
 
 
 .clock-splitter {
@@ -2780,52 +2787,97 @@ ul.underline-on-hover li a {
         background-color: #f96332;
         color: #fff !important; }
 
-/* @-webkit-keyframes --change {
-  from {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  to {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%); } }
-@keyframes --change {
-  from {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  to {
-    opacity: 0;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%); } }
-.--change {
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-duration: .3s;
-  transition-duration: .3s;
-  -webkit-animation-name: --change;
-  animation-name: --change;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out; } */
-		/* -webkit-transform: scaleX(0);
-						transform: scaleX(0);
-		-webkit-transform-origin: bottom right;
-						transform-origin: bottom right;
-		-webkit-transition: transform .5s ease-out;
-		-webkit-transition: -webkit-transform .5s ease-out;
-						transition: -webkit-transform .5s ease-out;
-						transition: transform .5s ease-out;
-						transition: transform .5s ease-out, -webkit-transform .5s ease-out; }
-		ul.underline-on-hover li a:hover::after {
-			-webkit-transform: scaleX(1);
-							transform: scaleX(1);
-			-webkit-transform-origin: bottom left;
-							transform-origin: bottom left; } */
+#slideshow {
+  height: 28rem;
+  display: block;
+	position: relative;
+  overflow-x: hidden;
+	overflow-y: auto; }
+  @media (min-width: 576px) {
+    #slideshow { height: 26rem; } }
+  @media (min-width: 992px) {
+    #slideshow { height: 24rem; } }
+
+	#slideshow .slidetext > p {
+		color: #222 !important; }
+	#slideshow .slidetext > h3,
+	#slideshow .slidetext > h4 {
+    font-weight: 600;
+		color: #475 !important; }
+	#slideshow .slidetext {
+		display: none; }
+		#slideshow .slidetext.active {
+			display: block;
+		  transition: 1s; }
+
+#slideshow + .controls-container {
+  border-top: 1px solid #ccc;
+  padding-top: 1.5rem; }
+  #slideshow + .controls-container .middle,
+  #slideshow + .controls-container .arrows {
+    cursor: pointer;
+    -webkit-transition: color, background-color, .6s ease;
+    -o-transition: color, background-color, .6s ease;
+    transition: color, background-color, .6s ease; }
+    #slideshow + .controls-container .arrows:hover {
+      background-color: #f96332;
+      color: #fafafa !important; }
+    #slideshow + .controls-container .middle:hover {
+      background-color: #ffb236;
+      color: #4d4d4d !important; }
+
+.slideRight {
+  -webkit-animation: slideRight 1s both;
+  animation: slideRight 1s both; }
+  @-webkit-keyframes slideRight {
+    from { opacity: 0;
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%); }
+    to { opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0); } }
+  @keyframes slideRight {
+    from { opacity: 0;
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%); }
+    to { opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0); } }
+.slideLeft {
+  -webkit-animation: slideLeft 1s both;
+  animation: slideLeft 1s both; }
+  @-webkit-keyframes slideLeft {
+    from { opacity: 0;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%); }
+    to { opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0); } }
+  @keyframes slideLeft {
+    from { opacity: 0;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%); }
+    to { opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0); } }
+.slideOne {
+  -webkit-animation: slideOne 1.2s both;
+  animation: slideOne 1.2s both; }
+  @-webkit-keyframes slideOne {
+    from { opacity: 0;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); }
+    to { opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0); } }
+  @keyframes slideOne {
+    from { opacity: 0;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); }
+    to { opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0); } }
+
 
 .bi-slideshow {
 	background: #333;

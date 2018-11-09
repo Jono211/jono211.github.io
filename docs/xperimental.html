@@ -37,99 +37,6 @@
 		</script> -->
 
 <style>
-#slideshow {
-  height: 28rem;
-  display: block;
-	position: relative;
-  overflow-x: hidden;
-	overflow-y: auto; }
-  @media (min-width: 576px) {
-    #slideshow { height: 26rem; } }
-  @media (min-width: 992px) {
-    #slideshow { height: 24rem; } }
-
-	#slideshow .slidetext > p {
-		color: #222 !important; }
-	#slideshow .slidetext > h3,
-	#slideshow .slidetext > h4 {
-    font-weight: 600;
-		color: #475 !important; }
-	#slideshow .slidetext {
-		display: none; }
-		#slideshow .slidetext.active {
-			display: block;
-		  transition: 1s; }
-
-.slideRight {
-  -webkit-animation: slideRight 1s both;
-  animation: slideRight 1s both; }
-  @-webkit-keyframes slideRight {
-    from { opacity: 0;
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%); }
-    to { opacity: 1;
-      -webkit-transform: translateX(0);
-      transform: translateX(0); } }
-  @keyframes slideRight {
-    from { opacity: 0;
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%); }
-    to { opacity: 1;
-      -webkit-transform: translateX(0);
-      transform: translateX(0); } }
-
-.slideLeft {
-  -webkit-animation: slideLeft 1s both;
-  animation: slideLeft 1s both; }
-  @-webkit-keyframes slideLeft {
-    from { opacity: 0;
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%); }
-    to { opacity: 1;
-      -webkit-transform: translateX(0);
-      transform: translateX(0); } }
-  @keyframes slideLeft {
-    from { opacity: 0;
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%); }
-    to { opacity: 1;
-      -webkit-transform: translateX(0);
-      transform: translateX(0); } }
-
-.slideOne {
-  -webkit-animation: slideOne 1.2s both;
-  animation: slideOne 1.2s both; }
-  @-webkit-keyframes slideOne {
-    from { opacity: 0;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%); }
-    to { opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0); } }
-  @keyframes slideOne {
-    from { opacity: 0;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%); }
-    to { opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0); } }
-
-#slideshow + .controls-container {
-  border-top: 1px solid #ccc;
-  padding-top: 1.5rem; }
-  #slideshow + .controls-container .middle,
-  #slideshow + .controls-container .arrows {
-    cursor: pointer;
-    -webkit-transition: color, background-color, .6s ease;
-    -o-transition: color, background-color, .6s ease;
-    transition: color, background-color, .6s ease; }
-    #slideshow + .controls-container .arrows:hover {
-      background-color: #f96332;
-      color: #fafafa !important; }
-    #slideshow + .controls-container .middle:hover {
-      background-color: #ffb236;
-      color: #4d4d4d !important; }
-
 #rdlr-banner img {
   height: 84px !important;
   width: auto; }
@@ -571,7 +478,6 @@
                   </ul>
                 </div>
               </div>
-
               <div class="controls-container">
                 <ul class="pagination justify-content-center">
                   <li class="page-item">
