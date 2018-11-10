@@ -159,6 +159,44 @@ function displayHamburger() {
 		} else { return; }
 
 		/* ----------------------------------------------------------- */
+		/*  10.  Show/Hide On Scroll
+		/* ----------------------------------------------------------- */
+    if ($('.headroom')[0]) {
+			var headroom  = new Headroom(document.querySelector("#navbar-main"), {
+				offset: 450,
+				tolerance: {
+					up: 25,
+					down: 20
+				},
+			});
+			headroom.init();
+    }
+
+		/* ----------------------------------------------------------- */
+		/*  09.  Hover Dropdown Menu
+		/* ----------------------------------------------------------- */
+  	// $('ul.navbar-nav li.dropdown').hover(function() {
+    //   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(300);
+    // }, function() {
+    //   $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(300);
+    // });
+
+		// $('.navbar-nav .dropdown').on('show.bs.dropdown', function() {
+		// 	var $this = $(this).find('.dropdown-menu');
+		// 	// $this.toggleClass('fa-rotate-180');
+		// 	$this.find('.fa-angle-down').toggleClass('fa-rotate-180');
+		// });
+		// $('.navbar-nav .dropdown').on('hide.bs.dropdown', function() {
+		// 	var $this = $(this).find('.dropdown-menu');
+		// 	// $this.toggleClass('fa-rotate-180');
+		// 	$this.find('.fa-angle-down').toggleClass('fa-rotate-180');
+		// 	// setTimeout(function() {
+		// 	// 	$this.removeClass('close');
+		// 	// }, 200);
+		// });
+
+
+		/* ----------------------------------------------------------- */
 		/*  09. JavaScript
 		/* ----------------------------------------------------------- */
 		// var animateWayPoint = function() {
@@ -190,19 +228,6 @@ function displayHamburger() {
 		// 	}, { offset: '85%' });
 		// };
 		// animateWayPoint();
-    // Headroom - show/hide navbar on scroll
-
-    if ($('.headroom')[0]) {
-			var headroom  = new Headroom(document.querySelector("#navigator-nav"), {
-				offset: 300,
-				tolerance: {
-					up: 30,
-					down: 30
-				},
-			});
-			headroom.init();
-    };
-
 
 	});
 }(jQuery));
@@ -212,7 +237,6 @@ function displayHamburger() {
 try {	var rellax = new Rellax('.rellax'); } catch(e){}
 
 try {
-	// new WOW().init();
 	var wow = new WOW({
 		offset: 20, 	 // distance to element when triggering  (default is 0)
 		mobile: false, // trigger animations on mobile devices (default is true)
@@ -220,18 +244,17 @@ try {
 	wow.init();	}
 catch(e){}
 
-
 try {
 	(function() {
 		var lineMaker = new LineMaker({
 				parent: { element: '.nspdr-background', position: 'append' },
 				// position: 'fixed',
 				lines: [
-					{ top: 0, left: '6.7%', width: 2, height: '100%', color: '#F44336', hidden: true, },
-					{ top: 0, left: '14%', width: 3, height: '100%', color: '#8BC34A', hidden: true, },
-					{ top: 0, left: '50%', width: 2, height: '100%', color: '#2196F3', hidden: true, },
-					{ top: 0, left: '86%', width: 3, height: '100%', color: '#8BC34A', hidden: true, },
-					{ top: 0, left: '93.3%', width: 2, height: '100%', color: '#F44336', hidden: true, },
+					{ top: 0, left: '6.7%', width: 2, height: '100%', color: '#f44336', hidden: true, },
+					{ top: 0, left: '14%', width: 3, height: '100%', color: '#8bc34a', hidden: true, },
+					{ top: 0, left: '50%', width: 2, height: '100%', color: '#2196f3', hidden: true, },
+					{ top: 0, left: '86%', width: 3, height: '100%', color: '#8bc34a', hidden: true, },
+					{ top: 0, left: '93.3%', width: 2, height: '100%', color: '#f44336', hidden: true, },
 
 					// {top: 0, left: '8.333333%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
 					// {top: 0, left: '16.666667%', width: 1, height: '100%', color: '#7599E4', hidden: true, },
@@ -280,6 +303,5 @@ try {
 		// document.querySelector('#showAll').addEventListener('click', function() {
 		// 	lineMaker.showLines();
 		// });
-
 	})(); }
 catch(e){}

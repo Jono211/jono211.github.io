@@ -50,48 +50,48 @@
 		<![endif]-->
 
     <!-- LOADER -->
-    <div id="preloader"><div class="loader"><img src="../img/preloader.gif"></div></div>
+    <!-- <div id="preloader"><div class="loader"><img src="../img/preloader.gif"></div></div> -->
 
     <!-- BANNER -->
-    <header class="container-fluid bg-white">
+    <!-- <header class="container-fluid bg-white">
       <div class="container">
         <div class="row p-2">
           <div class="col-sm-8 pl-1"><div id="drdlr-logo"></div></div>
           <div class="col-sm-4 py-2 hide-on-mobile"><div id="drdlr-flag"></div></div>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow">
-    <!-- <nav id="navigator-nav" class="navbar navbar-expand-md navbar-dark stickytop bg-nspdr navbar-shadow headroom"> -->
+    <!-- <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-nspdr navbar-shadow"> -->
+    <!-- <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark bg-nspdr navbar-shadow headroom"> -->
+    <!-- <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark headroom scrolling" data-scrolling-offset="450"> -->
+    <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark headroom">
+    <!-- <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark fixed-top headroom scrolling scrolling--below"> -->
       <div class="container">
         <a id="scrollContext" class="navbar-brand acronym-icon swing" href="#" title="National Spatial Planning Data Repository">
           <img class="png-shadow pb-1" src="../img/logos/acronym-256.png" alt="NSPDR Brand">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigator" aria-controls="navigator" aria-expanded="false" aria-label="Toggle Navigation" onclick="displayHamburger()">
-        <!-- <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-navigator" aria-expanded="false" aria-controls="dw-navigator" onclick="displayHamburger()"> -->
-          <!-- <span class="sr-only">Toggle drawer</span> -->
           <span class="navbar-toggler-icon override">
             <div id="burgers" class="hamburger hamburger--spin"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div>
           </span>
         </button>
         <div class="collapse navbar-collapse" id="navigator">
-          <ul class="navbar-nav mr-auto">
+          <!-- <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link pr-md-3" href="news.html">News</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
-                <!-- <span class="sr-only">(current)</span> -->
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown">
                 <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More</small></div>
 								<div class="dropdown-divider d-none d-md-block"></div>
                 <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
                 <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
-                <!-- <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-building mr-3"></i>Enabling SPLUMA</a> -->
-                <!-- <div class="dropdown-header"><small class="fw-300">It’s Features</small></div> -->
+                <a class="d-none dropdown-item" href="spluma.html"><i class="fa fa-sm fa-building mr-3"></i>Enabling SPLUMA</a>
+                <div class="d-none dropdown-header"><small class="fw-300">It’s Features</small></div>
 								<div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                 <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
                 <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-user mr-3"></i><span class="fw-600">E&hybull;Lodgement &nbsp;&ctdot;</span></a>
@@ -99,22 +99,28 @@
                 <a class="dropdown-item" href="resources.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
               </div>
             </li>
-          </ul>
-					<!-- <a class="dropdown-item active" href="#top" title="You are here!">Webpage<span class="sr-only">(current)</span></a> -->
+          </ul> -->
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link pr-md-3" href="../index.html"><span class="fw-600">Home</span></a></li>
+					  <!-- <li class="nav-item"><a class="nav-link pr-md-3 active" href="#top" title="You are here!">Webpage<span class="sr-only">(current)</span></a></li> -->
+					  <li class="nav-item"><a class="nav-link pr-md-3 active" href="#top" title="You are here!">Home<span class="sr-only">(current)</span></a></li>
+            <!-- <li class="nav-item"><a class="nav-link pr-md-3" href="../index.html"><span class="fw-600">Home</span></a></li> -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle override" href="#" id="navDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About<i class="fa fa-sm fa-angle-down ml-2"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown1">
-                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More &gt;</small></div>
+                <!-- <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More &gt;</small></div> -->
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn &gt;</small></div>
 								<div class="dropdown-divider d-none d-md-block"></div>
-                  <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About&nbsp; <span class="fw-700">NSPDR</span></a>
-                  <a class="dropdown-item" href="publication.html"><i class="fa fa-sm fa-flag mr-3"></i>2018 Publication</a>
+                  <!-- <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a> -->
+                  <a class="dropdown-item" href="about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>The <span class="fw-700">NSPDR</span></a>
+                  <a class="dropdown-item" href="publication.html"><i class="fa fa-sm fa-flag mr-3"></i>Publication</a>
                 <div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
-                  <a class="dropdown-item" href="news.html"><i class="fa fa-sm fa-rss mr-2"></i>&ensp;News &amp; Updates</a>
-                  <a class="dropdown-item" href="resources.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a>
+                  <!-- <a class="dropdown-item" href="news.html"><i class="fa fa-sm fa-rss mr-2"></i>&ensp;News &amp; Updates</a> -->
+                  <!-- <a class="dropdown-item" href="resources.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Content</a> -->
+                  <a class="dropdown-item" href="news.html"><i class="fa fa-sm fa-rss mr-2"></i>&ensp;News Feed</a>
+                  <!-- <a class="dropdown-item" href="resources.html"><i class="fa fa-sm fa-link mr-3"></i>Additional Stuff</a> -->
+                  <a class="dropdown-item" href="resources.html"><i class="fa fa-sm fa-link mr-3"></i>More Content</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -122,13 +128,18 @@
                 Features<i class="fa fa-sm fa-angle-down ml-1"></i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navDropdown2">
-                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Ecosystem &gt;</small></div>
+                <!-- <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Ecosystem &gt;</small></div> -->
+                <div class="dropdown-header  d-none d-md-block"><small class="fw-300">System &gt;</small></div>
 								<div class="dropdown-divider d-none d-md-block"></div>
-                  <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
-                  <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-building mr-3"></i><span class="fw-600">E&hybull;Lodgement </span>&nbsp;&check;</a>
-                  <a class="dropdown-item" href="ecosystem.html#e-learning"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Learning Tool</a>
+                  <a class="dropdown-item" href="ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>The Repository</a>
+                  <!-- <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-building mr-3"></i>E&hybull;Lodgement</a> -->
+                  <!-- <a class="dropdown-item" href="ecosystem.html#e-learning"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Learning</a> -->
+                  <a class="dropdown-item" href="elodgement.html"><i class="fa fa-sm fa-map-marker-alt mr-2"></i>&ensp;E&hybull;Lodgement</a>
+                  <a class="dropdown-item" href="ecosystem.html#e-learning"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Learning &nbsp;<b>&check;</b></a>
                 <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
-                  <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
+                  <!-- <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a> -->
+                  <!-- <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;SPLUMA Enabler</a> -->
+                  <a class="dropdown-item" href="spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;For SPLUMA</a>
               </div>
             </li>
           </ul>
@@ -136,29 +147,34 @@
             <a id="display-count" title="“T”-minus" href="../index.html#nspdr-countdown">nspdr.info</a>
           </span>
           <form class="form-inline mt-2 mt-md-0 pr-1">
-            <a class="btn btn-outline-light opaque-75 mr-1 my-2 my-md-0" href="contact.html"><small>CONTACT</small>&nbsp;<i class="fa fa-sm fa-phone"></i></a>
+            <a class="btn btn-outline-light opaque-85 mr-1 my-2 my-md-0" href="contact.html"><small>CONTACT</small>&nbsp;<i class="fa fa-sm fa-phone"></i></a>
           </form>
         </div>
       </div>
     </nav>
+    <!-- </header> -->
 
     <!-- HERO -->
-    <section class="page-hero mask-25 rellax" data-rellax-speed="-4">
+    <section class="page-hero --full mask-10 rellax" data-rellax-speed="-4">
       <div class="hero-header base-filter" style="background-image:url('../img/views/boland-landscape-960x472.jpg')">
-        <div class="container clear-filter">
+        <div class="container-fluid clear-filter">
           <div class="row justify-content-center">
-            <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
-              <img class="img-fluid png-shadows opaque-90 pull-up1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/inner-outline.png" alt="NSPDR">
-            </div>
-            <!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto">
-              <img class="img-fluid png-shadows opaque-90 pull-up1 p-md-3 p-xl-2 d-none d-md-block rellax" data-rellax-speed="2" src="../img/logos/inners-square.png" alt="NSPDR Ecosystem">
-              <img class="img-fluid png-shadows opaque-75 pull-up1 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-1" src="../img/logos/inners-square.png" alt="NSPDR Ecosystem">
+            <!-- <div class="col-12 col-sm-10 col-md-5 col-xl-4 m-auto rellax" data-rellax-speed="3">
+              <img class="img-fluid png-shadows opaque-85 pull-down1 p-5 p-sm-4 p-md-3 p-xl-2" src="../img/logos/inner-outline.png" alt="NSPDR">
             </div> -->
-            <div class="col-md-7 my-auto d-md-block d-none rellax" data-rellax-speed="-2">
+            <div class="col-12 col-sm-10 col-md-5 col-lg-4 col-xl4 offset-xl-1 ml-auto">
+              <!-- <img class="img-fluid png-shadows opaque-75 pull-down1 p-md-3 p-xl-2 d-none d-md-block rellax" data-rellax-speed="2" src="../img/logos/inners-square.png" alt="NSPDR"> -->
+              <img class="img-fluid png-shadows opaque-75 pull-down1 p-md-3 p-xl-2 d-none d-md-block rellax" data-rellax-speed="2" src="../img/logos/inner-outline.png" alt="NSPDR">
+              <img class="img-fluid png-shadows opaque-90 pull-up1 p-5 p-sm-4 d-block d-md-none rellax" data-rellax-speed="-1" src="../img/logos/inner-outline.png" alt="NSPDR">
+            </div>
+            <div class="col-md-7 mt-auto pb-4 d-md-block d-none rellax" data-rellax-speed="-2">
               <div class="row text-left">
-                <div class="col-12"><span class="h2 showcase text-white opaque-90 fw-600">E&middot;Learning</span></div>
-                <!-- <div class="col-12"><span class="h2 showcase text-white opaque-75">Training Portal</span></div> -->
-                <div class="col-12"><span class="h1 showcase text-white opaque-75">Web Portal</span></div>
+                <!-- <div class="col-12"><span class="h2 showcase text-white opaque-75">Training portal platform</span></div> -->
+                <div class="col-12"><span class="h2 showcase text-white opaque-95">E&hybull;Learning</span></div>
+                <div class="col-12 mt-2"><span class="h1 showcase text-white opaque-85">web portal</span></div>
+                <div class="col-12 mt-4"><span class="h2 showcase text-white opaque-75">Training Platform</span></div>
+                <!-- <div class="col-12"><span class="h2 showcase text-drdlr opaque-90 line-shadow">E&hybull;Learning</span></div> -->
+                <!-- <div class="col-12 mt-3"><span class="h1 showcase text-elodg opaque-99 line-shadow">web portal</span></div> -->
               </div>
             </div>
           </div>
@@ -168,7 +184,8 @@
 
 
     <!-- CONTENT -->
-    <main class="nspdr-background --raised circular top-brown">
+    <!-- <main class="nspdr-background --raised circular top-brown"> -->
+    <main class="nspdr-background --raised circular top-brown" style="margin-top:-50px!important">
       <article class="bg-honeycomb force-radius">
 
       <section class="d-none segment" draggable="true">
@@ -190,15 +207,16 @@
         </div>
       </section>
 
-      <div class="container"><div class="container"><hr class="dark mx-5"></div></div>
+      <!-- <div class="container"><div class="container"><hr class="dark mx-5"></div></div> -->
 
-      <section class="d-none segment" draggable="true">
-      <!-- <section class="segment bg-background" style="background-image:url('../img/theme/bg-altstyle2.svg')"> -->
+      <section class="dnone segment" draggable="true">
 	      <div class="container">
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-10">
+              <h2 class="section-title">Corporate Ipsum</h2>
+              <div class="nspdr-divider1"></div>
 		          <div class="lead">
-		            <h2 class="mb-3 fw-700">Corporate Ipsum</h2>
+		            <!-- <h2 class="mb-3 fw-700">Corporate Lorem Ipsum</h2> -->
 		            <p class="">
 									Compellingly conceptualize viral paradigms after standardized infrastructures. Interactively empower client-centric e-services via collaborative internal or "organic" sources. Assertively target excellent total linkage vis-a-vis performance based niche markets. Interactively brand alternative architectures without integrated meta-services. Energistically fabricate team building interfaces and equity invested process improvements.
 		            </p>
@@ -307,9 +325,11 @@
         </div>
       </section>
 
+      <hr class="space-4">
 
       <!-- <section class="segment --headers" draggable="true"> -->
-      <section class="segment --headers">
+      <section class="segment --headers bg-background force-radius" style="background-image:url('../img/theme/bg-altstyle2.svg')">
+      <!-- <section class="segment --headers"> -->
 	      <div class="container">
 		      <div class="row justify-content-center">
 			      <div class="col-12 col-md-10" id="slideshow-container">
@@ -318,7 +338,7 @@
               <div class="nspdr-divider2"></div>
 
               <!-- <div id="slideshow" class="px-1 bg-white-67" style="height:25rem!important;overflow-y:hidden!important;"> -->
-              <div id="slideshow" class="px-1 bg-white-67">
+              <div id="slideshow" class="px-1 bg-white67 bg-transparent">
 
                 <div class="slider px3">
 
@@ -534,11 +554,11 @@
 
 	        </div>
         </div>
+
+        <div class="container"><div class="nspdr-divider1 --extra mx-auto"></div></div>
+        <hr class="space-4">
       </section>
 
-      <div class="container"><div class="nspdr-divider1 --extra mx-auto"></div></div>
-
-      <hr class="space-4">
       </article>
     </main>
 
@@ -563,7 +583,7 @@
 		        </div>
       		</div>
           <div class="col-12 col-md-8 col-lg-4 order-lg-2">
-		        <div class="pt-2 pt-md-1 pt-lg-0">
+		        <div class="pt-3 pt-md-2 pt-lg-0">
 		          <ul class="social-media">
 		            <li class="--facebook"><a href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" target="_blank" class="fab fa-facebook-f" title="Facebook"></a></li>
 		            <li class="--twitter"><a href="https://twitter.com/DRDLR_online" target="_blank" class="fab fa-twitter" title="Twitter"></a></li>
@@ -589,8 +609,10 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/rellax.min.js"></script>
     <script src="../js/twbsmd.min.js"></script>
-    <!-- <script src="../js/vendor/headroom.min.js"></script> -->
+    <!-- <script src="../js/vendor/scrollstyler.js"></script> -->
+    <script src="../js/vendor/headroom.min.js"></script>
     <script src="../js/nspdr-scripts.js"></script>
+
 
     <!-- <script>
       var slideIndex = 1; handleSlides(slideIndex);

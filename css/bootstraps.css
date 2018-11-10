@@ -511,6 +511,12 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+@media (min-width: 480px) {
+  /* xtra-small */
+  .container {
+    max-width: 456px;
+  }
+}
 @media (min-width: 576px) {
   /* small */
   .container {
@@ -5534,8 +5540,8 @@ button.close.--bigger {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  /* width: 15%; */
-  width: 7.5%;
+  width: 15%;
+  /* width: 7.5%; */
   color: #fff;
   text-align: center;
   opacity: .5;

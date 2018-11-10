@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../css/bootstraps.css">
     <link rel="stylesheet" href="../css/stylesheet.css">
 		<link rel="stylesheet" href="../css/fa/css/all.css">
+		<link rel="stylesheet" href="../js/vendor/slick/slick.css">
 		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123359766-1"></script>
 		<script>
 			// Google Analytics - site tag (gtag.js)
@@ -168,7 +169,7 @@
         </div>
       </section>
 
-			<section class="segment pb-0" draggable="true">
+			<section class="segment pb-0 pt-4 pt-sm-5" draggable="true">
 				<div class="container">
 		      <div class="row justify-content-center no-gutters">
 						<div class="col-12 col-lg-10">
@@ -416,203 +417,207 @@
 				</div>
 			</section>
 
-      <section class="segment --headers" draggable="true">
+      <!-- <section class="segment --headers" draggable="true"> -->
+      <section class="segment --headers">
 	      <div class="container">
 		      <div class="row justify-content-center">
-			      <div class="col-12 col-md-10">
+			      <!-- <div class="col-12 col-md-10"> -->
+			      <div class="col-12 col-md-10" id="slideshow-container">
 
               <!-- <h2 class="section-title">Ecosystem’s Benefits</h2> -->
               <h2 class="section-title">What Are The Benefits?</h2>
               <div class="nspdr-divider3"></div>
 
-              <div id="slideshow" class="px-1">
-              <div class="slideshow-inner">
+              <!-- <div id="slideshow" class="px-1"> -->
+								<!-- <div class="slideshow-inner"> -->
+              <div id="slideshow" class="px-1 bg-transparent">
+                <div class="slider px1">
 
-                <div class="slidetext">
-                  <h4>01&ensp;Community GIS</h4>
-                  <ul class="bulleted-list">
-                    <li>Community GIS mapping aims to tell a community’s story in a vibrant and visual way.</li>
-                    <li>It highlights the rich array of community activities and makes them visible and accessible to people by providing spatial information linked to photographs and relevant data.</li>
-                    <li>The NSPDR Ecosystem will help users visually communicate their future development needs to support more accurate planning and development of infrastructure in communities.</li>
-                    <li>NSPDR will provide social and economic data relating to aspects of importance to communities such as; employment, wages, different job sectors, public transport, travel times, distances from work places, and demographics of workers.</li>
-                    <li>The NSPDR’s dashboards can speak to a specific municipalities service provision activity and can outline the progress of a program for decision makers and other people who need to stay on top of unfolding situations.</li>
-                    <li>The NSPDR will also make provision for a crowd-sourcing tool for collecting volunteered information from the public.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>02&ensp;Electronic Lodgement</h4>
-                  <ul class="bulleted-list">
-                    <li>NSPDR supports the electronic lodgement of applications and supporting documents relating to land development applications at a municipal level.</li>
-                    <li>The NSPDR will enable municipalities not only to receive, but to also consider and process land development applications electronically.</li>
-                    <li>Municipalities will be provided with access to a portal that they will manage and be able to assign user rights and restrictions to their officials and to applicants.</li>
-                    <li>Applicants will have the ability to register their unique profiles allowing for improved tracking and communication through email or written mail regarding their application status.</li>
-                    <li>Outputs from various stages of the application process will feed into dashboards that can be used for monitoring and evaluation by management to improve turnaround times.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>03&ensp;Monitoring and Evaluation (M&E)</h4>
-                  <ul class="bulleted-list">
-                    <li>M&E is integral to the daily work of public sector officials and municipal officials at different managerial levels to evaluate effectiveness of implemented programmes.</li>
-                    <li>The capacity of municipalities, national and provincial departments to perform their own M&E is increased through use of tools within NSPDR that allow for improved information management.</li>
-                    <li>The NSPDR will support managers by allowing for an evidence-based approach to M&E through the provision of quantitative data relating to specific aspects of land development applications.</li>
-                    <li>Municipal managers will be provided with dashboards that will allow them to monitor and track compliance within their municipality and thus be able to make improvements to their strategies.</li>
-                    <li>The NSPDR will facilitate the monitoring of defined KPIs such as spatial budgets and SPLUMA compliance nationally.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>04&ensp;Planning Support</h4>
-                  <ul class="bulleted-list">
-                    <li>The NSPDR will provide municipalities with access to spatially referenced information that is required for developing Spatial Development Frameworks (SDFs) that are representative of its unique spatial form.</li>
-                    <li>The ecosystem removes subjectivity from planning functions by allowing for a more evidence-based approach through improved access to core, reference and secondary data that is critical for effective planning.</li>
-                    <li>The NSPDR will also provide offline spatial information to remote municipalities with extemely limited bandwidth/internet access.</li>
-                    <li>Users will be provided with access to various planning related documents such as acts, by-laws and LUMS applications in one central place.</li>
-                    <li>Planners and decision makers will have a clear reflection of the reality of the municipal spatial environment, social and economic systems, particularly related to infrastructure needs and capacity.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>05&ensp;Metadata (data about data)</h4>
-                  <ul class="bulleted-list">
-                    <li>The SDI requires that all custodians make metadata available with their spatial data and make it available to the department for use in the Electronic Metadata Catalogue (EMC).</li>
-                    <li>The NSPDR will support the provision of metadata from participating custodians to the department through its proposal to integrate with SASDI’s EMC.</li>
-                    <li>The NSPDR will communicate the requirements of custodians to maintain and provide metadata that describes the content, quality and condition of their spatial information as determined by SASDI.</li>
-                    <li>NSPDR also supports the work of the Committee for Spatial Information (CSI), in recording gaps in terms of the ability of the custodians to provide metadata with their spatial data.</li>
-                    <li>NSPDR also highlights the capacity challenges at a local/municipal level to capture and maintain metadata through feedback obtained from stakeholder engagements.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>06&ensp;Living Atlas</h4>
-                  <ul class="bulleted-list">
-                    <li>One of the primary goals of the Living Atlas is to make the best information easy to discover and use through Esri’s ArcGIS Online application which is built in to the NSPDR Ecosystem.</li>
-                    <li>Users of the NSPDR will be provided with a large collection of high quality spatial information that has ever been preassembled covering topics such as; demographics, boundaries, elevation, soils, and climate.</li>
-                    <li>Users can access this spatial information from different devices, anywhere and at any time.</li>
-                    <li>The spatial information will constantly be growing and changing as maps, apps, and layers are added or updated by the registered users of the system or the system administrators.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>07&ensp;Distributed Database Systems</h4>
-                  <ul class="bulleted-list">
-                    <li>Concept of distributed describes a set of databases stored on multiple computers that appears to applications as a single database.</li>
-                    <li>NSPDR will support distributed processing by allowing application to distribute its tasks among different computers in a network.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>08&ensp;Big Data Analytics</h4>
-                  <ul class="bulleted-list">
-                    <li>Big data analytics is the process of examining large and varied datasets to uncover hidden patterns, unknown correlations, market trends, customer preferences and other useful information.</li>
-                    <li>Big data can help organisations make more informed business decisions.</li>
-                    <li>The NSPDR will have capability to support big data analytics by providing ArcGIS tools that allow users to analyse patterns and aggregate data in the context of both space and time.</li>
-                    <li>Users are offered ability to play with large scale datasets pertaining to topics such as the number of emergency phone calls accumulated within specific municipal boundary over a decade.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>09&ensp;Creating New Data from Artificial Intelligence</h4>
-                  <ul class="bulleted-list">
-                    <li>Concept of artificial intelligence generally refers to ability of machines to use language, form abstractions and concepts and solve kinds of problems now reserved for humans.</li>
-                    <li>It speaks to technologies that allow us to ask a computer questions, sit back while semi-autonomous cars negotiate traffic and make use of handheld devices to translate speech or printed text across most languages.</li>
-                    <li>Through the use of artificial intelligence, correlations can be rapidly detected by combing through a lot of statistical data to answer specific questions.</li>
-                    <li>Thereby new data is generated that allows human beings to be able to predict the outcomes.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>10&ensp;Analysing Settlement Patterns</h4>
-                  <ul class="bulleted-list">
-                    <li>Settlement patterns refer to the distribution of human activities across a country and the spatial relationship between these activities.</li>
-                    <li>There is a specific need for high resolution input demographic data that can provide enough detail to quantify rural settlement patterns and thus accurately measure population concentrations and accessibility.</li>
-                    <li>Popular research approaches require contemporary population count data to be combined with detailed satellite-derived settlement extents to map population distribution at a finer resolution.</li>
-                    <li>The NSPDR will support this approach by supplying the user with high-resolution imagery and land cover information from various custodians as well as a set of geoprocessing tools to determine extents of interest areas.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>11&ensp;Rapid Response Report Generation</h4>
-                  <ul class="bulleted-list">
-                    <li>Rapid response functionality provides high-speed text or email notifications to public officials, municipalities or communities so long as there is a database or contact list provided through an opt-in web service to the ArcGIS platform.</li>
-                    <li>Through web mapping, the user can select one or more alert areas and view citizen information via online aerial or hybrid maps.</li>
-                    <li>The NSPDR supports this functionality for rapid response notification through its dashboards and the municipal reporter.</li>
-                    <li>System administrators will be able to share reports generated from dashboards and the reporter with thousands of officials within the municipalities in a matter of minutes.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>12&ensp;The Science of Where&trade;</h4>
-                  <ul class="bulleted-list">
-                    <li>The Science of Where&trade; is the science of digital transformation; the science of exploration and navigation; the science of commerce and ecology.</li>
-                    <li>It speaks to the mission of Esri to offer the most high-powered, high-performance mapping and analytics capabilities in the world.</li>
-                    <li>From a NSPDR perspective, this vision is supported by streamlining of spatial analysis of geographic and enterprise data through intuitive maps, charts, and graphs built on the Esri platforms.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>13&ensp;No Charge E-Learning (MOOC)</h4>
-                  <ul class="bulleted-list">
-                    <li>MOOC refers to a course of study made available over the internet without charge to a very large number of people.</li>
-                    <li>Anyone who decides to take a MOOC simply logs on to the website and signs up.</li>
-                    <li>NSPDR will provide its registered users with free training on the e&NoBreak;-&NoBreak;learning portal.</li>
-                    <li>The e-learning portal is dedicated to help create and achieve a learning environment that appeals to all learning levels where the learner can confidently understand the training material presented on the platform.</li>
-                    <li>The e-learning portal supports self-paced learning by allowing users to proceed from one module to the next based on their own learning speed.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>14&ensp;Support for Municipalities with Power to Plan</h4>
-                  <ul class="bulleted-list">
-                    <li>The NSPDR will enable sharing of spatial planning information and data across all spheres of government and the private sector and will aid municipalities in spatial planning and land use management.</li>
-                    <li>It will help in facilitating effective and efficient collaboration amongst national government/sector departments to foster alignment of their programs and budgets to planning needs identified in the PGDP/PSDF/SDF/IDP processes.</li>
-                    <li>The ecosystem will save municipalities time where people involved with spatial planning are dispersed through use of E&NoBreak;-&NoBreak;Lodgement which reduces the time spent by employees on manually tracking and tracing planning applications.</li>
-                    <li>The NSPDR Ecosystem will provide guidance for the municipality’s LUMS.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>15&ensp;Field GIS Using Collector for Community GIS</h4>
-                  <ul class="bulleted-list">
-                    <li>Maps produced from GIS data provided through the ecosystem, that is collected through GPS’s and surveys can be used to depict relationships and significant hotspots within communities.</li>
-                    <li>GIS maps which can be produced on the ecosystem are more user-friendly than other forms of data presentation, helping community-based organisations to understand community data and facilitating a better understanding of the community.</li>
-                    <li>Community assessment conducted through data collection is an integral component of communities which show relationships between health, individual geographic locations, population numbers, etc.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>16&ensp;Support for SASDI-EMC</h4>
-                  <ul class="bulleted-list">
-                    <li>In terms of the SDI Act (Act 54 of 2003) the SASDI-EMC holds metadata records for all government spatial information.</li>
-                    <li>The NSPDR Ecosystem supports the objectives of SASDI to eliminate duplications in the capturing of data by improving access, discovery, retrieval and sharing of spatial information.</li>
-                    <li>The NSPDR will make collected spatial information from government custodians available together with linkage to the SASDI-EMC for metadata capturing.</li>
-                    <li>Custodians of data who enter into data sharing partnerships with the NSPDR Ecosystem will be required to provide all associated metadata in prescribed format on the SASDI-EMC.</li>
-                    <li>The NSPDR will have capacity to have an automated Electronic Data Interchange to SASDI catalogue services for store, search, discovery and querying of metadata that is compliant with the SDI Act.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>17&ensp;SPLUMA Understanding</h4>
-                  <ul class="bulleted-list">
-                    <li>In 2013, SPLUMA was signed into law and became South Africa’s principle policy and legislative framework guiding spatial planning and land use management and its objective is thus to provide for a uniform, effective and comprehensive system of spatial planning and land use management, that promotes social and economic inclusion and its referred to for the development of the NSPDR Ecosystem project.</li>
-                    <li>The NSPDR was developed using guidelines from SPLUMA (Act 16 of 2015) which speaks to: SPLUMA regulations, provincial spatial planning and land use management legislation, municipal spatial planning and land use management by-law and the municipal land use scheme and spatial development framework.</li>
-                    <li>The NSPDR Ecosystem will enable sharing of spatial planning information and data across all spheres of government and the private sector to support integrated planning and land use management.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>18&ensp;Historical Archive</h4>
-                  <ul class="bulleted-list">
-                    <li>Archiving in ArcGIS provides the functionality to record and access changes made to all or a subset of data in a geodatabase and the NSPDR can archive such data as it is hosted on the ArcGIS platform.</li>
-                    <li>An historical version represents the data at a specific moment in time and provides a read-only representation of the geodatabase and tools available in ArcGIS offer users the ability to easily investigate change to the data.</li>
-                    <li>Adding the archive class directly to ArcMap allows users to perform queries to explore how the data has evolved over time and the NSPDR provides such tools.</li>
-                    <li>Archiving allows users to connect to an historical version in a form of shapefiles or file geodatabases, as well as allowing historical versions to be updated.</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>19&ensp;Open Source Software Packages</h4>
-                  <ul class="bulleted-list">
-                    <li>Open source software is computer software with its source code made available with a licence in which the copyright holder proved the rights to study change and distribute the software to any user.</li>
-                    <li>It’s a prominent example of open collaboration as it allows users in a particular field to develop and build upon their skills/expertise to advance a certain cause for the benefit of the broader user community.</li>
-                    <li>The NSPDR will support this concept through developmental adherence to open source standards such as the Open Geospatial Consortium (OGC).</li>
-                  </ul>
-                </div>
-                <div class="slidetext">
-                  <h4>20&ensp;Image Rendering</h4>
-                  <ul class="bulleted-list">
-                    <li>Analysis of spatial information require visualisation the data and the spatial frame of data which is often depicted in 2D map or sometimes in a 3D representation of the terrain.</li>
-                    <li>The NSPDR supports the rendering of 2D and 3D geographic information through the ArcGIS platform.</li>
-                    <li>Terrain rendering techniques are useful for improving perception of spatial features and depth cues through means of drawing, shading or textures.</li>
-                    <li>Processing times in rendering will be determined by application programming interfaces available on the windows operating system as well as hardware capabilities of computer systems.</li>
-                  </ul>
-                </div>
+									<div class="slidetext">
+										<h4>01&ensp;Community GIS</h4>
+										<ul class="bulleted-list">
+											<li>Community GIS mapping aims to tell a community’s story in a vibrant and visual way.</li>
+											<li>It highlights the rich array of community activities and makes them visible and accessible to people by providing spatial information linked to photographs and relevant data.</li>
+											<li>The NSPDR Ecosystem will help users visually communicate their future development needs to support more accurate planning and development of infrastructure in communities.</li>
+											<li>NSPDR will provide social and economic data relating to aspects of importance to communities such as; employment, wages, different job sectors, public transport, travel times, distances from work places, and demographics of workers.</li>
+											<li>The NSPDR’s dashboards can speak to a specific municipalities service provision activity and can outline the progress of a program for decision makers and other people who need to stay on top of unfolding situations.</li>
+											<li>The NSPDR will also make provision for a crowd-sourcing tool for collecting volunteered information from the public.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>02&ensp;Electronic Lodgement</h4>
+										<ul class="bulleted-list">
+											<li>NSPDR supports the electronic lodgement of applications and supporting documents relating to land development applications at a municipal level.</li>
+											<li>The NSPDR will enable municipalities not only to receive, but to also consider and process land development applications electronically.</li>
+											<li>Municipalities will be provided with access to a portal that they will manage and be able to assign user rights and restrictions to their officials and to applicants.</li>
+											<li>Applicants will have the ability to register their unique profiles allowing for improved tracking and communication through email or written mail regarding their application status.</li>
+											<li>Outputs from various stages of the application process will feed into dashboards that can be used for monitoring and evaluation by management to improve turnaround times.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>03&ensp;Monitoring and Evaluation (M&E)</h4>
+										<ul class="bulleted-list">
+											<li>M&E is integral to the daily work of public sector officials and municipal officials at different managerial levels to evaluate effectiveness of implemented programmes.</li>
+											<li>The capacity of municipalities, national and provincial departments to perform their own M&E is increased through use of tools within NSPDR that allow for improved information management.</li>
+											<li>The NSPDR will support managers by allowing for an evidence-based approach to M&E through the provision of quantitative data relating to specific aspects of land development applications.</li>
+											<li>Municipal managers will be provided with dashboards that will allow them to monitor and track compliance within their municipality and thus be able to make improvements to their strategies.</li>
+											<li>The NSPDR will facilitate the monitoring of defined KPIs such as spatial budgets and SPLUMA compliance nationally.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>04&ensp;Planning Support</h4>
+										<ul class="bulleted-list">
+											<li>The NSPDR will provide municipalities with access to spatially referenced information that is required for developing Spatial Development Frameworks (SDFs) that are representative of its unique spatial form.</li>
+											<li>The ecosystem removes subjectivity from planning functions by allowing for a more evidence-based approach through improved access to core, reference and secondary data that is critical for effective planning.</li>
+											<li>The NSPDR will also provide offline spatial information to remote municipalities with extemely limited bandwidth/internet access.</li>
+											<li>Users will be provided with access to various planning related documents such as acts, by-laws and LUMS applications in one central place.</li>
+											<li>Planners and decision makers will have a clear reflection of the reality of the municipal spatial environment, social and economic systems, particularly related to infrastructure needs and capacity.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>05&ensp;Metadata (data about data)</h4>
+										<ul class="bulleted-list">
+											<li>The SDI requires that all custodians make metadata available with their spatial data and make it available to the department for use in the Electronic Metadata Catalogue (EMC).</li>
+											<li>The NSPDR will support the provision of metadata from participating custodians to the department through its proposal to integrate with SASDI’s EMC.</li>
+											<li>The NSPDR will communicate the requirements of custodians to maintain and provide metadata that describes the content, quality and condition of their spatial information as determined by SASDI.</li>
+											<li>NSPDR also supports the work of the Committee for Spatial Information (CSI), in recording gaps in terms of the ability of the custodians to provide metadata with their spatial data.</li>
+											<li>NSPDR also highlights the capacity challenges at a local/municipal level to capture and maintain metadata through feedback obtained from stakeholder engagements.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>06&ensp;Living Atlas</h4>
+										<ul class="bulleted-list">
+											<li>One of the primary goals of the Living Atlas is to make the best information easy to discover and use through Esri’s ArcGIS Online application which is built in to the NSPDR Ecosystem.</li>
+											<li>Users of the NSPDR will be provided with a large collection of high quality spatial information that has ever been preassembled covering topics such as; demographics, boundaries, elevation, soils, and climate.</li>
+											<li>Users can access this spatial information from different devices, anywhere and at any time.</li>
+											<li>The spatial information will constantly be growing and changing as maps, apps, and layers are added or updated by the registered users of the system or the system administrators.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>07&ensp;Distributed Database Systems</h4>
+										<ul class="bulleted-list">
+											<li>Concept of distributed describes a set of databases stored on multiple computers that appears to applications as a single database.</li>
+											<li>NSPDR will support distributed processing by allowing application to distribute its tasks among different computers in a network.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>08&ensp;Big Data Analytics</h4>
+										<ul class="bulleted-list">
+											<li>Big data analytics is the process of examining large and varied datasets to uncover hidden patterns, unknown correlations, market trends, customer preferences and other useful information.</li>
+											<li>Big data can help organisations make more informed business decisions.</li>
+											<li>The NSPDR will have capability to support big data analytics by providing ArcGIS tools that allow users to analyse patterns and aggregate data in the context of both space and time.</li>
+											<li>Users are offered ability to play with large scale datasets pertaining to topics such as the number of emergency phone calls accumulated within specific municipal boundary over a decade.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>09&ensp;Creating New Data from Artificial Intelligence</h4>
+										<ul class="bulleted-list">
+											<li>Concept of artificial intelligence generally refers to ability of machines to use language, form abstractions and concepts and solve kinds of problems now reserved for humans.</li>
+											<li>It speaks to technologies that allow us to ask a computer questions, sit back while semi-autonomous cars negotiate traffic and make use of handheld devices to translate speech or printed text across most languages.</li>
+											<li>Through the use of artificial intelligence, correlations can be rapidly detected by combing through a lot of statistical data to answer specific questions.</li>
+											<li>Thereby new data is generated that allows human beings to be able to predict the outcomes.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>10&ensp;Analysing Settlement Patterns</h4>
+										<ul class="bulleted-list">
+											<li>Settlement patterns refer to the distribution of human activities across a country and the spatial relationship between these activities.</li>
+											<li>There is a specific need for high resolution input demographic data that can provide enough detail to quantify rural settlement patterns and thus accurately measure population concentrations and accessibility.</li>
+											<li>Popular research approaches require contemporary population count data to be combined with detailed satellite-derived settlement extents to map population distribution at a finer resolution.</li>
+											<li>The NSPDR will support this approach by supplying the user with high-resolution imagery and land cover information from various custodians as well as a set of geoprocessing tools to determine extents of interest areas.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>11&ensp;Rapid Response Report Generation</h4>
+										<ul class="bulleted-list">
+											<li>Rapid response functionality provides high-speed text or email notifications to public officials, municipalities or communities so long as there is a database or contact list provided through an opt-in web service to the ArcGIS platform.</li>
+											<li>Through web mapping, the user can select one or more alert areas and view citizen information via online aerial or hybrid maps.</li>
+											<li>The NSPDR supports this functionality for rapid response notification through its dashboards and the municipal reporter.</li>
+											<li>System administrators will be able to share reports generated from dashboards and the reporter with thousands of officials within the municipalities in a matter of minutes.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>12&ensp;The Science of Where&trade;</h4>
+										<ul class="bulleted-list">
+											<li>The Science of Where&trade; is the science of digital transformation; the science of exploration and navigation; the science of commerce and ecology.</li>
+											<li>It speaks to the mission of Esri to offer the most high-powered, high-performance mapping and analytics capabilities in the world.</li>
+											<li>From a NSPDR perspective, this vision is supported by streamlining of spatial analysis of geographic and enterprise data through intuitive maps, charts, and graphs built on the Esri platforms.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>13&ensp;No Charge E-Learning (MOOC)</h4>
+										<ul class="bulleted-list">
+											<li>MOOC refers to a course of study made available over the internet without charge to a very large number of people.</li>
+											<li>Anyone who decides to take a MOOC simply logs on to the website and signs up.</li>
+											<li>NSPDR will provide its registered users with free training on the e&NoBreak;-&NoBreak;learning portal.</li>
+											<li>The e-learning portal is dedicated to help create and achieve a learning environment that appeals to all learning levels where the learner can confidently understand the training material presented on the platform.</li>
+											<li>The e-learning portal supports self-paced learning by allowing users to proceed from one module to the next based on their own learning speed.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>14&ensp;Support for Municipalities with Power to Plan</h4>
+										<ul class="bulleted-list">
+											<li>The NSPDR will enable sharing of spatial planning information and data across all spheres of government and the private sector and will aid municipalities in spatial planning and land use management.</li>
+											<li>It will help in facilitating effective and efficient collaboration amongst national government/sector departments to foster alignment of their programs and budgets to planning needs identified in the PGDP/PSDF/SDF/IDP processes.</li>
+											<li>The ecosystem will save municipalities time where people involved with spatial planning are dispersed through use of E&NoBreak;-&NoBreak;Lodgement which reduces the time spent by employees on manually tracking and tracing planning applications.</li>
+											<li>The NSPDR Ecosystem will provide guidance for the municipality’s LUMS.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>15&ensp;Field GIS Using Collector for Community GIS</h4>
+										<ul class="bulleted-list">
+											<li>Maps produced from GIS data provided through the ecosystem, that is collected through GPS’s and surveys can be used to depict relationships and significant hotspots within communities.</li>
+											<li>GIS maps which can be produced on the ecosystem are more user-friendly than other forms of data presentation, helping community-based organisations to understand community data and facilitating a better understanding of the community.</li>
+											<li>Community assessment conducted through data collection is an integral component of communities which show relationships between health, individual geographic locations, population numbers, etc.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>16&ensp;Support for SASDI-EMC</h4>
+										<ul class="bulleted-list">
+											<li>In terms of the SDI Act (Act 54 of 2003) the SASDI-EMC holds metadata records for all government spatial information.</li>
+											<li>The NSPDR Ecosystem supports the objectives of SASDI to eliminate duplications in the capturing of data by improving access, discovery, retrieval and sharing of spatial information.</li>
+											<li>The NSPDR will make collected spatial information from government custodians available together with linkage to the SASDI-EMC for metadata capturing.</li>
+											<li>Custodians of data who enter into data sharing partnerships with the NSPDR Ecosystem will be required to provide all associated metadata in prescribed format on the SASDI-EMC.</li>
+											<li>The NSPDR will have capacity to have an automated Electronic Data Interchange to SASDI catalogue services for store, search, discovery and querying of metadata that is compliant with the SDI Act.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>17&ensp;SPLUMA Understanding</h4>
+										<ul class="bulleted-list">
+											<li>In 2013, SPLUMA was signed into law and became South Africa’s principle policy and legislative framework guiding spatial planning and land use management and its objective is thus to provide for a uniform, effective and comprehensive system of spatial planning and land use management, that promotes social and economic inclusion and its referred to for the development of the NSPDR Ecosystem project.</li>
+											<li>The NSPDR was developed using guidelines from SPLUMA (Act 16 of 2015) which speaks to: SPLUMA regulations, provincial spatial planning and land use management legislation, municipal spatial planning and land use management by-law and the municipal land use scheme and spatial development framework.</li>
+											<li>The NSPDR Ecosystem will enable sharing of spatial planning information and data across all spheres of government and the private sector to support integrated planning and land use management.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>18&ensp;Historical Archive</h4>
+										<ul class="bulleted-list">
+											<li>Archiving in ArcGIS provides the functionality to record and access changes made to all or a subset of data in a geodatabase and the NSPDR can archive such data as it is hosted on the ArcGIS platform.</li>
+											<li>An historical version represents the data at a specific moment in time and provides a read-only representation of the geodatabase and tools available in ArcGIS offer users the ability to easily investigate change to the data.</li>
+											<li>Adding the archive class directly to ArcMap allows users to perform queries to explore how the data has evolved over time and the NSPDR provides such tools.</li>
+											<li>Archiving allows users to connect to an historical version in a form of shapefiles or file geodatabases, as well as allowing historical versions to be updated.</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>19&ensp;Open Source Software Packages</h4>
+										<ul class="bulleted-list">
+											<li>Open source software is computer software with its source code made available with a licence in which the copyright holder proved the rights to study change and distribute the software to any user.</li>
+											<li>It’s a prominent example of open collaboration as it allows users in a particular field to develop and build upon their skills/expertise to advance a certain cause for the benefit of the broader user community.</li>
+											<li>The NSPDR will support this concept through developmental adherence to open source standards such as the Open Geospatial Consortium (OGC).</li>
+										</ul>
+									</div>
+									<div class="slidetext">
+										<h4>20&ensp;Image Rendering</h4>
+										<ul class="bulleted-list">
+											<li>Analysis of spatial information require visualisation the data and the spatial frame of data which is often depicted in 2D map or sometimes in a 3D representation of the terrain.</li>
+											<li>The NSPDR supports the rendering of 2D and 3D geographic information through the ArcGIS platform.</li>
+											<li>Terrain rendering techniques are useful for improving perception of spatial features and depth cues through means of drawing, shading or textures.</li>
+											<li>Processing times in rendering will be determined by application programming interfaces available on the windows operating system as well as hardware capabilities of computer systems.</li>
+										</ul>
+									</div>
+								</div>
               </div>
-              </div>
-              <div class="controls-container">
+              <!-- <div class="controls-container">
                 <ul class="pagination justify-content-center">
                   <li class="page-item">
                     <a class="page-link arrows" role="button" title="-1" onclick="leftOrRight(-1,2)">
@@ -626,6 +631,25 @@
                   </li>
                   <li class="page-item">
                     <a class="page-link arrows" role="button" title="+1" onclick="leftOrRight(1,1)">
+                      &ensp;<i class="fa fa-sm fa-chevron-right"></i> <i class="fa fa-sm fa-chevron-right"></i> <i class="fa fa-sm fa-chevron-right"></i>&ensp;
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+              <div class="controls-container" draggable="true">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link arrows prev" role="button" title="-1">
+                      &ensp;<i class="fa fa-sm fa-chevron-left"></i> <i class="fa fa-sm fa-chevron-left"></i> <i class="fa fa-sm fa-chevron-left"></i>&ensp;
+                    </a>
+                  </li>
+                  <li class="page-item disabled">
+                    <a id="middle-asterisk" class="page-link middle fw-700" role="button" title="#1">
+                      &ensp;<i class="fa fa-asterisk grey-128"></i>&ensp;
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link arrows next" role="button" title="+1">
                       &ensp;<i class="fa fa-sm fa-chevron-right"></i> <i class="fa fa-sm fa-chevron-right"></i> <i class="fa fa-sm fa-chevron-right"></i>&ensp;
                     </a>
                   </li>
@@ -856,7 +880,7 @@
 		        </div>
       		</div>
           <div class="col-12 col-md-8 col-lg-4 order-lg-2">
-		        <div class="pt-2 pt-md-1 pt-lg-0">
+		        <div class="pt-3 pt-md-2 pt-lg-0">
 		          <ul class="social-media">
 		            <li class="--facebook"><a href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" target="_blank" class="fab fa-facebook-f" title="Facebook"></a></li>
 		            <li class="--twitter"><a href="https://twitter.com/DRDLR_online" target="_blank" class="fab fa-twitter" title="Twitter"></a></li>
@@ -881,7 +905,7 @@
     <script src="../js/twbsmd.min.js"></script>
     <script src="../js/nspdr-scripts.js"></script>
 
-    <script>
+    <!-- <script>
       var slideIndex = 1; handleSlides(slideIndex);
       function firstSlide() { handleSlides(slideIndex = 1); }
       function leftOrRight(n, a) { handleSlides(slideIndex += n,a); }
@@ -901,7 +925,6 @@
         $(slides[slideIndex - 1]).addClass(arr[0] + arr[a]);
       }
     </script>
-
     <script src="../js/vendor/jquery.mousewheel.min.js"></script>
     <script>
       $(document).ready(function() {
@@ -918,6 +941,29 @@
           // e.preventDefault();
         });
       });
+    </script> -->
+
+    <script src="../js/vendor/slick/slick.min.js"></script>
+    <script>
+      $('.slider').slick({
+        // dots: true,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        swipeToSlide: true,
+        touchThreshold: 10,
+        slidesToScroll: 3,
+        // waitForAnimate: false,
+        // prevArrow: $('.slick-prev'),
+        // nextArrow: $('.slick-next'),
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        // appendDots: $('#slideshow-container'),
+        // centerMode: true
+        // adaptiveHeight: true
+      });
+      $('.prev').on('click', function(event, slick, slickPrev){});
+      $('.next').on('click', function(event, slick, slickNext){});
     </script>
 
   </body>

@@ -37,7 +37,7 @@
 			gtag('config', 'UA-123359766-1');
 		</script> -->
 	</head>
-  <body id="top" class="bg-linear2 pt-5">
+  <body id="top" class="bglinearX bg-grey pt5">
 		<!--[if lte IE 9]>
 				<p class="upgrade-browser">
           You are using an <strong>outdated</strong> browser.&nbsp; 
@@ -49,7 +49,9 @@
     <div id="preloader"><div class="loader"><img src="img/preloader2.gif"></div></div>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling scrolling--below" data-scrolling-offset="500">
+    <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top scrolling scrolling--below" data-scrolling-offset="500"> -->
+    <!-- <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark headroom scrolling" data-scrolling-offset="450"> -->
+    <nav id="navbar-main" class="navbar navbar-expand-md navbar-dark headroom">
       <div class="container">
         <a id="scrollContext" class="navbar-brand acronym-icon swing" href="#" title="National Spatial Planning Data Repository">
           <img class="png-shadow pb-1" src="img/logos/acronym-256.png" alt="NSPDR Brand">
@@ -71,7 +73,7 @@
               <div class="dropdown-menu" aria-labelledby="navDropdown1">
                 <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Learn More &gt;</small></div>
 								<div class="dropdown-divider d-none d-md-block"></div>
-                  <a class="dropdown-item" href="docs/about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About&nbsp; <span class="fw-700">NSPDR</span></a>
+                  <a class="dropdown-item" href="docs/about.html"><i class="fa fa-sm fa-question-circle mr-3"></i>About <span class="fw-700">NSPDR</span></a>
                   <a class="dropdown-item" href="docs/publication.html"><i class="fa fa-sm fa-flag mr-3"></i>2018 Publication</a>
                 <div class="dropdown-divider --alt d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                   <a class="dropdown-item" href="docs/news.html"><i class="fa fa-sm fa-rss mr-2"></i>&ensp;News &amp; Updates</a>
@@ -85,23 +87,24 @@
               <div class="dropdown-menu" aria-labelledby="navDropdown2">
                 <div class="dropdown-header  d-none d-md-block"><small class="fw-300">Ecosystem &gt;</small></div>
 								<div class="dropdown-divider d-none d-md-block"></div>
-                  <a class="dropdown-item" href="docs/ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i><span class="fw-600">Data Repository</span></a>
-                  <a class="dropdown-item" href="docs/elodgement.html"><i class="fa fa-sm fa-building mr-3"></i><span class="fw-600">E&hybull;Lodgement </span>&nbsp;&check;</a>
-                  <a class="dropdown-item" href="docs/ecosystem.html#e-learning"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Learning Tool</a>
+                  <a class="dropdown-item" href="docs/ecosystem.html"><i class="fa fa-sm fa-database mr-3"></i>Data Repository</a>
+                  <a class="dropdown-item" href="docs/elodgement.html"><i class="fa fa-sm fa-map-marker-alt mr-2"></i>&ensp;E&hybull;Lodgement</a>
+                  <a class="dropdown-item" href="docs/ecosystem.html#e-learning"><i class="fa fa-sm fa-user mr-3"></i>E&hybull;Learning &nbsp;<b>&check;</b></a>
                 <div class="dropdown-divider --end d-none d-md-block"></div><div class="dropdown-divider d-md-none d-block"></div>
                   <a class="dropdown-item" href="docs/spluma.html"><i class="fa fa-sm fa-bullhorn mr-1"></i>&ensp;Enabling SPLUMA</a>
               </div>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
-            <a class="btn btn-outline-warning opaque-90 my-2 my-md-0" href="docs/contact.html">GET IN TOUCH<i class="fa fa-sm fa-phone ml-2"></i></a>
+            <a class="btn btn-outline-warning opaque-85 my-2 my-md-0" href="docs/contact.html">GET IN TOUCH<i class="fa fa-sm fa-phone ml-2"></i></a>
           </form>
         </div>
       </div>
     </nav>
 
     <!-- CAROUSEL -->
-    <section class="carousel-hero mask-10" style="position:relative;top:0px!important;z-index:1;margin-top:-48px!important;">
+    <!-- <section class="carousel-hero mask-10" style="position:relative;top:0px!important;z-index:1;margin-top:-48px!important;"> -->
+    <section class="carousel-hero mask-10" style="position:relative;top:0px!important;z-index:1;">
       <div id="slideCarousel" class="carousel slide drop-shadow" data-ride="carousel">
 
         <ol class="carousel-indicators">
@@ -181,10 +184,11 @@
         <div class="container pt-4 pt-sm-5">
           <div class="row text-center text-lg-left align-items-center">
             <div class="col-9 col-md-7 col-lg-5 col-xl-4 m-auto m-lg-0">
-              <img alt="NSPDR Ecosystem" class="img-fluid png-raised p-2" src="img/logos/nspdr-500x500.png">
+              <!-- <img alt="NSPDR Ecosystem" class="img-fluid png-raised p-2" src="img/logos/nspdr-500x500.png"> -->
+              <img alt="NSPDR Ecosystem" class="img-fluid png-raised p-2" src="img/logos/nspdr-round.png">
             </div>
             <div class="col-12 col-lg-7 col-xl-8 pt-4 pt-lg-0">
-              <h1 class="condensed-1 fw-700 grey-51 mb-1">National Spatial&nbsp;Planning Data&nbsp;Repository</h1>
+              <h1 class="condensed-1 fw-700 grey-77 mb-1">National Spatial&nbsp;Planning Data&nbsp;Repository</h1>
               <h2 class="condensed-1 fw-600 grey-68 mt-1">Integrated Spatial&nbsp;Planning and Land&nbsp;Use&nbsp;Management</h2>
               <div class="row text-left mt-3">
                 <div class="col-12 col-sm-6">
@@ -209,8 +213,8 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
-              <h2 class="section-title">New Paradigm In Planning</h2>
-              <!-- <h2 class="section-title">New Planning Paradigm</h2> -->
+              <!-- <h2 class="section-title">New Paradigm In Planning</h2> -->
+              <h2 class="section-title">New Planning Paradigm</h2>
               <div class="nspdr-divider1"></div>
               <p class="lead grey-68">The CHALLENGE for any planning framework in South Africa, has always been the question of how to balance the technicality of spatial planning and land use management, with the broader issues of socio&NoBreak;-&NoBreak;economic development.</p>
             </div>
@@ -219,7 +223,7 @@
             <div class="col-12 col-lg-11">
 
               <div class="row align-items-center no-gutters">
-                <div class="col-10 col-sm-8 col-md-7 col-lg-4 mx-auto">
+                <div class="col-11 col-sm-8 col-md-7 col-lg-4 mx-auto">
                   <div class="box-block top-brown pull-lg-right2 p4 pr-lg-5">
                     <img alt="NSPDR Icon" class="icon-150 mt-0 mt-lg-2" src="img/icons/icon4.png">
                     <h2 class="h1 condensed-1 text-trunc">Data Repository</h2>
@@ -230,7 +234,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-10 col-sm-8 col-md-7 col-lg-4 mx-auto mt-5 mt-lg-0 py-0 py-lg-3 box-block --main top-green">
+                <div class="col-11 col-xs-11 col-sm-8 col-md-7 col-lg-4 mx-auto mt-5 mt-lg-0 py-0 py-lg-3 box-block --main top-green">
                   <div class="p4">
                     <img alt="NSPDR Icon" class="icon-150 mt-0 mt-lg-2" src="img/icons/icon1.png">
                     <h2 class="h1">E&NoBreak;-Lodgement</h2>
@@ -241,7 +245,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-10 col-sm-8 col-md-7 col-lg-4 mx-auto mt-5 mt-lg-0">
+                <div class="col-11 col-sm-8 col-md-7 col-lg-4 mx-auto mt-5 mt-lg-0">
                   <div class="box-block top-greyy pull-lg-left2 p4 pl-lg-5">
                     <img alt="NSPDR Icon" class="icon-150 mt-0 mt-lg-2" src="img/icons/icon2.png">
                     <h2 class="h1 condensed-1 text-trunc">Enable SPLUMA</h2>
@@ -423,13 +427,13 @@
         <div class="container pb-3">
           <div class="row justify-content-center no-gutters">
             <div class="col-12 col-lg-11">
-              <div class="row align-items-center py-4">
-                <div class="col-12 col-sm-8 col-lg-9 text-center text-sm-left">
-                  <h2 class="fw-600 text-light dark-shadow ml-4 mb-1">Use the NSPDR for all your planning projects.</h2>
+              <div class="row justify-content-center align-items-center py-4">
+                <div class="col-10 col-sm-8 col-lg-9 text-center text-sm-left">
+                  <h2 class="fw-600 text-light dark-shadow ml-sm-4 mb-1">Use the NSPDR for all your planning projects.</h2>
                 </div>
                 <div class="col-12 d-block d-sm-none"><hr class="space-6"></div>
                 <div class="col-12 col-sm-4 col-md-3 text-center mt-4 mt-sm-2">
-                  <a class="btn btn-lg btn-pill btn-outline-nspdr2 btn-shadow --wobbleY fw-600" href="docs/ecosystem.html#technology">&ensp;Take a Tour&ensp;</a>
+                  <a class="btn btn-lg btn-pill btn-outline-nspdr2 btn-shadow --wobbleX fw-600" href="docs/ecosystem.html#technology">&ensp;Take a Tour&ensp;</a>
                 </div>
               </div>
             </div>
@@ -440,7 +444,7 @@
       <hr class="space-8">
 
       <!-- <div class="container"><hr class="dark-divider"></div> -->
-      <hr class="space-4">
+      <hr class="space-6">
 
 
       <!-- FEATURETTES -->
@@ -540,11 +544,14 @@
 
 			<section class="segment --headers" draggable="true">
         <div class="container">
+          <!-- <div class="row justify-content-center">
+            <div class="col-12 col-sm-11 col-md-10"> -->
           <div class="row justify-content-center pb-xl-3">
             <div class="col-12 col-md-10 text-center">
-              <h2 class="display-4 fw-400 text-nspdr11">Data&nbsp;Driven <span class="fw-500">Spatial&nbsp;Planning</span></h2>
+              <h2 class="display-4 condensed-2 fw-400 text-drdlr1">Data&nbsp;Driven <span class="fw-600">Spatial&nbsp;Planning</span></h2>
               <div class="col-10 col-md-8 mx-auto">
-                <div class="special-divider my-2 my-lg-3"></div>
+                <!-- <div class="special-divider my-2 my-lg-3"></div> -->
+                <div class="nspdr-divider2 --extra mx-auto my-4"></div>
               </div>
               <p class="lead">The <span class="fw-700">NSPDR</span> Ecosystem will ensure up-to-date integration of most government project data for efficient and effective spatial planning. It will also enable sharing of spatial data throughout the country and across the public and private sectors.</p>
             </div>
@@ -557,19 +564,21 @@
               <p class="mt-5 mt-lg-3"><img alt="NSPDR" height="40" src="img/logos/acronym-dark.png"></p>
 
               <h3 class="fw-600 grey-68 mt-5">Spatial Data</h3>
-              <p class="mb-2">Source datasets and models derived from spatial data provided by base data custodians, SDF guidelines, as well as the E⁠-⁠Lodgement application layer, can be used to design customised data models, validations and a whole lot more.</p>
+              <p class="mb-1">Source datasets and models derived from spatial data provided by base data custodians, SDF guidelines, as well as the E⁠-⁠Lodgement application layer, can be used to design customised data models, validations and a whole lot more.</p>
               <p class="lead-1"><a href="docs/ecosystem.html#spatial-data">Available datasets &gt;</a></p>
 
               <h3 class="fw-600 grey-68 mt-5">Geo-Analytics</h3>
-              <p class="mb-2">The portal hosts and contains an amazing variety of advanced GIS tools and functions. The portal will be the main place where users can access various web maps, mapping services, metadata, and E⁠-⁠Lodgement amongst others.</p>
+              <p class="mb-1">The portal hosts and contains an amazing variety of advanced GIS tools and functions. The portal will be the main place where users can access various web maps, mapping services, metadata, and E⁠-⁠Lodgement amongst others.</p>
               <p class="lead-1"><a href="docs/ecosystem.html#geo-tools">Tools and features &gt;</a></p>
 
               <h3 class="fw-600 grey-68 mt-5">E-Learning</h3>
-              <p class="mb-2">This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
+              <p class="mb-1">This easy to use platform is dedicated to help create and achieve an environment that appeals to everyone’s learning levels. It allows learners to acquire skills faster, retain knowledge longer, and apply these skills in the real world.</p>
               <p class="lead-1"><a href="docs/ecosystem.html#e-learning">Training platform &gt;</a></p>
             </div>
           </div>
         </div>
+        <!-- </div>
+        </div> -->
       </section>
 
       <div class="container"><hr class="space-4"><hr class="dark"></div>
@@ -578,8 +587,8 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-sm-11 col-md-10 text-left">
-              <h3 class="h2 grey-85 fw-600 ml-sm-2">Proudly brought to you by ...</h3>
-              <div class="linear-divider my-3"></div>
+              <h3 class="h2grey-51 text-black fw-400 no-spacing ml-sm-2">Proudly brought to you by ...</h3>
+              <!-- <div class="linear-divider my-3"></div> -->
               <!-- <a class="card-link" href="http://www.drdlr.gov.za" target="_blank"> -->
                 <img class="img-fluid p-sm-3 mt-5" alt="DRDLR Logo" src="img/logos/drdlr-layer.png">
               <!-- </a> -->
@@ -589,7 +598,7 @@
       </section>
 
       <!-- <div class="container"><hr class="space-4"><hr class="light"><hr class="space-4"></div> -->
-      <div class="container"><hr class="light mx-5 px-5"></div>
+      <div class="container"><hr class="dark mx-5 px-5"></div>
 
       <!-- <hr class="space-4">
       <section class="start-of-page mx-2 mx-sm-3 mx-md-5 rounded bg-background" draggable="true" style="background-image:url('img/theme/bg-greener.svg')">
@@ -669,7 +678,7 @@
 		        </div>
       		</div>
           <div class="col-12 col-md-8 col-lg-4 order-lg-2">
-		        <div class="pt-2 pt-md-1 pt-lg-0">
+		        <div class="pt-3 pt-md-2 pt-lg-0">
 		          <ul class="social-media">
 		            <li class="--facebook"><a href="https://www.facebook.com/Department-of-Rural-Development-and-Land-Reform-279632028822386" target="_blank" class="fab fa-facebook-f" title="Facebook"></a></li>
 		            <li class="--twitter"><a href="https://twitter.com/DRDLR_online" target="_blank" class="fab fa-twitter" title="Twitter"></a></li>
@@ -779,8 +788,9 @@
     <script src="js/modernizr.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/twbsmd.min.js"></script>
+    <!-- <script src="js/vendor/scrollstyler.js"></script> -->
+    <script src="js/vendor/headroom.min.js"></script>
     <script src="js/nspdr-scripts.js"></script>
-    <script src="js/scroll-styler.js"></script>
 
     <!-- <script>
       $(document).ready(function() {
