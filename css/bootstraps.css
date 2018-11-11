@@ -3055,8 +3055,9 @@ input[type='submit'].btn-block {
   margin-bottom: 0;
   /* font-size: .75rem; */
   font-size: .8125rem;
+  font-weight: 400;
   /* color: #6c757d; */
-  color: #555;
+  color: #808080;
   letter-spacing: .375rem;
   text-transform: uppercase;
   white-space: nowrap;
@@ -5540,8 +5541,8 @@ button.close.--bigger {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 15%;
-  /* width: 7.5%; */
+  /* width: 15%; */
+  width: 10%;
   color: #fff;
   text-align: center;
   opacity: .5;

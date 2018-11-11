@@ -761,6 +761,10 @@ hr[class^='space-'] {
 
 .pointer { cursor: pointer !important; }
 .default { cursor: default !important; }
+.grabbed {
+  cursor: -webkit-grab !important;
+  cursor: grab !important; }
+
 
 .dark-shadow { text-shadow: .125rem .125rem .375rem rgba(0,0,0,.25) !important; }
 .lite-shadow { text-shadow: .125rem .125rem 1.375rem rgba(15,15,15,.15) !important; }
@@ -3529,8 +3533,10 @@ misc
   display: block;
   position: fixed;
   text-decoration: none;
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
+  /* cursor: -webkit-grabbing;
+  cursor: grabbing; */
+  cursor: -webkit-grab;
+  cursor: grab;
   z-index: 8765;
   top: 4.5rem;
   right: 1.5rem;
