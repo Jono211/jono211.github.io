@@ -1,39 +1,38 @@
 /**
- * @license
- *  ========================================================================
+ * ========================================================================
+ * 
  * ScrollPos-Styler v0.7.0
  * https://github.com/acch/scrollpos-styler
- * ========================================================================
- * Copyright 2015 Achim Christ
+ * 
+ * Copyright (c) 2015 Achim Christ
  * Licensed under MIT (https://github.com/acch/scrollpos-styler/blob/master/LICENSE)
+ * 
  * ======================================================================== */
 
-// JSHint directives
-/* exported ScrollPosStyler */
 
 var ScrollPosStyler = (function(document, window) {
   "use strict";
-  /* ====================
-   * private variables
-   * ==================== */
+  /* --------------------
+   * Private variables
+   * -------------------- */
   var scrollPosY = 0,
       busy = false,
-      // toggle style / class when scrolling below this position (in px)
+      // toggle class when scrolling below this position (in px)
       scrollOffsetY = 111,
       // class used to apply scrollPosStyler to
       spsClass = "scrolling",
-      // choose elements to apply style / class to
+      // choose elements to apply class to
       elements = document.getElementsByClassName(spsClass),
-      // style / class to apply to elements when above scroll position
+      // class to apply to elements when above scroll position
       classAbove = "scrolling--above",
-      // style / class to apply to elements when below scroll position
+      // class to apply to elements when below scroll position
       classBelow = "scrolling--below",
       // tag to set custom scroll offset per element
       offsetTag = "data-scrolling-offset";
 
-  /* ====================
-   * private funcion to check scroll position
-   * ==================== */
+  /* --------------------
+   * Private function to check scroll position
+   * -------------------- */
   function onScroll() {
     // ensure that events don't stack
     if (!busy) {
@@ -51,9 +50,9 @@ var ScrollPosStyler = (function(document, window) {
     }
   }
 
-  /* ====================
-   * private funcion to find elements to update
-   * ==================== */
+  /* --------------------
+   * Private function to find elements to update
+   * -------------------- */
   function getElementsToUpdate() {
     // get current scroll position from window
     scrollPosY = window.pageYOffset;
@@ -88,9 +87,9 @@ var ScrollPosStyler = (function(document, window) {
     return elementsToUpdate;
   }
 
-  /* ====================
-   * private funcion to update elements
-   * ==================== */
+  /* --------------------
+   * Private function to update elements
+   * -------------------- */
   function updateElements(elementsToUpdate) {
     // iterate over elements
     // for (var elem of elements) {
@@ -104,15 +103,15 @@ var ScrollPosStyler = (function(document, window) {
     busy = false;
   }
 
-  /* ====================
-   * public function to initially style elements based on scroll position
+  /* --------------------
+   * Public function to initially style elements based on scroll position.
    * Options:
    *    scrollOffsetY (number): Default scroll position in px to trigger the style. Default is 1.
    *    spsClass (String): Classname used to determine which elements to style. Default is 'scrolling'.
    *    classAbove (String): Classname added to the elements when the window is scrolled above the defined position. Default is 'scrolling--above'.
    *    classBelow (String): Classname added to the elements when the window is scrolled below the defined position. Default is 'scrolling--below'.
    *    offsetTag (String): HTML tag used on the element to specify a scrollOffsetY other than the default.
-   * ==================== */
+   * -------------------- */
   var pub = {
     init: function(options) {
       // suspend accepting scroll events
@@ -143,9 +142,9 @@ var ScrollPosStyler = (function(document, window) {
     }
   };
 
-  /* ====================
-   * main initialization
-   * ==================== */
+  /* --------------------
+   * Main initialization.
+   * -------------------- */
   // add initial style / class to elements when DOM is ready
   document.addEventListener("DOMContentLoaded", function() {
     // defer initialization to allow browser to restore scroll position
@@ -164,15 +163,15 @@ var ScrollPosStyler = (function(document, window) {
 // hasTransparent = false;
 
 // $(document).ready(function() {
-//   if($('nav[role="navigation"]').hasClass('navbar-transparent')){
+//   if ($('nav[role="navigation"]').hasClass('navbar-transparent')) {
 //     hasTransparent = true;
 //   }
-//   $('[data-toggle="search"]').click(function(){
-//     if(searchVisible == 0){
+//   $('[data-toggle="search"]').click(function() {
+//     if (searchVisible == 0) {
 //       searchVisible = 1;
 //       $(this).parent().addClass('active');
 //       $(this).children('p').html('Close');
-//       $('.navbar-search-form').fadeIn(function(){
+//       $('.navbar-search-form').fadeIn(function() {
 //         $('.navbar-search-form input').focus();
 //       });
 //     } else {
@@ -180,7 +179,7 @@ var ScrollPosStyler = (function(document, window) {
 //       $(this).parent().removeClass('active');
 //       $(this).children('p').html('Search');
 //       $(this).blur();
-//       $('.navbar-search-form').fadeOut(function(){
+//       $('.navbar-search-form').fadeOut(function() {
 //         $('.navbar-search-form input').blur();
 //       });
 //     } 
@@ -188,14 +187,14 @@ var ScrollPosStyler = (function(document, window) {
 // });
 
 // $(document).scroll(function() {
-//   if(hasTransparent){
-//     if( $(this).scrollTop() > 260 ) {
-//       if(transparent) {
+//   if (hasTransparent) {
+//     if ($(this).scrollTop() > 260) {
+//       if (transparent) {
 //         transparent = false;
 //         $('nav[role="navigation"]').removeClass('navbar-transparent');
 //       }
 //     } else {
-//       if( !transparent ) {
+//       if (!transparent) {
 //         transparent = true;
 //         $('nav[role="navigation"]').addClass('navbar-transparent');
 //       }
