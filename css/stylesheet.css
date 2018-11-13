@@ -218,6 +218,15 @@ footer#footer:not(.end-of-page) {
     .slide-nspdr {
       background-size: 65%, cover; } }
 
+.slide-hero::after {
+	background: rgba(0,0,0,.5);
+  background: -webkit-linear-gradient(180deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.1) 100%) !important;
+  background: -o-linear-gradient(180deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.1) 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.9)), to(rgba(0,0,0,.1))) !important;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,.9) 0%, rgba(0,0,0,.1) 100%) !important;
+  background: -o-linear-gradient(top, rgba(0,0,0,.9) 0%, rgba(0,0,0,.1) 100%) !important;
+  background: linear-gradient(180deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.1) 100%) !important; }
+
 /* Branding
 ----------- */
 [id^='drdlr-'] {
@@ -1166,8 +1175,8 @@ hr[class^='space-'] {
 .text-grey077   { color: #4d4d4d; }
 .text-grey128   { color: #808080; }
 
-.grey-77  { color: #4d4d4d; }
-.grey-128 { color: #808080; }
+.grey-77  { color: #4d4d4d !important; }
+.grey-128 { color: #808080 !important; }
 
 .grey-34  { color: #222; }
 .grey-51  { color: #333; }
@@ -2520,12 +2529,12 @@ ul.underline-on-hover li a {
   display: block;
   top: 50%;
   /* margin-left: 2.5px; */
-  margin-left: 1px;
-  margin-top: -1px; }
+  margin-left: 0px;
+  margin-top: -1.25px; }
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
-    width: 25px;
+    width: 26px;
     height: 2px;
     background-color: inherit;
     border-radius: 4px;
