@@ -246,6 +246,7 @@ footer#footer:not(.end-of-page) {
 	align-items: center; }
 	#drdlr-logo {
 		background-image: url('../img/logos/drdlr-logo.png');
+		/* background-image: url('../img/logos/drdlr-layer.png'); */
 		background-position: center left !important;
 		height: 5.25rem !important; }
 	#drdlr-flag {
@@ -866,13 +867,16 @@ hr[class^='space-'] {
   width: 7.5rem;
   height: .375rem;
 	background-color: rgba(170,102,34,.8); }
-/* .nspdr-divider2.--extra { width: 10rem; } */
 .nspdr-divider3 {
   margin: 1.5rem 0 2rem;
   width: 7.5rem;
   height: .375rem;
 	background-color: rgba(136,136,119,.8); }
-/* .nspdr-divider3.--extra { width: 10rem; } */
+.nspdr-divider4 {
+  margin: 1.5rem 0 2rem;
+  width: 7.5rem;
+  height: .375rem;
+	background-color: rgba(170,153,85,.8); }
 [class^='nspdr-divider'].--extra { width: 10rem; }
 
 .drdlr-divider {
@@ -1528,7 +1532,8 @@ hr[class^='space-'] {
 	button.bg-nspdr2:hover {
 		background-color: #88521b !important; }
 .bg-nspdr3 {
-  background-color: #a95 !important; }
+  /* background-color: #a95 !important; } */
+  background-color: #afa05f !important; }
 	a.bg-nspdr3:focus,
 	a.bg-nspdr3:hover,
 	button.bg-nspdr3:focus,
@@ -2453,7 +2458,7 @@ ul.underline-on-hover li a {
     transform: translateY(-100%); }
   .headroom--not-top {
     /* padding-top: .5rem; */
-    padding-bottom: .5rem;
+    /* padding-bottom: .5rem; */
     background-color: #0f5c29 !important;
     /* box-shadow: 0 1px 10px rgba(130,130,134,.1); } */
     /* -webkit-box-shadow: 0 .725rem 1.875rem -.1875rem rgba(0,0,0,.5),
@@ -2529,8 +2534,8 @@ ul.underline-on-hover li a {
   display: block;
   top: 50%;
   /* margin-left: 2.5px; */
-  margin-left: 0px;
-  margin-top: -1.25px; }
+  margin-left: .3px;
+  margin-top: -1.2px; }
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
